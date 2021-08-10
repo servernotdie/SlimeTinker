@@ -15,7 +15,7 @@ import org.bukkit.inventory.ItemStack;
 @UtilityClass
 public final class Dies {
 
-    public static final String DIE_DESC = "A die to create a cast from";
+    public static final String DIE_DESC = "用于制作模具";
 
     protected static final ItemStack[] RECIPE_DIE_SHOVEL_HEAD = new ItemStack[] {
             null,    new ItemStack(Material.COBBLESTONE),    null,
@@ -94,7 +94,7 @@ public final class Dies {
                     "DIE_SHOVEL_HEAD",
                     SkullTextures.PART_SHOVEL_HEAD,
                     ThemeItemType.CAST,
-                    "Die: Stone Shovel Head",
+                    "模具原型: 石制铲子头",
                     ThemeUtils.PASSIVE + DIE_DESC
             );
 
@@ -103,7 +103,7 @@ public final class Dies {
                     "DIE_PICKAXE_HEAD",
                     SkullTextures.PART_PICKAXE_HEAD,
                     ThemeItemType.CAST,
-                    "Die: Stone Pickaxe Head",
+                    "模具原型: 石制镐子头",
                     ThemeUtils.PASSIVE + DIE_DESC
             );
 
@@ -112,7 +112,7 @@ public final class Dies {
                     "DIE_AXE_HEAD",
                     SkullTextures.PART_AXE_HEAD,
                     ThemeItemType.CAST,
-                    "Die: Stone Axe Head",
+                    "模具原型: 石制斧头",
                     ThemeUtils.PASSIVE + DIE_DESC
             );
 
@@ -121,7 +121,7 @@ public final class Dies {
                     "DIE_HOE_HEAD",
                     SkullTextures.PART_HOE_HEAD,
                     ThemeItemType.CAST,
-                    "Die: Stone Hoe Head",
+                    "模具原型: 石制锄头",
                     ThemeUtils.PASSIVE + DIE_DESC
             );
 
@@ -130,7 +130,7 @@ public final class Dies {
                     "DIE_SWORD_BLADE",
                     SkullTextures.PART_SWORD_BLADE,
                     ThemeItemType.CAST,
-                    "Die: Stone Sword Head",
+                    "模具原型: 石制剑身",
                     ThemeUtils.PASSIVE + DIE_DESC
             );
 
@@ -139,7 +139,7 @@ public final class Dies {
                     "DIE_TOOL_ROD",
                     SkullTextures.PART_TOOL_ROD,
                     ThemeItemType.CAST,
-                    "Die: Tool Rod",
+                    "模具原型: 手柄",
                     ThemeUtils.PASSIVE + DIE_DESC
             );
 
@@ -193,7 +193,7 @@ public final class Dies {
                     "DIE_REPAIR_KIT",
                     Material.MINECART,
                     ThemeItemType.CAST,
-                    "Die: Repair Kit",
+                    "模具原型: 修复工具",
                     ThemeUtils.PASSIVE + DIE_DESC
             );
 
