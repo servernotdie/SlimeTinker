@@ -18,7 +18,7 @@ public final class Mods {
             ThemeUtils.themedItemStack(
                     "MOD_REDSTONE_DUMMY",
                     Material.REDSTONE,
-                    ThemeUtils.ThemeItemType.MOD,
+                    ThemeItemType.MOD,
                     "模组: 红石",
                     ThemeUtils.PASSIVE + "将此模组安装到工具上后,",
                     ThemeUtils.PASSIVE + "玩家手持该工具/武器,",
@@ -29,7 +29,7 @@ public final class Mods {
             ThemeUtils.themedItemStack(
                     "MOD_LAPIS_DUMMY",
                     Material.LAPIS_LAZULI,
-                    ThemeUtils.ThemeItemType.MOD,
+                    ThemeItemType.MOD,
                     "模组: 青金石",
                     ThemeUtils.PASSIVE + "将此模组安装到工具上后,",
                     ThemeUtils.PASSIVE + "玩家手持该工具/武器,",
@@ -41,7 +41,7 @@ public final class Mods {
             ThemeUtils.themedItemStack(
                     "MOD_QUARTZ_DUMMY",
                     Material.QUARTZ,
-                    ThemeUtils.ThemeItemType.MOD,
+                    ThemeItemType.MOD,
                     "模组: 石英",
                     ThemeUtils.PASSIVE + "将此模组安装到工具上后,",
                     ThemeUtils.PASSIVE + "玩家手持该工具/武器,",
@@ -53,25 +53,23 @@ public final class Mods {
             ThemeUtils.themedItemStack(
                     "MOD_DIAMOND_DUMMY",
                     Material.DIAMOND,
-                    ThemeUtils.ThemeItemType.MOD,
+                    ThemeItemType.MOD,
                     "模组: 钻石",
                     ThemeUtils.PASSIVE + "将此模组安装到工具上后,",
                     ThemeUtils.PASSIVE + "玩家手持该工具/武器,",
-                    ThemeUtils.PASSIVE + "has a chance to reflect damage taken",
-                    ThemeUtils.PASSIVE + "back on to the attacker. 10% per level"
+                    ThemeUtils.PASSIVE + "受到攻击时有几率反弹伤害",
+                    ThemeUtils.PASSIVE + "每安装1个该模组可提升10%的效果"
             );
 
     public static final SlimefunItemStack MOD_EMERALD_DUMMY =
             ThemeUtils.themedItemStack(
                     "MOD_EMERALD_DUMMY",
                     Material.EMERALD,
-                    ThemeUtils.ThemeItemType.MOD,
+                    ThemeItemType.MOD,
                     "模组: 绿宝石",
                     ThemeUtils.PASSIVE + "将此模组安装到工具上后,",
-                    ThemeUtils.PASSIVE + "玩家手持该工具/武器,",
-                    ThemeUtils.PASSIVE + "will gain bonus tool EXP per action",
-                    ThemeUtils.PASSIVE + "undertaken. +1 exp for tools and 10%",
-                    ThemeUtils.PASSIVE + "for weapons."
+                    ThemeUtils.PASSIVE + "每次使用工具/武器都可以获得额外经验",
+                    ThemeUtils.PASSIVE + "每安装1个该模组可提升1点额外工具经验或10%额外武器经验"
             );
 
 
@@ -79,11 +77,11 @@ public final class Mods {
             ThemeUtils.themedItemStack(
                     "MOD_PLATE_DUMMY",
                     Material.OBSIDIAN,
-                    ThemeUtils.ThemeItemType.MOD,
-                    "模组: Reinforced Plate",
-                    ThemeUtils.PASSIVE + "A tool with this modification has a",
-                    ThemeUtils.PASSIVE + "chance to not take durability damage. 10%",
-                    ThemeUtils.PASSIVE + "per level - at Level 10 tools are unbreakable"
+                    ThemeItemType.MOD,
+                    "模组: 强化合金板",
+                    ThemeUtils.PASSIVE + "将此模组安装到工具上后,",
+                    ThemeUtils.PASSIVE + "每安装1个该模组可增加10%不消耗耐久的几率",
+                    ThemeUtils.PASSIVE + "安装10个模组的工具会不可破坏"
             );
 
 

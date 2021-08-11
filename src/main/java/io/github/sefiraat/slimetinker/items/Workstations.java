@@ -31,7 +31,7 @@ public final class Workstations {
                     "匠魂冶炼炉",
                     "把金属熔化为液体",
                     "然后可以冶炼合金",
-                    "或根据模型浇铸出各种物品",
+                    "或根据模具浇铸出各种物品",
                     "需要岩浆作为燃料"
             );
 
@@ -140,7 +140,7 @@ public final class Workstations {
         p.setWorkbench(new Workbench(Categories.WORKSTATIONS, TINKERS_WORKBENCH, RecipeType.ENHANCED_CRAFTING_TABLE, RECIPE_TINKERS_WORKBENCH));
         p.getWorkbench().register(p);
 
-        new UnplaceableBlock(Categories.WORKSTATIONS, TINKERS_SMELTERY_CORE, DummySmelteryMulti.TYPE, RECIPE_TINKERS_SMELTERY_MULTI).register(p);
+        new UnplaceableBlock(Categories.WORKSTATIONS, TINKERS_SMELTERY_CORE, RecipeType.MULTIBLOCK, RECIPE_TINKERS_SMELTERY_MULTI).register(p);
         new ToolTable(Categories.WORKSTATIONS, TINKERS_TABLE, Workbench.TYPE, RECIPE_TINKERS_TABLE).register(p);
         new ArmourTable(Categories.WORKSTATIONS, TINKERS_ARMOUR_TABLE, Workbench.TYPE, RECIPE_TINKERS_ARMOUR_TABLE).register(p);
         new RepairBench(Categories.WORKSTATIONS, TINKERS_REPAIR_BENCH, Workbench.TYPE, RECIPE_TINKERS_REPAIR_BENCH).register(p);

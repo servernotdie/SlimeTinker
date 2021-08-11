@@ -14,9 +14,9 @@ public final class SupportedPluginsManager {
     public static final boolean LITEXPANSION = SlimeTinker.inst().getServer().getPluginManager().getPlugin("LiteXpansion") != null;
 
     public static final String CORE_NOTE = ThemeUtils.MAIN + "粘液匠魂";
-    public static final String INFINITY_EXPANSION_NOTE = ThemeUtils.ADD_INFINITY + "无尽科技";
+    public static final String INFINITY_EXPANSION_NOTE = ThemeUtils.ADD_INFINITY + "无尽科技(InfinityExpansion)";
     public static final String SLIMEFUN_WARFARE_NOTE = ThemeUtils.ADD_SLIMEFUN_WARFARE + "Slimefun Warfare";
-    public static final String DYNATECH_NOTE = ThemeUtils.ADD_DYNATECH + "DynaTech";
-    public static final String LITEXPANSION_NOTE = ThemeUtils.ADD_LITEXPANSION + "工业";
+    public static final String DYNATECH_NOTE = ThemeUtils.ADD_DYNATECH + "动力科技(DynaTech)";
+    public static final String LITEXPANSION_NOTE = ThemeUtils.ADD_LITEXPANSION + "工业(LiteXpansion)";
 
 }

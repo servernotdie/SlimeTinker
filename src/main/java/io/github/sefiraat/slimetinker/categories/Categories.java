@@ -47,7 +47,7 @@ public final class Categories {
     ));
     public static final SubCategory ARMOUR = new SubCategory(SlimeTinker.inst().getKeys().getCategoryArmour(), MAIN, new CustomItem(
             Material.DIAMOND_CHESTPLATE,
-            ThemeUtils.MAIN + "Armour Building Guide"
+            ThemeUtils.MAIN + "防具制作指南"
     ));
     public static final SubCategory TRAITS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryProperties(), MAIN, new CustomItem(
             SkullItem.fromBase64(SkullTextures.CAT_TRAITS),

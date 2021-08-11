@@ -18,11 +18,10 @@ public final class DummySmelteryAlloy {
     public static final SlimefunItemStack STACK = new SlimefunItemStack(
             "DUMMY_TINKERS_SMELTERY_ALLOY",
             Material.CHISELED_POLISHED_BLACKSTONE,
-            ThemeUtils.ITEM_MACHINE + "Tinker's Smeltery",
+            ThemeUtils.ITEM_MACHINE + "匠魂冶炼炉",
             "",
-            ThemeUtils.PASSIVE + "This alloy is made in the Tinker's",
-            ThemeUtils.PASSIVE + "Smeltery by inputting correct metal",
-            ThemeUtils.PASSIVE + "types and clicking Alloy.",
+            ThemeUtils.PASSIVE + "在匠魂冶炼炉中放入正确类型的金属",
+            ThemeUtils.PASSIVE + "然后点击\"冶炼合金\"获得熔融合金",
             "",
             ThemeUtils.LORE_TYPE_MACHINE
     );
