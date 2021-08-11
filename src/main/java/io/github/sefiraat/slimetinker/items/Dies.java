@@ -148,7 +148,7 @@ public final class Dies {
                     "DIE_HELM_PLATE",
                     SkullTextures.PART_HELM_PLATES,
                     ThemeItemType.CAST,
-                    "Die: Stone Helmet Plates",
+                    "模具原型: 石制头盔板",
                     ThemeUtils.PASSIVE + DIE_DESC
             );
 
@@ -157,7 +157,7 @@ public final class Dies {
                     "DIE_CHEST_PLATE",
                     SkullTextures.PART_CHEST_PLATES,
                     ThemeItemType.CAST,
-                    "Die: Stone Chest Plates",
+                    "模具原型: 石制胸甲板",
                     ThemeUtils.PASSIVE + DIE_DESC
             );
 
@@ -166,7 +166,7 @@ public final class Dies {
                     "DIE_LEG_PLATE",
                     SkullTextures.PART_LEG_PLATES,
                     ThemeItemType.CAST,
-                    "Die: Stone Leg Plates",
+                    "模具原型: 石制护腿板",
                     ThemeUtils.PASSIVE + DIE_DESC
             );
 
@@ -175,7 +175,7 @@ public final class Dies {
                     "DIE_BOOT_PLATE",
                     SkullTextures.PART_BOOTS_PLATES,
                     ThemeItemType.CAST,
-                    "Die: Stone Boot Plates",
+                    "模具原型: 石制靴子板",
                     ThemeUtils.PASSIVE + DIE_DESC
             );
 
@@ -184,7 +184,7 @@ public final class Dies {
                     "DIE_MAIL_LINK",
                     SkullTextures.PART_LINKS,
                     ThemeItemType.CAST,
-                    "Die: Mail Links",
+                    "模具原型: 盔甲接合物",
                     ThemeUtils.PASSIVE + DIE_DESC
             );
 

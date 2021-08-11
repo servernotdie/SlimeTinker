@@ -49,7 +49,7 @@ public class CMManager {
     @Getter
     private static final Map<String, ComponentMaterial> MAP = new HashMap<>();
 
-    private static final String VALIDATE_TRAIT_MESSAGE = "The material {0} does not have a compatible trait type of {1}";
+    private static final String VALIDATE_TRAIT_MESSAGE = "材料 {0} 没有 {1} 特性";
 
     // Base
     public static final int AMOUNT_NUGGET = 1;

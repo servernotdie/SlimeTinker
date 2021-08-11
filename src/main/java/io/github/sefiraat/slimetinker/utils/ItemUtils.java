@@ -154,8 +154,8 @@ public final class ItemUtils {
 
         // General Material information
         lore.add(ThemeUtils.getLine());
-        lore.add(ThemeUtils.CLICK_INFO + "头: " + formatMaterialName(matHead));
-        lore.add(ThemeUtils.CLICK_INFO + "接合: " + formatMaterialName(matBind));
+        lore.add(ThemeUtils.CLICK_INFO + "头部: " + formatMaterialName(matHead));
+        lore.add(ThemeUtils.CLICK_INFO + "绑定结: " + formatMaterialName(matBind));
         lore.add(ThemeUtils.CLICK_INFO + "手柄: " + formatMaterialName(matRod));
         lore.add(ThemeUtils.getLine());
 
@@ -206,9 +206,9 @@ public final class ItemUtils {
 
         // General Material information
         lore.add(ThemeUtils.getLine());
-        lore.add(ThemeUtils.CLICK_INFO + "P: " + formatMaterialName(matPlate));
-        lore.add(ThemeUtils.CLICK_INFO + "G: " + formatMaterialName(matGambeson));
-        lore.add(ThemeUtils.CLICK_INFO + "L: " + formatMaterialName(matLinks));
+        lore.add(ThemeUtils.CLICK_INFO + "板: " + formatMaterialName(matPlate));
+        lore.add(ThemeUtils.CLICK_INFO + "护身软甲: " + formatMaterialName(matGambeson));
+        lore.add(ThemeUtils.CLICK_INFO + "盔甲接合物: " + formatMaterialName(matLinks));
         lore.add(ThemeUtils.getLine());
 
         // Material properties
@@ -652,13 +652,13 @@ public final class ItemUtils {
     }
 
     public static String getLoreExp(PersistentDataContainer c) {
-        return ThemeUtils.ITEM_TOOL + "Level: " +
+        return ThemeUtils.ITEM_TOOL + "等级: " +
                 ChatColor.WHITE + getTinkerLevel(c) +
                 ThemeUtils.PASSIVE + " (" + getTinkerExp(c) + " / " + getTinkerRequiredExp(c) + ")";
     }
 
     public static String getLoreModSlots(PersistentDataContainer c) {
-        return ThemeUtils.ITEM_TOOL + "Modifier Slots: " +
+        return ThemeUtils.ITEM_TOOL + "模组栏位: " +
                 ChatColor.WHITE + getTinkerModifierSlots(c);
     }
 

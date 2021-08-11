@@ -3,7 +3,7 @@ package io.github.sefiraat.slimetinker.utils;
 import io.github.sefiraat.slimetinker.items.componentmaterials.CMManager;
 import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
 import me.mrCookieSlime.Slimefun.cscorelib2.skull.SkullItem;
-import net.guizhanss.minecraft.slimetinker.utils.ItemNames;
+import net.guizhanss.minecraft.slimetinker.utils.LangUtils;
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
@@ -71,40 +71,40 @@ public final class GUIItems {
     public static CustomItem menuMarkerBinder() {
         return new CustomItem(
                 Material.RED_STAINED_GLASS_PANE,
-                ChatColor.RED + "放入接合物",
-                ThemeUtils.PASSIVE + "在下面的栏位放入接合物部件"
+                ChatColor.RED + "放入绑定结",
+                ThemeUtils.PASSIVE + "在下面的栏位放入绑定结部件"
         );
     }
 
     public static CustomItem menuMarkerHead() {
         return new CustomItem(
                 Material.RED_STAINED_GLASS_PANE,
-                ChatColor.RED + "放入工具头/剑身",
-                ThemeUtils.PASSIVE + "在下面的栏位放入工具头/剑身部件"
+                ChatColor.RED + "放入工具/武器头",
+                ThemeUtils.PASSIVE + "在下面的栏位放入工具/武器头部件"
         );
     }
 
     public static CustomItem menuMarkerLinks() {
         return new CustomItem(
                 Material.RED_STAINED_GLASS_PANE,
-                ChatColor.RED + "Links Input",
-                " "
+                ChatColor.RED + "放入盔甲接合物",
+                ThemeUtils.PASSIVE + "在下面的栏位放入盔甲接合物部件"
         );
     }
 
     public static CustomItem menuMarkerGambeson() {
         return new CustomItem(
                 Material.RED_STAINED_GLASS_PANE,
-                ChatColor.RED + "Gambeson Input",
-                " "
+                ChatColor.RED + "放入护身软甲",
+                ThemeUtils.PASSIVE + "在下面的栏位放入护身软甲"
         );
     }
 
     public static CustomItem menuMarkerPlates() {
         return new CustomItem(
                 Material.RED_STAINED_GLASS_PANE,
-                ChatColor.RED + "Plates Input",
-                " "
+                ChatColor.RED + "放入盔甲板",
+                ThemeUtils.PASSIVE + "在下面的栏位放入盔甲板"
         );
     }
 
@@ -157,7 +157,7 @@ public final class GUIItems {
             for (Map.Entry<String, Integer> e : map.entrySet()) {
                 String name =
                         CMManager.getById(e.getKey()).getColor() +
-                        ItemNames.get(e.getKey());
+                        LangUtils.getItemName(e.getKey());
                 String amount = e.getValue().toString();
                 meta.add(ThemeUtils.CLICK_INFO + name + ": " + ChatColor.WHITE + amount + " 单位");
             }

@@ -19,6 +19,7 @@ import io.github.sefiraat.slimetinker.utils.Keys;
 import lombok.Getter;
 import lombok.Setter;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 public class SlimeTinker extends AbstractAddon {
 
@@ -79,6 +80,12 @@ public class SlimeTinker extends AbstractAddon {
     @Override
     protected Metrics setupMetrics() {
         return new Metrics(this,11748);
+    }
+
+    @Nullable
+    @Override
+    public String getAutoUpdatePath() {
+        return "auto-update";
     }
 
     @Override

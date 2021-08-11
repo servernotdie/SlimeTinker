@@ -9,6 +9,7 @@ import io.github.sefiraat.slimetinker.utils.enums.ThemeItemType;
 import lombok.Getter;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
 import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
+import net.guizhanss.minecraft.slimetinker.utils.LangUtils;
 import org.apache.commons.lang.Validate;
 import org.bukkit.inventory.ItemStack;
 
@@ -31,14 +32,14 @@ public class CMAlloy {
 
     public void setupAlloy(ComponentMaterial parent) {
         this.parent = parent;
-        String titName = ThemeUtils.toTitleCase(parent.getId());
+        String titName = LangUtils.getItemName(parent.getId());
         this.itemStack =
                 ThemeUtils.themedItemStack(
                         parent.getId() + "_ALLOY",
                         parent.getLiquidTexture(),
                         ThemeItemType.MOLTEN_METAL,
-                        "Molten " + titName,
-                        ThemeUtils.PASSIVE + "A molten alloy metal of " + titName
+                        "熔融" + titName,
+                        ThemeUtils.PASSIVE + "熔融" + titName
                 );
         List<SlimefunItemStack> alloyRecipe = parent.getAlloyRecipe();
         Validate.notNull(alloyRecipe, "Alloy recipe is null. SefiDumb™");

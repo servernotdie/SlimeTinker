@@ -1,11 +1,12 @@
 package net.guizhanss.minecraft.slimetinker.utils;
 
+import io.github.sefiraat.slimetinker.utils.ThemeUtils;
 import lombok.experimental.UtilityClass;
 
 @UtilityClass
-public class ItemNames {
+public class LangUtils {
 
-    public static String get(String type) {
+    public static String getItemName(String type) {
         switch (type.toUpperCase()) {
             // Vanilla + Core SF
             case "IRON":
@@ -175,7 +176,39 @@ public class ItemNames {
 
             // Other
             default:
-                return type.toUpperCase();
+                return ThemeUtils.toTitleCase(type);
+        }
+    }
+
+    public static String getToolHead(String type){
+        switch(type.toUpperCase()){
+            case "PICK":
+                return "镐头";
+            case "SHOVEL":
+                return "铲头";
+            case "AXE":
+                return "斧刃";
+            case "SWORD":
+                return "剑刃";
+            case "HOE":
+                return "锄头";
+            default:
+                return ThemeUtils.toTitleCase(type);
+        }
+    }
+
+    public static String getArmorPart(String part) {
+        switch(part.toUpperCase()){
+            case "HELMET":
+                return "头盔";
+            case "CHESTPLATE":
+                return "胸甲";
+            case "LEGGINGS":
+                return "护腿";
+            case "BOOTS":
+                return "靴子";
+            default:
+                return ThemeUtils.toTitleCase(part);
         }
     }
 }
