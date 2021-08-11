@@ -6,7 +6,7 @@ import lombok.experimental.UtilityClass;
 @UtilityClass
 public class LangUtils {
 
-    public static String getItemName(String type) {
+    public static String getMaterialName(String type) {
         switch (type.toUpperCase()) {
             // Vanilla + Core SF
             case "IRON":
