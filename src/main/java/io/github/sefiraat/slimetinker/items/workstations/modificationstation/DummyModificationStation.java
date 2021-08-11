@@ -20,7 +20,7 @@ public final class DummyModificationStation {
             Material.GRINDSTONE,
             ThemeUtils.ITEM_MACHINE + "匠魂模组工作站",
             "",
-            ThemeUtils.PASSIVE + "Tools are augmented on the Modification",
+            ThemeUtils.PASSIVE + "在匠魂模组工作站中给工具/武器安装模组",
             ThemeUtils.PASSIVE + "station using the appropriate material.",
             ThemeUtils.PASSIVE + "Once enough material has been added, the",
             ThemeUtils.PASSIVE + "modification will level.",

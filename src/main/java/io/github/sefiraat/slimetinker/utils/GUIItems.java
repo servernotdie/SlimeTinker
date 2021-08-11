@@ -217,10 +217,10 @@ public final class GUIItems {
     public static CustomItem menuCraftTable() {
         return new CustomItem(
                 Material.SMITHING_TABLE,
-                ThemeUtils.GUI_HEAD + "组装工具/武器",
+                ThemeUtils.GUI_HEAD + "组装",
                 "",
-                ThemeUtils.PASSIVE + "将三个部件(手柄、接合物、工具头/剑身)",
-                ThemeUtils.PASSIVE + "组装成工具/武器",
+                ThemeUtils.PASSIVE + "将三个部件",
+                ThemeUtils.PASSIVE + "组装成工具/武器/防具",
                 ThemeUtils.CLICK_INFO + "点击此处" + ChatColor.WHITE + "组装"
         );
     }

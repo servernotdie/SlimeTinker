@@ -162,7 +162,7 @@ public class ArmourTable extends AbstractContainer {
         ItemStack links = blockMenu.getItemInSlot(INPUT_MAIL_LINK);
 
         if (plates == null || gambeson == null || links == null) { // Missing one or more items
-            player.sendMessage(ThemeUtils.ERROR + "需要提供所有部件");
+            player.sendMessage(ThemeUtils.ERROR + "需要放入所有部件");
             return false;
         }
         if (!validate(plates, gambeson, links)) { // One or more items are not the correct part

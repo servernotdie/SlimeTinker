@@ -171,11 +171,11 @@ public class ToolTable extends AbstractTickingContainer {
         ItemStack rod = blockMenu.getItemInSlot(INPUT_ROD);
 
         if (head == null || binding == null || rod == null) { // Missing one or more items
-            player.sendMessage(ThemeUtils.ERROR + "Not all items present");
+            player.sendMessage(ThemeUtils.ERROR + "需要放入所有部件");
             return false;
         }
         if (!validateClass(head, IDStrings.HEAD) || !validateBinder(binding) || !validateClass(rod, IDStrings.ROD)) { // One or more items are not the correct part
-            player.sendMessage(ThemeUtils.WARNING + "One or more items are either not Tinker's parts or in the wrong slot?");
+            player.sendMessage(ThemeUtils.WARNING + "某栏位的部件无效");
             return false;
         }
 

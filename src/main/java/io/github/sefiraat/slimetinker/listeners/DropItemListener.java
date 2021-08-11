@@ -18,7 +18,7 @@ public class DropItemListener implements Listener {
 
         if (ItemUtils.cannotDrop(itemStack)) {
             event.setCancelled(true);
-            event.getPlayer().sendMessage(ThemeUtils.WARNING + "This cannot be dropped.");
+            event.getPlayer().sendMessage(ThemeUtils.WARNING + "该物品无法被丢弃");
         }
 
     }

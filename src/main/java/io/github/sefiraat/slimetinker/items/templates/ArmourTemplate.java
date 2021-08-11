@@ -11,6 +11,7 @@ import me.mrCookieSlime.Slimefun.Lists.RecipeType;
 import me.mrCookieSlime.Slimefun.Objects.Category;
 import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
 import me.mrCookieSlime.Slimefun.cscorelib2.data.PersistentDataAPI;
+import net.guizhanss.minecraft.slimetinker.utils.LangUtils;
 import net.md_5.bungee.api.ChatColor;
 import org.apache.commons.lang.Validate;
 import org.bukkit.Material;
@@ -21,10 +22,10 @@ public class ArmourTemplate extends UnplaceableBlock {
 
     public String getName(ArmourDefinition armourDefinition) {
         return
-                CMManager.getById(armourDefinition.getPlateMaterial()).getColor() + ThemeUtils.toTitleCase(armourDefinition.getPlateMaterial()) + "-" +
-                CMManager.getById(armourDefinition.getGambesonMaterial()).getColor() + ThemeUtils.toTitleCase(armourDefinition.getGambesonMaterial()) + "-" +
-                CMManager.getById(armourDefinition.getLinksMaterial()).getColor() + ThemeUtils.toTitleCase(armourDefinition.getLinksMaterial()) + " " +
-                ChatColor.WHITE + ThemeUtils.toTitleCase(armourDefinition.getPartType());
+                CMManager.getById(armourDefinition.getPlateMaterial()).getColor() + LangUtils.getMaterialName(armourDefinition.getPlateMaterial()) + "-" +
+                CMManager.getById(armourDefinition.getGambesonMaterial()).getColor() + LangUtils.getMaterialName(armourDefinition.getGambesonMaterial()) + "-" +
+                CMManager.getById(armourDefinition.getLinksMaterial()).getColor() + LangUtils.getMaterialName(armourDefinition.getLinksMaterial()) + " " +
+                ChatColor.WHITE + LangUtils.getArmorPart(armourDefinition.getPartType());
 
     }
 
