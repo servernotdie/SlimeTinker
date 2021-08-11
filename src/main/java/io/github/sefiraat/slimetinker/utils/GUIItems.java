@@ -157,7 +157,7 @@ public final class GUIItems {
             for (Map.Entry<String, Integer> e : map.entrySet()) {
                 String name =
                         CMManager.getById(e.getKey()).getColor() +
-                        LangUtils.getItemName(e.getKey());
+                        LangUtils.getMaterialName(e.getKey());
                 String amount = e.getValue().toString();
                 meta.add(ThemeUtils.CLICK_INFO + name + ": " + ChatColor.WHITE + amount + " 单位");
             }

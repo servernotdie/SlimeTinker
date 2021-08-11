@@ -18,7 +18,7 @@ public final class DummyModificationStation {
     public static final SlimefunItemStack STACK = new SlimefunItemStack(
             "DUMMY_MODIFICATION_STATION",
             Material.GRINDSTONE,
-            ThemeUtils.ITEM_MACHINE + "Tinker's Modification Station",
+            ThemeUtils.ITEM_MACHINE + "匠魂模组工作站",
             "",
             ThemeUtils.PASSIVE + "Tools are augmented on the Modification",
             ThemeUtils.PASSIVE + "station using the appropriate material.",

@@ -173,7 +173,7 @@ public class ComponentMaterial {
     }
 
     public SlimefunItemStack headStack(String name, String type, String skullTexture) {
-        String titName = LangUtils.getItemName(name);
+        String titName = LangUtils.getMaterialName(name);
         String headName = LangUtils.getToolHead(type);
         return ThemeUtils.themedItemStack(
                 "PART_HEAD_" + type + name,
@@ -186,7 +186,7 @@ public class ComponentMaterial {
 
     // TODO This is now very disjointed. Needs all wrapping in - to resolve the this == this issue
     public SlimefunItemStack bindingStack(String name) {
-        String titName = LangUtils.getItemName(name);
+        String titName = LangUtils.getMaterialName(name);
         SlimefunItemStack i = ThemeUtils.themedItemStack(
                 "PART_BINDING_" + name,
                 SkullTextures.PART_BINDING,
@@ -206,7 +206,7 @@ public class ComponentMaterial {
     }
 
     public SlimefunItemStack rodStack(String name) {
-        String titName = LangUtils.getItemName(name);
+        String titName = LangUtils.getMaterialName(name);
         return ThemeUtils.themedItemStack(
                 "PART_ROD_" + name,
                 SkullTextures.PART_TOOL_ROD,
@@ -217,7 +217,7 @@ public class ComponentMaterial {
     }
 
     public SlimefunItemStack platesStack(String name, String type, String skullTexture) {
-        String titName = LangUtils.getItemName(name);
+        String titName = LangUtils.getMaterialName(name);
         String partName = LangUtils.getArmorPart(type);
         return ThemeUtils.themedItemStack(
                 "PART_PLATES_" + type + name,
@@ -230,7 +230,7 @@ public class ComponentMaterial {
 
     // TODO This is now very disjointed. Needs all wrapping in - to resolve the this == this issue
     public SlimefunItemStack gambesonStack(String name) {
-        String titName = LangUtils.getItemName(name);
+        String titName = LangUtils.getMaterialName(name);
         SlimefunItemStack i = ThemeUtils.themedItemStack(
                 "PART_GAMBESON_" + name,
                 SkullTextures.PART_GAMBESON,
@@ -249,7 +249,7 @@ public class ComponentMaterial {
     }
 
     public SlimefunItemStack linksStack(String name) {
-        String titName = LangUtils.getItemName(name);
+        String titName = LangUtils.getMaterialName(name);
         return ThemeUtils.themedItemStack(
                 "PART_LINKS_" + name,
                 SkullTextures.PART_LINKS,
@@ -260,7 +260,7 @@ public class ComponentMaterial {
     }
 
     public SlimefunItemStack repairStack(String name) {
-        String titName = LangUtils.getItemName(name);
+        String titName = LangUtils.getMaterialName(name);
         return ThemeUtils.themedItemStack(
                 "PART_REPAIR_KIT_" + name,
                 Material.CHEST_MINECART,

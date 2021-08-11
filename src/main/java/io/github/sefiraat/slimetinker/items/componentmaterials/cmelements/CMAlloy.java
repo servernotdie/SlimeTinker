@@ -32,7 +32,7 @@ public class CMAlloy {
 
     public void setupAlloy(ComponentMaterial parent) {
         this.parent = parent;
-        String titName = LangUtils.getItemName(parent.getId());
+        String titName = LangUtils.getMaterialName(parent.getId());
         this.itemStack =
                 ThemeUtils.themedItemStack(
                         parent.getId() + "_ALLOY",
