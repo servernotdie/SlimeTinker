@@ -12,6 +12,7 @@ import me.mrCookieSlime.Slimefun.Objects.Category;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
 import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
 import me.mrCookieSlime.Slimefun.cscorelib2.data.PersistentDataAPI;
+import net.guizhanss.minecraft.slimetinker.utils.LangUtils;
 import net.md_5.bungee.api.ChatColor;
 import org.apache.commons.lang.Validate;
 import org.bukkit.Material;
@@ -22,10 +23,10 @@ public class ToolTemplate extends SlimefunItem implements NotPlaceable {
 
     public String getName(ToolDefinition toolDefinition) {
         return
-                CMManager.getById(toolDefinition.getHeadMaterial()).getColor() + ThemeUtils.toTitleCase(toolDefinition.getHeadMaterial()) + "-" +
-                CMManager.getById(toolDefinition.getBinderMaterial()).getColor() + ThemeUtils.toTitleCase(toolDefinition.getBinderMaterial()) + "-" +
-                CMManager.getById(toolDefinition.getRodMaterial()).getColor() + ThemeUtils.toTitleCase(toolDefinition.getRodMaterial()) + " " +
-                ChatColor.WHITE + ThemeUtils.toTitleCase(toolDefinition.getPartType());
+                CMManager.getById(toolDefinition.getHeadMaterial()).getColor() + LangUtils.getMaterialName(toolDefinition.getHeadMaterial()) + "-" +
+                CMManager.getById(toolDefinition.getBinderMaterial()).getColor() + LangUtils.getMaterialName(toolDefinition.getBinderMaterial()) + "-" +
+                CMManager.getById(toolDefinition.getRodMaterial()).getColor() + LangUtils.getMaterialName(toolDefinition.getRodMaterial()) + " " +
+                ChatColor.WHITE + LangUtils.getToolName(toolDefinition.getPartType());
 
     }
 

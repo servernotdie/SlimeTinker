@@ -51,7 +51,7 @@ public final class Categories {
     ));
     public static final SubCategory TRAITS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryProperties(), MAIN, new CustomItem(
             SkullItem.fromBase64(SkullTextures.CAT_TRAITS),
-            ThemeUtils.MAIN + "金属特性"
+            ThemeUtils.MAIN + "特性"
     ));
     public static final SubCategory MODIFICATIONS = new SubCategory(SlimeTinker.inst().getKeys().getCategoryModifications(), MAIN, new CustomItem(
             Material.REDSTONE,

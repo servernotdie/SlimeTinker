@@ -34,7 +34,7 @@ public class PartTemplate extends UnplaceableBlock {
         list.add(ThemeUtils.PASSIVE + "一个工具部件,本身没有任何作用");
         list.add(ThemeUtils.PASSIVE + "但可以在匠魂工具组装台组装成工具");
         list.add("");
-        list.add(ThemeUtils.CLICK_INFO + "材料 : " + color + LangUtils.getMaterialName(material));
+        list.add(ThemeUtils.CLICK_INFO + "材质: " + color + LangUtils.getMaterialName(material));
         return list;
     }
 

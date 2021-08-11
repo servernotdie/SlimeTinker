@@ -12,7 +12,9 @@ import lombok.experimental.UtilityClass;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
 import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
 import me.mrCookieSlime.Slimefun.cscorelib2.data.PersistentDataAPI;
+import net.guizhanss.minecraft.slimetinker.utils.LangUtils;
 import net.md_5.bungee.api.ChatColor;
+import org.apache.commons.codec.language.bm.Lang;
 import org.apache.commons.lang.Validate;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
@@ -233,7 +235,7 @@ public final class ItemUtils {
                 String amountRequired = String.valueOf(mod.getRequirementMap().get(level + 1));
                 lore.add(ThemeUtils.CLICK_INFO + ThemeUtils.toTitleCase(entry.getKey()) + " 等级 " + entry.getValue() + ThemeUtils.PASSIVE + " - (" + mapAmounts.get(entry.getKey()) + "/" + amountRequired + ")");
             } else {
-                lore.add(ThemeUtils.CLICK_INFO + ThemeUtils.toTitleCase(entry.getKey()) + " 等级 " + entry.getValue() + ThemeUtils.PASSIVE + " - (MAX)");
+                lore.add(ThemeUtils.CLICK_INFO + ThemeUtils.toTitleCase(entry.getKey()) + " 等级 " + entry.getValue() + ThemeUtils.PASSIVE + " - (最高)");
             }
         }
         if (!mapLevels.isEmpty()) {
@@ -288,10 +290,10 @@ public final class ItemUtils {
         assert im != null;
 
         String name =
-                CMManager.getById(first).getColor() + ThemeUtils.toTitleCase(first) + "-" +
-                        CMManager.getById(second).getColor() + ThemeUtils.toTitleCase(second) + "-" +
-                        CMManager.getById(third).getColor() + ThemeUtils.toTitleCase(third) + " " +
-                        ChatColor.WHITE + ThemeUtils.toTitleCase(type);
+                CMManager.getById(first).getColor() + LangUtils.getMaterialName(first) + "-" +
+                        CMManager.getById(second).getColor() + LangUtils.getMaterialName(second) + "-" +
+                        CMManager.getById(third).getColor() + LangUtils.getMaterialName(third) + " " +
+                        ChatColor.WHITE + LangUtils.getToolOrArmorName(type);
 
         im.setDisplayName(name);
         itemStack.setItemMeta(im);
@@ -428,7 +430,7 @@ public final class ItemUtils {
     }
 
     public static String formatMaterialName(String s) {
-        return CMManager.getById(s).getColor() + ThemeUtils.toTitleCase(s);
+        return CMManager.getById(s).getColor() + LangUtils.getMaterialName(s);
     }
 
     public static String formatPropertyName(String s, String p) {

@@ -180,6 +180,23 @@ public class LangUtils {
         }
     }
 
+    public static String getToolName(String type){
+        switch(type.toUpperCase()){
+            case "PICK":
+                return "镐";
+            case "SHOVEL":
+                return "铲";
+            case "AXE":
+                return "斧";
+            case "SWORD":
+                return "剑";
+            case "HOE":
+                return "锄";
+            default:
+                return ThemeUtils.toTitleCase(type);
+        }
+    }
+
     public static String getToolHead(String type){
         switch(type.toUpperCase()){
             case "PICK":
@@ -210,5 +227,10 @@ public class LangUtils {
             default:
                 return ThemeUtils.toTitleCase(part);
         }
+    }
+
+    public static String getToolOrArmorName(String type){
+        String toolName = getToolName(type);
+        return toolName.equals(ThemeUtils.toTitleCase(type)) ? getArmorPart(type) : toolName;
     }
 }
