@@ -9,6 +9,7 @@ import me.mrCookieSlime.Slimefun.Lists.RecipeType;
 import me.mrCookieSlime.Slimefun.Objects.Category;
 import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
 import me.mrCookieSlime.Slimefun.cscorelib2.data.PersistentDataAPI;
+import net.guizhanss.minecraft.slimetinker.utils.LangUtils;
 import net.md_5.bungee.api.ChatColor;
 import org.apache.commons.lang.Validate;
 import org.bukkit.Material;
@@ -27,7 +28,7 @@ public class RepairkitTemplate extends UnplaceableBlock {
     private final String name;
 
     public String getName(String material) {
-        return ThemeUtils.toTitleCase(material) + ThemeUtils.ITEM_PART + " " + name;
+        return LangUtils.getMaterialName(material) + ThemeUtils.ITEM_PART + " " + name;
     }
 
     public List<String> getLore(String material, ChatColor color) {
