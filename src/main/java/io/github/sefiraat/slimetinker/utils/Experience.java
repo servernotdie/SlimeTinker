@@ -100,7 +100,7 @@ public final class Experience {
         if (Guide.getGrowthMap().get(type).containsKey(level)) {
             itemStack.setType(Guide.getGrowthMap().get(type).get(level));
             ItemUtils.repairItem(itemStack);
-            player.sendMessage(ThemeUtils.SUCCESS + "你的工具或武器已被升级!");
+            player.sendMessage(ThemeUtils.SUCCESS + "你的工具或武器已升级!");
         }
 
     }
