@@ -638,8 +638,9 @@ public final class CMInfinity {
                                                 CMTraits.PROP_PLATES,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
                                                 "偷袭 II",
-                                                "Damage doubled if target is facing away.",
-                                                "Large tolerence"
+                                                "当目标看向别处时,",
+                                                "+100% 对其造成的伤害",
+                                                "(看向别处的判定范围更广)"
                                         ),
                                         null,
                                         new CMTrait(
