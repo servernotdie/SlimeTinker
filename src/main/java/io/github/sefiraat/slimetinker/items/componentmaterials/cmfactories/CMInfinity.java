@@ -646,8 +646,9 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_LINKS,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Acupuncture II",
-                                                "Cactus pricks heal you and removes all effects."
+                                                "针灸 II",
+                                                "免疫来自仙人掌的伤害",
+                                                "来自仙人掌的伤害可以治疗你"
                                         ))
                         ));
 
@@ -674,9 +675,9 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Flammable II",
-                                                "Has a (Tool level x 10)% chance to",
-                                                "set your enemies ablaze for a longer time.",
+                                                "燃烧 II",
+                                                "有(工具等级 x 10)%的几率",
+                                                "让敌人着火更长时间",
                                                 "",
                                                 ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
@@ -684,24 +685,25 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Magnetesium II",
-                                                "Random items are drawn to you from",
-                                                "within a 10 block range",
+                                                "磁铁 II",
+                                                "随机捡起附近10格范围内的物品",
                                                 "",
                                                 ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Light II",
-                                                "Damage Dealt -25%. Speed + 2"
+                                                "快溜",
+                                                "-50% 输出伤害",
+                                                "获得速度效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_LINKS,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "MagneSight™ II",
-                                                "Gain night vision and highlight all mobs"
+                                                "镁地™夜视 II",
+                                                "获得夜视效果",
+                                                "并标记出周围10格内所有生物"
                                         ))
                         ));
         map.put(IDStrings.SINGDIAMOND,
@@ -760,29 +762,38 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Elven Speed",
-                                                "Haste 2, Speed 1. Durability loss +50%"
+                                                "精灵疾驰",
+                                                "+50% 耐久消耗",
+                                                "获得急迫II效果",
+                                                "获得速度效果",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Sting of Gondolin",
-                                                "All nearby, hostile, mobs are repelled."
+                                                "贡多林刺针",
+                                                "击退附近所有的敌对生物",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Brightburn",
-                                                "Gives on stack of Burning Bright! With 4 ",
-                                                "stacks, hostile mobs are repelled (not bosses)."
+                                                "魔童",
+                                                "获得1层魔童效果",
+                                                "当拥有4层及以上的魔童效果时",
+                                                "击退周围5格内的所有的敌对生物",
+                                                "(凋零与末影龙除外)"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_LINKS,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Call of the Wild",
-                                                "When hit, you sometimes summon a wolf to your aid"
+                                                "野性的呼唤",
+                                                "当受到伤害时",
+                                                "有几率召唤一只狼来帮助你"
                                         ))
                         ));
 
@@ -813,28 +824,34 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Mystic",
-                                                "Player Exp + 100% (Mining) +50% (Mobs)"
+                                                "神秘",
+                                                "+100% 玩家经验获取(挖矿)",
+                                                "+50% 玩家经验获取(打怪)",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Adamant",
-                                                "Become immune to all explosions"
+                                                "坚硬",
+                                                "免疫爆炸伤害",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Deflective",
-                                                "Projectile Damage -25%"
+                                                "射歪了",
+                                                "-25% 来自弹射物的伤害"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_LINKS,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Experienced",
-                                                "All tool and armour exp +10%"
+                                                "有经验的",
+                                                "+10% 工具经验获取",
+                                                "+10% 玩家经验获取"
                                         ))
                         ));
 
@@ -861,15 +878,19 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Magnanimous",
-                                                "You're just far too kind"
+                                                "宽容",
+                                                "你真的太棒了",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
                                                 "Flaming Hot",
-                                                "Smelts things when possible."
+                                                "Smelts things when possible.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
@@ -912,14 +933,18 @@ public final class CMInfinity {
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
                                                 "Fortunate",
                                                 "200% drops from fortune. Stacks",
-                                                "with Lapis modifiers."
+                                                "with Lapis modifiers.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
                                                 "Merchant's Veil",
-                                                "Invisibility with none of the drawbacks!"
+                                                "Invisibility with none of the drawbacks!",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
@@ -960,14 +985,18 @@ public final class CMInfinity {
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
                                                 "Tricks",
-                                                "Plays nasty tricks on nearby things."
+                                                "Plays nasty tricks on nearby things.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
                                                 "Secrets Revealed",
-                                                "Reveals all nearby living (or not!) things."
+                                                "Reveals all nearby living (or not!) things.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
@@ -1010,7 +1039,9 @@ public final class CMInfinity {
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
                                                 "Earth Shaker",
                                                 "Knocks back hit mobs and stuns them",
-                                                "when they land."
+                                                "when they land.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
@@ -1018,7 +1049,9 @@ public final class CMInfinity {
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
                                                 "Grinder",
                                                 "Breaking blocks act as if they have",
-                                                "gone through the grinder."
+                                                "gone through the grinder.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
@@ -1060,7 +1093,9 @@ public final class CMInfinity {
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
                                                 "Clean Cut",
-                                                "Damage +100%. Haste 2"
+                                                "Damage +100%. Haste 2",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
@@ -1068,7 +1103,9 @@ public final class CMInfinity {
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
                                                 "Conductor",
                                                 "All player exp is converted to tool",
-                                                "exp at a 10 : 1 ratio."
+                                                "exp at a 10 : 1 ratio.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
@@ -1112,14 +1149,18 @@ public final class CMInfinity {
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
                                                 "Infinite",
-                                                "This tool will live on forever."
+                                                "This tool will live on forever.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
                                                 "Conceptual Defence",
-                                                "All damage is halved (rounded up)."
+                                                "All damage is halved (rounded up).",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
@@ -1163,7 +1204,9 @@ public final class CMInfinity {
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
                                                 "Breakpoint",
                                                 "Unbreakable. +200% Damage.",
-                                                "+200% Tool Exp and 3x3 Mining."
+                                                "+200% Tool Exp and 3x3 Mining.",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         null,
                                         null,
