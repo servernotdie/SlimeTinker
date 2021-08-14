@@ -130,7 +130,7 @@ public final class CMCore {
                                                 SupportedPluginsManager.CORE_NOTE,
                                                 "繁荣",
                                                 "在受到伤害时",
-                                                "有1%几率掉落1格金粒"
+                                                "有1%几率掉落1个金粒"
                                         ),
                                         null,
                                         new CMTrait(
@@ -445,7 +445,7 @@ public final class CMCore {
                                                 SupportedPluginsManager.CORE_NOTE,
                                                 "飘浮",
                                                 "未蹲下时让你变得比空气还轻",
-                                                "(获得飘浮效果)",
+                                                "(获得飘浮II效果)",
                                                 "",
                                                 ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
@@ -690,7 +690,7 @@ public final class CMCore {
                                                 "耐用",
                                                 "工具损坏时依然可用,但:",
                                                 "-50% 输出伤害",
-                                                "拥有更慢的挖掘速度",
+                                                "获得挖掘疲劳效果",
                                                 "无法获得工具经验",
                                                 "",
                                                 ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
@@ -715,8 +715,9 @@ public final class CMCore {
                                         new CMTrait(
                                                 CMTraits.PROP_LINKS,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Shock Absorbant",
-                                                "10% chance to ignore damage. Not additive"
+                                                "减震剂",
+                                                "有10%的几率免疫伤害",
+                                                "叠加不会提高几率"
                                         ))
                         ));
         map.put(IDStrings.BRONZE,
@@ -1105,7 +1106,7 @@ public final class CMCore {
                                                 CMTraits.PROP_PLATES,
                                                 SupportedPluginsManager.CORE_NOTE,
                                                 "绑定环",
-                                                "+300% 耐久消耗",
+                                                "+200% 耐久消耗",
                                                 "承受伤害将根据耐久度计算:",
                                                 "耐久高于一半时减少承受伤害,满耐久度时最多为25%",
                                                 "耐久低于一半时增加承受伤害,1耐久度时最多为25%"
