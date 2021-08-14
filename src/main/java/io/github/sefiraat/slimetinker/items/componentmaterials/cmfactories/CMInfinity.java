@@ -878,7 +878,7 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "宽容",
+                                                "宽宏大量",
                                                 "你真的太棒了",
                                                 "",
                                                 ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
@@ -887,23 +887,24 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Flaming Hot",
-                                                "Smelts things when possible.",
+                                                "炽热",
+                                                "可熔炼掉落物",
                                                 "",
                                                 ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Escape",
-                                                "When hit, teleport away randomly (10s CD)."
+                                                "逃脱",
+                                                "受到伤害时随机传送到附近(10秒冷却时间)"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_LINKS,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Oxygenated",
-                                                "Who needs it!?"
+                                                "有氧",
+                                                "谁需要它呢?",
+                                                "(免疫溺水伤害)"
                                         ))
                         ));
 
@@ -931,9 +932,9 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Fortunate",
-                                                "200% drops from fortune. Stacks",
-                                                "with Lapis modifiers.",
+                                                "幸运",
+                                                "获得双倍掉落物",
+                                                "可与青金石模组叠加",
                                                 "",
                                                 ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
@@ -941,23 +942,25 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Merchant's Veil",
-                                                "Invisibility with none of the drawbacks!",
+                                                "商人面纱",
+                                                "没有副作用的隐身",
+                                                "(获得隐身III效果)",
                                                 "",
                                                 ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "How Fortunate",
-                                                "0.5% chance to get a gift when hit."
+                                                "多么幸运",
+                                                "受到1点以上(初始)伤害时",
+                                                "有0.5%的几率获得一件礼物"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_LINKS,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Beautiful",
-                                                "Plants flowers as you walk."
+                                                "鲜花",
+                                                "在行走时有几率让周围的草地上开花"
                                         ))
                         ));
 
@@ -984,8 +987,13 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Tricks",
-                                                "Plays nasty tricks on nearby things.",
+                                                "魔术戏法",
+                                                "对周围所有生物随机释放魔术戏法,包括:",
+                                                "- 击退",
+                                                "- 中毒",
+                                                "- 随机传送",
+                                                "- 着火",
+                                                "- 速度",
                                                 "",
                                                 ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
@@ -993,24 +1001,24 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Secrets Revealed",
-                                                "Reveals all nearby living (or not!) things.",
+                                                "揭露秘密",
+                                                "标记出周围10格内的所有的生物",
                                                 "",
                                                 ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Wizard Robes",
-                                                "Chance, when hit, to create MAGIC"
+                                                "巫师袍",
+                                                "造成伤害时",
+                                                "有几率释放魔法"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_LINKS,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Magical Mint",
-                                                "It may still be foul, but the Dragon's",
-                                                "breath will not hurt you."
+                                                "魔法薄荷",
+                                                "免疫龙息伤害"
                                         ))
                         ));
 
@@ -1037,9 +1045,8 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Earth Shaker",
-                                                "Knocks back hit mobs and stuns them",
-                                                "when they land.",
+                                                "撼地者",
+                                                "击退并禁锢命中的生物",
                                                 "",
                                                 ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
@@ -1047,25 +1054,26 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Grinder",
-                                                "Breaking blocks act as if they have",
-                                                "gone through the grinder.",
+                                                "粉碎机",
+                                                "破坏方块时的掉落物",
+                                                "就像经过了粉碎机一样",
                                                 "",
                                                 ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Lava Walker",
-                                                "Lava turns into magma blocks beneath your feet."
+                                                "岩浆行者",
+                                                "脚下的岩浆变为岩浆块"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_LINKS,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "It's only natural",
-                                                "Feeds two nearby animals on right click. 2m CD",
-                                                "Cooldown fires regardless of success."
+                                                "自然法则",
+                                                "(2分钟冷却时间)右键点击时",
+                                                "喂食周围的两只动物",
+                                                "无论是否喂食成功,该效果都会进入冷却"
                                         ))
                         ));
 
@@ -1092,8 +1100,9 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Clean Cut",
-                                                "Damage +100%. Haste 2",
+                                                "干净利落",
+                                                "+100% 输出伤害",
+                                                "获得急迫II效果",
                                                 "",
                                                 ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
@@ -1101,26 +1110,27 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Conductor",
-                                                "All player exp is converted to tool",
-                                                "exp at a 10 : 1 ratio.",
+                                                "经验导体",
+                                                "所有玩家经验以10:1的比例",
+                                                "转化为工具经验",
                                                 "",
                                                 ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "KOTR",
-                                                "Chance, when hit, to summon a Knight",
-                                                "of the Round. (It's a Golem ;))"
+                                                "圆桌骑士",
+                                                "受到伤害时有几率",
+                                                "在周围生成圆桌骑士",
+                                                "(好吧,是铁傀儡)"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_LINKS,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Gleam",
-                                                "Chance when hit to reflect damage and",
-                                                "dazzle attackers."
+                                                "闪光弹",
+                                                "受到伤害时,有几率",
+                                                "反弹伤害并使攻击者眩晕"
                                         ))
                         ));
 
@@ -1148,8 +1158,8 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Infinite",
-                                                "This tool will live on forever.",
+                                                "无尽",
+                                                "这件工具永远不会损坏",
                                                 "",
                                                 ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
@@ -1157,8 +1167,8 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Conceptual Defence",
-                                                "All damage is halved (rounded up).",
+                                                "概念性防御",
+                                                "-50% 承受伤害",
                                                 "",
                                                 ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
