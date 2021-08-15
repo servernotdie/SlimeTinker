@@ -1175,17 +1175,18 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Infinite Capacity",
-                                                "Everytime you take damage, 10% is stored",
-                                                "up to 5 hearts. Right click to release",
-                                                "the damage on nearby entities"
+                                                "无尽反应盔甲",
+                                                "每次承受伤害的10%会被存储",
+                                                "最多可存储10点伤害(5颗心)",
+                                                "右键点击对周围所有生物",
+                                                "释放存储的伤害"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_LINKS,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Oroborus",
-                                                "20% chance to reflect 50% damage taken."
+                                                "衔尾蛇",
+                                                "有20%的几率反弹承受的伤害"
                                         ))
                         ));
 
@@ -1212,9 +1213,11 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
-                                                "Breakpoint",
-                                                "Unbreakable. +200% Damage.",
-                                                "+200% Tool Exp and 3x3 Mining.",
+                                                "断点",
+                                                "无法破坏",
+                                                "+200% 输出伤害",
+                                                "+200% 工具经验获取",
+                                                "可挖掘 3x3x3 区域",
                                                 "",
                                                 ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
@@ -1223,17 +1226,18 @@ public final class CMInfinity {
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Infinitly Powerful",
-                                                "Every 300 points of damage taken (before",
-                                                "reductions) will unlock a new, random,",
-                                                "enchantment. No upper limits."
+                                                "无尽力量",
+                                                "每承受2000点伤害(减伤计算前)",
+                                                "可以获得一个新的随机附魔",
+                                                "无等级上限"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_LINKS,
                                                 SupportedPluginsManager.CORE_NOTE,
-                                                "Infinite Defence",
-                                                "Damage taken set to 0 with 4 peices."
+                                                "无尽防御",
+                                                "当装备全套包含无尽防御的防具时",
+                                                "-100% 承受伤害"
                                         ))
                         ));
 
