@@ -2,6 +2,16 @@
 
 SlimeTinker 是一个 Slimefun4 的附属插件，致力于在非模组服务器中还原知名模组匠魂([链接](https://www.curseforge.com/minecraft/mc-mods/tinkers-construct))的体验。
 
+## 下载
+
+点击这里下载 SlimeTinker: [下载 SlimeTinker](https://github.com/ybw0014/SlimeTinker-CN/actions/workflows/maven.yml)
+
+<p align="center">
+  <a href="https://github.com/ybw0014/SlimeTinker-CN/actions/workflows/maven.yml">
+    <img src="https://github.com/ybw0014/SlimeTinker-CN/actions/workflows/maven.yml/badge.svg" alt="Build status"/>
+  </a>
+</p>
+
 ## 功能包括:
 
 * 可以熔化所有原版以及 Slimefun 中的金属与合金。
@@ -27,7 +37,7 @@ SlimeTinker 是一个 Slimefun4 的附属插件，致力于在非模组服务器
 
 SlimeTinker 有**大量**的特性与效果，我没有足够的想法来充实。所以我欢迎任何人在 Slimefun Addon Community 的 Discord 服务器中反馈(记得在slimetinker频道里)。如果你有任何想法，请点击[邀请链接](https://discord.gg/SqD3gg5SAU) 加入服务器。
 
-## 感谢 :id=credits
+## 感谢
 
 感谢 [Riley](https://github.com/Mooy1) 提供的 InfinityLib, 它加快了开发进度。另外要感谢 [Martin](https://github.com/martinbrom) 帮我们提出许多点子与开发方向。感谢 [Boomer](https://www.youtube.com/channel/UC2ZmER18YBRYube-62-JVpA) 测试并提供反馈。
 
