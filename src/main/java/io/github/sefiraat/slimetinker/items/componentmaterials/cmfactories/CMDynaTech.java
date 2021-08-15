@@ -16,6 +16,7 @@ import io.github.sefiraat.slimetinker.items.componentmaterials.cmelements.CMTrai
 import io.github.sefiraat.slimetinker.managers.SupportedPluginsManager;
 import io.github.sefiraat.slimetinker.utils.IDStrings;
 import io.github.sefiraat.slimetinker.utils.SkullTextures;
+import io.github.sefiraat.slimetinker.utils.ThemeUtils;
 import lombok.Getter;
 import lombok.experimental.UtilityClass;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
@@ -60,28 +61,35 @@ public final class CMDynaTech {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.DYNATECH_NOTE,
-                                                "Super Dooper Stainless",
-                                                "Like Steel or MagSteel but yet more absurd."
+                                                "超级不锈钢",
+                                                "真的，绝对是不锈钢",
+                                                "可以抵挡更多鲜血",
+                                                "(更多花里胡哨的炫酷效果)",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.DYNATECH_NOTE,
-                                                "Cutlery",
-                                                "Hitting animals will directly feed you. Grim"
+                                                "餐具",
+                                                "攻击动物可直接喂食自己",
+                                                "真不错...",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
                                                 SupportedPluginsManager.DYNATECH_NOTE,
-                                                "The Standard",
-                                                "Damage taken reduced by 5%"
+                                                "标准",
+                                                "-5% 承受伤害"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_LINKS,
                                                 SupportedPluginsManager.DYNATECH_NOTE,
-                                                "Water Safe",
-                                                "Gives you water breathing"
+                                                "水里是安全的",
+                                                "获得水下呼吸效果"
                                         ))
                         ));
 
@@ -109,17 +117,19 @@ public final class CMDynaTech {
                                         new CMTrait(
                                                 CMTraits.PROP_BINDING,
                                                 SupportedPluginsManager.DYNATECH_NOTE,
-                                                "NoClip",
-                                                "Right click while holding to randomly teleport.",
-                                                "5 min cooldown."
+                                                "土遁",
+                                                "右键点击随机传送到附近",
+                                                "(5分钟冷却时间)",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         null,
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_GAMBESON,
                                                 SupportedPluginsManager.DYNATECH_NOTE,
-                                                "Annoying",
-                                                "Vex gems shouldn't be used like this!"
+                                                "真让人烦恼",
+                                                "恼鬼宝石不应该这样用!"
                                         ),
                                         null)
                         ));
@@ -147,31 +157,41 @@ public final class CMDynaTech {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.DYNATECH_NOTE,
-                                                "Bright Fury",
-                                                "Attacks dazzle and blind while being.",
-                                                "50% more powerful."
+                                                "光煞",
+                                                "+50% 输出伤害",
+                                                "攻击可使目标眩晕",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.DYNATECH_NOTE,
                                                 "Yvaine",
-                                                "Gives an ethereal glow and makes villagers",
-                                                "friendlier to you."
+                                                "\"不要向流星许愿，否则它就会变成女人\"",
+                                                "获得发光效果",
+                                                "周围的村民会不断向你聚集",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
                                                 SupportedPluginsManager.DYNATECH_NOTE,
-                                                "Starshine",
-                                                "5% chance to heal 1/2 heart during the night"
+                                                "星光",
+                                                "有5%的几率",
+                                                "在夜间恢复1点血量(半颗心)",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_LINKS,
                                                 SupportedPluginsManager.DYNATECH_NOTE,
-                                                "Brightburn",
-                                                "Gives on stack of Burning Bright! With 4 ",
-                                                "stacks, hostile mobs are repelled (not bosses)."
+                                                "魔童",
+                                                "获得1层魔童效果",
+                                                "当拥有4层及以上的魔童效果时",
+                                                "击退周围5格内的所有的敌对生物",
+                                                "(凋零与末影龙除外)"
                                         ))
                         ));
 
@@ -199,29 +219,37 @@ public final class CMDynaTech {
                                         new CMTrait(
                                                 CMTraits.PROP_BINDING,
                                                 SupportedPluginsManager.DYNATECH_NOTE,
-                                                "Incorporeal",
-                                                "Projectiles just pass right through you."
+                                                "幽灵形态",
+                                                "免疫来自弹射物的伤害",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         new CMTrait(
                                                 CMTraits.PROP_ROD,
                                                 SupportedPluginsManager.DYNATECH_NOTE,
-                                                "HyperCube [B]",
-                                                "Only works with both [A] and [B]. Shift + Right",
-                                                "click to store a location. Right click to recall",
-                                                "to that location. 10min CD."
+                                                "超立方体 [B]",
+                                                "只有 [A] 与 [B] 同时存在时才会生效",
+                                                "",
+                                                ThemeUtils.CLICK_INFO + "Shift + 右键点击" + ThemeUtils.PASSIVE + "存储位置",
+                                                ThemeUtils.CLICK_INFO + "右键点击" + ThemeUtils.PASSIVE + "传送到存储的位置",
+                                                "(10分钟冷却时间)",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_GAMBESON,
                                                 SupportedPluginsManager.DYNATECH_NOTE,
-                                                "Ghost in the shell",
-                                                "Slowly damaged all nearby mobs at the cost of durability"
+                                                "攻壳机动队",
+                                                "消耗耐久来缓慢攻击周围所有生物",
+                                                "(消耗耐久不受其他特性,模组,附魔的影响)"
                                         ),
                                         new CMTrait(
                                                 CMTraits.PROP_LINKS,
                                                 SupportedPluginsManager.DYNATECH_NOTE,
-                                                "Ghostly",
-                                                "Hover like a ghost"
+                                                "幽灵之影",
+                                                "像幽灵一样盘旋",
+                                                "(获得飘浮效果)"
                                         ))
                         ));
 
@@ -248,30 +276,45 @@ public final class CMDynaTech {
                                         new CMTrait(
                                                 CMTraits.PROP_HEAD,
                                                 SupportedPluginsManager.DYNATECH_NOTE,
-                                                "HyperCube [A]",
-                                                "Only works with both [A] and [B]. Shift + Right",
-                                                "click to store a location. Right click to recall",
-                                                "to that location. 10min CD."
+                                                "超立方体 [A]",
+                                                "只有 [A] 与 [B] 同时存在时才会生效",
+                                                "",
+                                                ThemeUtils.CLICK_INFO + "Shift + 右键点击" + ThemeUtils.PASSIVE + "存储位置",
+                                                ThemeUtils.CLICK_INFO + "右键点击" + ThemeUtils.PASSIVE + "将自己召回到存储的位置",
+                                                "(10分钟冷却时间)",
+                                                "",
+                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                                         ),
                                         null,
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
                                                 SupportedPluginsManager.DYNATECH_NOTE,
-                                                "Hyberbolic Tesseration",
-                                                "When in your personal home, you store energy.",
-                                                "Damage taken is removed from this energy pool.",
-                                                "Required 8x pieces to function and caps at 50."
+                                                "光学能量",
+                                                "需要全套包含双光学能量特性的盔甲",
+                                                "(每件盔甲需要有2个光学能量特性)才能生效",
+                                                "当你处于异次元之家中时，会不断积累光学能量",
+                                                "当受到伤害时，光学能量会被释放用于抵消伤害",
+                                                "(伤害为经过增伤/减伤计算后)",
+                                                "1点光学能量可以抵消1点伤害",
+                                                "若光学能量不足以抵消全部伤害,则不会抵消任何伤害",
+                                                "每件盔甲最多可以存储50点光学能量",
+                                                "全套盔甲最多可以存储200点光学能量"
                                         ),
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_LINKS,
                                                 SupportedPluginsManager.DYNATECH_NOTE,
-                                                "Hyberbolic Tesseration",
-                                                "When in your personal home, you store energy.",
-                                                "Damage taken is removed from this energy pool.",
-                                                "Required 8x pieces to function and caps at 50",
-                                                "per peice."
+                                                "光学能量",
+                                                "需要8个光学能量特性才能生效",
+                                                "(每件盔甲需要有2个光学能量特性)",
+                                                "当你处于异次元之家中时，会不断积累光学能量",
+                                                "当受到伤害时，光学能量会被释放用于抵消伤害",
+                                                "(伤害为经过增伤/减伤计算后)",
+                                                "1点光学能量可以抵消1点伤害",
+                                                "若光学能量不足以抵消全部伤害,则不会抵消任何伤害",
+                                                "每件盔甲最多可以存储50点光学能量",
+                                                "全套盔甲最多可以存储200点光学能量"
                                         ))
                         ));
 

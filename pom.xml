@@ -5,22 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.sefiraat.slimetinker</groupId>
     <artifactId>SlimeTinker</artifactId>
-    <version>MODIFIED</version>
+    <version>DEV-30-zh_CN</version>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <sonar.projectKey>Sefiraat_SlimeTinker</sonar.projectKey>
-        <sonar.organization>sefiraat</sonar.organization>
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-
-        <sonar.issue.ignore.multicriteria>e1,e2</sonar.issue.ignore.multicriteria>
-        <sonar.issue.ignore.multicriteria.e1.ruleKey>java:S6212</sonar.issue.ignore.multicriteria.e1.ruleKey>
-        <sonar.issue.ignore.multicriteria.e1.resourceKey>**</sonar.issue.ignore.multicriteria.e1.resourceKey>
-
-        <sonar.issue.ignore.multicriteria.e2.ruleKey>java:S125</sonar.issue.ignore.multicriteria.e2.ruleKey>
-        <sonar.issue.ignore.multicriteria.e2.resourceKey>**</sonar.issue.ignore.multicriteria.e2.resourceKey>
     </properties>
 
     <repositories>
@@ -43,7 +33,7 @@
     </repositories>
 
     <build>
-        <finalName>${project.name} v${project.version}</finalName>
+        <finalName>${project.name}-${project.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -123,9 +113,9 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>io.github.mooy1</groupId>
+            <groupId>com.github.ybw0014</groupId>
             <artifactId>InfinityLib</artifactId>
-            <version>84a3ce8</version>
+            <version>78248c5</version>
             <scope>compile</scope>
         </dependency>
         <dependency>

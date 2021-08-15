@@ -19,9 +19,9 @@ import io.github.sefiraat.slimetinker.utils.Keys;
 import lombok.Getter;
 import lombok.Setter;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 public class SlimeTinker extends AbstractAddon {
-
 
     public static final int RUNNABLE_TICK_RATE = 40;
 
@@ -44,14 +44,14 @@ public class SlimeTinker extends AbstractAddon {
     private Workbench workbench;
 
     @Override
-    public void onAddonEnable() {
+    public void enable() {
 
         instance = this;
         keys = new Keys();
 
         getLogger().info("########################################");
-        getLogger().info("              Slime Tinker              ");
-        getLogger().info("           Created by Sefiraat          ");
+        getLogger().info("         Slime Tinker  粘液匠魂          ");
+        getLogger().info("       作者: Sefiraat 汉化: ybw0014      ");
         getLogger().info("########################################");
 
         Categories.set(this);
@@ -72,7 +72,7 @@ public class SlimeTinker extends AbstractAddon {
     }
 
     @Override
-    protected void onAddonDisable() {
+    protected void disable() {
         saveConfig();
         instance = null;
     }
@@ -82,9 +82,15 @@ public class SlimeTinker extends AbstractAddon {
         return new Metrics(this,11748);
     }
 
+    @Nullable
+    @Override
+    public String getAutoUpdatePath() {
+        return "auto-update";
+    }
+
     @Override
     protected @NotNull String getGithubPath() {
-        return "Sefiraat/SlimeTinker/master";
+        return "ybw0014/SlimeTinker/master";
     }
 
 }

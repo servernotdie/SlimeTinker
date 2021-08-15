@@ -8,6 +8,7 @@ import me.mrCookieSlime.Slimefun.Lists.RecipeType;
 import me.mrCookieSlime.Slimefun.Objects.Category;
 import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
 import me.mrCookieSlime.Slimefun.cscorelib2.data.PersistentDataAPI;
+import net.guizhanss.minecraft.slimetinker.utils.LangUtils;
 import net.md_5.bungee.api.ChatColor;
 import org.apache.commons.lang.Validate;
 import org.bukkit.inventory.ItemStack;
@@ -24,17 +25,16 @@ public class PartTemplate extends UnplaceableBlock {
 
     private final String name;
 
-    public String getName(String material) { return ThemeUtils.toTitleCase(material) + ThemeUtils.ITEM_PART + " " + name;
+    public String getName(String material) { return LangUtils.getMaterialName(material) + ThemeUtils.ITEM_PART + " " + name;
     }
 
     public List<String> getLore(String material, ChatColor color) {
         List<String> list = new ArrayList<>();
         list.add("");
-        list.add(ThemeUtils.PASSIVE + "A tool part. Useless on it's own but can");
-        list.add(ThemeUtils.PASSIVE + "be made into something greater at the");
-        list.add(ThemeUtils.PASSIVE + "Tinker's table.");
+        list.add(ThemeUtils.PASSIVE + "一个工具部件,本身没有任何作用");
+        list.add(ThemeUtils.PASSIVE + "但可以在匠魂工具组装台组装成工具");
         list.add("");
-        list.add(ThemeUtils.CLICK_INFO + "Material : " + color + ThemeUtils.toTitleCase(material));
+        list.add(ThemeUtils.CLICK_INFO + "材质: " + color + LangUtils.getMaterialName(material));
         return list;
     }
 
