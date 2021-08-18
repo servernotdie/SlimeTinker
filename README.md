@@ -1,6 +1,6 @@
 ![](https://cdn.jsdelivr.net/gh/Sefiraat/SlimeTinker/images/logo/logo_large.png)
 
-SlimeTinker 是一个 Slimefun4 的附属插件，致力于在非模组服务器中还原知名模组匠魂([链接](https://www.curseforge.com/minecraft/mc-mods/tinkers-construct))的体验。
+SlimeTinker 是一个 Slimefun4 的附属插件，致力于在非模组服务器中还原知名模组 [匠魂](https://www.curseforge.com/minecraft/mc-mods/tinkers-construct) 的体验。
 
 SlimeTinker 的非官方中文 Wiki 包含了所有特性的列表: [点击前往](https://slimetinker.guizhanss.wiki)
 
