@@ -1949,8 +1949,8 @@ public final class CMCore {
                                                                                                                                             // Conductive (Special case - in Experience.java, should be moved out)
         map.get(IDStrings.CRIMSON_ROOTS).addEvent(TraitEventType.TICK, TraitPartType.BINDER, TickEvents::binderCrimsonRoot);                // Decay
         map.get(IDStrings.WEEPING_VINES).addEvent(TraitEventType.TICK, TraitPartType.BINDER, TickEvents::binderWeepingVine);                // Doom
-                                                                                                                                            // Durable - Damage (Special Case - in EntityDamageListener.java - cant move)
-                                                                                                                                            // Durable - Block Break (Special Case - in BlockBreakListener.java - cant move)
+        map.get(IDStrings.DURALIUM).addEvent(TraitEventType.ENTITY_DAMAGED, TraitPartType.HEAD, EntityDamageEvents::headDuralium);          // Durable - Entity Damage - Damage Reduction + No Exp
+        map.get(IDStrings.DURALIUM).addEvent(TraitEventType.BLOCK_BREAK, TraitPartType.HEAD, BlockBreakEvents::headDuralium);               // Durable - Block Break -  No Exp
         map.get(IDStrings.DURALIUM).addEvent(TraitEventType.TICK, TraitPartType.HEAD, TickEvents::headDuralium);                            // Durable - Tick
                                                                                                                                             // Easy Fix (Special case - in RepairBench.java. Will have to stay there)
                                                                                                                                             // Enchanting (Special case - in Experience.java - could be moved if I raise an event)
@@ -2051,7 +2051,7 @@ public final class CMCore {
         map.get(IDStrings.GOLD).addEvent(TraitEventType.PLAYER_DAMAGED, TraitPartType.PLATE, PlayerDamagedEvents::plateGold);               // Prosperous
         map.get(IDStrings.WARPED_ROOTS).addEvent(TraitEventType.TICK, TraitPartType.GAMBESON, TickEvents::gambesonWarpedRoots);             // Refreshing
                                                                                                                                             // Reinforcable (Special Case - nested within plate mod. Will be moved when mods are changed to consumers)
-        map.get(IDStrings.IRON).addEvent(TraitEventType.TICK, TraitPartType.LINKS, TickEvents::linksIron);                                  // Rusty
+        map.get(IDStrings.IRON).addEvent(TraitEventType.TICK, TraitPartType.LINKS, EntityDamageEvents::linksIron);                          // Rusty
         map.get(IDStrings.DURALIUM).addEvent(TraitEventType.PLAYER_DAMAGED, TraitPartType.LINKS, PlayerDamagedEvents::linksDuralium);       // Shock Absorbant
         map.get(IDStrings.LEAD).addEvent(TraitEventType.TICK, TraitPartType.PLATE, TickEvents::plateLead);                                  // Sickly (plate)
         map.get(IDStrings.LEAD).addEvent(TraitEventType.TICK, TraitPartType.LINKS, TickEvents::linksLead);                                  // Sickly (links)

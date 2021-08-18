@@ -1,16 +1,20 @@
 ![](https://cdn.jsdelivr.net/gh/Sefiraat/SlimeTinker/images/logo/logo_large.png)
 
-SlimeTinker 是一个 Slimefun4 的附属插件，致力于在非模组服务器中还原知名模组匠魂([链接](https://www.curseforge.com/minecraft/mc-mods/tinkers-construct))的体验。
+SlimeTinker 是一个 Slimefun4 的附属插件，致力于在非模组服务器中还原知名模组 [匠魂](https://www.curseforge.com/minecraft/mc-mods/tinkers-construct) 的体验。
 
 SlimeTinker 的非官方中文 Wiki 包含了所有特性的列表: [点击前往](https://slimetinker.guizhanss.wiki)
 
 ## 下载
 
-点击这里下载 SlimeTinker: [下载 SlimeTinker](https://github.com/ybw0014/SlimeTinker-CN/actions/workflows/maven.yml)
+点击这里下载 SlimeTinker: [下载 SlimeTinker](https://github.com/ybw0014/SlimeTinker-CN/actions/workflows/build.yml)
 
 <p align="center">
   <a href="https://github.com/ybw0014/SlimeTinker-CN/actions/workflows/maven.yml">
-    <img src="https://github.com/ybw0014/SlimeTinker-CN/actions/workflows/maven.yml/badge.svg" alt="Build status"/>
+    <img src="https://github.com/ybw0014/SlimeTinker-CN/actions/workflows/maven.yml/badge.svg" alt="Java CI"/>
+  </a>
+
+  <a href="https://github.com/ybw0014/SlimeTinker-CN/actions/workflows/build.yml">
+    <img src="https://github.com/ybw0014/SlimeTinker-CN/actions/workflows/build.yml/badge.svg" alt="Build status"/>
   </a>
 </p>
 
