@@ -66,6 +66,7 @@ public class Commands extends BaseCommand {
     }
 
     @Subcommand("AddExp")
+    @CommandPermission("SlimeTinker.Admin")
     @CommandCompletion("<amount>")
     @Description("向手持物品增加经验")
     public void tool(CommandSender sender, int amount) {
