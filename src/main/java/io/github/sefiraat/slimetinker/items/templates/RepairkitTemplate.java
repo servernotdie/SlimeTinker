@@ -57,8 +57,8 @@ public class RepairkitTemplate extends UnplaceableBlock {
         return itemStack;
     }
 
-    public RepairkitTemplate(ItemGroup category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe, String name) {
-        super(category, item, recipeType, recipe);
+    public RepairkitTemplate(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe, String name) {
+        super(itemGroup, item, recipeType, recipe);
         this.name = name;
     }
 

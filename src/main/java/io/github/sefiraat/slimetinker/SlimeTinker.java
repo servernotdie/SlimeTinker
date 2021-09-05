@@ -1,7 +1,7 @@
 package io.github.sefiraat.slimetinker;
 
 import io.github.mooy1.infinitylib.core.AbstractAddon;
-import io.github.sefiraat.slimetinker.categories.Categories;
+import io.github.sefiraat.slimetinker.itemgroups.ItemGroups;
 import io.github.sefiraat.slimetinker.items.Casts;
 import io.github.sefiraat.slimetinker.items.Dies;
 import io.github.sefiraat.slimetinker.items.Guide;
@@ -59,7 +59,7 @@ public class SlimeTinker extends AbstractAddon {
         getLogger().info("       作者: Sefiraat 汉化: ybw0014      ");
         getLogger().info("########################################");
 
-        Categories.set(this);
+        ItemGroups.set(this);
         Materials.set(this);
         Dies.set(this);
         Casts.set(this);
