@@ -1,7 +1,6 @@
 package io.github.sefiraat.slimetinker;
 
-import io.github.mooy1.infinitylib.AbstractAddon;
-import io.github.mooy1.infinitylib.bstats.bukkit.Metrics;
+import io.github.mooy1.infinitylib.core.AbstractAddon;
 import io.github.sefiraat.slimetinker.categories.Categories;
 import io.github.sefiraat.slimetinker.items.Casts;
 import io.github.sefiraat.slimetinker.items.Dies;
@@ -18,14 +17,18 @@ import io.github.sefiraat.slimetinker.runnables.RunnableManager;
 import io.github.sefiraat.slimetinker.utils.Keys;
 import lombok.Getter;
 import lombok.Setter;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
+import org.bstats.bukkit.Metrics;
 
 public class SlimeTinker extends AbstractAddon {
 
     public static final int RUNNABLE_TICK_RATE = 40;
 
     private static SlimeTinker instance;
+
+    public SlimeTinker() {
+        super("ybw0014", "SlimeTinker-CN", "master", "auto-update");
+    }
+
     public static SlimeTinker inst() {
         return instance;
     }
@@ -45,6 +48,8 @@ public class SlimeTinker extends AbstractAddon {
 
     @Override
     public void enable() {
+
+        new Metrics(this,11748);
 
         instance = this;
         keys = new Keys();
@@ -75,22 +80,6 @@ public class SlimeTinker extends AbstractAddon {
     protected void disable() {
         saveConfig();
         instance = null;
-    }
-
-    @Override
-    protected Metrics setupMetrics() {
-        return new Metrics(this,11748);
-    }
-
-    @Nullable
-    @Override
-    public String getAutoUpdatePath() {
-        return "auto-update";
-    }
-
-    @Override
-    protected @NotNull String getGithubPath() {
-        return "ybw0014/SlimeTinker/master";
     }
 
 }

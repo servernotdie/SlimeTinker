@@ -5,12 +5,22 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.sefiraat.slimetinker</groupId>
     <artifactId>SlimeTinker</artifactId>
-    <version>DEV-31-zh_CN</version>
+    <version>DEV-32-zh_CN</version>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <sonar.projectKey>Sefiraat_SlimeTinker</sonar.projectKey>
+        <sonar.organization>sefiraat</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+
+        <sonar.issue.ignore.multicriteria>e1,e2</sonar.issue.ignore.multicriteria>
+        <sonar.issue.ignore.multicriteria.e1.ruleKey>java:S6212</sonar.issue.ignore.multicriteria.e1.ruleKey>
+        <sonar.issue.ignore.multicriteria.e1.resourceKey>**</sonar.issue.ignore.multicriteria.e1.resourceKey>
+
+        <sonar.issue.ignore.multicriteria.e2.ruleKey>java:S125</sonar.issue.ignore.multicriteria.e2.ruleKey>
+        <sonar.issue.ignore.multicriteria.e2.resourceKey>**</sonar.issue.ignore.multicriteria.e2.resourceKey>
     </properties>
 
     <repositories>
@@ -97,7 +107,7 @@
         <dependency>
             <groupId>com.github.Slimefun</groupId>
             <artifactId>Slimefun4</artifactId>
-            <version>25dea3d</version>
+            <version>RC-27</version>
             <scope>provided</scope>
             <exclusions>
                 <exclusion>
@@ -115,7 +125,7 @@
         <dependency>
             <groupId>com.github.ybw0014</groupId>
             <artifactId>InfinityLib</artifactId>
-            <version>78248c5</version>
+            <version>1.2.0</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
