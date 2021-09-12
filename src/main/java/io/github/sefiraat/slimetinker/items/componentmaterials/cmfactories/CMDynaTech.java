@@ -242,6 +242,7 @@ public final class CMDynaTech {
                                                 SupportedPluginsManager.DYNATECH_NOTE,
                                                 "攻壳机动队",
                                                 "消耗耐久来缓慢攻击周围所有生物",
+                                                "该特性不会致死",
                                                 "(消耗耐久不受其他特性,模组,附魔的影响)"
                                         ),
                                         new CMTrait(
