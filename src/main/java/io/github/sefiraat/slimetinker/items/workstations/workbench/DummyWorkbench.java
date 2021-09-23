@@ -18,7 +18,7 @@ public final class DummyWorkbench {
             Material.FLETCHING_TABLE,
             ThemeItemType.MACHINE,
             "匠魂合成站",
-            ThemeUtils.PASSIVE + "该物品在匠魂合成站中制作"
+            "该物品在匠魂合成站中制作"
     );
 
     public static final RecipeType TYPE = new RecipeType(SlimeTinker.inst().getKeys().getWsDummyWorkbench(), STACK);

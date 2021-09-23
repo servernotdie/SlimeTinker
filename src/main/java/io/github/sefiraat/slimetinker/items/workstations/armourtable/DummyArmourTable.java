@@ -18,8 +18,8 @@ public final class DummyArmourTable {
             Material.CHISELED_NETHER_BRICKS,
             ThemeItemType.MACHINE,
             "匠魂防具组装台",
-            ThemeUtils.PASSIVE + "在匠魂防具组装台",
-            ThemeUtils.PASSIVE + "放入相应部件组装获得",
+            "在匠魂防具组装台",
+            "放入相应部件组装获得"
     );
 
     public static final RecipeType TYPE = new RecipeType(SlimeTinker.inst().getKeys().getWsDummyArmourTable(), STACK);
