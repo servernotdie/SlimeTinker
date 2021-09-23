@@ -2,6 +2,7 @@ package io.github.sefiraat.slimetinker.items.workstations.smeltery;
 
 import io.github.sefiraat.slimetinker.SlimeTinker;
 import io.github.sefiraat.slimetinker.utils.ThemeUtils;
+import io.github.sefiraat.slimetinker.utils.enums.ThemeItemType;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import org.bukkit.Material;
@@ -12,18 +13,16 @@ public final class DummySmeltery {
         throw new IllegalStateException("Utility class");
     }
 
-    public static final SlimefunItemStack STACK = new SlimefunItemStack(
+    public static final SlimefunItemStack STACK = ThemeUtils.themedItemStack(
             "DUMMY_TINKERS_SMELTERY",
             Material.CHISELED_POLISHED_BLACKSTONE,
-            ThemeUtils.ITEM_MACHINE + "匠魂冶炼炉",
-            "",
-            ThemeUtils.PASSIVE + "这个物品是在匠魂冶炼炉中",
-            ThemeUtils.PASSIVE + "使用特定的模具",
-            ThemeUtils.PASSIVE + "浇铸相应的熔融金属/液体获得",
-            "",
-            ThemeUtils.LORE_TYPE_MACHINE
+            ThemeItemType.MACHINE,
+            "匠魂冶炼炉",
+            "这个物品是在匠魂冶炼炉中",
+            "使用特定的模具",
+            "浇铸相应的熔融金属/液体获得"
     );
 
-    public static final RecipeType TYPE = new RecipeType(SlimeTinker.inst().getKeys().getWsDummySmeltery(), STACK, "null");
+    public static final RecipeType TYPE = new RecipeType(SlimeTinker.inst().getKeys().getWsDummySmeltery(), STACK);
 
 }
