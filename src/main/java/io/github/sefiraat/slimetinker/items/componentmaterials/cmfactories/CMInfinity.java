@@ -1174,7 +1174,7 @@ public final class CMInfinity {
                                         ),
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
-                                                SupportedPluginsManager.CORE_NOTE,
+                                                SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
                                                 "无尽反应盔甲",
                                                 "每次承受伤害的10%会被存储",
                                                 "最多可存储10点伤害(5颗心)",
@@ -1184,7 +1184,7 @@ public final class CMInfinity {
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_LINKS,
-                                                SupportedPluginsManager.CORE_NOTE,
+                                                SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
                                                 "衔尾蛇",
                                                 "有20%的几率反弹承受的伤害"
                                         ))
@@ -1225,7 +1225,7 @@ public final class CMInfinity {
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_PLATES,
-                                                SupportedPluginsManager.CORE_NOTE,
+                                                SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
                                                 "无尽力量",
                                                 "每承受2000点伤害(减伤计算前)",
                                                 "可以获得一个新的随机附魔",
@@ -1234,7 +1234,7 @@ public final class CMInfinity {
                                         null,
                                         new CMTrait(
                                                 CMTraits.PROP_LINKS,
-                                                SupportedPluginsManager.CORE_NOTE,
+                                                SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
                                                 "无尽防御",
                                                 "当装备全套包含无尽防御的防具时",
                                                 "所有承受的伤害均减少至1点"

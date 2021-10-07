@@ -215,7 +215,7 @@ public final class GUIItems {
         );
     }
 
-    public static CustomItemStack menuCraftTable() {
+    public static CustomItemStack menuCraftToolTable() {
         return new CustomItemStack(
                 Material.SMITHING_TABLE,
                 ThemeUtils.GUI_HEAD + "组装",
@@ -223,6 +223,16 @@ public final class GUIItems {
                 ThemeUtils.PASSIVE + "将三个部件",
                 ThemeUtils.PASSIVE + "组装成工具/武器/防具",
                 ThemeUtils.CLICK_INFO + "点击此处" + ChatColor.WHITE + "组装"
+        );
+    }
+
+    public static CustomItemStack menuCraftArmourTable() {
+        return new CustomItemStack(
+                Material.SMITHING_TABLE,
+                ThemeUtils.GUI_HEAD + "Form Armour",
+                "",
+                ThemeUtils.PASSIVE + "Forms a piece of armour from the three given",
+                ThemeUtils.PASSIVE + "parts (Plate, Gambeson and Links)"
         );
     }
 
