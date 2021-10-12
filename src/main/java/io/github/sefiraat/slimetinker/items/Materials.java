@@ -245,6 +245,15 @@ public final class Materials {
             "Boomerite粒",
             "由熔融Boomerite制成的粒"
         );
+
+    public static final SlimefunItemStack NUGGET_CAST_SEFIRITE =
+        ThemeUtils.themedItemStack(
+            "NUGGET_CAST_SEFIRITE",
+            Material.IRON_NUGGET,
+            ThemeItemType.CRAFTING,
+            "Sefirite粒",
+            "由熔融Sefirite制成的粒"
+        );
     // endregion
     // region Ingots
     public static final SlimefunItemStack INGOT_CAST_BOOMERITE =
