@@ -9,19 +9,18 @@ import org.bukkit.Material;
 
 public final class DummySmelteryTrait {
 
+    public static final SlimefunItemStack STACK = ThemeUtils.themedItemStack(
+        "DUMMY_TINKERS_SMELTERY_PROP",
+        Material.CHISELED_POLISHED_BLACKSTONE,
+        ThemeItemType.MACHINE,
+        "匠魂冶炼炉",
+        "当相应部件使用该金属制成时",
+        "该部件会获得此特性"
+    );
+    public static final RecipeType TYPE = new RecipeType(SlimeTinker.inst().getKeys().getWsDummySmelteryA(), STACK);
+
     private DummySmelteryTrait() {
         throw new IllegalStateException("Utility class");
     }
-
-    public static final SlimefunItemStack STACK = ThemeUtils.themedItemStack(
-            "DUMMY_TINKERS_SMELTERY_PROP",
-            Material.CHISELED_POLISHED_BLACKSTONE,
-            ThemeItemType.MACHINE,
-            "匠魂冶炼炉",
-            "当相应部件使用该金属制成时",
-            "该部件会获得此特性"
-    );
-
-    public static final RecipeType TYPE = new RecipeType(SlimeTinker.inst().getKeys().getWsDummySmelteryA(), STACK);
 
 }

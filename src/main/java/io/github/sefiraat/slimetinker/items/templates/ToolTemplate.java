@@ -21,9 +21,13 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 public class ToolTemplate extends SlimefunItem implements NotPlaceable {
 
+    public ToolTemplate(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
+        super(itemGroup, item, recipeType, recipe);
+    }
+
     public String getName(ToolDefinition toolDefinition) {
         return
-                CMManager.getById(toolDefinition.getHeadMaterial()).getColor() + LangUtils.getMaterialName(toolDefinition.getHeadMaterial()) + "-" +
+            CMManager.getById(toolDefinition.getHeadMaterial()).getColor() + LangUtils.getMaterialName(toolDefinition.getHeadMaterial()) + "-" +
                 CMManager.getById(toolDefinition.getBinderMaterial()).getColor() + LangUtils.getMaterialName(toolDefinition.getBinderMaterial()) + "-" +
                 CMManager.getById(toolDefinition.getRodMaterial()).getColor() + LangUtils.getMaterialName(toolDefinition.getRodMaterial()) + " " +
                 ChatColor.WHITE + LangUtils.getToolName(toolDefinition.getPartType());
@@ -65,10 +69,6 @@ public class ToolTemplate extends SlimefunItem implements NotPlaceable {
         itemStack.setItemMeta(im);
         ItemUtils.rebuildTinkerLore(itemStack);
         return itemStack;
-    }
-
-    public ToolTemplate(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
-        super(itemGroup, item, recipeType, recipe);
     }
 
 }

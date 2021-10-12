@@ -19,9 +19,13 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 public class ArmourTemplate extends UnplaceableBlock {
 
+    public ArmourTemplate(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
+        super(itemGroup, item, recipeType, recipe);
+    }
+
     public String getName(ArmourDefinition armourDefinition) {
         return
-                CMManager.getById(armourDefinition.getPlateMaterial()).getColor() + LangUtils.getMaterialName(armourDefinition.getPlateMaterial()) + "-" +
+            CMManager.getById(armourDefinition.getPlateMaterial()).getColor() + LangUtils.getMaterialName(armourDefinition.getPlateMaterial()) + "-" +
                 CMManager.getById(armourDefinition.getGambesonMaterial()).getColor() + LangUtils.getMaterialName(armourDefinition.getGambesonMaterial()) + "-" +
                 CMManager.getById(armourDefinition.getLinksMaterial()).getColor() + LangUtils.getMaterialName(armourDefinition.getLinksMaterial()) + " " +
                 ChatColor.WHITE + LangUtils.getArmorPart(armourDefinition.getPartType());
@@ -62,10 +66,6 @@ public class ArmourTemplate extends UnplaceableBlock {
         itemStack.setItemMeta(im);
         ItemUtils.rebuildTinkerLore(itemStack);
         return itemStack;
-    }
-
-    public ArmourTemplate(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
-        super(itemGroup, item, recipeType, recipe);
     }
 
 }

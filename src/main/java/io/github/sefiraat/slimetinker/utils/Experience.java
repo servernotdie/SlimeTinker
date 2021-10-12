@@ -126,9 +126,4 @@ public final class Experience {
             player.sendMessage(ThemeUtils.SUCCESS + "获得了 [" + amount + "] 个随机附魔! 希望一切顺利 :>");
         }
     }
-
-
-
-
-
 }

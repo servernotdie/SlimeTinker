@@ -38,469 +38,469 @@ public final class CMLiteXpansion {
 
     static {
         map.put(IDStrings.RUBBER,
-                new ComponentMaterial
-                        (
-                                new CMIdentity(IDStrings.RUBBER, Objects.requireNonNull(SlimefunItem.getById("RUBBER")).getItem(), SkullTextures.ALLOY_BROWN, "#38414d"),
-                                null,
-                                new CMToolMakeup(false, true, false, false, true, false),
-                                new CMForms(
-                                        null,
-                                        null,
-                                        null,
-                                        null,
-                                        Objects.requireNonNull(SlimefunItem.getById("RUBBER")).getId(),
-                                        null,
-                                        null,
-                                        null,
-                                        null,
-                                        null
-                                ),
-                                new CMTraits(
-                                        IDStrings.RUBBER,
-                                        null,
-                                        new CMTrait(
-                                                CMTraits.PROP_BINDING,
-                                                SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "绝缘",
-                                                "免疫闪电伤害",
-                                                "",
-                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
-                                        ),
-                                        null,
-                                        null,
-                                        new CMTrait(
-                                                CMTraits.PROP_GAMBESON,
-                                                SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "出汗",
-                                                "橡胶护身软甲真的太热了!"
-                                        ),
-                                        null)
-                        ));
+            new ComponentMaterial
+                (
+                    new CMIdentity(IDStrings.RUBBER, Objects.requireNonNull(SlimefunItem.getById("RUBBER")).getItem(), SkullTextures.ALLOY_BROWN, "#38414d"),
+                    null,
+                    new CMToolMakeup(false, true, false, false, true, false),
+                    new CMForms(
+                        null,
+                        null,
+                        null,
+                        null,
+                        Objects.requireNonNull(SlimefunItem.getById("RUBBER")).getId(),
+                        null,
+                        null,
+                        null,
+                        null,
+                        null
+                    ),
+                    new CMTraits(
+                        IDStrings.RUBBER,
+                        null,
+                        new CMTrait(
+                            CMTraits.PROP_BINDING,
+                            SupportedPluginsManager.LITEXPANSION_NOTE,
+                            "绝缘",
+                            "免疫闪电伤害",
+                            "",
+                            ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
+                        ),
+                        null,
+                        null,
+                        new CMTrait(
+                            CMTraits.PROP_GAMBESON,
+                            SupportedPluginsManager.LITEXPANSION_NOTE,
+                            "出汗",
+                            "橡胶护身软甲真的太热了!"
+                        ),
+                        null)
+                ));
 
         map.put(IDStrings.REFINED_IRON,
-                new ComponentMaterial
-                        (
-                                new CMIdentity(IDStrings.REFINED_IRON, Objects.requireNonNull(SlimefunItem.getById("REFINED_IRON")).getItem(), SkullTextures.ALLOY_SILVER, "#ababab"),
-                                null,
-                                new CMToolMakeup(true, false, true, true, false, true),
-                                new CMForms(
-                                        Materials.NUGGET_CAST_REFINED_IRON.getItemId(),
-                                        Objects.requireNonNull(SlimefunItem.getById("REFINED_IRON")).getId(),
-                                        Materials.BLOCK_CAST_REFINED_IRON.getItemId(),
-                                        null,
-                                        null,
-                                        null,
-                                        null,
-                                        null,
-                                        null,
-                                        null
-                                ),
-                                new CMTraits(
-                                        IDStrings.REFINED_IRON,
-                                        new CMTrait(
-                                                CMTraits.PROP_HEAD,
-                                                SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "真的稳定",
-                                                "真的没有特性",
-                                                "不过也许升级后会有呢?",
-                                                "(工具10级达到后",
-                                                "+(工具等级 * 10)% 输出伤害)",
-                                                "",
-                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
-                                        ),
-                                        null,
-                                        new CMTrait(
-                                                CMTraits.PROP_ROD,
-                                                SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "不知礼，无以立也",
-                                                "获得速度效果",
-                                                "+50% 输出伤害",
-                                                "你的战斗过程将变得炫酷",
-                                                "",
-                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
-                                        ),
-                                        new CMTrait(
-                                                CMTraits.PROP_PLATES,
-                                                SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "王牌特工",
-                                                "需要满足以下全部条件才能生效:",
-                                                "- 装备全套有王牌特工特性的盔甲",
-                                                "- 熟知礼仪 (不知礼，无以立也)",
-                                                "",
-                                                "右键点击时召唤毁灭阵",
-                                                "对阵中的所有生物造成伤害",
-                                                "(20分钟冷却时间)"
-                                        ),
-                                        null,
-                                        new CMTrait(
-                                                CMTraits.PROP_LINKS,
-                                                SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "看不到我",
-                                                "攻击者获得失明效果"
-                                        ))
-                        ));
+            new ComponentMaterial
+                (
+                    new CMIdentity(IDStrings.REFINED_IRON, Objects.requireNonNull(SlimefunItem.getById("REFINED_IRON")).getItem(), SkullTextures.ALLOY_SILVER, "#ababab"),
+                    null,
+                    new CMToolMakeup(true, false, true, true, false, true),
+                    new CMForms(
+                        Materials.NUGGET_CAST_REFINED_IRON.getItemId(),
+                        Objects.requireNonNull(SlimefunItem.getById("REFINED_IRON")).getId(),
+                        Materials.BLOCK_CAST_REFINED_IRON.getItemId(),
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null
+                    ),
+                    new CMTraits(
+                        IDStrings.REFINED_IRON,
+                        new CMTrait(
+                            CMTraits.PROP_HEAD,
+                            SupportedPluginsManager.LITEXPANSION_NOTE,
+                            "真的稳定",
+                            "真的没有特性",
+                            "不过也许升级后会有呢?",
+                            "(工具10级达到后",
+                            "+(工具等级 * 10)% 输出伤害)",
+                            "",
+                            ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
+                        ),
+                        null,
+                        new CMTrait(
+                            CMTraits.PROP_ROD,
+                            SupportedPluginsManager.LITEXPANSION_NOTE,
+                            "不知礼，无以立也",
+                            "获得速度效果",
+                            "+50% 输出伤害",
+                            "你的战斗过程将变得炫酷",
+                            "",
+                            ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
+                        ),
+                        new CMTrait(
+                            CMTraits.PROP_PLATES,
+                            SupportedPluginsManager.LITEXPANSION_NOTE,
+                            "王牌特工",
+                            "需要满足以下全部条件才能生效:",
+                            "- 装备全套有王牌特工特性的盔甲",
+                            "- 熟知礼仪 (不知礼，无以立也)",
+                            "",
+                            "右键点击时召唤毁灭阵",
+                            "对阵中的所有生物造成伤害",
+                            "(20分钟冷却时间)"
+                        ),
+                        null,
+                        new CMTrait(
+                            CMTraits.PROP_LINKS,
+                            SupportedPluginsManager.LITEXPANSION_NOTE,
+                            "看不到我",
+                            "攻击者获得失明效果"
+                        ))
+                ));
 
         map.put(IDStrings.MIXED_METAL,
-                new ComponentMaterial
-                        (
-                                new CMIdentity(IDStrings.MIXED_METAL, Objects.requireNonNull(SlimefunItem.getById("MIXED_METAL_INGOT")).getItem(), SkullTextures.ALLOY_SILVER, "#6e7a66"),
-                                Arrays.asList(
-                                        map.get(IDStrings.REFINED_IRON).getLiquidItemStack(3),
-                                        CMCore.getMap().get(IDStrings.BRONZE).getLiquidItemStack(3),
-                                        CMCore.getMap().get(IDStrings.TIN).getLiquidItemStack(3)
-                                ),
-                                new CMToolMakeup(true, false, true, true, false, true),
-                                new CMForms(
-                                        Materials.NUGGET_CAST_MIXED_METAL.getItemId(),
-                                        Objects.requireNonNull(SlimefunItem.getById("MIXED_METAL_INGOT")).getId(),
-                                        Materials.BLOCK_CAST_MIXED_METAL.getItemId(),
-                                        null,
-                                        null,
-                                        null,
-                                        null,
-                                        null,
-                                        null,
-                                        null
-                                ),
-                                new CMTraits(
-                                        IDStrings.MIXED_METAL,
-                                        new CMTrait(
-                                                CMTraits.PROP_HEAD,
-                                                SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "合金",
-                                                "随机获得其冶炼材料的特性",
-                                                "但效果减半",
-                                                "(随机获得速度,防火,幸运效果)",
-                                                "",
-                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
-                                        ),
-                                        null,
-                                        new CMTrait(
-                                                CMTraits.PROP_ROD,
-                                                SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "倒霉鬼",
-                                                "+50% 输出伤害",
-                                                "获得厄运III效果",
-                                                "",
-                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
-                                        ),
-                                        new CMTrait(
-                                                CMTraits.PROP_PLATES,
-                                                SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "有经验的",
-                                                "+10% 工具经验获取",
-                                                "+10% 玩家经验获取"
-                                        ),
-                                        null,
-                                        new CMTrait(
-                                                CMTraits.PROP_LINKS,
-                                                SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "混乱",
-                                                "受到攻击时",
-                                                "有几率与攻击者互换位置"
-                                        ))
-                        ));
+            new ComponentMaterial
+                (
+                    new CMIdentity(IDStrings.MIXED_METAL, Objects.requireNonNull(SlimefunItem.getById("MIXED_METAL_INGOT")).getItem(), SkullTextures.ALLOY_SILVER, "#6e7a66"),
+                    Arrays.asList(
+                        map.get(IDStrings.REFINED_IRON).getLiquidItemStack(3),
+                        CMCore.getMap().get(IDStrings.BRONZE).getLiquidItemStack(3),
+                        CMCore.getMap().get(IDStrings.TIN).getLiquidItemStack(3)
+                    ),
+                    new CMToolMakeup(true, false, true, true, false, true),
+                    new CMForms(
+                        Materials.NUGGET_CAST_MIXED_METAL.getItemId(),
+                        Objects.requireNonNull(SlimefunItem.getById("MIXED_METAL_INGOT")).getId(),
+                        Materials.BLOCK_CAST_MIXED_METAL.getItemId(),
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null
+                    ),
+                    new CMTraits(
+                        IDStrings.MIXED_METAL,
+                        new CMTrait(
+                            CMTraits.PROP_HEAD,
+                            SupportedPluginsManager.LITEXPANSION_NOTE,
+                            "合金",
+                            "随机获得其冶炼材料的特性",
+                            "但效果减半",
+                            "(随机获得速度,防火,幸运效果)",
+                            "",
+                            ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
+                        ),
+                        null,
+                        new CMTrait(
+                            CMTraits.PROP_ROD,
+                            SupportedPluginsManager.LITEXPANSION_NOTE,
+                            "倒霉鬼",
+                            "+50% 输出伤害",
+                            "获得厄运III效果",
+                            "",
+                            ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
+                        ),
+                        new CMTrait(
+                            CMTraits.PROP_PLATES,
+                            SupportedPluginsManager.LITEXPANSION_NOTE,
+                            "有经验的",
+                            "+10% 工具经验获取",
+                            "+10% 玩家经验获取"
+                        ),
+                        null,
+                        new CMTrait(
+                            CMTraits.PROP_LINKS,
+                            SupportedPluginsManager.LITEXPANSION_NOTE,
+                            "混乱",
+                            "受到攻击时",
+                            "有几率与攻击者互换位置"
+                        ))
+                ));
 
         map.put(IDStrings.ADVANCED_ALLOY,
-                new ComponentMaterial
-                        (
-                                new CMIdentity(IDStrings.ADVANCED_ALLOY, Objects.requireNonNull(SlimefunItem.getById("ADVANCED_ALLOY")).getItem(), SkullTextures.ALLOY_BLUE_PALE, "#78aba2"),
-                                null,
-                                new CMToolMakeup(true, false, true, true, false, true),
-                                new CMForms(
-                                        Materials.NUGGET_CAST_ADVANCED_ALLOY.getItemId(),
-                                        Objects.requireNonNull(SlimefunItem.getById("ADVANCED_ALLOY")).getId(),
-                                        Materials.BLOCK_CAST_ADVANCED_ALLOY.getItemId(),
-                                        null,
-                                        null,
-                                        null,
-                                        null,
-                                        null,
-                                        null,
-                                        null
-                                ),
-                                new CMTraits(
-                                        IDStrings.ADVANCED_ALLOY,
-                                        new CMTrait(
-                                                CMTraits.PROP_HEAD,
-                                                SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "散射",
-                                                "攻击时对周围所有生物同时造成伤害",
-                                                "散射的伤害不会受到其他特性或模组的影响",
-                                                "",
-                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
-                                        ),
-                                        null,
-                                        new CMTrait(
-                                                CMTraits.PROP_ROD,
-                                                SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "高负荷",
-                                                "每损失50点耐久,会",
-                                                "消耗一块铁锭来恢复50点耐久",
-                                                "",
-                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
-                                        ),
-                                        new CMTrait(
-                                                CMTraits.PROP_PLATES,
-                                                SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "更加高级",
-                                                "Advanced modifiers +1 for each piece.",
-                                                "(开发中的特性,暂不翻译)"
-                                        ),
-                                        null,
-                                        new CMTrait(
-                                                CMTraits.PROP_LINKS,
-                                                SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "高温",
-                                                "有几率使周围实体着火"
-                                        ))
-                        ));
+            new ComponentMaterial
+                (
+                    new CMIdentity(IDStrings.ADVANCED_ALLOY, Objects.requireNonNull(SlimefunItem.getById("ADVANCED_ALLOY")).getItem(), SkullTextures.ALLOY_BLUE_PALE, "#78aba2"),
+                    null,
+                    new CMToolMakeup(true, false, true, true, false, true),
+                    new CMForms(
+                        Materials.NUGGET_CAST_ADVANCED_ALLOY.getItemId(),
+                        Objects.requireNonNull(SlimefunItem.getById("ADVANCED_ALLOY")).getId(),
+                        Materials.BLOCK_CAST_ADVANCED_ALLOY.getItemId(),
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null
+                    ),
+                    new CMTraits(
+                        IDStrings.ADVANCED_ALLOY,
+                        new CMTrait(
+                            CMTraits.PROP_HEAD,
+                            SupportedPluginsManager.LITEXPANSION_NOTE,
+                            "散射",
+                            "攻击时对周围所有生物同时造成伤害",
+                            "散射的伤害不会受到其他特性或模组的影响",
+                            "",
+                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
+                        ),
+                        null,
+                        new CMTrait(
+                            CMTraits.PROP_ROD,
+                            SupportedPluginsManager.LITEXPANSION_NOTE,
+                            "高负荷",
+                            "每损失50点耐久,会",
+                            "消耗一块铁锭来恢复50点耐久",
+                            "",
+                            ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
+                        ),
+                        new CMTrait(
+                            CMTraits.PROP_PLATES,
+                            SupportedPluginsManager.LITEXPANSION_NOTE,
+                            "更加高级",
+                            "Advanced modifiers +1 for each piece.",
+                            "(开发中的特性,暂不翻译)"
+                        ),
+                        null,
+                        new CMTrait(
+                            CMTraits.PROP_LINKS,
+                            SupportedPluginsManager.LITEXPANSION_NOTE,
+                            "高温",
+                            "有几率使周围实体着火"
+                        ))
+                ));
 
         map.put(IDStrings.THORIUM,
-                new ComponentMaterial
-                        (
-                                new CMIdentity(IDStrings.THORIUM, Objects.requireNonNull(SlimefunItem.getById("THORIUM")).getItem(), SkullTextures.ALLOY_GREEN, "#33de4d"),
-                                null,
-                                new CMToolMakeup(false, false, false, false, false, false),
-                                new CMForms(
-                                        null,
-                                        null,
-                                        null,
-                                        null,
-                                        Objects.requireNonNull(SlimefunItem.getById("THORIUM")).getId(),
-                                        null,
-                                        null,
-                                        null,
-                                        null,
-                                        null
-                                ),
-                                new CMTraits(
-                                        IDStrings.THORIUM,
-                                        null,
-                                        null,
-                                        null,
-                                        null,
-                                        null,
-                                        null)
-                        ));
+            new ComponentMaterial
+                (
+                    new CMIdentity(IDStrings.THORIUM, Objects.requireNonNull(SlimefunItem.getById("THORIUM")).getItem(), SkullTextures.ALLOY_GREEN, "#33de4d"),
+                    null,
+                    new CMToolMakeup(false, false, false, false, false, false),
+                    new CMForms(
+                        null,
+                        null,
+                        null,
+                        null,
+                        Objects.requireNonNull(SlimefunItem.getById("THORIUM")).getId(),
+                        null,
+                        null,
+                        null,
+                        null,
+                        null
+                    ),
+                    new CMTraits(
+                        IDStrings.THORIUM,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null)
+                ));
 
         map.put(IDStrings.MAG_THOR,
-                new ComponentMaterial
-                        (
-                                new CMIdentity(IDStrings.MAG_THOR, Objects.requireNonNull(SlimefunItem.getById("MAG_THOR")).getItem(), SkullTextures.ALLOY_BLUE_PALE, "#33de4d"),
-                                Arrays.asList(
-                                        CMCore.getMap().get(IDStrings.REINFORCED).getLiquidItemStack(1),
-                                        map.get(IDStrings.THORIUM).getLiquidItemStack(1),
-                                        CMCore.getMap().get(IDStrings.MAGNESIUM).getLiquidItemStack(1),
-                                        CMCore.getMap().get(IDStrings.ZINC).getLiquidItemStack(1)
-                                ),
-                                new CMToolMakeup(true, false, true, true, false, true),
-                                new CMForms(
-                                        Materials.NUGGET_CAST_MAG_THOR.getItemId(),
-                                        Objects.requireNonNull(SlimefunItem.getById("MAG_THOR")).getId(),
-                                        Materials.BLOCK_CAST_MAG_THOR.getItemId(),
-                                        null,
-                                        null,
-                                        null,
-                                        null,
-                                        null,
-                                        null,
-                                        null
-                                ),
-                                new CMTraits(
-                                        IDStrings.MAG_THOR,
-                                        new CMTrait(
-                                                CMTraits.PROP_HEAD,
-                                                SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "耐热",
-                                                "你可以在岩浆里游泳",
-                                                "(免疫火焰与岩浆伤害)",
-                                                "",
-                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
-                                        ),
-                                        null,
-                                        new CMTrait(
-                                                CMTraits.PROP_ROD,
-                                                SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "吸血鬼",
-                                                "造成伤害时有33%的几率恢复1点血量",
-                                                "-50% 伤害(日间)",
-                                                "+50% 伤害(夜间)",
-                                                "",
-                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
-                                        ),
-                                        new CMTrait(
-                                                CMTraits.PROP_PLATES,
-                                                SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "放射性盔甲板",
-                                                "受到伤害时",
-                                                "对攻击者施加中毒效果"
-                                        ),
-                                        null,
-                                        new CMTrait(
-                                                CMTraits.PROP_LINKS,
-                                                SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "建筑狂怒",
-                                                "有20%的几率在受到伤害时",
-                                                "获得速度效果",
-                                                "获得急迫效果"
-                                        ))
-                        ));
+            new ComponentMaterial
+                (
+                    new CMIdentity(IDStrings.MAG_THOR, Objects.requireNonNull(SlimefunItem.getById("MAG_THOR")).getItem(), SkullTextures.ALLOY_BLUE_PALE, "#33de4d"),
+                    Arrays.asList(
+                        CMCore.getMap().get(IDStrings.REINFORCED).getLiquidItemStack(1),
+                        map.get(IDStrings.THORIUM).getLiquidItemStack(1),
+                        CMCore.getMap().get(IDStrings.MAGNESIUM).getLiquidItemStack(1),
+                        CMCore.getMap().get(IDStrings.ZINC).getLiquidItemStack(1)
+                    ),
+                    new CMToolMakeup(true, false, true, true, false, true),
+                    new CMForms(
+                        Materials.NUGGET_CAST_MAG_THOR.getItemId(),
+                        Objects.requireNonNull(SlimefunItem.getById("MAG_THOR")).getId(),
+                        Materials.BLOCK_CAST_MAG_THOR.getItemId(),
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null
+                    ),
+                    new CMTraits(
+                        IDStrings.MAG_THOR,
+                        new CMTrait(
+                            CMTraits.PROP_HEAD,
+                            SupportedPluginsManager.LITEXPANSION_NOTE,
+                            "耐热",
+                            "你可以在岩浆里游泳",
+                            "(免疫火焰与岩浆伤害)",
+                            "",
+                            ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
+                        ),
+                        null,
+                        new CMTrait(
+                            CMTraits.PROP_ROD,
+                            SupportedPluginsManager.LITEXPANSION_NOTE,
+                            "吸血鬼",
+                            "造成伤害时有33%的几率恢复1点血量",
+                            "-50% 伤害(日间)",
+                            "+50% 伤害(夜间)",
+                            "",
+                            ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
+                        ),
+                        new CMTrait(
+                            CMTraits.PROP_PLATES,
+                            SupportedPluginsManager.LITEXPANSION_NOTE,
+                            "放射性盔甲板",
+                            "受到伤害时",
+                            "对攻击者施加中毒效果"
+                        ),
+                        null,
+                        new CMTrait(
+                            CMTraits.PROP_LINKS,
+                            SupportedPluginsManager.LITEXPANSION_NOTE,
+                            "建筑狂怒",
+                            "有20%的几率在受到伤害时",
+                            "获得速度效果",
+                            "获得急迫效果"
+                        ))
+                ));
 
         map.put(IDStrings.CARBON_MESH,
-                new ComponentMaterial
-                        (
-                                new CMIdentity(IDStrings.CARBON_MESH, Objects.requireNonNull(SlimefunItem.getById("RAW_CARBON_MESH")).getItem(), SkullTextures.ALLOY_BROWN, "#192927"),
-                                null,
-                                new CMToolMakeup(false, true, false, true, true, false),
-                                new CMForms(
-                                        null,
-                                        null,
-                                        null,
-                                        null,
-                                        Objects.requireNonNull(SlimefunItem.getById("RAW_CARBON_MESH")).getId(),
-                                        null,
-                                        null,
-                                        null,
-                                        null,
-                                        null
-                                ),
-                                new CMTraits(
-                                        IDStrings.CARBON_MESH,
-                                        null,
-                                        new CMTrait(
-                                                CMTraits.PROP_BINDING,
-                                                SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "敏捷",
-                                                "获得速度效果",
-                                                "-33% 承受伤害",
-                                                "",
-                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
-                                        ),
-                                        null,
-                                        null,
-                                        new CMTrait(
-                                                CMTraits.PROP_GAMBESON,
-                                                SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "碳纤维",
-                                                "获得速度效果"
-                                        ),
-                                        null)
-                        ));
+            new ComponentMaterial
+                (
+                    new CMIdentity(IDStrings.CARBON_MESH, Objects.requireNonNull(SlimefunItem.getById("RAW_CARBON_MESH")).getItem(), SkullTextures.ALLOY_BROWN, "#192927"),
+                    null,
+                    new CMToolMakeup(false, true, false, true, true, false),
+                    new CMForms(
+                        null,
+                        null,
+                        null,
+                        null,
+                        Objects.requireNonNull(SlimefunItem.getById("RAW_CARBON_MESH")).getId(),
+                        null,
+                        null,
+                        null,
+                        null,
+                        null
+                    ),
+                    new CMTraits(
+                        IDStrings.CARBON_MESH,
+                        null,
+                        new CMTrait(
+                            CMTraits.PROP_BINDING,
+                            SupportedPluginsManager.LITEXPANSION_NOTE,
+                            "敏捷",
+                            "获得速度效果",
+                            "-33% 承受伤害",
+                            "",
+                            ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
+                        ),
+                        null,
+                        null,
+                        new CMTrait(
+                            CMTraits.PROP_GAMBESON,
+                            SupportedPluginsManager.LITEXPANSION_NOTE,
+                            "碳纤维",
+                            "获得速度效果"
+                        ),
+                        null)
+                ));
 
         map.put(IDStrings.SCRAP,
-                new ComponentMaterial
-                        (
-                                new CMIdentity(IDStrings.SCRAP, Objects.requireNonNull(SlimefunItem.getById("SCRAP")).getItem(), SkullTextures.ALLOY_BROWN, "#5c451d"),
-                                null,
-                                new CMToolMakeup(true, false, true, true, false, true),
-                                new CMForms(
-                                        Materials.NUGGET_CAST_SCRAP.getItemId(),
-                                        Objects.requireNonNull(SlimefunItem.getById("SCRAP")).getId(),
-                                        Materials.BLOCK_CAST_SCRAP.getItemId(),
-                                        null,
-                                        null,
-                                        null,
-                                        null,
-                                        null,
-                                        null,
-                                        null
-                                ),
-                                new CMTraits(
-                                        IDStrings.SCRAP,
-                                        new CMTrait(
-                                                CMTraits.PROP_HEAD,
-                                                SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "可怕",
-                                                "+300% 耐久消耗",
-                                                "-100% 工具经验获取",
-                                                "",
-                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
-                                        ),
-                                        null,
-                                        new CMTrait(
-                                                CMTraits.PROP_ROD,
-                                                SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "这是个脑力活",
-                                                "+100% 工具经验获取",
-                                                "-50% 输出伤害",
-                                                "",
-                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
-                                        ),
-                                        new CMTrait(
-                                                CMTraits.PROP_PLATES,
-                                                SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "可悲",
-                                                "警告: 不要穿上这件盔甲",
-                                                "会有坏事发生",
-                                                "+400% 玩家经验获取"
-                                        ),
-                                        null,
-                                        new CMTrait(
-                                                CMTraits.PROP_LINKS,
-                                                SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "分崩离析",
-                                                "+200% 玩家经验获取",
-                                                "受到伤害时护甲有几率直接掉落"
-                                        ))
-                        ));
+            new ComponentMaterial
+                (
+                    new CMIdentity(IDStrings.SCRAP, Objects.requireNonNull(SlimefunItem.getById("SCRAP")).getItem(), SkullTextures.ALLOY_BROWN, "#5c451d"),
+                    null,
+                    new CMToolMakeup(true, false, true, true, false, true),
+                    new CMForms(
+                        Materials.NUGGET_CAST_SCRAP.getItemId(),
+                        Objects.requireNonNull(SlimefunItem.getById("SCRAP")).getId(),
+                        Materials.BLOCK_CAST_SCRAP.getItemId(),
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null
+                    ),
+                    new CMTraits(
+                        IDStrings.SCRAP,
+                        new CMTrait(
+                            CMTraits.PROP_HEAD,
+                            SupportedPluginsManager.LITEXPANSION_NOTE,
+                            "可怕",
+                            "+300% 耐久消耗",
+                            "-100% 工具经验获取",
+                            "",
+                            ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
+                        ),
+                        null,
+                        new CMTrait(
+                            CMTraits.PROP_ROD,
+                            SupportedPluginsManager.LITEXPANSION_NOTE,
+                            "这是个脑力活",
+                            "+100% 工具经验获取",
+                            "-50% 输出伤害",
+                            "",
+                            ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
+                        ),
+                        new CMTrait(
+                            CMTraits.PROP_PLATES,
+                            SupportedPluginsManager.LITEXPANSION_NOTE,
+                            "可悲",
+                            "警告: 不要穿上这件盔甲",
+                            "会有坏事发生",
+                            "+400% 玩家经验获取"
+                        ),
+                        null,
+                        new CMTrait(
+                            CMTraits.PROP_LINKS,
+                            SupportedPluginsManager.LITEXPANSION_NOTE,
+                            "分崩离析",
+                            "+200% 玩家经验获取",
+                            "受到伤害时护甲有几率直接掉落"
+                        ))
+                ));
 
         map.put(IDStrings.IRIDIUM,
-                new ComponentMaterial
-                        (
-                                new CMIdentity(IDStrings.IRIDIUM, Objects.requireNonNull(SlimefunItem.getById("IRIDIUM")).getItem(), SkullTextures.ALLOY_PINK, "#c999c9"),
-                                null,
-                                new CMToolMakeup(true, false, true, true, false, true),
-                                new CMForms(
-                                        Materials.NUGGET_CAST_IRIDIUM.getItemId(),
-                                        Objects.requireNonNull(SlimefunItem.getById("IRIDIUM")).getId(),
-                                        Materials.BLOCK_CAST_IRIDIUM.getItemId(),
-                                        null,
-                                        null,
-                                        null,
-                                        null,
-                                        null,
-                                        null,
-                                        null
-                                ),
-                                new CMTraits(
-                                        IDStrings.IRIDIUM,
-                                        new CMTrait(
-                                                CMTraits.PROP_HEAD,
-                                                SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "保护",
-                                                "使你免于死亡",
-                                                "(20分钟冷却时间)",
-                                                "",
-                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
-                                        ),
-                                        null,
-                                        new CMTrait(
-                                                CMTraits.PROP_ROD,
-                                                SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "别看我",
-                                                "使目标看向你的朝向",
-                                                "(20秒冷却时间)",
-                                                "",
-                                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
-                                        ),
-                                        new CMTrait(
-                                                CMTraits.PROP_PLATES,
-                                                SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "不屈",
-                                                "承受伤害的10%会被反弹至攻击者"
-                                        ),
-                                        null,
-                                        new CMTrait(
-                                                CMTraits.PROP_LINKS,
-                                                SupportedPluginsManager.LITEXPANSION_NOTE,
-                                                "非常规力量",
-                                                "承受的伤害会被转化为能源",
-                                                "并存储在盔甲中(伤害不会被取消)",
-                                                "右键点击释放存储的能源",
-                                                "用于给物品栏中所有的物品充电"
-                                        ))
-                        ));
+            new ComponentMaterial
+                (
+                    new CMIdentity(IDStrings.IRIDIUM, Objects.requireNonNull(SlimefunItem.getById("IRIDIUM")).getItem(), SkullTextures.ALLOY_PINK, "#c999c9"),
+                    null,
+                    new CMToolMakeup(true, false, true, true, false, true),
+                    new CMForms(
+                        Materials.NUGGET_CAST_IRIDIUM.getItemId(),
+                        Objects.requireNonNull(SlimefunItem.getById("IRIDIUM")).getId(),
+                        Materials.BLOCK_CAST_IRIDIUM.getItemId(),
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null
+                    ),
+                    new CMTraits(
+                        IDStrings.IRIDIUM,
+                        new CMTrait(
+                            CMTraits.PROP_HEAD,
+                            SupportedPluginsManager.LITEXPANSION_NOTE,
+                            "保护",
+                            "使你免于死亡",
+                            "(20分钟冷却时间)",
+                            "",
+                            ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
+                        ),
+                        null,
+                        new CMTrait(
+                            CMTraits.PROP_ROD,
+                            SupportedPluginsManager.LITEXPANSION_NOTE,
+                            "别看我",
+                            "使目标看向你的朝向",
+                            "(20秒冷却时间)",
+                            "",
+                            ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
+                        ),
+                        new CMTrait(
+                            CMTraits.PROP_PLATES,
+                            SupportedPluginsManager.LITEXPANSION_NOTE,
+                            "不屈",
+                            "承受伤害的10%会被反弹至攻击者"
+                        ),
+                        null,
+                        new CMTrait(
+                            CMTraits.PROP_LINKS,
+                            SupportedPluginsManager.LITEXPANSION_NOTE,
+                            "非常规力量",
+                            "承受的伤害会被转化为能源",
+                            "并存储在盔甲中(伤害不会被取消)",
+                            "右键点击释放存储的能源",
+                            "用于给物品栏中所有的物品充电"
+                        ))
+                ));
 
         setupToolConsumers();
         setupArmourConsumers();
@@ -537,7 +537,7 @@ public final class CMLiteXpansion {
 
         map.get(IDStrings.MAG_THOR).addEvent(TraitEventType.PLAYER_DAMAGED, TraitPartType.LINKS, PlayerDamagedEvents::linksMagThor);                    // Building Rage
         map.get(IDStrings.CARBON_MESH).addEvent(TraitEventType.TICK, TraitPartType.GAMBESON, TickEvents::gambesonCarbonMesh);                           // Carbon Fibre
-                                                                                                                                                        // Event More Advanced (mod affector)
+        // Event More Advanced (mod affector)
         map.get(IDStrings.MIXED_METAL).addEvent(TraitEventType.ENTITY_DAMAGED, TraitPartType.PLATE, EntityDamageEvents::linksAdamantite);               // Experienced (CO) - Kill
         map.get(IDStrings.MIXED_METAL).addEvent(TraitEventType.BLOCK_BREAK, TraitPartType.PLATE, BlockBreakEvents::linksAdamantite);                    // Experienced (CO) - Block Break
         map.get(IDStrings.SCRAP).addEvent(TraitEventType.ENTITY_DAMAGED, TraitPartType.LINKS, EntityDamageEvents::linksScrap);                          // Falling Apart - Exp

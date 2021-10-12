@@ -25,11 +25,11 @@ import java.util.Map;
 
 public class ModificationStation extends MenuBlock {
 
-    private static final int[] BACKGROUND_SLOTS = {0,1,2,3,4,5,6,7,8,9,11,13,15,17,18,19,20,21,22,23,24,25,26};
-    private static final int INPUT_TOOL = 10;
-    private static final int INPUT_MOD = 12;
     protected static final int MOD_BUTTON = 14;
     protected static final int OUTPUT_SLOT = 16;
+    private static final int[] BACKGROUND_SLOTS = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 13, 15, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26};
+    private static final int INPUT_TOOL = 10;
+    private static final int INPUT_MOD = 12;
 
     public ModificationStation(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe);
@@ -50,7 +50,7 @@ public class ModificationStation extends MenuBlock {
         // Still no tool, nice try
         if (ItemUtils.isTool(item)) {
             return modTool(blockMenu, player, item, modItem);
-        } else if(ItemUtils.isArmour(item)) {
+        } else if (ItemUtils.isArmour(item)) {
             return modArmour(blockMenu, player, item, modItem);
         } else {
             player.sendMessage(ThemeUtils.WARNING + "第一格内的物品不是匠魂工具/防具");
@@ -91,7 +91,7 @@ public class ModificationStation extends MenuBlock {
                 player.sendMessage(ThemeUtils.WARNING + "该工具/武器没有剩余的模组栏位");
                 return false;
             } else { // Remove mod slot
-                ItemUtils.setTinkerModifierSlots(c,modSlots - 1);
+                ItemUtils.setTinkerModifierSlots(c, modSlots - 1);
             }
         }  // Or continuing on with a previous mod so we can continue without a free slot
 
@@ -153,7 +153,7 @@ public class ModificationStation extends MenuBlock {
                 player.sendMessage(ThemeUtils.WARNING + "该防具没有剩余的模组栏位");
                 return false;
             } else { // Remove mod slot
-                ItemUtils.setTinkerModifierSlots(c,modSlots - 1);
+                ItemUtils.setTinkerModifierSlots(c, modSlots - 1);
             }
         }  // Or continuing on with a previous mod so we can continue without a free slot
 

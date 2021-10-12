@@ -15,56 +15,56 @@ import org.bukkit.Material;
 public final class ItemGroups {
 
     public static final NestedItemGroup MAIN = new NestedItemGroup(SlimeTinker.inst().getKeys().getItemGroupMain(), new CustomItemStack(
-            PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.CAT_MAIN)),
-            ThemeUtils.MAIN + "粘液匠魂(SlimeTinker)"
+        PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.CAT_MAIN)),
+        ThemeUtils.MAIN + "粘液匠魂(SlimeTinker)"
     ));
     public static final SubItemGroup WORKSTATIONS = new SubItemGroup(SlimeTinker.inst().getKeys().getItemGroupWorkstations(), MAIN, new CustomItemStack(
-            PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.CAT_MAIN)),
-            ThemeUtils.MAIN + "工作站"
+        PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.CAT_MAIN)),
+        ThemeUtils.MAIN + "工作站"
     ));
     public static final SubItemGroup MATERIALS = new SubItemGroup(SlimeTinker.inst().getKeys().getItemGroupMaterials(), MAIN, new CustomItemStack(
-            PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.CAT_MATERIALS)),
-            ThemeUtils.MAIN + "材料"
+        PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.CAT_MATERIALS)),
+        ThemeUtils.MAIN + "材料"
     ));
     public static final SubItemGroup MOLTEN_METALS = new SubItemGroup(SlimeTinker.inst().getKeys().getItemGroupMolten(), MAIN, new CustomItemStack(
-            PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.CAT_MOLTEN)),
-            ThemeUtils.MAIN + "熔融金属"
+        PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.CAT_MOLTEN)),
+        ThemeUtils.MAIN + "熔融金属"
     ));
     public static final SubItemGroup ALLOYS = new SubItemGroup(SlimeTinker.inst().getKeys().getItemGroupAlloys(), MAIN, new CustomItemStack(
-            PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.CAT_ALLOYS)),
-            ThemeUtils.MAIN + "熔融合金"
+        PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.CAT_ALLOYS)),
+        ThemeUtils.MAIN + "熔融合金"
     ));
     public static final SubItemGroup CASTS = new SubItemGroup(SlimeTinker.inst().getKeys().getItemGroupCasts(), MAIN, new CustomItemStack(
-            PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.CAT_CASTS)),
-            ThemeUtils.MAIN + "铸件"
+        PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.CAT_CASTS)),
+        ThemeUtils.MAIN + "铸件"
     ));
     public static final SubItemGroup PARTS = new SubItemGroup(SlimeTinker.inst().getKeys().getItemGroupParts(), MAIN, new CustomItemStack(
-            PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.CAT_PARTS)),
-            ThemeUtils.MAIN + "部件制作指南"
+        PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.CAT_PARTS)),
+        ThemeUtils.MAIN + "部件制作指南"
     ));
     public static final SubItemGroup TOOLS = new SubItemGroup(SlimeTinker.inst().getKeys().getItemGroupTools(), MAIN, new CustomItemStack(
-            Material.DIAMOND_SWORD,
-            ThemeUtils.MAIN + "工具制作指南"
+        Material.DIAMOND_SWORD,
+        ThemeUtils.MAIN + "工具制作指南"
     ));
     public static final SubItemGroup ARMOUR = new SubItemGroup(SlimeTinker.inst().getKeys().getItemGroupArmour(), MAIN, new CustomItemStack(
-            Material.DIAMOND_CHESTPLATE,
-            ThemeUtils.MAIN + "防具制作指南"
+        Material.DIAMOND_CHESTPLATE,
+        ThemeUtils.MAIN + "防具制作指南"
     ));
     public static final SubItemGroup TRAITS = new SubItemGroup(SlimeTinker.inst().getKeys().getItemGroupProperties(), MAIN, new CustomItemStack(
-            PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.CAT_TRAITS)),
-            ThemeUtils.MAIN + "特性"
+        PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.CAT_TRAITS)),
+        ThemeUtils.MAIN + "特性"
     ));
     public static final SubItemGroup MODIFICATIONS = new SubItemGroup(SlimeTinker.inst().getKeys().getItemGroupModifications(), MAIN, new CustomItemStack(
-            Material.REDSTONE,
-            ThemeUtils.MAIN + "模组"
+        Material.REDSTONE,
+        ThemeUtils.MAIN + "模组"
     ));
     public static final SubItemGroup PART_DICT = new SubItemGroup(SlimeTinker.inst().getKeys().getItemGroupPartDict(), MAIN, new CustomItemStack(
-            PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.PART_PICKAXE_HEAD)),
-            ThemeUtils.MAIN + "所有部件"
+        PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.PART_PICKAXE_HEAD)),
+        ThemeUtils.MAIN + "所有部件"
     ));
     public static final DummyItemGroup DUMMY = new DummyItemGroup(SlimeTinker.inst().getKeys().getItemGroupDummy(), new CustomItemStack(
-            Material.BARRIER,
-            ThemeUtils.MAIN + "SlimeTinker 占位符"
+        Material.BARRIER,
+        ThemeUtils.MAIN + "SlimeTinker 占位符"
     ));
 
     public static void set(SlimeTinker p) {

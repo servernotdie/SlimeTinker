@@ -24,113 +24,113 @@ public final class Workstations {
 
     // Tinkers Smeltery
     public static final SlimefunItemStack TINKERS_SMELTERY_CORE =
-            ThemeUtils.themedItemStack(
-                    "TINKERS_SMELTERY_CORE",
-                    Material.CHISELED_POLISHED_BLACKSTONE,
-                    ThemeItemType.MACHINE,
-                    "匠魂冶炼炉",
-                    "把金属熔化为液体",
-                    "然后可以冶炼合金",
-                    "或根据模具浇铸出各种物品",
-                    "需要岩浆作为燃料"
-            );
+        ThemeUtils.themedItemStack(
+            "TINKERS_SMELTERY_CORE",
+            Material.CHISELED_POLISHED_BLACKSTONE,
+            ThemeItemType.MACHINE,
+            "匠魂冶炼炉",
+            "把金属熔化为液体",
+            "然后可以冶炼合金",
+            "或根据模具浇铸出各种物品",
+            "需要岩浆作为燃料"
+        );
 
     // Workbench
     public static final SlimefunItemStack TINKERS_WORKBENCH =
-            ThemeUtils.themedItemStack(
-                    "TINKERS_WORKBENCH",
-                    Material.FLETCHING_TABLE,
-                    ThemeItemType.MACHINE,
-                    "匠魂合成站",
-                    "用来合成各种物品",
-                    "包括匠魂工具的部件与建筑材料",
-                    "也可以当成增强型工作台使用"
-            );
+        ThemeUtils.themedItemStack(
+            "TINKERS_WORKBENCH",
+            Material.FLETCHING_TABLE,
+            ThemeItemType.MACHINE,
+            "匠魂合成站",
+            "用来合成各种物品",
+            "包括匠魂工具的部件与建筑材料",
+            "也可以当成增强型工作台使用"
+        );
 
     // Tool Table
     public static final SlimefunItemStack TINKERS_TABLE =
-            ThemeUtils.themedItemStack(
-                    "TINKERS_TABLE",
-                    Material.SMITHING_TABLE,
-                    ThemeItemType.MACHINE,
-                    "匠魂工具组装台",
-                    "将部件组装为工具"
-            );
+        ThemeUtils.themedItemStack(
+            "TINKERS_TABLE",
+            Material.SMITHING_TABLE,
+            ThemeItemType.MACHINE,
+            "匠魂工具组装台",
+            "将部件组装为工具"
+        );
 
     // Armour Table
     public static final SlimefunItemStack TINKERS_ARMOUR_TABLE =
-            ThemeUtils.themedItemStack(
-                    "TINKERS_ARMOUR_TABLE",
-                    Material.SMITHING_TABLE,
-                    ThemeItemType.MACHINE,
-                    "匠魂防具组装台",
-                    "将部件组装为防具"
-            );
+        ThemeUtils.themedItemStack(
+            "TINKERS_ARMOUR_TABLE",
+            Material.SMITHING_TABLE,
+            ThemeItemType.MACHINE,
+            "匠魂防具组装台",
+            "将部件组装为防具"
+        );
 
     // Repair
     public static final SlimefunItemStack TINKERS_REPAIR_BENCH =
-            ThemeUtils.themedItemStack(
-                    "TINKERS_REPAIR_BENCH",
-                    Material.CARTOGRAPHY_TABLE,
-                    ThemeItemType.MACHINE,
-                    "匠魂修复台",
-                    "修复工具与武器"
-            );
+        ThemeUtils.themedItemStack(
+            "TINKERS_REPAIR_BENCH",
+            Material.CARTOGRAPHY_TABLE,
+            ThemeItemType.MACHINE,
+            "匠魂修复台",
+            "修复工具与武器"
+        );
 
     // Swapping
     public static final SlimefunItemStack TINKERS_SWAPPING_STATION =
-            ThemeUtils.themedItemStack(
-                    "TINKERS_SWAPPING_STATION",
-                    Material.LOOM,
-                    ThemeItemType.MACHINE,
-                    "匠魂部件更换台",
-                    "使用新的部件替换已有部件"
-            );
+        ThemeUtils.themedItemStack(
+            "TINKERS_SWAPPING_STATION",
+            Material.LOOM,
+            ThemeItemType.MACHINE,
+            "匠魂部件更换台",
+            "使用新的部件替换已有部件"
+        );
 
     // Modification
     public static final SlimefunItemStack TINKERS_MOD_STATION =
-            ThemeUtils.themedItemStack(
-                    "TINKERS_MOD_STATION",
-                    Material.GRINDSTONE,
-                    ThemeItemType.MACHINE,
-                    "匠魂模组工作站",
-                    "将模组安装到工具与武器上"
-            );
+        ThemeUtils.themedItemStack(
+            "TINKERS_MOD_STATION",
+            Material.GRINDSTONE,
+            ThemeItemType.MACHINE,
+            "匠魂模组工作站",
+            "将模组安装到工具与武器上"
+        );
 
-    protected static final ItemStack[] RECIPE_TINKERS_SMELTERY_MULTI = new ItemStack[] {
-            Materials.SEARED_BRICK_BLOCK,   Materials.SEARED_BRICK_BLOCK,   Materials.SEARED_BRICK_BLOCK,
-            Materials.SEARED_TANK,          Materials.SMELTERY_CONTROLLER,  Materials.SPOUT,
-            Materials.SEARED_BRICK_BLOCK,   Materials.SEARED_BRICK_BLOCK,   Materials.SEARED_BRICK_BLOCK
+    protected static final ItemStack[] RECIPE_TINKERS_SMELTERY_MULTI = new ItemStack[]{
+        Materials.SEARED_BRICK_BLOCK, Materials.SEARED_BRICK_BLOCK, Materials.SEARED_BRICK_BLOCK,
+        Materials.SEARED_TANK, Materials.SMELTERY_CONTROLLER, Materials.SPOUT,
+        Materials.SEARED_BRICK_BLOCK, Materials.SEARED_BRICK_BLOCK, Materials.SEARED_BRICK_BLOCK
     };
-    protected static final ItemStack[] RECIPE_TINKERS_WORKBENCH = new ItemStack[] {
-            new ItemStack(Material.IRON_BLOCK),   new ItemStack(Material.IRON_BLOCK),       new ItemStack(Material.IRON_BLOCK),
-            new ItemStack(Material.OAK_PLANKS),   new ItemStack(Material.CRAFTING_TABLE),   new ItemStack(Material.OAK_PLANKS),
-            new ItemStack(Material.OAK_PLANKS),   new ItemStack(Material.DISPENSER),        new ItemStack(Material.OAK_PLANKS)
+    protected static final ItemStack[] RECIPE_TINKERS_WORKBENCH = new ItemStack[]{
+        new ItemStack(Material.IRON_BLOCK), new ItemStack(Material.IRON_BLOCK), new ItemStack(Material.IRON_BLOCK),
+        new ItemStack(Material.OAK_PLANKS), new ItemStack(Material.CRAFTING_TABLE), new ItemStack(Material.OAK_PLANKS),
+        new ItemStack(Material.OAK_PLANKS), new ItemStack(Material.DISPENSER), new ItemStack(Material.OAK_PLANKS)
     };
-    protected static final ItemStack[] RECIPE_TINKERS_TABLE = new ItemStack[] {
-            Materials.BLOCK_CAST_STEEL,   Materials.BLOCK_CAST_STEEL,   Materials.BLOCK_CAST_STEEL,
-            new ItemStack(Material.OAK_PLANKS),   Workstations.TINKERS_WORKBENCH,   new ItemStack(Material.OAK_PLANKS),
-            new ItemStack(Material.OAK_PLANKS),   SlimefunItems.POWER_CRYSTAL,   new ItemStack(Material.OAK_PLANKS)
+    protected static final ItemStack[] RECIPE_TINKERS_TABLE = new ItemStack[]{
+        Materials.BLOCK_CAST_STEEL, Materials.BLOCK_CAST_STEEL, Materials.BLOCK_CAST_STEEL,
+        new ItemStack(Material.OAK_PLANKS), Workstations.TINKERS_WORKBENCH, new ItemStack(Material.OAK_PLANKS),
+        new ItemStack(Material.OAK_PLANKS), SlimefunItems.POWER_CRYSTAL, new ItemStack(Material.OAK_PLANKS)
     };
-    protected static final ItemStack[] RECIPE_TINKERS_ARMOUR_TABLE = new ItemStack[] {
-            Materials.BLOCK_CAST_DAMASCUS_STEEL,   Materials.BLOCK_CAST_DAMASCUS_STEEL,   Materials.BLOCK_CAST_DAMASCUS_STEEL,
-            new ItemStack(Material.OAK_PLANKS),   Workstations.TINKERS_WORKBENCH,   new ItemStack(Material.OAK_PLANKS),
-            new ItemStack(Material.OAK_PLANKS),   SlimefunItems.POWER_CRYSTAL,   new ItemStack(Material.OAK_PLANKS)
+    protected static final ItemStack[] RECIPE_TINKERS_ARMOUR_TABLE = new ItemStack[]{
+        Materials.BLOCK_CAST_DAMASCUS_STEEL, Materials.BLOCK_CAST_DAMASCUS_STEEL, Materials.BLOCK_CAST_DAMASCUS_STEEL,
+        new ItemStack(Material.OAK_PLANKS), Workstations.TINKERS_WORKBENCH, new ItemStack(Material.OAK_PLANKS),
+        new ItemStack(Material.OAK_PLANKS), SlimefunItems.POWER_CRYSTAL, new ItemStack(Material.OAK_PLANKS)
     };
-    protected static final ItemStack[] RECIPE_TINKERS_REPAIR_BENCH = new ItemStack[] {
-            Materials.BLOCK_CAST_ALUMINUM,   Materials.BLOCK_CAST_ALUMINUM,   Materials.BLOCK_CAST_ALUMINUM,
-            new ItemStack(Material.OAK_PLANKS),   Workstations.TINKERS_WORKBENCH,   new ItemStack(Material.OAK_PLANKS),
-            new ItemStack(Material.OAK_PLANKS),   SlimefunItems.POWER_CRYSTAL,   new ItemStack(Material.OAK_PLANKS)
+    protected static final ItemStack[] RECIPE_TINKERS_REPAIR_BENCH = new ItemStack[]{
+        Materials.BLOCK_CAST_ALUMINUM, Materials.BLOCK_CAST_ALUMINUM, Materials.BLOCK_CAST_ALUMINUM,
+        new ItemStack(Material.OAK_PLANKS), Workstations.TINKERS_WORKBENCH, new ItemStack(Material.OAK_PLANKS),
+        new ItemStack(Material.OAK_PLANKS), SlimefunItems.POWER_CRYSTAL, new ItemStack(Material.OAK_PLANKS)
     };
-    protected static final ItemStack[] RECIPE_TINKERS_SWAPPING_STATION = new ItemStack[] {
-            Materials.BLOCK_CAST_COR_BRONZE,   Materials.BLOCK_CAST_COR_BRONZE,   Materials.BLOCK_CAST_COR_BRONZE,
-            new ItemStack(Material.OAK_PLANKS),   Workstations.TINKERS_WORKBENCH,   new ItemStack(Material.OAK_PLANKS),
-            new ItemStack(Material.OAK_PLANKS),   SlimefunItems.POWER_CRYSTAL,   new ItemStack(Material.OAK_PLANKS)
+    protected static final ItemStack[] RECIPE_TINKERS_SWAPPING_STATION = new ItemStack[]{
+        Materials.BLOCK_CAST_COR_BRONZE, Materials.BLOCK_CAST_COR_BRONZE, Materials.BLOCK_CAST_COR_BRONZE,
+        new ItemStack(Material.OAK_PLANKS), Workstations.TINKERS_WORKBENCH, new ItemStack(Material.OAK_PLANKS),
+        new ItemStack(Material.OAK_PLANKS), SlimefunItems.POWER_CRYSTAL, new ItemStack(Material.OAK_PLANKS)
     };
-    protected static final ItemStack[] RECIPE_TINKERS_MOD_STATION = new ItemStack[] {
-            Materials.BLOCK_CAST_REINFORCED,   Materials.BLOCK_CAST_REINFORCED,   Materials.BLOCK_CAST_REINFORCED,
-            new ItemStack(Material.OAK_PLANKS),   Workstations.TINKERS_TABLE,   new ItemStack(Material.OAK_PLANKS),
-            new ItemStack(Material.OAK_PLANKS),   SlimefunItems.POWER_CRYSTAL,   new ItemStack(Material.OAK_PLANKS)
+    protected static final ItemStack[] RECIPE_TINKERS_MOD_STATION = new ItemStack[]{
+        Materials.BLOCK_CAST_REINFORCED, Materials.BLOCK_CAST_REINFORCED, Materials.BLOCK_CAST_REINFORCED,
+        new ItemStack(Material.OAK_PLANKS), Workstations.TINKERS_TABLE, new ItemStack(Material.OAK_PLANKS),
+        new ItemStack(Material.OAK_PLANKS), SlimefunItems.POWER_CRYSTAL, new ItemStack(Material.OAK_PLANKS)
     };
 
 

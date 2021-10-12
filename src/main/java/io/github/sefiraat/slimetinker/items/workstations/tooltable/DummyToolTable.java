@@ -9,19 +9,18 @@ import org.bukkit.Material;
 
 public final class DummyToolTable {
 
+    public static final SlimefunItemStack STACK = ThemeUtils.themedItemStack(
+        "DUMMY_TINKERS_TABLE",
+        Material.SMITHING_TABLE,
+        ThemeItemType.MACHINE,
+        "匠魂工具组装台",
+        "在匠魂工具组装台",
+        "放入相应部件组装获得"
+    );
+    public static final RecipeType TYPE = new RecipeType(SlimeTinker.inst().getKeys().getWsDummyToolTable(), STACK);
+
     private DummyToolTable() {
         throw new IllegalStateException("Utility class");
     }
-
-    public static final SlimefunItemStack STACK = ThemeUtils.themedItemStack(
-            "DUMMY_TINKERS_TABLE",
-            Material.SMITHING_TABLE,
-            ThemeItemType.MACHINE,
-            "匠魂工具组装台",
-            "在匠魂工具组装台",
-            "放入相应部件组装获得"
-    );
-
-    public static final RecipeType TYPE = new RecipeType(SlimeTinker.inst().getKeys().getWsDummyToolTable(), STACK);
 
 }

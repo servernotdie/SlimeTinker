@@ -28,6 +28,22 @@ public class Commands extends BaseCommand {
         }
     }
 
+    @Subcommand("AddExp")
+    @CommandPermission("SlimeTinker.Admin")
+    @CommandCompletion("<amount>")
+    @Description("向手持物品增加经验")
+    public void tool(CommandSender sender, int amount) {
+        if (sender instanceof Player) {
+            Player p = (Player) sender;
+            ItemStack i = p.getInventory().getItemInMainHand();
+            if (ItemUtils.isTool(i) || ItemUtils.isArmour(i)) {
+                Experience.addExp(i, amount, p, false);
+            }
+        } else {
+            sender.sendMessage(ThemeUtils.ERROR + "只有玩家才能执行该指令");
+        }
+    }
+
     @Subcommand("GenerateItem")
     @CommandPermission("SlimeTinker.Admin")
     @Description("生成匠魂物品")
@@ -63,22 +79,6 @@ public class Commands extends BaseCommand {
             }
         }
 
-    }
-
-    @Subcommand("AddExp")
-    @CommandPermission("SlimeTinker.Admin")
-    @CommandCompletion("<amount>")
-    @Description("向手持物品增加经验")
-    public void tool(CommandSender sender, int amount) {
-        if (sender instanceof Player) {
-            Player p = (Player) sender;
-            ItemStack i = p.getInventory().getItemInMainHand();
-            if (ItemUtils.isTool(i) || ItemUtils.isArmour(i)) {
-                Experience.addExp(i, amount, p, false);
-            }
-        } else {
-            sender.sendMessage(ThemeUtils.ERROR + "只有玩家才能执行该指令");
-        }
     }
 
 }
