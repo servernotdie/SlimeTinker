@@ -218,7 +218,7 @@ public final class RightClickEvents {
                 ItemUtils.setCooldown(tool, "celebrate", 3600000);
             }
         } else {
-            player.sendMessage(ThemeUtils.WARNING + "This ability is on cooldown.");
+            player.sendMessage(ThemeUtils.WARNING + "庆祝技能冷却中");
         }
     }
 }

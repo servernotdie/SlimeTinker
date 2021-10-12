@@ -1962,7 +1962,7 @@ public final class CMCore {
                         null,
                         null,
                         null)
-                ));
+        ));
 
         setupToolConsumers();
         setupArmourConsumers();
