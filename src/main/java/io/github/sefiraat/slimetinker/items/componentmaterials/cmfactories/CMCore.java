@@ -1926,6 +1926,43 @@ public final class CMCore {
                         null,
                         null)
                 ));
+        map.put(IDStrings.SEFIRITE,
+            new ComponentMaterial
+                (
+                    new CMIdentity(IDStrings.SEFIRITE, Materials.INGOT_CAST_SEFIRITE, SkullTextures.ALLOY_GREEN, "#9beb34"),
+                    Arrays.asList(
+                        map.get(IDStrings.REINFORCED).getLiquidItemStack(1),
+                        map.get(IDStrings.ALUBRASS).getLiquidItemStack(2),
+                        map.get(IDStrings.HARD).getLiquidItemStack(2),
+                        map.get(IDStrings.REDSTONE_ALLOY).getLiquidItemStack(2)
+                    ),
+                    new CMToolMakeup(true, false, false, false, false, false),
+                    new CMForms(
+                        Materials.NUGGET_CAST_SEFIRITE.getItemId(),
+                        Materials.INGOT_CAST_SEFIRITE.getItemId(),
+                        Materials.BLOCK_CAST_SEFIRITE.getItemId(),
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null
+                    ),
+                    new CMTraits(
+                        IDStrings.SEFIRITE,
+                        new CMTrait(
+                            CMTraits.PROP_HEAD,
+                            SupportedPluginsManager.CORE_NOTE,
+                            "庆祝",
+                            "是时候庆祝一下了"
+                        ),
+                        null,
+                        null,
+                        null,
+                        null,
+                        null)
+                ));
 
         setupToolConsumers();
         setupArmourConsumers();
@@ -1942,6 +1979,7 @@ public final class CMCore {
         map.get(IDStrings.ALUBRONZE).addEvent(TraitEventType.DURABILITY, TraitPartType.ROD, DurabilityEvents::rodAluBronze);                // Brittle
         map.get(IDStrings.REINFORCED).addEvent(TraitEventType.DURABILITY, TraitPartType.HEAD, DurabilityEvents::explosive);                 // Bulky (explosive)
         map.get(IDStrings.TIN).addEvent(TraitEventType.TICK, TraitPartType.ROD, TickEvents::rodTin);                                        // Can
+        map.get(IDStrings.SEFIRITE).addEvent(TraitEventType.RIGHT_CLICK, TraitPartType.HEAD, RightClickEvents::headSefirite);               // Celebrate
         map.get(IDStrings.NICKEL).addEvent(TraitEventType.ENTITY_DAMAGED, TraitPartType.HEAD, EntityDamageEvents::charged);                 // Charged A (Head)
         map.get(IDStrings.NICKEL).addEvent(TraitEventType.ENTITY_DAMAGED, TraitPartType.ROD, EntityDamageEvents::charged);                  // Charged A (Rod)
         map.get(IDStrings.COBALT).addEvent(TraitEventType.ENTITY_DAMAGED, TraitPartType.HEAD, EntityDamageEvents::charged);                 // Charged B (Head)
