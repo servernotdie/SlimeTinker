@@ -228,7 +228,7 @@ public final class CMLiteXpansion {
                             "攻击时对周围所有生物同时造成伤害",
                             "散射的伤害不会受到其他特性或模组的影响",
                             "",
-                                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
+                            ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
                         ),
                         null,
                         new CMTrait(
