@@ -41,7 +41,7 @@ SlimeTinker 的非官方中文 Wiki 包含了所有特性的列表: [点击前�
 
 ## 建议
 
-SlimeTinker 有**大量**的特性与效果，我没有足够的想法来充实。所以我欢迎任何人在 Slimefun Addon Community 的 Discord 服务器中反馈 (记得在slimetinker频道里)。 如果你有任何想法，请点击[邀请链接](https://discord.gg/SqD3gg5SAU) 加入服务器。
+SlimeTinker 有**大量**的特性与效果，我没有足够的想法来充实。所以我欢迎任何人在 Slimefun Addon Community 的 Discord 服务器中反馈 (记得在slimetinker频道里)。 如果你有任何想法，请点击 [邀请链接](https://discord.gg/SqD3gg5SAU) 加入服务器。
 
 ## 感谢
 
