@@ -12,6 +12,9 @@ SlimeTinker 的非官方中文 Wiki 包含了所有特性的列表: [点击前�
   <a href="https://github.com/ybw0014/SlimeTinker-CN/actions/workflows/maven.yml">
     <img src="https://github.com/ybw0014/SlimeTinker-CN/actions/workflows/maven.yml/badge.svg" alt="Java CI"/>
   </a>
+  <a href="https://builds.guizhanss.net/ybw0014/SlimeTinker-CN/master">
+    <img src="https://builds.guizhanss.net/f/ybw0014/SlimeTinker-CN/master/badge.svg" alt="Build status"/>
+  </a>
 </p>
 
 ## 功能包括:
