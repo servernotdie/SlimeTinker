@@ -242,8 +242,8 @@ public final class GUIItems {
             Material.CARTOGRAPHY_TABLE,
             ThemeUtils.GUI_HEAD + "修复",
             "",
-            ThemeUtils.PASSIVE + "在第一格中放入需要修复的工具",
-            ThemeUtils.PASSIVE + "在第二格中放入工具头对应材质的修复工具",
+            ThemeUtils.PASSIVE + "在第一格中放入需要修复的工具/防具",
+            ThemeUtils.PASSIVE + "在第二格中放入工具头/盔甲板对应材质的修复工具",
             ThemeUtils.CLICK_INFO + "点击此处" + ChatColor.WHITE + "修复"
         );
     }
@@ -252,7 +252,7 @@ public final class GUIItems {
         return new CustomItemStack(
             Material.GRINDSTONE,
             ThemeUtils.GUI_HEAD + "安装模组",
-            ThemeUtils.PASSIVE + "在第一格中放入工具/武器",
+            ThemeUtils.PASSIVE + "在第一格中放入工具/武器/防具",
             ThemeUtils.PASSIVE + "在第二格中放入要安装的模组",
             ThemeUtils.CLICK_INFO + "点击此处" + ChatColor.WHITE + "安装模组"
         );
@@ -263,7 +263,7 @@ public final class GUIItems {
             Material.LOOM,
             ThemeUtils.GUI_HEAD + "更换部件",
             "",
-            ThemeUtils.PASSIVE + "在第一格中放入工具/武器",
+            ThemeUtils.PASSIVE + "在第一格中放入工具/武器/防具",
             ThemeUtils.PASSIVE + "在第二格中放入要更换的部件",
             ThemeUtils.CLICK_INFO + "点击此处" + ChatColor.WHITE + "更换部件"
         );
