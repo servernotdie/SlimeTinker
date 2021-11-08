@@ -1,5 +1,5 @@
 ---
-name: 建议
+name: 提供建议
 about: 向本插件提供建议
 title: ''
 labels: suggestion
