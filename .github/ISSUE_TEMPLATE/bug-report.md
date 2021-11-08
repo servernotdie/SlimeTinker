@@ -1,35 +1,44 @@
 ---
-name: Bug Report about: Report a Bug or an Issue with this Plugin. title: ''
-labels: bug assignees: ''
+name: Bug汇报
+about: 反馈本插件的Bug或问题
+title: ''
+labels: bug
+assignees: ''
 
 ---
 
-## Description (Required)
+<!-- 请不要修改模板内容，否则你的issue可能会被立刻关闭 -->
+<!-- 如果你使用的不是从构建站点下载的版本，我们无法提供任何支持 -->
+<!-- 如果你可以确认该问题为上游问题，你可以直接在上游的问题追踪器中汇报该问题 -->
 
-<!-- A clear and detailed description of what exactly the Issue consists of. -->
-<!-- Please try to write as much as possible. "it doesn't work" is not sufficient. -->
-<!-- Try to write at least 4-6 sentences. -->
+## 描述 (必须)
 
-## Steps to reproduce the Issue (Required)
+<!-- 详细描述你要汇报的问题，越详细越好 -->
+<!-- 只说"不能用"没法让开发者定位问题 -->
 
-<!-- Youtube Videos and Screenshots are recommended! -->
+## 复现步骤 (必须)
 
-## Expected behavior (Required)
+<!-- 描述一下怎样可以复现你提到的问题 -->
+<!-- 如果可以，请上传视频并在此处提供链接 -->
 
-<!-- What did you expect to happen? -->
+## 预期行为 (必须)
 
-## Server Log / Error Report
+<!-- 你觉得应该发生什么 -->
+<!-- 有时候，问题的原因是你误解了某个功能 -->
 
-<!-- Take a look at your Server Log and please provide any error reports you can find via https://pastebin.com/ -->
-<!-- We may discard your Issue if you just post it here, as it's unreadable for us. Please use Pastebin! -->
+## 服务器日志 / 错误报告
 
-## Environment (Required)
+<!-- 请查看你的服务器日志，找一下有没有报错 -->
+<!-- 如果有，请上传至 https://paste.guizhanss.net/ 并将链接提供给我们 -->
+<!-- 如果你直接将日志粘贴在这里，我们可能会关闭你的issue -->
+<!-- 另外，如果有相关错误日志，也请同时提供 -->
 
-<!-- We may also close your Issue if you are not providing the exact version numbers. -->
-<!-- "latest" IS NOT A VERSION NUMBER. -->
-<!-- You can also just run "/sf versions" and show us a screenshot of that. -->
+## 运行环境 (必须)
 
-- Minecraft Version:
-- CS-CoreLib Version:
-- Slimefun Version:
-- Plugin Version: 
+<!-- 如果你没有提供版本号,我们可能会关闭你的issue -->
+<!-- "最新版"不是有效的版本号 -->
+<!-- 你可以使用指令 "/sf versions" 并将完整截图提供给我们 -->
+
+- Minecraft 版本:
+- Slimefun 版本:
+- SlimeTinker 版本: 
