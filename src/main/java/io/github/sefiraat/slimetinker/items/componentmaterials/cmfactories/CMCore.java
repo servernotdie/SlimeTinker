@@ -943,8 +943,8 @@ public final class CMCore {
                             CMTraits.PROP_LINKS,
                             SupportedPluginsManager.CORE_NOTE,
                             "温血",
-                            "在热带地区获得速度II效果",
-                            "在寒冷地区获得缓慢效果"
+                            "在地狱获得速度II效果",
+                            "在末地获得缓慢效果"
                         ))
                 ));
         map.put(IDStrings.SOLDER,
