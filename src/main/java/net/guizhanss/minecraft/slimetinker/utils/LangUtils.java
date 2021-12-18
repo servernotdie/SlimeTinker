@@ -83,6 +83,8 @@ public class LangUtils {
                 return "硅铁";
             case "BOOMERITE":
                 return "Boomerite";
+            case "LEATHER":
+                return "皮革";
 
             // Infinity Expansion
             case "VOID":
