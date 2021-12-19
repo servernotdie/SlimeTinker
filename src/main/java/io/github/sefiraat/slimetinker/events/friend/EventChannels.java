@@ -61,6 +61,7 @@ public class EventChannels {
         }
 
         if (eventShouldCancelIfBroken(i, friend.getEventType())) {
+            friend.setActionTaken(true);
             friend.setCancelEvent(true);
             friend.getPlayer().sendMessage(ThemeUtils.WARNING + "你的工具已经损坏,需要修复!");
             return;
