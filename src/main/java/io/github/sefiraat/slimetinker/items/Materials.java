@@ -259,8 +259,8 @@ public final class Materials {
             "NUGGET_CAST_CRINGLEIUM",
             Material.IRON_NUGGET,
             ThemeItemType.CRAFTING,
-            "Cringleium Nugget",
-            "A nugget made from Cringleium."
+            "Cringleium粒",
+            "由熔融Cringleium制成的粒"
         );
     // endregion
     // region Ingots
@@ -286,8 +286,9 @@ public final class Materials {
             "INGOT_CAST_CRINGLEIUM",
             Material.IRON_INGOT,
             ThemeItemType.CRAFTING,
-            "Cringleium Ingot",
-            "A festive ingot that's only available for a short time."
+            "Cringleium锭",
+            "由熔融Cringleium制成的锭",
+            "不稳定,只能存在一小段时间"
         );
     // End Region
     // region Blocks
@@ -519,8 +520,8 @@ public final class Materials {
             "BLOCK_CAST_CRINGLEIUM",
             Material.IRON_BLOCK,
             ThemeItemType.CRAFTING,
-            "Cringleium Block",
-            "A block made from Cringleium"
+            "Cringleium块",
+            "由熔融Cringleium制成的块"
         );
     // endregion
     // region Crafts
