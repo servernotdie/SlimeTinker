@@ -81,8 +81,6 @@ public class LangUtils {
                 return "硅";
             case "FERROSILICON":
                 return "硅铁";
-            case "BOOMERITE":
-                return "Boomerite";
             case "LEATHER":
                 return "皮革";
 
