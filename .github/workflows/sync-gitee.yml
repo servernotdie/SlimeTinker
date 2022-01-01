@@ -14,5 +14,5 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.GITEE_SYNC_SECRET }}
         with:
-          source-repo: "git@github.com:ybw0014/SlimeTinker-CN.git"
+          source-repo: "git@github.com:GuizhanCraft/SlimeTinker-CN.git"
           destination-repo: "git@gitee.com:ybw0014/SlimeTinker-CN.git"
