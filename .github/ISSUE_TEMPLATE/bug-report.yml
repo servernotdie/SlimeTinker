@@ -9,7 +9,7 @@ body:
         建议先阅读[这篇文章](https://slimefun.guizhanss.wiki/#/How-to-report-bugs)了解如何正确地汇报Bug。
         目前构建站不保存构建的校验和信息，如果遇到安装后出现`zip file closed`报错，或指南中不显示物品的问题，请先尝试重新下载。
 
-        ***你必须填写标注为星号 (*) 的表单项***
+        <strong><i>你必须填写标注为星号（*）的表单项</i></strong>
 
   - type: checkboxes
     id: checklist
@@ -126,7 +126,7 @@ body:
         - label: 我没有安装CS-CoreLib
           required: true
 
-  - type: input
+  - type: textarea
     id: slimefun-version
     attributes:
       label: Slimefun版本
