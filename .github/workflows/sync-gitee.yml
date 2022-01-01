@@ -6,13 +6,16 @@ on:
       - master
   workflow_dispatch: {}
 
+concurrency:
+  group: git-mirror
+
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
       - uses: wearerequired/git-mirror-action@master
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.GITEE_SYNC_SECRET }}
+          SSH_PRIVATE_KEY: ${{ secrets.GITEE_PRIVATE_KEY }}
         with:
           source-repo: "git@github.com:GuizhanCraft/SlimeTinker-CN.git"
           destination-repo: "git@gitee.com:ybw0014/SlimeTinker-CN.git"
