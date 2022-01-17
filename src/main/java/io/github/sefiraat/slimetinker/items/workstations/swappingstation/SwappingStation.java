@@ -49,6 +49,11 @@ public class SwappingStation extends MenuBlock {
             return false;
         }
 
+        if (item.getAmount() > 1) {
+            player.sendMessage(ThemeUtils.WARNING + "Nope - nerd");
+            return false;
+        }
+
         if (part == null) {
             player.sendMessage(ThemeUtils.WARNING + "在第二格内放入替换的部件");
             return false;
