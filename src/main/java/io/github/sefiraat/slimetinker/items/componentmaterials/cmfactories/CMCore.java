@@ -138,7 +138,8 @@ public final class CMCore {
                             CMTraits.PROP_LINKS,
                             SupportedPluginsManager.CORE_NOTE,
                             "来个交易",
-                            "猪灵会被你吸引"
+                            "猪灵会被你吸引",
+                            "(周围5格内的猪灵不会攻击你)"
                         ))
                 ));
         map.put(IDStrings.COPPER,

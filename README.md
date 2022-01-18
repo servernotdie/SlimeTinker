@@ -4,6 +4,8 @@ SlimeTinker 是一个 Slimefun4 的附属插件，致力于在非模组服务器
 
 SlimeTinker 的非官方中文 Wiki 包含了所有特性的列表: [点击前往](https://slimetinker.guizhanss.wiki)
 
+**更新预告**: 即将支持配置特性功能，可以禁用部分不想要的特性。预计时间：本周内（可能会推迟）
+
 ## 下载
 
 点击这里下载 SlimeTinker: [下载 SlimeTinker](https://builds.guizhanss.net/ybw0014/SlimeTinker-CN/master)

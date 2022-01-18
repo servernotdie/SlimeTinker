@@ -314,7 +314,8 @@ public final class CMInfinity {
                             CMTraits.PROP_LINKS,
                             SupportedPluginsManager.INFINITY_EXPANSION_NOTE,
                             "来个交易 II",
-                            "猪灵会被你深深地吸引"
+                            "猪灵会被你深深地吸引",
+                            "(周围5格内的猪灵不会攻击你)"
                         ))
                 ));
 
