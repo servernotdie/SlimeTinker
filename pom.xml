@@ -40,6 +40,7 @@
                 <artifactId>maven-shade-plugin</artifactId>
                 <version>3.2.4</version>
                 <configuration>
+                    <minimizeJar>true</minimizeJar>
                     <relocations>
                         <relocation>
                             <pattern>io.github.mooy1.infinitylib</pattern>
@@ -53,12 +54,17 @@
                             <pattern>co.aikar.commands</pattern>
                             <shadedPattern>io.github.sefiraat.slimetinker.acf</shadedPattern>
                         </relocation>
+                        <relocation>
+                            <pattern>net.guizhanss.guizhanlib</pattern>
+                            <shadedPattern>io.github.sefiraat.networks.guizhanlib</shadedPattern>
+                        </relocation>
                     </relocations>
                     <filters>
                         <filter>
                             <artifact>*:*</artifact>
                             <excludes>
                                 <exclude>META-INF/*</exclude>
+                                <exclude>minecraft.*</exclude>
                             </excludes>
                         </filter>
                     </filters>
@@ -133,6 +139,12 @@
             <groupId>co.aikar</groupId>
             <artifactId>acf-paper</artifactId>
             <version>0.5.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>net.guizhanss</groupId>
+            <artifactId>GuizhanLib</artifactId>
+            <version>0.5.0</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>
