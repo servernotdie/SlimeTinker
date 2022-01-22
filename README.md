@@ -44,6 +44,15 @@ SlimeTinker现已支持禁用特性。所有的特性默认启用。
 要禁用特性，打开 `/plugins/SlimeTinker/traits.yml`,  
 将指定材料的部件设置为`false`即可。
 
+部件对应：
+
+- `HEAD`: 工具头
+- `BINDING`: 绑定结
+- `ROD`: 手柄
+- `PLATE`: 盔甲板
+- `GAMBESON`: 护身软甲
+- `LINKS`: 盔甲接合物
+
 ## 计划中的新功能:
 
 * 增加对更多附属插件中的金属的支持
