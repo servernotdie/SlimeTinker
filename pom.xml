@@ -56,7 +56,7 @@
                         </relocation>
                         <relocation>
                             <pattern>net.guizhanss.guizhanlib</pattern>
-                            <shadedPattern>io.github.sefiraat.networks.guizhanlib</shadedPattern>
+                            <shadedPattern>io.github.sefiraat.slimetinker.guizhanlib</shadedPattern>
                         </relocation>
                     </relocations>
                     <filters>
