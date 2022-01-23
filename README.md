@@ -4,6 +4,8 @@ SlimeTinker 是一个 Slimefun4 的附属插件，致力于在非模组服务器
 
 SlimeTinker 的非官方中文 Wiki 包含了所有特性的列表: [点击前往](https://slimetinker.guizhanss.wiki)
 
+**已知问题**: 锤子特性禁用无效，等待修复。
+
 ## 下载
 
 **自动更新**: 汉化版构建#15及以后版本包含*自动更新*功能，默认开启。
