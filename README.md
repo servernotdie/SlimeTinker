@@ -66,7 +66,7 @@ SlimeTinker现已支持禁用特性。所有的特性默认启用。
 
 ## 建议
 
-SlimeTinker 有**大量**的特性与效果，我没有足够的想法来充实。所以我欢迎任何人在 Slimefun Addon Community 的 Discord 服务器中反馈 (记得在slimetinker频道里)。 如果你有任何想法，请点击 [邀请链接](https://discord.gg/SqD3gg5SAU) 加入服务器。
+SlimeTinker 有**大量**的特性与效果，我没有足够的想法来充实。所以我欢迎任何人在 Slimefun Addon Community 的 Discord 服务器中反馈 (记得在slime-tinker频道里)。 如果你有任何想法，请点击 [邀请链接](https://discord.gg/SqD3gg5SAU) 加入服务器。
 
 ## 感谢
 
