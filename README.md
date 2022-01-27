@@ -21,6 +21,12 @@ SlimeTinker 的非官方中文 Wiki 包含了所有特性的列表: [点击前�
   </a>
 </p>
 
+## 问题反馈
+
+请在[问题追踪器](https://github.com/GuizhanCraft/SlimeTinker-CN/issues)中反馈问题。  
+如果你无法访问GitHub，你也可以在[QQ群](https://ybw0014.net/go/sf-qgroup)内进行反馈。（该条仅对Gitee用户有效)
+不会在Gitee的问题追踪器中处理任何问题。
+
 ## 功能包括:
 
 * 可以熔化所有原版以及 Slimefun 中的金属与合金。
