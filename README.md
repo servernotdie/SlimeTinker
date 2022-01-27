@@ -72,4 +72,6 @@ SlimeTinker 有**大量**的特性与效果，我没有足够的想法来充实�
 
 感谢 [Riley](https://github.com/Mooy1) 提供的 InfinityLib, 它加快了开发进度。另外要感谢 [Martin](https://github.com/martinbrom) 帮我们提出许多点子与开发方向。感谢 [Boomer](https://www.youtube.com/channel/UC2ZmER18YBRYube-62-JVpA) 测试并提供反馈。
 
-最后，非常感谢Minecraft服务器 mct.tantrum.org 提供了早期的想法与测试环境，这个服务器真不错!
+感谢 **mct.tantrum.org** 的服主提供的测试环境。
+
+另外，感谢 **mc.talosmp.net** 的 **GentlemanCheesy** 成为本人的首位赞助者！每个月能多喝一杯咖啡让我能有动力更好地编写插件。
