@@ -1,10 +1,10 @@
 package io.github.sefiraat.slimetinker.items.workstations.swappingstation;
 
 import io.github.mooy1.infinitylib.machines.MenuBlock;
-import io.github.sefiraat.slimetinker.SlimeTinker;
 import io.github.sefiraat.slimetinker.utils.GUIItems;
-import io.github.sefiraat.slimetinker.utils.IDStrings;
+import io.github.sefiraat.slimetinker.utils.Ids;
 import io.github.sefiraat.slimetinker.utils.ItemUtils;
+import io.github.sefiraat.slimetinker.utils.Keys;
 import io.github.sefiraat.slimetinker.utils.ThemeUtils;
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
@@ -37,26 +37,24 @@ public class SwappingStation extends MenuBlock {
         super(itemGroup, item, recipeType, recipe);
     }
 
-    @SuppressWarnings("SameReturnValue")
-    protected boolean craft(BlockMenu blockMenu, Player player) {
-
+    protected void craft(BlockMenu blockMenu, Player player) {
         ItemStack item = blockMenu.getItemInSlot(INPUT_ITEM);
         ItemStack part = blockMenu.getItemInSlot(INPUT_PART);
 
         // No tool dummy!
         if (item == null) {
-            player.sendMessage(ThemeUtils.WARNING + "在第一格内放入工具/武器/防具");
-            return false;
+            player.sendMessage(ThemeUtils.WARNING + "在第一格内放入匠魂装备");
+            return;
         }
 
         if (item.getAmount() > 1) {
-            player.sendMessage(ThemeUtils.WARNING + "Nope - nerd");
-            return false;
+            player.sendMessage(ThemeUtils.WARNING + "匠魂装备不能堆叠");
+            return;
         }
 
         if (part == null) {
             player.sendMessage(ThemeUtils.WARNING + "在第二格内放入替换的部件");
-            return false;
+            return;
         }
 
         String partClass = ItemUtils.getPartClass(part);
@@ -65,62 +63,42 @@ public class SwappingStation extends MenuBlock {
 
         if (ItemUtils.isTool(item)) {
             if (partClass != null && ItemUtils.partIsTool(partClass)) {
-                return swapTool(blockMenu, player, item, partClass, partType, partMaterial);
+                swapTool(blockMenu, player, item, partClass, partType, partMaterial);
             } else {
                 player.sendMessage(ThemeUtils.WARNING + "该部件不能替换到此工具/武器上");
             }
         } else if (ItemUtils.isArmour(item)) {
             if (partClass != null && ItemUtils.partIsArmour(partClass)) {
-                return swapArmour(blockMenu, player, item, partClass, partType, partMaterial);
+                swapArmour(blockMenu, player, item, partClass, partType, partMaterial);
             } else {
                 player.sendMessage(ThemeUtils.WARNING + "该部件不能替换到此防具上");
             }
         } else {
             player.sendMessage(ThemeUtils.WARNING + "第一格内的物品不是匠魂工具/武器/防具");
         }
-
-        return false;
-
     }
 
-    private boolean swapTool(BlockMenu blockMenu, Player player, ItemStack item, String partClass, String partType, String partMaterial) {
-
+    private void swapTool(BlockMenu blockMenu, Player player, ItemStack item, String partClass, String partType, String partMaterial) {
         // The part is a head part but the type is either null or not matching the tool (Axe head part for shovel etc.)
-        if (partClass.equals(IDStrings.HEAD) && (partType != null && !partType.equals(ItemUtils.getToolTypeName(item)))) {
+        if (partClass.equals(Ids.HEAD) && (partType != null && !partType.equals(ItemUtils.getToolTypeName(item)))) {
             player.sendMessage(ThemeUtils.WARNING + "该工具头部与工具类型不一致,无法替换");
-            return false;
+            return;
         }
 
         ItemStack newTool = item.clone();
         ItemMeta newToolMeta = newTool.getItemMeta();
 
-        String swappedMaterial;
-
-        switch (partClass) {
-            case IDStrings.HEAD:
-                swappedMaterial = ItemUtils.getToolHeadMaterial(newTool);
-                break;
-            case IDStrings.BINDING:
-                swappedMaterial = ItemUtils.getToolBindingMaterial(newTool);
-                break;
-            case IDStrings.ROD:
-                swappedMaterial = ItemUtils.getToolRodMaterial(newTool);
-                break;
-            default:
-                throw new IllegalStateException("Unexpected value: " + partClass);
-        }
-
         checkAndChangeExplosiveness(newTool, newToolMeta, partMaterial, partClass);
 
         switch (partClass) {
-            case IDStrings.HEAD:
-                PersistentDataAPI.setString(newToolMeta, SlimeTinker.inst().getKeys().getToolInfoHeadMaterial(), partMaterial);
+            case Ids.HEAD:
+                PersistentDataAPI.setString(newToolMeta, Keys.TOOL_INFO_HEAD_MATERIAL, partMaterial);
                 break;
-            case IDStrings.BINDING:
-                PersistentDataAPI.setString(newToolMeta, SlimeTinker.inst().getKeys().getToolInfoBinderMaterial(), partMaterial);
+            case Ids.BINDING:
+                PersistentDataAPI.setString(newToolMeta, Keys.TOOL_INFO_BINDER_MATERIAL, partMaterial);
                 break;
-            case IDStrings.ROD:
-                PersistentDataAPI.setString(newToolMeta, SlimeTinker.inst().getKeys().getToolInfoRodMaterial(), partMaterial);
+            case Ids.ROD:
+                PersistentDataAPI.setString(newToolMeta, Keys.TOOL_INFO_ROD_MATERIAL, partMaterial);
                 break;
             default:
                 throw new IllegalStateException("Unexpected value: " + partClass);
@@ -134,31 +112,27 @@ public class SwappingStation extends MenuBlock {
         blockMenu.pushItem(newTool, OUTPUT_SLOT);
         blockMenu.getItemInSlot(INPUT_ITEM).setAmount(blockMenu.getItemInSlot(INPUT_ITEM).getAmount() - 1);
         blockMenu.getItemInSlot(INPUT_PART).setAmount(blockMenu.getItemInSlot(INPUT_PART).getAmount() - 1);
-
-        return false;
-
     }
 
-    private boolean swapArmour(BlockMenu blockMenu, Player player, ItemStack item, String partClass, String partType, String partMaterial) {
-
+    private void swapArmour(BlockMenu blockMenu, Player player, ItemStack item, String partClass, String partType, String partMaterial) {
         // The part is a plate part but the type is either null or not matching the armour (Helm plates for boots etc..)
-        if (partClass.equals(IDStrings.PLATE) && (partType != null && !partType.equals(ItemUtils.getArmourTypeName(item)))) {
+        if (partClass.equals(Ids.PLATE) && (partType != null && !partType.equals(ItemUtils.getArmourTypeName(item)))) {
             player.sendMessage(ThemeUtils.WARNING + "该盔甲板与防具类型不一致,无法替换");
-            return false;
+            return;
         }
 
         ItemStack newArmour = item.clone();
         ItemMeta newArmourMeta = newArmour.getItemMeta();
 
         switch (partClass) {
-            case IDStrings.PLATE:
-                PersistentDataAPI.setString(newArmourMeta, SlimeTinker.inst().getKeys().getArmourInfoPlateMaterial(), partMaterial);
+            case Ids.PLATE:
+                PersistentDataAPI.setString(newArmourMeta, Keys.ARMOUR_INFO_PLATE_MATERIAL, partMaterial);
                 break;
-            case IDStrings.GAMBESON:
-                PersistentDataAPI.setString(newArmourMeta, SlimeTinker.inst().getKeys().getArmourInfoGambesonMaterial(), partMaterial);
+            case Ids.GAMBESON:
+                PersistentDataAPI.setString(newArmourMeta, Keys.ARMOUR_INFO_GAMBESON_MATERIAL, partMaterial);
                 break;
-            case IDStrings.LINKS:
-                PersistentDataAPI.setString(newArmourMeta, SlimeTinker.inst().getKeys().getArmourInfoLinksMaterial(), partMaterial);
+            case Ids.LINKS:
+                PersistentDataAPI.setString(newArmourMeta, Keys.ARMOUR_INFO_LINKS_MATERIAL, partMaterial);
                 break;
             default:
                 throw new IllegalStateException("Unexpected value: " + partClass);
@@ -172,15 +146,10 @@ public class SwappingStation extends MenuBlock {
         blockMenu.pushItem(newArmour, OUTPUT_SLOT);
         blockMenu.getItemInSlot(INPUT_ITEM).setAmount(blockMenu.getItemInSlot(INPUT_ITEM).getAmount() - 1);
         blockMenu.getItemInSlot(INPUT_PART).setAmount(blockMenu.getItemInSlot(INPUT_PART).getAmount() - 1);
-
-        return false;
-
     }
 
     private void checkAndChangeExplosiveness(ItemStack newTool, ItemMeta im, String partMaterial, String partClass) {
-
         Validate.notNull(Slimefun.instance(), "Slimefun is null, that's... not great?");
-
         NamespacedKey sfIDKey = new NamespacedKey(Slimefun.instance(), "slimefun_item");
         String sID = PersistentDataAPI.getString(im, sfIDKey);
 
@@ -193,16 +162,13 @@ public class SwappingStation extends MenuBlock {
             sID = sID.replace("_EXP", "");
             PersistentDataAPI.setString(im, sfIDKey, sID);
         }
-
     }
 
     @Override
     protected void setup(BlockMenuPreset blockMenuPreset) {
-
         blockMenuPreset.drawBackground(ChestMenuUtils.getBackground(), BACKGROUND_SLOTS);
-        blockMenuPreset.addItem(CRAFT_BUTTON, GUIItems.menuCraftSwap());
+        blockMenuPreset.addItem(CRAFT_BUTTON, GUIItems.MENU_CRAFT_SWAP);
         blockMenuPreset.addMenuClickHandler(CRAFT_BUTTON, (player, i, itemStack, clickAction) -> false);
-
     }
 
     @Override
@@ -227,15 +193,18 @@ public class SwappingStation extends MenuBlock {
     @Override
     protected void onNewInstance(@Nonnull BlockMenu blockMenu, @Nonnull Block b) {
         super.onNewInstance(blockMenu, b);
-        blockMenu.addMenuClickHandler(CRAFT_BUTTON, (player, i, itemStack, clickAction) -> craft(blockMenu, player));
+        blockMenu.addMenuClickHandler(CRAFT_BUTTON, (player, i, itemStack, clickAction) -> {
+            craft(blockMenu, player);
+            return false;
+        });
     }
 
     private boolean isExplosivePart(String material, String part) {
         return (
-            (material.equals(IDStrings.REINFORCED) && part.equals(IDStrings.HEAD)) ||
-                (material.equals(IDStrings.HARD) && part.equals(IDStrings.ROD)) ||
-                (material.equals(IDStrings.SINGINFINITY) && part.equals(IDStrings.HEAD)) ||
-                (material.equals(IDStrings.OSMIUM) && part.equals(IDStrings.HEAD))
+            (material.equals(Ids.REINFORCED_ALLOY) && part.equals(Ids.HEAD)) ||
+                (material.equals(Ids.HARDENED_METAL) && part.equals(Ids.ROD)) ||
+                (material.equals(Ids.INFINITY_SINGULARITY) && part.equals(Ids.HEAD)) ||
+                (material.equals(Ids.OSMIUM) && part.equals(Ids.HEAD))
         );
     }
 

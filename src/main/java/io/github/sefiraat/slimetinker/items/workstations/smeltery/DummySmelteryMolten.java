@@ -1,6 +1,6 @@
 package io.github.sefiraat.slimetinker.items.workstations.smeltery;
 
-import io.github.sefiraat.slimetinker.SlimeTinker;
+import io.github.sefiraat.slimetinker.utils.Keys;
 import io.github.sefiraat.slimetinker.utils.ThemeUtils;
 import io.github.sefiraat.slimetinker.utils.enums.ThemeItemType;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
@@ -18,10 +18,9 @@ public final class DummySmelteryMolten {
         "放入冶炼炉中熔化得到的产物",
         "需要有岩浆才能熔化金属"
     );
-    public static final RecipeType TYPE = new RecipeType(SlimeTinker.inst().getKeys().getWsDummySmelteryM(), STACK);
+    public static final RecipeType TYPE = new RecipeType(Keys.WS_DUMMY_SMELTERY_M, STACK);
 
     private DummySmelteryMolten() {
         throw new IllegalStateException("Utility class");
     }
-
 }

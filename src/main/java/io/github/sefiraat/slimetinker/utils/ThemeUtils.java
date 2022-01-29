@@ -3,21 +3,22 @@ package io.github.sefiraat.slimetinker.utils;
 import io.github.sefiraat.slimetinker.items.BaseItem;
 import io.github.sefiraat.slimetinker.utils.enums.ThemeItemType;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-import lombok.experimental.UtilityClass;
 import net.md_5.bungee.api.ChatColor;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.WordUtils;
 import org.bukkit.Material;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import javax.annotation.Nonnull;
+import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.List;
 
 @SuppressWarnings("SpellCheckingInspection")
-@UtilityClass
 public final class ThemeUtils {
 
-    public static final String PREFIX = "" + ChatColor.GRAY + "[粘液匠魂] ";
-    public static final String SUFFIX = "" + ChatColor.GRAY + "";
+    private ThemeUtils() {
+        throw new UnsupportedOperationException("Utility Class");
+    }
 
     public static final ChatColor WARNING = ChatColor.YELLOW;
     public static final ChatColor ERROR = ChatColor.RED;
@@ -48,6 +49,8 @@ public final class ThemeUtils {
     public static final ChatColor ADD_SLIMEFUN_WARFARE = ChatColor.of("#c1db4d");
     public static final ChatColor ADD_DYNATECH = ChatColor.of("#60d1cd");
     public static final ChatColor ADD_LITEXPANSION = ChatColor.of("#8a8a8a");
+    public static final ChatColor ADD_TRANSCENDENCE = ChatColor.of("#c242f5");
+    public static final ChatColor ADD_NETWORKS = ChatColor.of("#05ad08");
 
     public static final String LORE_TYPE_CRAFT = ITEM_TYPEDESC + "合成材料";
     public static final String LORE_TYPE_MACHINE = ITEM_TYPEDESC + "机器";
@@ -65,6 +68,8 @@ public final class ThemeUtils {
     public static final String LORE_PROP = ITEM_TYPEDESC + "特性";
     public static final String LORE_MULTIBLOCK = ITEM_TYPEDESC + "多方块结构";
 
+    @Nonnull
+    @ParametersAreNonnullByDefault
     public static SlimefunItemStack themedItemStack(String id, String skull, ThemeItemType type, String name, String... loreLines) {
         BaseItem itemStack = new BaseItem(
             id,
@@ -84,6 +89,8 @@ public final class ThemeUtils {
         return itemStack;
     }
 
+    @Nonnull
+    @ParametersAreNonnullByDefault
     public static SlimefunItemStack themedItemStack(String id, Material material, ThemeItemType type, String name, String... loreLines) {
         BaseItem itemStack = new BaseItem(
             id,
@@ -103,6 +110,8 @@ public final class ThemeUtils {
         return itemStack;
     }
 
+    @Nonnull
+    @ParametersAreNonnullByDefault
     public static SlimefunItemStack themedItemStack(String id, String skull, ThemeItemType type, String name, List<String> loreLines) {
         BaseItem itemStack = new BaseItem(
             id,
@@ -122,6 +131,8 @@ public final class ThemeUtils {
         return itemStack;
     }
 
+    @Nonnull
+    @ParametersAreNonnullByDefault
     public static SlimefunItemStack themedItemStack(String id, Material material, ThemeItemType type, String name, List<String> loreLines) {
         BaseItem itemStack = new BaseItem(
             id,
@@ -141,7 +152,8 @@ public final class ThemeUtils {
         return itemStack;
     }
 
-    public static ChatColor itemTypeColor(ThemeItemType type) {
+    @Nonnull
+    public static ChatColor itemTypeColor(@Nonnull ThemeItemType type) {
         switch (type) {
             case DROP:
                 return ITEM_RARE_DROP;
@@ -176,7 +188,8 @@ public final class ThemeUtils {
         }
     }
 
-    public static String itemTypeDescriptor(ThemeItemType type) {
+    @Nonnull
+    public static String itemTypeDescriptor(@Nonnull ThemeItemType type) {
         switch (type) {
             case DROP:
                 return LORE_TYPE_DROP;
@@ -211,13 +224,14 @@ public final class ThemeUtils {
         }
     }
 
+    @Nonnull
     public static String toTitleCase(String string) {
         final char[] delimiters = {' ', '_'};
         return WordUtils.capitalizeFully(string, delimiters).replace("_", " ");
     }
 
+    @Nonnull
     public static String getLine() {
         return PASSIVE + StringUtils.repeat("-", 25);
     }
-
 }

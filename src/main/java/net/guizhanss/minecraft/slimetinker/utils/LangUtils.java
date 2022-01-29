@@ -1,10 +1,12 @@
 package net.guizhanss.minecraft.slimetinker.utils;
 
 import io.github.sefiraat.slimetinker.utils.ThemeUtils;
-import lombok.experimental.UtilityClass;
 
-@UtilityClass
-public class LangUtils {
+public final class LangUtils {
+
+    private LangUtils() {
+        throw new IllegalStateException("Utility class");
+    }
 
     public static String getMaterialName(String type) {
         switch (type.toUpperCase()) {

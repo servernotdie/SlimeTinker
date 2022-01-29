@@ -1,12 +1,17 @@
 package io.github.sefiraat.slimetinker.events;
 
+import io.github.sefiraat.networks.slimefun.network.grid.NetworkGrid;
+import io.github.sefiraat.networks.slimefun.tools.NetworkRemote;
+import io.github.sefiraat.networks.utils.Theme;
 import io.github.sefiraat.slimetinker.SlimeTinker;
+import io.github.sefiraat.slimetinker.events.friend.ActiveFriendElement;
 import io.github.sefiraat.slimetinker.events.friend.EventFriend;
 import io.github.sefiraat.slimetinker.runnables.event.KingsmanSpam;
 import io.github.sefiraat.slimetinker.utils.BlockUtils;
 import io.github.sefiraat.slimetinker.utils.EntityUtils;
 import io.github.sefiraat.slimetinker.utils.GeneralUtils;
 import io.github.sefiraat.slimetinker.utils.ItemUtils;
+import io.github.sefiraat.slimetinker.utils.Keys;
 import io.github.sefiraat.slimetinker.utils.ThemeUtils;
 import io.github.thebusybiscuit.slimefun4.api.MinecraftVersion;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
@@ -14,7 +19,7 @@ import io.github.thebusybiscuit.slimefun4.core.attributes.Rechargeable;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.data.persistent.PersistentDataAPI;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.protection.Interaction;
-import lombok.experimental.UtilityClass;
+import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import org.apache.commons.lang.Validate;
 import org.bukkit.Effect;
 import org.bukkit.Location;
@@ -28,14 +33,18 @@ import org.bukkit.entity.Animals;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
+import org.bukkit.event.block.Action;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
-@UtilityClass
-public final class RightClickEvents {
+public final class InteractionEvents {
+
+    private InteractionEvents() {
+        throw new UnsupportedOperationException("Utility Class");
+    }
 
     public static void headTessMat(EventFriend friend) {
         friend.setHypercube(friend.getHypercube() + 1);
@@ -47,7 +56,7 @@ public final class RightClickEvents {
             ItemMeta im = i.getItemMeta();
             String cooldownName = "hypercube";
 
-            NamespacedKey keyLoc = SlimeTinker.inst().getKeys().getTraitsHypercubeLocation();
+            NamespacedKey keyLoc = Keys.TRAITS_HYPERCUBE_LOCATION;
 
             if (p.isSneaking()) {
                 // Setting location
@@ -100,8 +109,7 @@ public final class RightClickEvents {
     public static void plateInfinity(EventFriend friend) {
         ItemStack i = friend.getActiveStack();
         ItemMeta im = i.getItemMeta();
-        NamespacedKey k = SlimeTinker.inst().getKeys().getArmourInfiniteCapacityStored();
-        Validate.notNull(im, "Meta is null, nope!");
+        NamespacedKey k = Keys.ARMOUR_INFINITE_CAPACITY_STORED;
         double d = PersistentDataAPI.getDouble(im, k, 0);
         if (d > 1) {
             List<Entity> entityList = friend.getPlayer().getNearbyEntities(3, 3, 3);
@@ -153,7 +161,7 @@ public final class RightClickEvents {
             String cdName = "kingsman";
             if (!ItemUtils.onCooldown(i, cdName)) {
                 KingsmanSpam task = new KingsmanSpam(p, 10);
-                task.runTaskTimer(SlimeTinker.inst(), 0, 20);
+                task.runTaskTimer(SlimeTinker.getInstance(), 0, 20);
                 ItemUtils.setCooldown(i, cdName, 20 * 60000L);
             } else {
                 p.sendMessage(ThemeUtils.WARNING + "王牌特工技能冷却中");
@@ -162,30 +170,37 @@ public final class RightClickEvents {
     }
 
     public static void linksIridium(EventFriend friend) {
+        final ItemStack i = friend.getActiveStack();
+        final ItemMeta im = i.getItemMeta();
+        int amount = PersistentDataAPI.getInt(im, Keys.ARMOUR_UNCONVENTIONAL_STORED, 0);
 
-        ItemStack i = friend.getActiveStack();
-        ItemMeta im = i.getItemMeta();
-        Validate.notNull(im, "Meta is null, herp derp derp");
-        NamespacedKey k = SlimeTinker.inst().getKeys().getArmourUnconventionalStored();
-        int amount = PersistentDataAPI.getInt(im, k, 0);
 
         for (ItemStack i2 : friend.getPlayer().getInventory()) {
-            SlimefunItem s = SlimefunItem.getByItem(i2);
-            if (s instanceof Rechargeable) {
-                Rechargeable r1 = (Rechargeable) s;
-                float maxCharge = r1.getMaxItemCharge(i2);
-                float charge = r1.getItemCharge(i2);
-                float amountToCharge = maxCharge - charge;
-                if (amount > amountToCharge) {
-                    r1.setItemCharge(i2, maxCharge);
-                    amount = (int) (amount - amountToCharge);
-                } else {
-                    r1.addItemCharge(i2, amount);
-                    amount = 0;
-                }
+            final SlimefunItem slimefunItem = SlimefunItem.getByItem(i2);
+
+            if (!(slimefunItem instanceof Rechargeable)) {
+                return;
+            }
+
+            final Rechargeable rechargeable = (Rechargeable) slimefunItem;
+            final float maxCharge = rechargeable.getMaxItemCharge(i2);
+            final float charge = rechargeable.getItemCharge(i2);
+            final float amountToCharge = maxCharge - charge;
+
+            if (amount > amountToCharge) {
+                rechargeable.setItemCharge(i2, maxCharge);
+                amount = (int) (amount - amountToCharge);
+            } else {
+                rechargeable.addItemCharge(i2, amount);
+                amount = 0;
+            }
+
+            if (amount <= 0) {
+                break;
             }
         }
-        PersistentDataAPI.setInt(im, k, amount);
+
+        PersistentDataAPI.setInt(im, Keys.ARMOUR_UNCONVENTIONAL_STORED, amount);
         i.setItemMeta(im);
     }
 
@@ -219,6 +234,36 @@ public final class RightClickEvents {
             }
         } else {
             player.sendMessage(ThemeUtils.WARNING + "庆祝技能冷却中");
+        }
+    }
+
+    public static void linksUltimaninium(EventFriend friend) {
+        if (friend.getActiveFriendElement() != ActiveFriendElement.HELMET) {
+            return;
+        }
+
+        final Player player = friend.getPlayer();
+
+        if (player.getInventory().getItemInMainHand().getType() != Material.AIR) {
+            return;
+        }
+
+        if (player.isSneaking() && friend.getAction() == Action.LEFT_CLICK_BLOCK) {
+            final Block block = friend.getBlock();
+            if (block == null) {
+                return;
+            }
+
+            final SlimefunItem slimefunItem = BlockStorage.check(block);
+            if (Slimefun.getProtectionManager().hasPermission(player, block, Interaction.INTERACT_BLOCK)
+                && slimefunItem instanceof NetworkGrid
+            ) {
+                NetworkRemote.setGrid(friend.getActiveStack(), block, player);
+            } else {
+                player.sendMessage(Theme.ERROR + "必须连接一个网格 (不能是带合成的).");
+            }
+        } else if (friend.getAction() == Action.LEFT_CLICK_AIR) {
+            NetworkRemote.tryOpenGrid(friend.getActiveStack(), player, -1);
         }
     }
 }

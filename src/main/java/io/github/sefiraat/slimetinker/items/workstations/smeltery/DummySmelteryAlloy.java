@@ -1,6 +1,6 @@
 package io.github.sefiraat.slimetinker.items.workstations.smeltery;
 
-import io.github.sefiraat.slimetinker.SlimeTinker;
+import io.github.sefiraat.slimetinker.utils.Keys;
 import io.github.sefiraat.slimetinker.utils.ThemeUtils;
 import io.github.sefiraat.slimetinker.utils.enums.ThemeItemType;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
@@ -17,10 +17,9 @@ public final class DummySmelteryAlloy {
         "在匠魂冶炼炉中放入正确类型的金属",
         "然后点击\"冶炼合金\"获得熔融合金"
     );
-    public static final RecipeType TYPE = new RecipeType(SlimeTinker.inst().getKeys().getWsDummySmelteryA(), STACK);
+    public static final RecipeType TYPE = new RecipeType(Keys.WS_DUMMY_SMELTERY_A, STACK);
 
     private DummySmelteryAlloy() {
         throw new IllegalStateException("Utility class");
     }
-
 }
