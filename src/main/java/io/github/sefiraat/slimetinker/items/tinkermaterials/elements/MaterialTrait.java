@@ -60,7 +60,7 @@ public class MaterialTrait {
             || getPartType() == MaterialTrait.PROP_ROD) {
             List<String> tmpLore = Arrays.asList(lore);
             tmpLore.add("");
-            tmpLore.add("必须手持工具或武器才有效果");
+            tmpLore.add(ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果");
 
             String[] loreArray = new String[tmpLore.size()];
             this.lore = tmpLore.toArray(loreArray);
