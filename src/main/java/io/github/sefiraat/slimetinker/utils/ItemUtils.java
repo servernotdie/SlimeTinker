@@ -186,9 +186,9 @@ public final class ItemUtils {
             Mod mod = Modifications.getModificationDefinitionsTool().get(entry.getKey());
             if (mod.getRequirementMap().containsKey(level + 1)) {
                 String amountRequired = String.valueOf(mod.getRequirementMap().get(level + 1));
-                lore.add(ThemeUtils.CLICK_INFO + ThemeUtils.toTitleCase(entry.getKey()) + " 等级 " + entry.getValue() + ThemeUtils.PASSIVE + " - (" + mapAmounts.get(entry.getKey()) + "/" + amountRequired + ")");
+                lore.add(ThemeUtils.CLICK_INFO + LangUtils.getMaterialName(entry.getKey()) + " 等级 " + entry.getValue() + ThemeUtils.PASSIVE + " - (" + mapAmounts.get(entry.getKey()) + "/" + amountRequired + ")");
             } else {
-                lore.add(ThemeUtils.CLICK_INFO + ThemeUtils.toTitleCase(entry.getKey()) + " 等级 " + entry.getValue() + ThemeUtils.PASSIVE + " - (最高)");
+                lore.add(ThemeUtils.CLICK_INFO + LangUtils.getMaterialName(entry.getKey()) + " 等级 " + entry.getValue() + ThemeUtils.PASSIVE + " - (最高)");
             }
         }
         if (!mapLevels.isEmpty()) {
@@ -236,9 +236,9 @@ public final class ItemUtils {
             Mod mod = Modifications.getModificationDefinitionsArmour().get(entry.getKey());
             if (mod.getRequirementMap().containsKey(level + 1)) {
                 String amountRequired = String.valueOf(mod.getRequirementMap().get(level + 1));
-                lore.add(ThemeUtils.CLICK_INFO + ThemeUtils.toTitleCase(entry.getKey()) + " 等级 " + entry.getValue() + ThemeUtils.PASSIVE + " - (" + mapAmounts.get(entry.getKey()) + "/" + amountRequired + ")");
+                lore.add(ThemeUtils.CLICK_INFO + LangUtils.getMaterialName(entry.getKey()) + " 等级 " + entry.getValue() + ThemeUtils.PASSIVE + " - (" + mapAmounts.get(entry.getKey()) + "/" + amountRequired + ")");
             } else {
-                lore.add(ThemeUtils.CLICK_INFO + ThemeUtils.toTitleCase(entry.getKey()) + " 等级 " + entry.getValue() + ThemeUtils.PASSIVE + " - (最高)");
+                lore.add(ThemeUtils.CLICK_INFO + LangUtils.getMaterialName(entry.getKey()) + " 等级 " + entry.getValue() + ThemeUtils.PASSIVE + " - (最高)");
             }
         }
         if (!mapLevels.isEmpty()) {

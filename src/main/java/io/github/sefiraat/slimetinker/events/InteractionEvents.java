@@ -260,7 +260,7 @@ public final class InteractionEvents {
             ) {
                 NetworkRemote.setGrid(friend.getActiveStack(), block, player);
             } else {
-                player.sendMessage(Theme.ERROR + "Must be set to a Network Grid (not crafting grid).");
+                player.sendMessage(Theme.ERROR + "必须连接一个网格 (不能是带合成的).");
             }
         } else if (friend.getAction() == Action.LEFT_CLICK_AIR) {
             NetworkRemote.tryOpenGrid(friend.getActiveStack(), player, -1);
