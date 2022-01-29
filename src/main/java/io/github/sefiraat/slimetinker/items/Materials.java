@@ -878,40 +878,40 @@ public final class Materials {
         "NUGGET_CAST_DAXI_STRENGTH",
         Material.IRON_NUGGET,
         ThemeItemType.CRAFTING,
-        "Nugget of Strength Daxi",
-        "A nugget of Daxi emanating strength."
+        "超能力核心(S)粒",
+        "由熔融超能力核心(S)制成的粒"
     );
 
     public static final SlimefunItemStack NUGGET_CAST_DAXI_ABSORPTION = ThemeUtils.themedItemStack(
         "NUGGET_CAST_DAXI_ABSORPTION",
         Material.IRON_NUGGET,
         ThemeItemType.CRAFTING,
-        "Nugget of Absorption Daxi",
-        "A nugget of Daxi emanating resolution."
+        "超能力核心(A)粒",
+        "由熔融超能力核心(A)制成的粒"
     );
 
     public static final SlimefunItemStack NUGGET_CAST_DAXI_FORTITUDE = ThemeUtils.themedItemStack(
         "NUGGET_CAST_DAXI_FORTITUDE",
         Material.IRON_NUGGET,
         ThemeItemType.CRAFTING,
-        "Nugget of Fortitude Daxi",
-        "A nugget of Daxi emanating defiance."
+        "超能力核心(F)粒",
+        "由熔融超能力核心(F)制成的粒"
     );
 
     public static final SlimefunItemStack NUGGET_CAST_DAXI_SATURATION = ThemeUtils.themedItemStack(
         "NUGGET_CAST_DAXI_SATURATION",
         Material.IRON_NUGGET,
         ThemeItemType.CRAFTING,
-        "Nugget of Saturation Daxi",
-        "A nugget of Daxi emanating warmth."
+        "超能力核心(H)粒",
+        "由熔融超能力核心(H)制成的粒"
     );
 
     public static final SlimefunItemStack NUGGET_CAST_DAXI_REGENERATION = ThemeUtils.themedItemStack(
         "NUGGET_CAST_DAXI_REGENERATION",
         Material.IRON_NUGGET,
         ThemeItemType.CRAFTING,
-        "Nugget of Regeneration Daxi",
-        "A nugget of Daxi emanating kindness."
+        "超能力核心(R)粒",
+        "由熔融超能力核心(R)制成的粒"
     );
 
     // endregion
@@ -922,40 +922,40 @@ public final class Materials {
         "INGOT_CAST_DAXI_STRENGTH",
         Material.IRON_INGOT,
         ThemeItemType.CRAFTING,
-        "Ingot of Strength Daxi",
-        "An ingot of Daxi emanating strength."
+        "超能力核心(S)锭",
+        "由熔融超能力核心(S)制成的锭"
     );
 
     public static final SlimefunItemStack INGOT_CAST_DAXI_ABSORPTION = ThemeUtils.themedItemStack(
         "INGOT_CAST_DAXI_ABSORPTION",
         Material.IRON_INGOT,
         ThemeItemType.CRAFTING,
-        "Ingot of Absorption Daxi",
-        "An ingot of Daxi emanating resolution."
+        "超能力核心(A)锭",
+        "由熔融超能力核心(A)制成的锭"
     );
 
     public static final SlimefunItemStack INGOT_CAST_DAXI_FORTITUDE = ThemeUtils.themedItemStack(
         "INGOT_CAST_DAXI_FORTITUDE",
         Material.IRON_INGOT,
         ThemeItemType.CRAFTING,
-        "Ingot of Fortitude Daxi",
-        "An ingot of Daxi emanating defiance."
+        "超能力核心(F)锭",
+        "由熔融超能力核心(F)制成的锭"
     );
 
     public static final SlimefunItemStack INGOT_CAST_DAXI_SATURATION = ThemeUtils.themedItemStack(
         "INGOT_CAST_DAXI_SATURATION",
         Material.IRON_INGOT,
         ThemeItemType.CRAFTING,
-        "Ingot of Saturation Daxi",
-        "An ingot of Daxi emanating warmth."
+        "超能力核心(H)锭",
+        "由熔融超能力核心(H)制成的锭"
     );
 
     public static final SlimefunItemStack INGOT_CAST_DAXI_REGENERATION = ThemeUtils.themedItemStack(
         "INGOT_CAST_DAXI_REGENERATION",
         Material.IRON_INGOT,
         ThemeItemType.CRAFTING,
-        "Ingot of Regeneration Daxi",
-        "An ingot of Daxi emanating kindness."
+        "超能力核心(R)锭",
+        "由熔融超能力核心(R)制成的锭"
     );
 
     // endregion
