@@ -186,6 +186,7 @@ public final class LangUtils {
             case "IRIDIUM":
                 return "铱";
 
+            // TranscEndence
             case "DAXI_STRENGTH":
                 return "超能力核心(S)";
             case "DAXI_ABSORPTION":
