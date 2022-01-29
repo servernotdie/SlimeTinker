@@ -2822,7 +2822,7 @@ public final class Traits {
         .setAddedBy(SupportedPluginsManager.TRANSCENDENCE_NOTE)
         .setTraitName("超能力联合(F)")
         .setLore(
-            "当4种超能力(A, F, S, R)联合起来后",
+            "当4种超能力(A, F, H, R)联合起来后",
             "你死亡时可以保留超能力核心的效果"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateDaxiFortitude);
@@ -2830,9 +2830,9 @@ public final class Traits {
     public static final MaterialTrait TNS_DAXI_SATURATION = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.TRANSCENDENCE_NOTE)
-        .setTraitName("超能力联合(S)")
+        .setTraitName("超能力联合(H)")
         .setLore(
-            "当4种超能力(A, F, S, R)联合起来后",
+            "当4种超能力(A, F, H, R)联合起来后",
             "你死亡时可以保留超能力核心的效果"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateDaxiSaturation);
@@ -2842,7 +2842,7 @@ public final class Traits {
         .setAddedBy(SupportedPluginsManager.TRANSCENDENCE_NOTE)
         .setTraitName("超能力联合(R)")
         .setLore(
-            "当4种超能力(A, F, S, R)联合起来后",
+            "当4种超能力(A, F, H, R)联合起来后",
             "你死亡时可以保留超能力核心的效果"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateDaxiRegeneration);
