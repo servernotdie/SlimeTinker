@@ -85,6 +85,14 @@ public final class LangUtils {
                 return "硅铁";
             case "LEATHER":
                 return "皮革";
+            case "BOOMERITE":
+                return "Boomer合金";
+            case "SEFIRITE":
+                return "Sefi合金";
+            case "LIQUID_CHRISTMAS":
+                return "圣诞礼物";
+            case "CRINGLEIUM":
+                return "圣诞合金";
 
             // Infinity Expansion
             case "VOID":
@@ -177,6 +185,25 @@ public final class LangUtils {
                 return "废料";
             case "IRIDIUM":
                 return "铱";
+
+            case "DAXI_STRENGTH":
+                return "超能力核心(S)";
+            case "DAXI_ABSORPTION":
+                return "超能力核心(A)";
+            case "DAXI_FORTITUDE":
+                return "超能力核心(F)";
+            case "DAXI_SATURATION":
+                return "超能力核心(H)";
+            case "DAXI_REGENERATION":
+                return "超能力核心(R)";
+
+            // Networks
+            case "INTERDIMENSIONAL_PRESENCE":
+                return "跨越维度的存在";
+            case "REMOTININIUM":
+                return "古代远程访问";
+            case "ULTIMANINIUM":
+                return "终极远程访问";
 
             // Other
             default:

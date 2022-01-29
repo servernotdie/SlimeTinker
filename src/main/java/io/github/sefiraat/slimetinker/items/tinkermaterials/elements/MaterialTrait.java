@@ -13,6 +13,7 @@ import io.github.sefiraat.slimetinker.utils.ThemeUtils;
 import io.github.sefiraat.slimetinker.utils.enums.ThemeItemType;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import org.apache.commons.lang.ArrayUtils;
 import org.bukkit.inventory.ItemStack;
 
 import javax.annotation.Nonnull;
@@ -58,12 +59,11 @@ public class MaterialTrait {
         if (getPartType() == MaterialTrait.PROP_HEAD
             || getPartType() == MaterialTrait.PROP_BINDING
             || getPartType() == MaterialTrait.PROP_ROD) {
-            List<String> tmpLore = Arrays.asList(lore);
-            tmpLore.add("");
-            tmpLore.add(ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果");
-
-            String[] loreArray = new String[tmpLore.size()];
-            this.lore = tmpLore.toArray(loreArray);
+            String[] appendix = new String[] {
+                "",
+                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
+            };
+            this.lore = (String[]) ArrayUtils.addAll(lore, appendix);
         } else {
             this.lore = lore;
         }
