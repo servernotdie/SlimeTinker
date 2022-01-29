@@ -5,7 +5,6 @@ import io.github.sefiraat.slimetinker.itemgroups.ItemGroups;
 import io.github.sefiraat.slimetinker.items.workstations.armourtable.ArmourTable;
 import io.github.sefiraat.slimetinker.items.workstations.modificationstation.ModificationStation;
 import io.github.sefiraat.slimetinker.items.workstations.repairbench.RepairBench;
-import io.github.sefiraat.slimetinker.items.workstations.smeltery.DummySmelteryMulti;
 import io.github.sefiraat.slimetinker.items.workstations.swappingstation.SwappingStation;
 import io.github.sefiraat.slimetinker.items.workstations.tooltable.ToolTable;
 import io.github.sefiraat.slimetinker.items.workstations.workbench.Workbench;

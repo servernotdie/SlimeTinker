@@ -48,7 +48,7 @@ public class SwappingStation extends MenuBlock {
         }
 
         if (item.getAmount() > 1) {
-            player.sendMessage(ThemeUtils.WARNING + "Nope - nerd");
+            player.sendMessage(ThemeUtils.WARNING + "匠魂装备不能堆叠");
             return;
         }
 

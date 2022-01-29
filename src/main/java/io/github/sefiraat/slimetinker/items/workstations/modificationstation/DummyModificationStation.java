@@ -14,7 +14,7 @@ public final class DummyModificationStation {
         Material.GRINDSTONE,
         ThemeItemType.MACHINE,
         "匠魂模组工作站",
-        "在匠魂模组工作站中给工具/武器安装模组"
+        "在匠魂模组工作站中给匠魂装备安装模组"
     );
     public static final RecipeType TYPE = new RecipeType(Keys.WS_DUMMY_TOOL_TABLE, STACK);
 
