@@ -1,6 +1,6 @@
 package io.github.sefiraat.slimetinker.items.workstations.modificationstation;
 
-import io.github.sefiraat.slimetinker.SlimeTinker;
+import io.github.sefiraat.slimetinker.utils.Keys;
 import io.github.sefiraat.slimetinker.utils.ThemeUtils;
 import io.github.sefiraat.slimetinker.utils.enums.ThemeItemType;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
@@ -16,7 +16,7 @@ public final class DummyModificationStation {
         "匠魂模组工作站",
         "在匠魂模组工作站中给工具/武器安装模组"
     );
-    public static final RecipeType TYPE = new RecipeType(SlimeTinker.inst().getKeys().getWsDummyToolTable(), STACK);
+    public static final RecipeType TYPE = new RecipeType(Keys.WS_DUMMY_TOOL_TABLE, STACK);
 
     private DummyModificationStation() {
         throw new IllegalStateException("Utility class");

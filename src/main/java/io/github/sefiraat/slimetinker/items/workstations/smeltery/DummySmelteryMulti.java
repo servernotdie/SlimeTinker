@@ -1,6 +1,6 @@
 package io.github.sefiraat.slimetinker.items.workstations.smeltery;
 
-import io.github.sefiraat.slimetinker.SlimeTinker;
+import io.github.sefiraat.slimetinker.utils.Keys;
 import io.github.sefiraat.slimetinker.utils.ThemeUtils;
 import io.github.sefiraat.slimetinker.utils.enums.ThemeItemType;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
@@ -17,10 +17,9 @@ public final class DummySmelteryMulti {
         "这是多方块结构",
         "按照展示的结构在世界中建造"
     );
-    public static final RecipeType TYPE = new RecipeType(SlimeTinker.inst().getKeys().getWsDummySmelteryA(), STACK);
+    public static final RecipeType TYPE = new RecipeType(Keys.WS_DUMMY_SMELTERY_A, STACK);
 
     private DummySmelteryMulti() {
         throw new IllegalStateException("Utility class");
     }
-
 }

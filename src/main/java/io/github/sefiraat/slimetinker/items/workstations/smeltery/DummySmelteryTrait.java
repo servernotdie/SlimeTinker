@@ -1,6 +1,6 @@
 package io.github.sefiraat.slimetinker.items.workstations.smeltery;
 
-import io.github.sefiraat.slimetinker.SlimeTinker;
+import io.github.sefiraat.slimetinker.utils.Keys;
 import io.github.sefiraat.slimetinker.utils.ThemeUtils;
 import io.github.sefiraat.slimetinker.utils.enums.ThemeItemType;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
@@ -17,10 +17,9 @@ public final class DummySmelteryTrait {
         "当相应部件使用该金属制成时",
         "该部件会获得此特性"
     );
-    public static final RecipeType TYPE = new RecipeType(SlimeTinker.inst().getKeys().getWsDummySmelteryA(), STACK);
+    public static final RecipeType TYPE = new RecipeType(Keys.WS_DUMMY_SMELTERY_A, STACK);
 
     private DummySmelteryTrait() {
         throw new IllegalStateException("Utility class");
     }
-
 }

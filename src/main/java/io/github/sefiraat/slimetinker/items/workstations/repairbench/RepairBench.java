@@ -33,28 +33,27 @@ public class RepairBench extends MenuBlock {
         super(itemGroup, item, recipeType, recipe);
     }
 
-    @SuppressWarnings("SameReturnValue")
-    protected boolean craft(BlockMenu blockMenu, Player player) {
+    protected void craft(BlockMenu blockMenu, Player player) {
 
         ItemStack item = blockMenu.getItemInSlot(INPUT_TOOL);
         ItemStack kit = blockMenu.getItemInSlot(INPUT_KIT);
 
         // No item dummy!
         if (item == null) {
-            player.sendMessage(ThemeUtils.WARNING + "在第一格内放入需要修复的物品");
-            return false;
+            player.sendMessage(ThemeUtils.WARNING + "在第一格内放入需要修复的装备");
+            return;
         }
 
         // Still no item, nice try
         if (!ItemUtils.isTool(item) && !ItemUtils.isArmour(item)) {
-            player.sendMessage(ThemeUtils.WARNING + "第一格内的物品不是匠魂工具/武器/护甲");
-            return false;
+            player.sendMessage(ThemeUtils.WARNING + "第一格内的物品不是匠魂装备");
+            return;
         }
 
         // No kit!
         if (kit == null || !RepairkitTemplate.isRepairKit(kit)) {
             player.sendMessage(ThemeUtils.WARNING + "在第二格内放入修复工具");
-            return false;
+            return;
         }
 
         // All items present, are they correct?
@@ -78,9 +77,6 @@ public class RepairBench extends MenuBlock {
         } else {
             player.sendMessage(ThemeUtils.WARNING + "修复工具的材质与需要修复的物品的材质不一致");
         }
-
-        return false;
-
     }
 
     private boolean repairChecks(String partMaterial, String toolMaterial, String armourMaterial, ItemStack itemStack) {
@@ -120,7 +116,7 @@ public class RepairBench extends MenuBlock {
 
         blockMenuPreset.drawBackground(ChestMenuUtils.getBackground(), BACKGROUND_SLOTS);
 
-        blockMenuPreset.addItem(CRAFT_BUTTON, GUIItems.menuCraftRepair());
+        blockMenuPreset.addItem(CRAFT_BUTTON, GUIItems.MENU_CRAFT_REPAIR);
         blockMenuPreset.addMenuClickHandler(CRAFT_BUTTON, (player, i, itemStack, clickAction) -> false);
 
     }
@@ -147,7 +143,10 @@ public class RepairBench extends MenuBlock {
     @Override
     protected void onNewInstance(@Nonnull BlockMenu blockMenu, @Nonnull Block b) {
         super.onNewInstance(blockMenu, b);
-        blockMenu.addMenuClickHandler(CRAFT_BUTTON, (player, i, itemStack, clickAction) -> craft(blockMenu, player));
+        blockMenu.addMenuClickHandler(CRAFT_BUTTON, (player, i, itemStack, clickAction) -> {
+            craft(blockMenu, player);
+            return false;
+        });
     }
 
 }
