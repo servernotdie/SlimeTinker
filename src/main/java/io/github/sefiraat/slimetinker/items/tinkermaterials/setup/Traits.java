@@ -2723,7 +2723,7 @@ public final class Traits {
         )
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::rodGhostly);
 
-    public static final MaterialTrait DYN_GHOSTLY_ESSENCE_PLATES = new MaterialTrait()
+    public static final MaterialTrait DYN_GHOSTLY_ESSENCE_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
         .setTraitName("攻壳机动队")
