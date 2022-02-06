@@ -1217,9 +1217,10 @@ public final class Traits {
     public static final MaterialTrait CORE_LOVE_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("It's all you need")
+        .setTraitName("这是你要的一切")
         .setLore(
-            "You are loved"
+            "你被关爱了",
+            "(获得生命回复效果)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksLove);
 

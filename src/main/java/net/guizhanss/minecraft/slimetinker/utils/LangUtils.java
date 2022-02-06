@@ -1,5 +1,6 @@
 package net.guizhanss.minecraft.slimetinker.utils;
 
+import io.github.sefiraat.slimetinker.utils.Ids;
 import io.github.sefiraat.slimetinker.utils.ThemeUtils;
 
 public final class LangUtils {
@@ -89,10 +90,18 @@ public final class LangUtils {
                 return "Boomer合金";
             case "SEFIRITE":
                 return "Sefi合金";
-            case "LIQUID_CHRISTMAS":
+            case Ids.LIQUID_CHRISTMAS:
                 return "圣诞礼物";
-            case "CRINGLEIUM":
+            case Ids.CRINGLEIUM:
                 return "圣诞合金";
+            case Ids.FLOWING_FONDNESS:
+                return "喜爱";
+            case Ids.DETAILED_DEVOTION:
+                return "深爱";
+            case Ids.PURIFIED_PASSION:
+                return "热情";
+            case Ids.LIQUID_LOVE:
+                return "爱";
 
             // Infinity Expansion
             case "VOID":

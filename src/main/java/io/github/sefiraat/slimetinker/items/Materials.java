@@ -243,33 +243,29 @@ public final class Materials {
         "NUGGET_CAST_FONDNESS",
         Material.PINK_DYE,
         ThemeItemType.CRAFTING,
-        "Fondness Nugget",
-        "A nugget made from the concept",
-        "of fondness."
+        "喜爱粒",
+        "带有喜爱意义的粒"
     );
     public static final SlimefunItemStack NUGGET_CAST_DEVOTION = ThemeUtils.themedItemStack(
         "NUGGET_CAST_DEVOTION",
         Material.PINK_DYE,
         ThemeItemType.CRAFTING,
-        "Devotion Nugget",
-        "A nugget made from the concept",
-        "of devotion."
+        "深爱粒",
+        "带有深爱意义的梨"
     );
     public static final SlimefunItemStack NUGGET_CAST_PASSION = ThemeUtils.themedItemStack(
         "NUGGET_CAST_PASSION",
         Material.PINK_DYE,
         ThemeItemType.CRAFTING,
-        "Passion Nugget",
-        "A nugget made from the concept",
-        "of passion."
+        "热情粒",
+        "带有热情意义的粒"
     );
     public static final SlimefunItemStack NUGGET_CAST_LOVE = ThemeUtils.themedItemStack(
         "NUGGET_CAST_LOVE",
         Material.PINK_DYE,
         ThemeItemType.CRAFTING,
-        "Love Nugget",
-        "A nugget that exudes nothing but",
-        "pure and unadulterated love."
+        "爱之粒",
+        "由纯真的爱铸造而成的粒"
     );
     // endregion
 
@@ -301,33 +297,29 @@ public final class Materials {
         "INGOT_CAST_FONDNESS",
         Material.BRICK,
         ThemeItemType.CRAFTING,
-        "Fondness Ingot",
-        "An ingot made from the concept",
-        "of fondness."
+        "喜爱锭",
+        "带有喜爱意义的锭"
     );
     public static final SlimefunItemStack INGOT_CAST_DEVOTION = ThemeUtils.themedItemStack(
         "INGOT_CAST_DEVOTION",
         Material.BRICK,
         ThemeItemType.CRAFTING,
-        "Devotion Ingot",
-        "An ingot made from the concept",
-        "of devotion."
+        "深爱锭",
+        "带有深爱意义的锭"
     );
     public static final SlimefunItemStack INGOT_CAST_PASSION = ThemeUtils.themedItemStack(
         "INGOT_CAST_PASSION",
         Material.BRICK,
         ThemeItemType.CRAFTING,
-        "Passion Ingot",
-        "An ingot made from the concept",
-        "of passion."
+        "热情锭",
+        "带有热情意义的锭"
     );
     public static final SlimefunItemStack INGOT_CAST_LOVE = ThemeUtils.themedItemStack(
         "INGOT_CAST_LOVE",
         Material.BRICK,
         ThemeItemType.CRAFTING,
-        "Love Ingot",
-        "An ingot that exudes nothing but",
-        "pure and unadulterated love."
+        "爱之锭",
+        "由纯真的爱制成的锭"
     );
     // endregion
     // region Blocks
