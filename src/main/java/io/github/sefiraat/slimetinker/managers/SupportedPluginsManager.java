@@ -5,6 +5,8 @@ import io.github.sefiraat.slimetinker.utils.ThemeUtils;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;
 
+import java.util.regex.Pattern;
+
 @SuppressWarnings("SpellCheckingInspection")
 public final class SupportedPluginsManager {
 
@@ -20,6 +22,8 @@ public final class SupportedPluginsManager {
     public static final boolean NETWORKS;
 
     public static Plugin TRANSCENDENCE_PLUGIN;
+    public static Plugin INFINITY_EXPANSION_PLUGIN;
+    public static boolean INFINITY_EXPANSION_VERSION = false;
 
     public static final String CORE_NOTE = ThemeUtils.MAIN + "粘液匠魂(SlimeTinker)";
     public static final String INFINITY_EXPANSION_NOTE = ThemeUtils.ADD_INFINITY + "无尽科技(InfinityExpansion)";
@@ -37,6 +41,15 @@ public final class SupportedPluginsManager {
         LITEXPANSION = pluginManager.isPluginEnabled("LiteXpansion");
         TRANSCENDENCE = pluginManager.isPluginEnabled("TranscEndence");
         NETWORKS = pluginManager.isPluginEnabled("Networks");
+
+        if (INFINITY_EXPANSION) {
+            INFINITY_EXPANSION_PLUGIN = pluginManager.getPlugin("InfinityExpansion");
+
+            String version = INFINITY_EXPANSION_PLUGIN.getDescription().getVersion();
+            if (version.contains("baoad") || version.matches("\\\\d{1,6} zh-CN")) {
+                INFINITY_EXPANSION_VERSION = true;
+            }
+        }
 
         if (TRANSCENDENCE) {
             TRANSCENDENCE_PLUGIN = pluginManager.getPlugin("TranscEndence");

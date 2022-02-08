@@ -271,8 +271,8 @@ public final class Materials {
         "NUGGET_CAST_NICE",
         Material.GOLD_NUGGET,
         ThemeItemType.CRAFTING,
-        "Nice Nugget",
-        "Nice"
+        "Nice粒",
+        "Nice~"
     );
     // endregion
 
@@ -332,8 +332,8 @@ public final class Materials {
         "INGOT_CAST_NICE",
         Material.GOLD_INGOT,
         ThemeItemType.CRAFTING,
-        "Nice Ingot",
-        "Nice"
+        "Nice锭",
+        "Nice~"
     );
     // endregion
     // region Blocks
@@ -546,16 +546,15 @@ public final class Materials {
         "BLOCK_CAST_LOVE",
         Material.PINK_DYE,
         ThemeItemType.CRAFTING,
-        "Love Block",
-        "A block that exudes nothing but",
-        "pure and unadulterated love."
+        "爱之块",
+        "由纯爱制成的块"
     );
     public static final SlimefunItemStack BLOCK_CAST_NICE = ThemeUtils.themedItemStack(
         "BLOCK_CAST_NICE",
         Material.GOLD_BLOCK,
         ThemeItemType.CRAFTING,
-        "Nice Block",
-        "Nice"
+        "Nice块",
+        "Nice~"
     );
     // endregion
 
