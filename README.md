@@ -6,7 +6,7 @@ SlimeTinker 的非官方中文 Wiki 包含了所有特性的列表: [点击前�
 
 ## 下载
 
-**自动更新**: 汉化版构建#15及以后版本包含*自动更新*功能，默认开启。
+**自动更新**: 汉化版构建#15及以后版本包含自动更新功能，默认开启。
 
 点击这里下载 SlimeTinker: [下载 SlimeTinker](https://builds.guizhanss.net/ybw0014/SlimeTinker-CN/master)
 
