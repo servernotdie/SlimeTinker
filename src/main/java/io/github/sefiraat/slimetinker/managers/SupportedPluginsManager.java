@@ -5,8 +5,6 @@ import io.github.sefiraat.slimetinker.utils.ThemeUtils;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;
 
-import java.util.regex.Pattern;
-
 @SuppressWarnings("SpellCheckingInspection")
 public final class SupportedPluginsManager {
 

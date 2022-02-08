@@ -1,6 +1,5 @@
 package net.guizhanss.minecraft.slimetinker.utils;
 
-import io.github.sefiraat.slimetinker.managers.SupportedPluginsManager;
 import io.github.sefiraat.slimetinker.utils.Ids;
 
 import java.util.HashMap;
