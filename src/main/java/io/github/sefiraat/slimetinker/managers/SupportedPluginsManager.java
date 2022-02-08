@@ -44,7 +44,7 @@ public final class SupportedPluginsManager {
             INFINITY_EXPANSION_PLUGIN = pluginManager.getPlugin("InfinityExpansion");
 
             String version = INFINITY_EXPANSION_PLUGIN.getDescription().getVersion();
-            if (version.contains("baoad") || version.matches("\\\\d{1,6} zh-CN")) {
+            if (version.contains("baoad") || version.matches("\\d{1,6} zh-CN")) {
                 INFINITY_EXPANSION_VERSION = true;
             }
         }
