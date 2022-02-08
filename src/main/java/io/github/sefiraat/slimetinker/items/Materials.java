@@ -267,6 +267,13 @@ public final class Materials {
         "爱之粒",
         "由纯真的爱铸造而成的粒"
     );
+    public static final SlimefunItemStack NUGGET_CAST_NICE = ThemeUtils.themedItemStack(
+        "NUGGET_CAST_NICE",
+        Material.GOLD_NUGGET,
+        ThemeItemType.CRAFTING,
+        "Nice Nugget",
+        "Nice"
+    );
     // endregion
 
     // region Ingots
@@ -320,6 +327,13 @@ public final class Materials {
         ThemeItemType.CRAFTING,
         "爱之锭",
         "由纯真的爱制成的锭"
+    );
+    public static final SlimefunItemStack INGOT_CAST_NICE = ThemeUtils.themedItemStack(
+        "INGOT_CAST_NICE",
+        Material.GOLD_INGOT,
+        ThemeItemType.CRAFTING,
+        "Nice Ingot",
+        "Nice"
     );
     // endregion
     // region Blocks
@@ -535,6 +549,13 @@ public final class Materials {
         "Love Block",
         "A block that exudes nothing but",
         "pure and unadulterated love."
+    );
+    public static final SlimefunItemStack BLOCK_CAST_NICE = ThemeUtils.themedItemStack(
+        "BLOCK_CAST_NICE",
+        Material.GOLD_BLOCK,
+        ThemeItemType.CRAFTING,
+        "Nice Block",
+        "Nice"
     );
     // endregion
 
@@ -1173,6 +1194,10 @@ public final class Materials {
         new UnplaceableBlock(ItemGroups.MATERIALS, NUGGET_CAST_LOVE, DummySmeltery.TYPE, ItemUtils.getMiddleOnlyRecipe(Casts.CAST_NUGGET)).register(p);
         new UnplaceableBlock(ItemGroups.MATERIALS, INGOT_CAST_LOVE, DummySmeltery.TYPE, ItemUtils.getMiddleOnlyRecipe(Casts.CAST_INGOT)).register(p);
         new UnplaceableBlock(ItemGroups.MATERIALS, BLOCK_CAST_LOVE, DummySmeltery.TYPE, ItemUtils.getMiddleOnlyRecipe(Casts.CAST_BLOCK)).register(p);
+
+        new UnplaceableBlock(ItemGroups.MATERIALS, NUGGET_CAST_NICE, DummySmeltery.TYPE, ItemUtils.getMiddleOnlyRecipe(Casts.CAST_NUGGET)).register(p);
+        new UnplaceableBlock(ItemGroups.MATERIALS, INGOT_CAST_NICE, DummySmeltery.TYPE, ItemUtils.getMiddleOnlyRecipe(Casts.CAST_INGOT)).register(p);
+        new UnplaceableBlock(ItemGroups.MATERIALS, BLOCK_CAST_NICE, DummySmeltery.TYPE, ItemUtils.getMiddleOnlyRecipe(Casts.CAST_BLOCK)).register(p);
 
         new UnplaceableBlock(ItemGroups.MATERIALS, NUGGET_CAST_COAL, DummySmeltery.TYPE, ItemUtils.getMiddleOnlyRecipe(Casts.CAST_NUGGET)).register(p);
 
