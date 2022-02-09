@@ -20,12 +20,10 @@ public final class SupportedPluginsManager {
     public static final boolean NETWORKS;
 
     public static Plugin TRANSCENDENCE_PLUGIN;
-    public static Plugin INFINITY_EXPANSION_PLUGIN;
-    public static boolean INFINITY_EXPANSION_VERSION = false;
 
     public static final String CORE_NOTE = ThemeUtils.MAIN + "粘液匠魂(SlimeTinker)";
     public static final String INFINITY_EXPANSION_NOTE = ThemeUtils.ADD_INFINITY + "无尽科技(InfinityExpansion)";
-    public static final String SLIMEFUN_WARFARE_NOTE = ThemeUtils.ADD_SLIMEFUN_WARFARE + "粘液军事(Slimefun Warfare)";
+    public static final String SLIMEFUN_WARFARE_NOTE = ThemeUtils.ADD_SLIMEFUN_WARFARE + "战争工艺(SlimefunWarfare)";
     public static final String DYNATECH_NOTE = ThemeUtils.ADD_DYNATECH + "动力科技(DynaTech)";
     public static final String LITEXPANSION_NOTE = ThemeUtils.ADD_LITEXPANSION + "工业(LiteXpansion)";
     public static final String TRANSCENDENCE_NOTE = ThemeUtils.ADD_TRANSCENDENCE + "末地科技(TranscEndence)";
@@ -39,15 +37,6 @@ public final class SupportedPluginsManager {
         LITEXPANSION = pluginManager.isPluginEnabled("LiteXpansion");
         TRANSCENDENCE = pluginManager.isPluginEnabled("TranscEndence");
         NETWORKS = pluginManager.isPluginEnabled("Networks");
-
-        if (INFINITY_EXPANSION) {
-            INFINITY_EXPANSION_PLUGIN = pluginManager.getPlugin("InfinityExpansion");
-
-            String version = INFINITY_EXPANSION_PLUGIN.getDescription().getVersion();
-            if (version.contains("baoad") || version.matches("\\d{1,6} zh-CN")) {
-                INFINITY_EXPANSION_VERSION = true;
-            }
-        }
 
         if (TRANSCENDENCE) {
             TRANSCENDENCE_PLUGIN = pluginManager.getPlugin("TranscEndence");

@@ -19,6 +19,9 @@ import io.github.sefiraat.slimetinker.runnables.RunnableManager;
 import net.guizhanss.guizhanlib.updater.GuizhanBuildsUpdater;
 import net.guizhanss.minecraft.slimetinker.utils.IdMap;
 import org.bstats.bukkit.Metrics;
+import org.bukkit.Bukkit;
+
+import java.util.logging.Level;
 
 public class SlimeTinker extends AbstractAddon {
 
@@ -50,8 +53,12 @@ public class SlimeTinker extends AbstractAddon {
         getLogger().info("########################################");
 
         // 检测是InfinityExpansion否为baoad版本
-        if (SupportedPluginsManager.INFINITY_EXPANSION_VERSION) {
-            IdMap.switchIEVersion();
+        if (SupportedPluginsManager.isInfinityExpansion()) {
+            String version = getServer().getPluginManager().getPlugin("InfinityExpansion").getDescription().getVersion();
+
+            if (version.contains("baoad") || version.matches("\\d{1,6} zh-CN")) {
+                IdMap.switchIEVersion();
+            }
         }
 
         ItemGroups.set(this);
