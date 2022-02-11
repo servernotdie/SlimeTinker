@@ -1,0 +1,31 @@
+name: 提供建议
+description: 向本插件提供建议
+labels: ["suggestion"]
+assignees:
+  - ybw0014
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 欢迎来到 SlimeTinker 汉化版
+        你可以在这里提出对插件的任何建议，我将在看到后处理。
+
+        <strong><i>你必须填写标注为星号（*）的表单项</i></strong>
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 建议描述
+      description: |
+        详细描述你的建议
+    validations:
+      required: true
+
+  - type: textarea
+    id: preview
+    attributes:
+      label: 预览图
+      description: |
+        如果你有任何预览图 / 视频，请提供给我们。
+    validations:
+      required: false

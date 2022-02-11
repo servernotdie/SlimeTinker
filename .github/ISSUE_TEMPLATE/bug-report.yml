@@ -1,12 +1,14 @@
 name: Bug汇报
 description: 反馈本插件的Bug或问题
 labels: ["bug"]
+assignees:
+  - ybw0014
 body:
   - type: markdown
     attributes:
       value: |
         ## 欢迎来到 SlimeTinker 汉化版 Bug 追踪器
-        建议先阅读[这篇文章](https://slimefun.guizhanss.wiki/#/How-to-report-bugs)了解如何正确地汇报Bug。
+        建议先阅读[这篇文章](https://slimefun.guizhanss.wiki/How-to-report-bugs)了解如何正确地汇报Bug。
         目前构建站不保存构建的校验和信息，如果遇到安装后出现`zip file closed`报错，或指南中不显示物品的问题，请先尝试重新下载。
 
         <strong><i>你必须填写标注为星号（*）的表单项</i></strong>
