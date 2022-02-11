@@ -93,7 +93,7 @@ public final class GUIItems {
         PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.BUTTON_PURGE)),
         ThemeUtils.GUI_HEAD + "清除金属",
         "",
-        ThemeUtils.PASSIVE + "可以从金属罐中直接清楚不需要的金属",
+        ThemeUtils.PASSIVE + "可以从金属罐中直接清除不需要的金属",
         "",
         ThemeUtils.CLICK_INFO + "左键点击" + ChatColor.WHITE + "移除最上层金属",
         ThemeUtils.CLICK_INFO + "右键点击" + ChatColor.WHITE + "移除所有金属"
