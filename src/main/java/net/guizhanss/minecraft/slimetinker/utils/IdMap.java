@@ -65,7 +65,7 @@ public class IdMap {
         idMap.put(Ids.LIQUID_LOVE, "爱");
         idMap.put(Ids.NICEINIUM, "Nice");
 
-        // Infinity Expansion (ybw0014)
+        // Infinity Expansion (baoad)
         idMap.put(Ids.VOID, "虚空");
         idMap.put(Ids.INFINITY, "无尽");
         idMap.put(Ids.FORTUNE_SINGULARITY, "时运奇点");
@@ -75,19 +75,19 @@ public class IdMap {
         idMap.put(Ids.MAGSTEEL, "磁钢");
         idMap.put(Ids.TITANIUM, "钛");
         idMap.put(Ids.MYTHRIL, "秘银");
-        idMap.put(Ids.ADAMANTITE, "精金");
-        idMap.put(Ids.MAGNONIUM, "镁合金");
-        idMap.put(Ids.COPPER_SINGULARITY, "铜结构");
-        idMap.put(Ids.ZINC_SINGULARITY, "锌结构");
-        idMap.put(Ids.TIN_SINGULARITY, "锡结构");
-        idMap.put(Ids.ALUMINUM_SINGULARITY, "铝结构");
-        idMap.put(Ids.SILVER_SINGULARITY, "银结构");
-        idMap.put(Ids.MAGNESIUM_SINGULARITY, "镁结构");
-        idMap.put(Ids.LEAD_SINGULARITY, "铅结构");
-        idMap.put(Ids.GOLD_SINGULARITY, "金结构");
-        idMap.put(Ids.IRON_SINGULARITY, "铁结构");
-        idMap.put(Ids.DIAMOND_SINGULARITY, "钻石结构");
-        idMap.put(Ids.INFINITY_SINGULARITY, "无尽结构");
+        idMap.put(Ids.ADAMANTITE, "金刚石");
+        idMap.put(Ids.MAGNONIUM, "磁矿");
+        idMap.put(Ids.COPPER_SINGULARITY, "铜奇点");
+        idMap.put(Ids.ZINC_SINGULARITY, "锌奇点");
+        idMap.put(Ids.TIN_SINGULARITY, "锡奇点");
+        idMap.put(Ids.ALUMINUM_SINGULARITY, "铝奇点");
+        idMap.put(Ids.SILVER_SINGULARITY, "银奇点");
+        idMap.put(Ids.MAGNESIUM_SINGULARITY, "镁奇点");
+        idMap.put(Ids.LEAD_SINGULARITY, "铅奇点");
+        idMap.put(Ids.GOLD_SINGULARITY, "金奇点");
+        idMap.put(Ids.IRON_SINGULARITY, "铁奇点");
+        idMap.put(Ids.DIAMOND_SINGULARITY, "钻石奇点");
+        idMap.put(Ids.INFINITY_SINGULARITY, "无尽奇点");
 
         // Slimefun Warfare
         idMap.put(Ids.SLIMESTEEL, "软钢");
@@ -129,29 +129,29 @@ public class IdMap {
     }
 
     public static void switchIEVersion() {
-        // Infinity Expansion (baoad)
+        // Infinity Expansion (ybw0014)
         idMap.put(Ids.VOID, "虚空");
         idMap.put(Ids.INFINITY, "无尽");
-        idMap.put(Ids.FORTUNE_SINGULARITY, "奇点(F)");
-        idMap.put(Ids.MAGIC_SINGULARITY, "奇点(MS)");
-        idMap.put(Ids.EARTH_SINGULARITY, "奇点(E)");
-        idMap.put(Ids.METAL_SINGULARITY, "奇点(M)");
+        idMap.put(Ids.FORTUNE_SINGULARITY, "时运奇点");
+        idMap.put(Ids.MAGIC_SINGULARITY, "魔法奇点");
+        idMap.put(Ids.EARTH_SINGULARITY, "地球奇点");
+        idMap.put(Ids.METAL_SINGULARITY, "金属奇点");
         idMap.put(Ids.MAGSTEEL, "磁钢");
         idMap.put(Ids.TITANIUM, "钛");
         idMap.put(Ids.MYTHRIL, "秘银");
-        idMap.put(Ids.ADAMANTITE, "金刚石");
-        idMap.put(Ids.MAGNONIUM, "磁矿");
-        idMap.put(Ids.COPPER_SINGULARITY, "铜奇点");
-        idMap.put(Ids.ZINC_SINGULARITY, "锌奇点");
-        idMap.put(Ids.TIN_SINGULARITY, "锡奇点");
-        idMap.put(Ids.ALUMINUM_SINGULARITY, "铝奇点");
-        idMap.put(Ids.SILVER_SINGULARITY, "银奇点");
-        idMap.put(Ids.MAGNESIUM_SINGULARITY, "镁奇点");
-        idMap.put(Ids.LEAD_SINGULARITY, "铅奇点");
-        idMap.put(Ids.GOLD_SINGULARITY, "金奇点");
-        idMap.put(Ids.IRON_SINGULARITY, "铁奇点");
-        idMap.put(Ids.DIAMOND_SINGULARITY, "钻石奇点");
-        idMap.put(Ids.INFINITY_SINGULARITY, "无尽奇点");
+        idMap.put(Ids.ADAMANTITE, "精金");
+        idMap.put(Ids.MAGNONIUM, "镁合金");
+        idMap.put(Ids.COPPER_SINGULARITY, "铜结构");
+        idMap.put(Ids.ZINC_SINGULARITY, "锌结构");
+        idMap.put(Ids.TIN_SINGULARITY, "锡结构");
+        idMap.put(Ids.ALUMINUM_SINGULARITY, "铝结构");
+        idMap.put(Ids.SILVER_SINGULARITY, "银结构");
+        idMap.put(Ids.MAGNESIUM_SINGULARITY, "镁结构");
+        idMap.put(Ids.LEAD_SINGULARITY, "铅结构");
+        idMap.put(Ids.GOLD_SINGULARITY, "金结构");
+        idMap.put(Ids.IRON_SINGULARITY, "铁结构");
+        idMap.put(Ids.DIAMOND_SINGULARITY, "钻石结构");
+        idMap.put(Ids.INFINITY_SINGULARITY, "无尽结构");
     }
 
     public static Map<String, String> getMap() {

@@ -56,7 +56,7 @@ public class SlimeTinker extends AbstractAddon {
         if (SupportedPluginsManager.isInfinityExpansion()) {
             String version = getServer().getPluginManager().getPlugin("InfinityExpansion").getDescription().getVersion();
 
-            if (version.contains("baoad") || version.matches("\\d{1,6} zh-CN")) {
+            if (version.contains("ybw0014")) {
                 IdMap.switchIEVersion();
             }
         }
