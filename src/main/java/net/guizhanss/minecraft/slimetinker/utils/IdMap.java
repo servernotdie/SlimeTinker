@@ -65,6 +65,12 @@ public class IdMap {
         idMap.put(Ids.LIQUID_LOVE, "爱");
         idMap.put(Ids.NICEINIUM, "Nice");
 
+        // Mods
+        idMap.put("QUARTZ", "石英");
+        idMap.put("LAPIS_LAZULI", "青金石");
+        idMap.put("MOD_PLATE", "强化合金板");
+        idMap.put("EMERALD", "绿宝石");
+
         // Infinity Expansion (baoad)
         idMap.put(Ids.VOID, "虚空");
         idMap.put(Ids.INFINITY, "无尽");

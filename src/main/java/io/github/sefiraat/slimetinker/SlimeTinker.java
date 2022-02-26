@@ -52,7 +52,7 @@ public class SlimeTinker extends AbstractAddon {
         getLogger().info("       作者: Sefiraat 汉化: ybw0014      ");
         getLogger().info("########################################");
 
-        // 检测是InfinityExpansion否为baoad版本
+        // 检测是InfinityExpansion否为ybw0014版本
         if (SupportedPluginsManager.isInfinityExpansion()) {
             String version = getServer().getPluginManager().getPlugin("InfinityExpansion").getDescription().getVersion();
 
