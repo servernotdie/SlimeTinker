@@ -16,7 +16,6 @@ import io.github.sefiraat.slimetinker.managers.DispatchManager;
 import io.github.sefiraat.slimetinker.managers.SupportedPluginsManager;
 import io.github.sefiraat.slimetinker.managers.TraitManager;
 import io.github.sefiraat.slimetinker.runnables.RunnableManager;
-import net.guizhanss.guizhanlib.updater.GuizhanBuildsUpdater;
 import net.guizhanss.minecraft.slimetinker.utils.IdMap;
 import org.bstats.bukkit.Metrics;
 
@@ -49,11 +48,6 @@ public class SlimeTinker extends AbstractAddon {
         getLogger().info("       作者: Sefiraat 汉化: ybw0014      ");
         getLogger().info("########################################");
 
-        if (getConfig().getBoolean("auto-update") &&
-            getDescription().getVersion().startsWith("Build")) {
-            new GuizhanBuildsUpdater(this, getFile(), "ybw0014", "SlimeTinker-CN", "master", false).start();
-        }
-
         // 检测是InfinityExpansion否为ybw0014版本
         if (SupportedPluginsManager.isInfinityExpansion()) {
             String version = getServer().getPluginManager().getPlugin("InfinityExpansion").getDescription().getVersion();
@@ -85,7 +79,6 @@ public class SlimeTinker extends AbstractAddon {
         saveConfig();
         instance = null;
     }
-
 
     public RunnableManager getRunnableManager() {
         return runnableManager;
