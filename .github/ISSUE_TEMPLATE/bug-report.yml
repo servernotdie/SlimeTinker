@@ -7,9 +7,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## 欢迎来到 SlimeTinker 汉化版 Bug 追踪器
-        建议先阅读[这篇文章](https://slimefun.guizhanss.wiki/How-to-report-bugs)了解如何正确地汇报Bug。
-        目前构建站不保存构建的校验和信息，如果遇到安装后出现`zip file closed`报错，或指南中不显示物品的问题，请先尝试重新下载。
+        ## 欢迎来到 SlimefunGuguProject Bug 追踪器
+        你正在反馈 SlimeTinker 汉化版的 Bug。
+        建议先阅读[这篇文章](https://slimefun-wiki.guizhanss.cn/How-to-report-bugs)了解如何正确地汇报Bug。
 
         <strong><i>你必须填写标注为星号（*）的表单项</i></strong>
 
@@ -19,8 +19,6 @@ body:
       label: 检查项目
       description: 在汇报之前，你需要确认
       options:
-        - label: 你使用的是由ybw0014提供的汉化版本(版本号中含有ybw0014)
-          required: true
         - label: 你使用的是从构建站下载的版本 (https://builds.guizhanss.net)
           required: true
         - label: 你已经检验过下载的文件的校验和，确认已完整下载文件 (暂未推出)
@@ -122,7 +120,6 @@ body:
       label: CS-CoreLib 版本
       description: |
         从2021年1月30日起，Slimefun以及其附属插件都不再需要安装CS-CoreLib。
-        如果你使用SlimeTinker的最新版本，那么你不需要安装CS-CoreLib。
         保留CS-CoreLib可能导致一些未知的问题。
       options:
         - label: 我没有安装CS-CoreLib
@@ -142,9 +139,9 @@ body:
   - type: input
     id: version-plugin
     attributes:
-      label: SlimeTinker版本
+      label: 插件版本
       description: |
-        请填写SlimeTinker版本
+        请填写插件版本
         只需填写Build后面的数字版本即可
         (`Build 7 zh-CN(ybw0014) (git 9ef7fee)`只需填写`7`即可)
     validations:
