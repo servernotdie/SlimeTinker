@@ -13,13 +13,13 @@ import io.github.sefiraat.slimetinker.utils.ThemeUtils;
 import io.github.sefiraat.slimetinker.utils.enums.ThemeItemType;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-import org.apache.commons.lang.ArrayUtils;
 import org.bukkit.inventory.ItemStack;
 
 import javax.annotation.Nonnull;
 import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.EnumMap;
 import java.util.List;
 import java.util.Locale;
@@ -63,7 +63,10 @@ public class MaterialTrait {
                 "",
                 ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
             };
-            this.lore = (String[]) ArrayUtils.addAll(lore, appendix);
+            List<String> list = new ArrayList<>();
+            Collections.addAll(list, lore);
+            Collections.addAll(list, appendix);
+            this.lore = list.toArray(new String[0]);
         } else {
             this.lore = lore;
         }
