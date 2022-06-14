@@ -13,10 +13,8 @@ import io.github.sefiraat.slimetinker.items.tinkermaterials.TinkerMaterialManage
 import io.github.sefiraat.slimetinker.items.workstations.workbench.Workbench;
 import io.github.sefiraat.slimetinker.listeners.ListenerManager;
 import io.github.sefiraat.slimetinker.managers.DispatchManager;
-import io.github.sefiraat.slimetinker.managers.SupportedPluginsManager;
 import io.github.sefiraat.slimetinker.managers.TraitManager;
 import io.github.sefiraat.slimetinker.runnables.RunnableManager;
-import net.guizhanss.minecraft.slimetinker.utils.IdMap;
 import org.bstats.bukkit.Metrics;
 
 public class SlimeTinker extends AbstractAddon {
@@ -47,15 +45,6 @@ public class SlimeTinker extends AbstractAddon {
         getLogger().info("         Slime Tinker  粘液匠魂          ");
         getLogger().info("       作者: Sefiraat 汉化: ybw0014      ");
         getLogger().info("########################################");
-
-        // 检测是InfinityExpansion否为ybw0014版本
-        if (SupportedPluginsManager.isInfinityExpansion()) {
-            String version = getServer().getPluginManager().getPlugin("InfinityExpansion").getDescription().getVersion();
-
-            if (version.contains("ybw0014") || version.contains("haiman233")) {
-                IdMap.switchIEVersion();
-            }
-        }
 
         ItemGroups.set(this);
         Materials.set(this);
