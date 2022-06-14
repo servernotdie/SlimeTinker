@@ -1,5 +1,6 @@
 package io.github.sefiraat.slimetinker.items.tinkermaterials.elements;
 
+import com.google.common.base.Preconditions;
 import io.github.sefiraat.slimetinker.SlimeTinker;
 import io.github.sefiraat.slimetinker.itemgroups.ItemGroups;
 import io.github.sefiraat.slimetinker.items.tinkermaterials.TinkerMaterial;
@@ -9,7 +10,6 @@ import io.github.sefiraat.slimetinker.utils.enums.ThemeItemType;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import net.guizhanss.minecraft.slimetinker.utils.LangUtils;
-import org.apache.commons.lang.Validate;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -38,7 +38,7 @@ public class Alloy {
                 ThemeUtils.PASSIVE + "熔融" + titName
             );
         SlimefunItemStack[] alloyRecipe = parent.getAlloyRecipe();
-        Validate.notNull(alloyRecipe, "Alloy recipe is null. SefiDumb™");
+        Preconditions.checkNotNull(alloyRecipe, "Alloy recipe is null. SefiDumb™");
         this.item = new SlimefunItem(ItemGroups.ALLOYS, itemStack, DummySmelteryAlloy.TYPE, alloyRecipe);
         item.register(SlimeTinker.getInstance());
         for (SlimefunItemStack i : parent.getAlloyRecipe()) {
