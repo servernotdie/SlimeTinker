@@ -64,7 +64,7 @@ public class IdMap {
         idMap.put(Ids.PURIFIED_PASSION, "热情");
         idMap.put(Ids.LIQUID_LOVE, "爱");
         idMap.put(Ids.NICEINIUM, "Nice");
-        idMap.put(Ids.DRACONIC, "龙");
+        idMap.put(Ids.DRACONIC, "龙息");
         idMap.put(Ids.REINFORCED_DRACONIUM, "强化龙");
 
         // Mods
