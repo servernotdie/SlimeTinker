@@ -16,6 +16,7 @@ import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import org.bukkit.inventory.ItemStack;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -31,6 +32,7 @@ public class MaterialTrait {
     private String traitName;
     private String[] lore;
     private String addedBy;
+    private String sponsor = null;
     private SlimefunItemStack partType;
 
     private final Map<TraitEventType, Consumer<EventFriend>> eventTypeConsumerMap = new EnumMap<>(TraitEventType.class);
@@ -84,6 +86,17 @@ public class MaterialTrait {
         return this;
     }
 
+    @Nullable
+    public String getSponsoredBy() {
+        return this.sponsor;
+    }
+
+    @Nonnull
+    public MaterialTrait setSponsoredBy(@Nonnull String sponsor) {
+        this.sponsor = sponsor;
+        return this;
+    }
+
     @Nonnull
     public SlimefunItemStack getPartType() {
         return this.partType;
@@ -120,6 +133,10 @@ public class MaterialTrait {
         List<String> newLore = new ArrayList<>(Arrays.asList(lore));
         newLore.add("");
         newLore.add(ThemeUtils.ITEM_TYPEDESC + "来自: " + addedBy);
+        if (this.sponsor != null) {
+            newLore.add("");
+            newLore.add(ThemeUtils.ITEM_TYPEDESC + "由 " + sponsor + " 赞助");
+        }
         this.itemStack =
             ThemeUtils.themedItemStack(
                 MessageFormat.format(
