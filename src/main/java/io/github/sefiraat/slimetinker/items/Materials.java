@@ -278,9 +278,8 @@ public final class Materials {
         "NUGGET_CAST_REINFORCED_DRACONIUM",
         Material.CRIMSON_BUTTON,
         ThemeItemType.CRAFTING,
-        "Reinforced Draconium Nugget",
-        "An ingot that just teems with an",
-        "unrivalled fury."
+        "强化龙粒",
+        "由无尽的愤怒铸造而成的粒"
     );
     // endregion
 
@@ -347,9 +346,8 @@ public final class Materials {
         "INGOT_CAST_REINFORCED_DRACONIUM",
         Material.BRICK,
         ThemeItemType.CRAFTING,
-        "Reinforced Draconium Ingot",
-        "An ingot that just teems with an",
-        "unrivalled fury."
+        "强化龙锭",
+        "由无尽的愤怒铸造而成的锭"
     );
     // endregion
     // region Blocks
@@ -576,9 +574,8 @@ public final class Materials {
         "BLOCK_CAST_REINFORCED_DRACONIUM",
         Material.RED_CONCRETE,
         ThemeItemType.CRAFTING,
-        "Reinforced Draconium Block",
-        "A block that just teems with an",
-        "unrivalled fury."
+        "强化龙块",
+        "由无尽的愤怒铸造而成的块"
     );
     // endregion
 

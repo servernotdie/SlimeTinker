@@ -2084,11 +2084,12 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
         .setSponsoredBy("Bunkky/ReasonFoundDecoy")
-        .setTraitName("Draconic Tantrum")
+        .setTraitName("龙之愤怒")
         .setLore(
-            "When hit by the Ender Dragon, gain",
-            "bonus damage for 15 seconds.",
-            "Stacks additively. Stacks refresh duration."
+            "当被末影龙击中后,获得龙之愤怒效果,",
+            "每层增加10%的伤害,持续15秒,无上限.",
+            "层数可叠加，2层为20%，3层为30%，以此类推",
+            "叠加层数后重置持续时间."
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::headReinforcedDraconium)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headReinforcedDraconium);
