@@ -15,6 +15,7 @@ import io.github.sefiraat.slimetinker.listeners.ListenerManager;
 import io.github.sefiraat.slimetinker.managers.DispatchManager;
 import io.github.sefiraat.slimetinker.managers.TraitManager;
 import io.github.sefiraat.slimetinker.runnables.RunnableManager;
+import net.guizhanss.guizhanlibplugin.updater.GuizhanBuildsUpdaterWrapper;
 import org.bstats.bukkit.Metrics;
 
 public class SlimeTinker extends AbstractAddon {
@@ -61,6 +62,10 @@ public class SlimeTinker extends AbstractAddon {
         dispatchManager = new DispatchManager();
 
         this.listenerManager = new ListenerManager(this, this.getServer().getPluginManager());
+
+        if (getConfig().getBoolean("auto-update") && getDescription().getVersion().startsWith("Build")) {
+            GuizhanBuildsUpdaterWrapper.start(this, getFile(), "ybw0014", "SlimeTinker-CN", "master", false);
+        }
     }
 
     @Override
