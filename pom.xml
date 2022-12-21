@@ -43,7 +43,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>3.3.0</version>
+                <version>3.4.1</version>
                 <configuration>
                     <minimizeJar>true</minimizeJar>
                     <relocations>
@@ -166,7 +166,7 @@
         <dependency>
             <groupId>io.github.sefiraat</groupId>
             <artifactId>networks</artifactId>
-            <version>MODIFIED_1.0.4</version>
+            <version>MODIFIED_1.0.7</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
