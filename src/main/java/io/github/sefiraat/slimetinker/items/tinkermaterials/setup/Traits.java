@@ -1237,11 +1237,11 @@ public final class Traits {
     public static final MaterialTrait CORE_ANNIVERSARIUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("10 Years of (Slime)fun!")
+        .setTraitName("粘液科技10周年!")
         .setLore(
-            "10 Years of (Slime)fun!",
+            "庆祝粘液科技10周年!",
             "",
-            "Requires all four armor pieces."
+            "需要全套护甲才能生效."
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateAnniversary);
 

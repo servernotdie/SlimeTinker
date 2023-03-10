@@ -107,7 +107,7 @@ public class MainFlexGroup extends FlexItemGroup {
         // Docs
         menu.replaceExistingItem(DOCS, DOCS_ITEM_STACK);
         menu.addMenuClickHandler(DOCS, (player1, i1, itemStack1, clickAction) -> {
-            final TextComponent link = new TextComponent("To access the documentation Wiki, please click here");
+            final TextComponent link = new TextComponent("点击此处前往Wiki");
             link.setColor(ChatColor.YELLOW);
             link.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://slimefun-addons-wiki.guizhanss.cn/slime-tinker/"));
             player.spigot().sendMessage(link);

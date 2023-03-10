@@ -278,8 +278,8 @@ public final class Materials {
         "NUGGET_CAST_ANNIVERSARIUM",
         Material.GOLD_NUGGET,
         ThemeItemType.CRAFTING,
-        "Anniversarium Nugget",
-        "10 Years of (Slime)fun!"
+        "周年庆粒",
+        "庆祝粘液科技10周年!"
     );
     public static final SlimefunItemStack NUGGET_CAST_REINFORCED_DRACONIUM = ThemeUtils.themedItemStack(
         "NUGGET_CAST_REINFORCED_DRACONIUM",
@@ -353,8 +353,8 @@ public final class Materials {
         "INGOT_CAST_ANNIVERSARIUM",
         Material.GOLD_INGOT,
         ThemeItemType.CRAFTING,
-        "Anniversarium Ingot",
-        "10 Years of (Slime)fun!"
+        "周年庆锭",
+        "庆祝粘液科技10周年!"
     );
     public static final SlimefunItemStack INGOT_CAST_REINFORCED_DRACONIUM = ThemeUtils.themedItemStack(
         "INGOT_CAST_REINFORCED_DRACONIUM",
@@ -588,8 +588,8 @@ public final class Materials {
         "BLOCK_CAST_ANNIVERSARIUM",
         Material.GOLD_BLOCK,
         ThemeItemType.CRAFTING,
-        "Anniversarium Block",
-        "10 Years of (Slime)fun!"
+        "周年庆块",
+        "庆祝粘液科技10周年!"
     );
     public static final SlimefunItemStack BLOCK_CAST_REINFORCED_DRACONIUM = ThemeUtils.themedItemStack(
         "BLOCK_CAST_REINFORCED_DRACONIUM",
