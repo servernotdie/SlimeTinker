@@ -274,6 +274,13 @@ public final class Materials {
         "Nice粒",
         "Nice~"
     );
+    public static final SlimefunItemStack NUGGET_CAST_ANNIVERSARIUM = ThemeUtils.themedItemStack(
+        "NUGGET_CAST_ANNIVERSARIUM",
+        Material.GOLD_NUGGET,
+        ThemeItemType.CRAFTING,
+        "Anniversarium Nugget",
+        "10 Years of (Slime)fun!"
+    );
     public static final SlimefunItemStack NUGGET_CAST_REINFORCED_DRACONIUM = ThemeUtils.themedItemStack(
         "NUGGET_CAST_REINFORCED_DRACONIUM",
         Material.CRIMSON_BUTTON,
@@ -341,6 +348,13 @@ public final class Materials {
         ThemeItemType.CRAFTING,
         "Nice锭",
         "Nice~"
+    );
+    public static final SlimefunItemStack INGOT_CAST_ANNIVERSARIUM = ThemeUtils.themedItemStack(
+        "INGOT_CAST_ANNIVERSARIUM",
+        Material.GOLD_INGOT,
+        ThemeItemType.CRAFTING,
+        "Anniversarium Ingot",
+        "10 Years of (Slime)fun!"
     );
     public static final SlimefunItemStack INGOT_CAST_REINFORCED_DRACONIUM = ThemeUtils.themedItemStack(
         "INGOT_CAST_REINFORCED_DRACONIUM",
@@ -569,6 +583,13 @@ public final class Materials {
         ThemeItemType.CRAFTING,
         "Nice块",
         "Nice~"
+    );
+    public static final SlimefunItemStack BLOCK_CAST_ANNIVERSARIUM = ThemeUtils.themedItemStack(
+        "BLOCK_CAST_ANNIVERSARIUM",
+        Material.GOLD_BLOCK,
+        ThemeItemType.CRAFTING,
+        "Anniversarium Block",
+        "10 Years of (Slime)fun!"
     );
     public static final SlimefunItemStack BLOCK_CAST_REINFORCED_DRACONIUM = ThemeUtils.themedItemStack(
         "BLOCK_CAST_REINFORCED_DRACONIUM",
@@ -1218,6 +1239,10 @@ public final class Materials {
         new UnplaceableBlock(ItemGroups.MATERIALS, NUGGET_CAST_NICE, DummySmeltery.TYPE, ItemUtils.getMiddleOnlyRecipe(Casts.CAST_NUGGET)).register(p);
         new UnplaceableBlock(ItemGroups.MATERIALS, INGOT_CAST_NICE, DummySmeltery.TYPE, ItemUtils.getMiddleOnlyRecipe(Casts.CAST_INGOT)).register(p);
         new UnplaceableBlock(ItemGroups.MATERIALS, BLOCK_CAST_NICE, DummySmeltery.TYPE, ItemUtils.getMiddleOnlyRecipe(Casts.CAST_BLOCK)).register(p);
+
+        new UnplaceableBlock(ItemGroups.MATERIALS, NUGGET_CAST_ANNIVERSARIUM, DummySmeltery.TYPE, ItemUtils.getMiddleOnlyRecipe(Casts.CAST_NUGGET)).register(p);
+        new UnplaceableBlock(ItemGroups.MATERIALS, INGOT_CAST_ANNIVERSARIUM, DummySmeltery.TYPE, ItemUtils.getMiddleOnlyRecipe(Casts.CAST_INGOT)).register(p);
+        new UnplaceableBlock(ItemGroups.MATERIALS, BLOCK_CAST_ANNIVERSARIUM, DummySmeltery.TYPE, ItemUtils.getMiddleOnlyRecipe(Casts.CAST_BLOCK)).register(p);
 
         new UnplaceableBlock(ItemGroups.MATERIALS, NUGGET_CAST_REINFORCED_DRACONIUM, DummySmeltery.TYPE, ItemUtils.getMiddleOnlyRecipe(Casts.CAST_NUGGET)).register(p);
         new UnplaceableBlock(ItemGroups.MATERIALS, INGOT_CAST_REINFORCED_DRACONIUM, DummySmeltery.TYPE, ItemUtils.getMiddleOnlyRecipe(Casts.CAST_INGOT)).register(p);
