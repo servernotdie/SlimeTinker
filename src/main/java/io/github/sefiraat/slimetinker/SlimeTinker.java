@@ -15,8 +15,10 @@ import io.github.sefiraat.slimetinker.listeners.ListenerManager;
 import io.github.sefiraat.slimetinker.managers.DispatchManager;
 import io.github.sefiraat.slimetinker.managers.TraitManager;
 import io.github.sefiraat.slimetinker.runnables.RunnableManager;
-import net.guizhanss.guizhanlibplugin.updater.GuizhanBuildsUpdaterWrapper;
+import net.guizhanss.guizhanlibplugin.updater.GuizhanUpdater;
 import org.bstats.bukkit.Metrics;
+
+import java.util.logging.Level;
 
 public class SlimeTinker extends AbstractAddon {
 
@@ -32,11 +34,18 @@ public class SlimeTinker extends AbstractAddon {
     private TraitManager traitManager;
 
     public SlimeTinker() {
-        super("ybw0014", "SlimeTinker-CN", "master", "auto-update");
+        super("SlimefunGuguProject", "SlimeTinker", "master", "auto-update");
     }
 
     @Override
     public void enable() {
+
+        if (!getServer().getPluginManager().isPluginEnabled("GuizhanLibPlugin")) {
+            getLogger().log(Level.SEVERE, "本插件需要 鬼斩前置库插件(GuizhanLibPlugin) 才能运行!");
+            getLogger().log(Level.SEVERE, "从此处下载: https://50l.cc/gzlib");
+            getServer().getPluginManager().disablePlugin(this);
+            return;
+        }
 
         new Metrics(this, 11748);
 
@@ -64,7 +73,7 @@ public class SlimeTinker extends AbstractAddon {
         this.listenerManager = new ListenerManager(this, this.getServer().getPluginManager());
 
         if (getConfig().getBoolean("auto-update") && getDescription().getVersion().startsWith("Build")) {
-            GuizhanBuildsUpdaterWrapper.start(this, getFile(), "ybw0014", "SlimeTinker-CN", "master", false);
+            GuizhanUpdater.start(this, getFile(), "SlimefunGuguProject", "SlimeTinker", "master");
         }
     }
 
