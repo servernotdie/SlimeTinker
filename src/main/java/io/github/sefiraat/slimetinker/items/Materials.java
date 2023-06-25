@@ -278,9 +278,8 @@ public final class Materials {
         "NUGGET_CAST_SMITHIUM",
         Material.IRON_NUGGET,
         ThemeItemType.CRAFTING,
-        "Smithium Nugget",
-        "A straight-forward metal with various uses",
-        "in core industry tasks."
+        "史密斯粒",
+        "一种直接的金属，有多种工业用途。"
     );
     public static final SlimefunItemStack NUGGET_CAST_ANNIVERSARIUM = ThemeUtils.themedItemStack(
         "NUGGET_CAST_ANNIVERSARIUM",
@@ -361,9 +360,8 @@ public final class Materials {
         "INGOT_CAST_SMITHIUM",
         Material.IRON_INGOT,
         ThemeItemType.CRAFTING,
-        "Smithium Ingot",
-        "A straight-forward metal with various uses",
-        "in core industry tasks."
+        "史密斯锭",
+        "一种直接的金属，有多种工业用途。"
     );
     public static final SlimefunItemStack INGOT_CAST_ANNIVERSARIUM = ThemeUtils.themedItemStack(
         "INGOT_CAST_ANNIVERSARIUM",
@@ -605,9 +603,8 @@ public final class Materials {
         "BLOCK_CAST_SMITHIUM",
         Material.IRON_BLOCK,
         ThemeItemType.CRAFTING,
-        "Smithium Block",
-        "A straight-forward metal with various uses",
-        "in core industry tasks."
+        "史密斯块",
+        "一种直接的金属，有多种工业用途。"
     );
     public static final SlimefunItemStack BLOCK_CAST_ANNIVERSARIUM = ThemeUtils.themedItemStack(
         "BLOCK_CAST_ANNIVERSARIUM",
