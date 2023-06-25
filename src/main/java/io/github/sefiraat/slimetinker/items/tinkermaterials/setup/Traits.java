@@ -1234,6 +1234,45 @@ public final class Traits {
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headNice)
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headNice);
 
+    public static final MaterialTrait CORE_SMITHIUM_HEAD = new MaterialTrait()
+        .setPartType(MaterialTrait.PROP_HEAD)
+        .setAddedBy(SupportedPluginsManager.CORE_NOTE)
+        .setTraitName("坚毅")
+        .setLore(
+            "有 50% 几率不消耗耐久。"
+        )
+        .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::headSmithium);
+
+    public static final MaterialTrait CORE_SMITHIUM_ROD = new MaterialTrait()
+        .setPartType(MaterialTrait.PROP_ROD)
+        .setAddedBy(SupportedPluginsManager.CORE_NOTE)
+        .setTraitName("勤勉")
+        .setLore(
+            "Shift + 右键点击来激活急速爆裂效果，持续30秒。",
+            "急速爆裂效果生效期间，",
+            "每破坏一个方块有 [50 ÷ 急迫等级]% 几率",
+            "增加1级急迫效果，最高为急迫 10。冷却时间5分钟。"
+        )
+        .addConsumer(TraitEventType.INTERACT, InteractionEvents::rodSmithium)
+        .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::rodSmithium);
+
+    public static final MaterialTrait CORE_SMITHIUM_PLATES = new MaterialTrait()
+        .setPartType(MaterialTrait.PROP_PLATES)
+        .setAddedBy(SupportedPluginsManager.CORE_NOTE)
+        .setTraitName("抗热")
+        .setLore(
+            "有 25% 几率无视火焰/岩浆伤害。"
+        )
+        .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::platesSmithium);
+
+    public static final MaterialTrait CORE_SMITHIUM_LINKS = new MaterialTrait()
+        .setPartType(MaterialTrait.PROP_LINKS)
+        .setAddedBy(SupportedPluginsManager.CORE_NOTE)
+        .setTraitName("工匠技术")
+        .setLore(
+            "有 25% 几率返还维修花费。"
+        );
+
     public static final MaterialTrait CORE_ANNIVERSARIUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
