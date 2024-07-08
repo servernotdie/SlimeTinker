@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>dev.sefiraat</groupId>
     <artifactId>SlimeTinker</artifactId>
-    <version>0.1.1.2</version>
+    <version>MODIFIED</version>
 
     <name>SlimeTinker</name>
     <description>Slimefun4 Addon SlimeTinker</description>
@@ -79,7 +79,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-source-plugin</artifactId>
-                        <version>3.3.0</version>
+                        <version>3.3.1</version>
 
                         <executions>
                             <execution>
@@ -96,7 +96,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>3.4.0</version>
+                        <version>3.7.0</version>
 
                         <configuration>
                             <includeDependencySources>false</includeDependencySources>
@@ -129,7 +129,7 @@
                     <plugin>
                         <groupId>org.sonatype.plugins</groupId>
                         <artifactId>nexus-staging-maven-plugin</artifactId>
-                        <version>1.6.13</version>
+                        <version>1.7.0</version>
                         <extensions>true</extensions>
 
                         <configuration>
@@ -142,7 +142,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>3.1.0</version>
+                        <version>3.2.4</version>
 
                         <executions>
                             <execution>
@@ -166,7 +166,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>3.5.0</version>
+                <version>3.6.0</version>
                 <configuration>
                     <minimizeJar>true</minimizeJar>
                     <relocations>
@@ -235,7 +235,7 @@
         <dependency>
             <groupId>com.github.Slimefun</groupId>
             <artifactId>Slimefun4</artifactId>
-            <version>2c4f886</version>
+            <version>03e5b9a</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
