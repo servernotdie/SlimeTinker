@@ -18,7 +18,7 @@ public final class TinkersMaterialsDynatech {
 
     private static final Map<String, TinkerMaterial> CM_MAP = new HashMap<>();
 
-    private static final TinkerMaterial STAINLESS_STEEL = new TinkerMaterial(Ids.STAINLESS_STEEL, SlimefunItem.getById("DYNATECH_STAINLESS_STEEL_INGOT").getItem(), "#d1d1d1")
+    private static final TinkerMaterial STAINLESS_STEEL = new TinkerMaterial(Ids.STAINLESS_STEEL, SlimefunItem.getById("DT_STAINLESS_STEEL_INGOT").getItem(), "#d1d1d1")
         .setLiquidTexture(SkullTextures.ALLOY_SILVER)
         .setTraitToolHead(Traits.DYN_STAINLESS_STEEL_HEAD)
         .setTraitToolRod(Traits.DYN_STAINLESS_STEEL_ROD)
@@ -33,14 +33,14 @@ public final class TinkersMaterialsDynatech {
         )
         .build();
 
-    private static final TinkerMaterial VEX_GEM = new TinkerMaterial(Ids.VEX_GEM, SlimefunItem.getById("DYNATECH_VEX_GEM").getItem(), "#38c0c2")
+    private static final TinkerMaterial VEX_GEM = new TinkerMaterial(Ids.VEX_GEM, SlimefunItem.getById("VEX_GEM").getItem(), "#38c0c2")
         .setLiquidTexture(SkullTextures.ALLOY_BLUE_PALE)
         .setTraitToolBinder(Traits.DYN_VEX_GEM_BINDING)
         .setTraitArmorGambeson(Traits.DYN_VEX_GEM_GAMBESON)
         .setFormGem("DYNATECH_VEX_GEM")
         .build();
 
-    private static final TinkerMaterial STARDUST = new TinkerMaterial(Ids.STARDUST, SlimefunItem.getById("DYNATECH_STAR_DUST").getItem(), "#fdff96")
+    private static final TinkerMaterial STARDUST = new TinkerMaterial(Ids.STARDUST, SlimefunItem.getById("STAR_DUST").getItem(), "#fdff96")
         .setLiquidTexture(SkullTextures.ALLOY_SILVER)
         .setTraitToolHead(Traits.DYN_STAR_DUST_HEAD)
         .setTraitToolRod(Traits.DYN_STAR_DUST_ROD)
@@ -49,7 +49,7 @@ public final class TinkersMaterialsDynatech {
         .setFormGem("DYNATECH_STAR_DUST")
         .build();
 
-    private static final TinkerMaterial GHOSTLY_ESSENCE = new TinkerMaterial(Ids.GHOSTLY_ESSENCE, SlimefunItem.getById("DYNATECH_GHOSTLY_ESSENCE").getItem(), "#d4ffef")
+    private static final TinkerMaterial GHOSTLY_ESSENCE = new TinkerMaterial(Ids.GHOSTLY_ESSENCE, SlimefunItem.getById("GHOSTLY_ESSENCE").getItem(), "#d4ffef")
         .setLiquidTexture(SkullTextures.ALLOY_BROWN)
         .setTraitToolBinder(Traits.DYN_GHOSTLY_ESSENCE_BINDING)
         .setTraitToolRod(Traits.DYN_GHOSTLY_ESSENCE_ROD)
@@ -58,7 +58,7 @@ public final class TinkersMaterialsDynatech {
         .setFormDust("DYNATECH_GHOSTLY_ESSENCE")
         .build();
 
-    private static final TinkerMaterial TESSERACT = new TinkerMaterial(Ids.TESSERACT, SlimefunItem.getById("DYNATECH_TESSERACTING_OBJECT").getItem(), "#c7ba9f")
+    private static final TinkerMaterial TESSERACT = new TinkerMaterial(Ids.TESSERACT, SlimefunItem.getById("TESSERACTING_OBJ").getItem(), "#c7ba9f")
         .setLiquidTexture(SkullTextures.ALLOY_TAN)
         .setTraitToolHead(Traits.DYN_TESSERACT_HEAD)
         .setTraitArmorPlates(Traits.DYN_TESSERACT_PLATES)
