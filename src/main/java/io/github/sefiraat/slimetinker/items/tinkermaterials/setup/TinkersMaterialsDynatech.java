@@ -25,7 +25,7 @@ public final class TinkersMaterialsDynatech {
         .setTraitArmorPlates(Traits.DYN_STAINLESS_STEEL_PLATES)
         .setTraitArmorLinks(Traits.DYN_STAINLESS_STEEL_LINKS)
         .setFormNugget(Materials.NUGGET_CAST_STAINLESSSTEEL.getItemId())
-        .setFormIngot("DYNATECH_STAINLESS_STEEL_INGOT")
+        .setFormIngot("DT_STAINLESS_STEEL_INGOT")
         .setFormBlock(Materials.BLOCK_CAST_STAINLESSSTEEL.getItemId())
         .addAlloyRecipe(
             TinkersMaterialsCore.getCmMap().get(Ids.IRON).getLiquidItemStack(2),
@@ -37,7 +37,7 @@ public final class TinkersMaterialsDynatech {
         .setLiquidTexture(SkullTextures.ALLOY_BLUE_PALE)
         .setTraitToolBinder(Traits.DYN_VEX_GEM_BINDING)
         .setTraitArmorGambeson(Traits.DYN_VEX_GEM_GAMBESON)
-        .setFormGem("DYNATECH_VEX_GEM")
+        .setFormGem("VEX_GEM")
         .build();
 
     private static final TinkerMaterial STARDUST = new TinkerMaterial(Ids.STARDUST, SlimefunItem.getById("STAR_DUST").getItem(), "#fdff96")
@@ -46,7 +46,7 @@ public final class TinkersMaterialsDynatech {
         .setTraitToolRod(Traits.DYN_STAR_DUST_ROD)
         .setTraitArmorPlates(Traits.DYN_STAR_DUST_PLATES)
         .setTraitArmorLinks(Traits.DYN_STAR_DUST_LINKS)
-        .setFormGem("DYNATECH_STAR_DUST")
+        .setFormGem("STAR_DUST")
         .build();
 
     private static final TinkerMaterial GHOSTLY_ESSENCE = new TinkerMaterial(Ids.GHOSTLY_ESSENCE, SlimefunItem.getById("GHOSTLY_ESSENCE").getItem(), "#d4ffef")
@@ -55,7 +55,7 @@ public final class TinkersMaterialsDynatech {
         .setTraitToolRod(Traits.DYN_GHOSTLY_ESSENCE_ROD)
         .setTraitArmorGambeson(Traits.DYN_GHOSTLY_ESSENCE_GAMBESON)
         .setTraitArmorLinks(Traits.DYN_GHOSTLY_ESSENCE_LINKS)
-        .setFormDust("DYNATECH_GHOSTLY_ESSENCE")
+        .setFormDust("GHOSTLY_ESSENCE")
         .build();
 
     private static final TinkerMaterial TESSERACT = new TinkerMaterial(Ids.TESSERACT, SlimefunItem.getById("TESSERACTING_OBJ").getItem(), "#c7ba9f")
@@ -63,7 +63,7 @@ public final class TinkersMaterialsDynatech {
         .setTraitToolHead(Traits.DYN_TESSERACT_HEAD)
         .setTraitArmorPlates(Traits.DYN_TESSERACT_PLATES)
         .setTraitArmorLinks(Traits.DYN_TESSERACT_LINKS)
-        .setFormBlock("DYNATECH_TESSERACTING_OBJECT")
+        .setFormBlock("TESSERACTING_OBJ")
         .build();
 
     static {
