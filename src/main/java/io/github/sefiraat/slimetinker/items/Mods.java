@@ -20,58 +20,58 @@ public final class Mods {
         "MOD_REDSTONE_DUMMY",
         Material.REDSTONE,
         ThemeItemType.MOD,
-        "模组: 红石",
-        ThemeUtils.PASSIVE + "可安装装备: 工具/武器",
+        "Bản sửa đổi: Đá đỏ",
+        ThemeUtils.PASSIVE + "Trang bị có thể áp dụng: Công cụ/Vũ khí",
         "",
-        ThemeUtils.PASSIVE + "玩家手持该装备时,",
-        ThemeUtils.PASSIVE + "可以获得与模组等级对应的急迫效果"
+        ThemeUtils.PASSIVE + "Khi người chơi cầm trang bị này,",
+        ThemeUtils.PASSIVE + "sẽ nhận được hiệu ứng Hấp tấp tương ứng với cấp độ bản sửa đổi"
     );
 
     public static final SlimefunItemStack MOD_LAPIS_DUMMY = ThemeUtils.themedItemStack(
         "MOD_LAPIS_DUMMY",
         Material.LAPIS_LAZULI,
         ThemeItemType.MOD,
-        "模组: 青金石",
-        ThemeUtils.PASSIVE + "可安装装备: 工具/武器",
+        "Bản sửa đổi: Ngọc lưu ly",
+        ThemeUtils.PASSIVE + "Trang bị có thể áp dụng: Công cụ/Vũ khí",
         "",
-        ThemeUtils.PASSIVE + "玩家手持该装备时,",
-        ThemeUtils.PASSIVE + "会获得等同于时运或抢夺附魔的效果",
-        ThemeUtils.PASSIVE + "每安装1个该模组可提升10%的效果"
+        ThemeUtils.PASSIVE + "Khi người chơi cầm trang bị này,",
+        ThemeUtils.PASSIVE + "sẽ nhận được hiệu ứng tương đương với phù phép Gia tài hoặc Nhặt rác",
+        ThemeUtils.PASSIVE + "Mỗi bản sửa đổi này được cài đặt sẽ tăng 10% hiệu ứng"
     );
 
     public static final SlimefunItemStack MOD_QUARTZ_DUMMY = ThemeUtils.themedItemStack(
         "MOD_QUARTZ_DUMMY",
         Material.QUARTZ,
         ThemeItemType.MOD,
-        "模组: 石英",
-        ThemeUtils.PASSIVE + "可安装装备: 工具/武器",
+        "Bản sửa đổi: Thạch anh",
+        ThemeUtils.PASSIVE + "Trang bị có thể áp dụng: Công cụ/Vũ khí",
         "",
-        ThemeUtils.PASSIVE + "玩家手持该装备时,",
-        ThemeUtils.PASSIVE + "会增加该工具/武器的伤害",
-        ThemeUtils.PASSIVE + "每安装1个该模组可提升20%的效果"
+        ThemeUtils.PASSIVE + "Khi người chơi cầm trang bị này,",
+        ThemeUtils.PASSIVE + "sẽ tăng sát thương của công cụ/vũ khí đó",
+        ThemeUtils.PASSIVE + "Mỗi bản sửa đổi này được cài đặt sẽ tăng 20% hiệu ứng"
     );
 
     public static final SlimefunItemStack MOD_DIAMOND_DUMMY = ThemeUtils.themedItemStack(
         "MOD_DIAMOND_DUMMY",
         Material.DIAMOND,
         ThemeItemType.MOD,
-        "模组: 钻石",
-        ThemeUtils.PASSIVE + "可安装装备: 工具/武器",
+        "Bản sửa đổi: Kim cương",
+        ThemeUtils.PASSIVE + "Trang bị có thể áp dụng: Công cụ/Vũ khí",
         "",
-        ThemeUtils.PASSIVE + "玩家手持该装备时,",
-        ThemeUtils.PASSIVE + "受到攻击时有几率反弹伤害",
-        ThemeUtils.PASSIVE + "每安装1个该模组可提升10%的效果"
+        ThemeUtils.PASSIVE + "Khi người chơi cầm trang bị này,",
+        ThemeUtils.PASSIVE + "có tỉ lệ phản đòn khi bị tấn công",
+        ThemeUtils.PASSIVE + "Mỗi bản sửa đổi này được cài đặt sẽ tăng 10% hiệu ứng"
     );
 
     public static final SlimefunItemStack MOD_EMERALD_DUMMY = ThemeUtils.themedItemStack(
         "MOD_EMERALD_DUMMY",
         Material.EMERALD,
         ThemeItemType.MOD,
-        "模组: 绿宝石",
-        ThemeUtils.PASSIVE + "可安装装备: 工具/武器",
+        "Bản sửa đổi: Ngọc lục bảo",
+        ThemeUtils.PASSIVE + "Trang bị có thể áp dụng: Công cụ/Vũ khí",
         "",
-        ThemeUtils.PASSIVE + "每次使用装备都可以获得额外经验",
-        ThemeUtils.PASSIVE + "每安装1个该模组可提升1点额外工具经验或10%额外武器经验"
+        ThemeUtils.PASSIVE + "Mỗi lần sử dụng trang bị đều có thể nhận thêm kinh nghiệm",
+        ThemeUtils.PASSIVE + "Mỗi bản sửa đổi này được cài đặt sẽ tăng 1 điểm kinh nghiệm công cụ hoặc 10% kinh nghiệm vũ khí"
     );
 
 
@@ -79,11 +79,11 @@ public final class Mods {
         "MOD_PLATE_DUMMY",
         Material.OBSIDIAN,
         ThemeItemType.MOD,
-        "模组: 强化合金板",
-        ThemeUtils.PASSIVE + "可安装装备: 工具/武器/防具",
+        "Bản sửa đổi: Tấm hợp kim gia cố",
+        ThemeUtils.PASSIVE + "Trang bị có thể áp dụng: Công cụ/Vũ khí/Áo giáp",
         "",
-        ThemeUtils.PASSIVE + "每安装1个该模组可增加10%不消耗耐久的几率",
-        ThemeUtils.PASSIVE + "安装10个模组的装备无法破坏"
+        ThemeUtils.PASSIVE + "Mỗi bản sửa đổi này được cài đặt sẽ tăng 10% cơ hội không tiêu hao độ bền",
+        ThemeUtils.PASSIVE + "Trang bị được cài đặt 10 bản sửa đổi sẽ không thể phá hủy"
     );
 
 

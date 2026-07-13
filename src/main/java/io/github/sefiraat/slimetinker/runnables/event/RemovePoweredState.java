@@ -1,20 +1,25 @@
 package io.github.sefiraat.slimetinker.runnables.event;
 
+import com.tcoded.folialib.wrapper.task.WrappedTask;
 import io.github.sefiraat.slimetinker.utils.BlockUtils;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
-import org.bukkit.scheduler.BukkitRunnable;
 
-public class RemovePoweredState extends BukkitRunnable {
+public class RemovePoweredState implements Runnable {
 
     private final Block block;
     private final Player player;
+    private WrappedTask handle;
 
     public RemovePoweredState(Block block, Player player) {
         this.block = block;
         this.player = player;
+    }
+
+    public void setHandle(WrappedTask handle) {
+        this.handle = handle;
     }
 
     @Override
@@ -38,6 +43,8 @@ public class RemovePoweredState extends BukkitRunnable {
         BlockUtils.fakeUnPower(block.getRelative(BlockFace.WEST));
         BlockUtils.fakeUnPower(block.getRelative(BlockFace.DOWN));
         BlockUtils.fakeUnPower(block.getRelative(BlockFace.UP));
-        this.cancel();
+        if (handle != null) {
+            handle.cancel();
+        }
     }
 }

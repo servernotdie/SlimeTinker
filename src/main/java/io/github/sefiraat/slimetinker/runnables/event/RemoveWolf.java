@@ -1,9 +1,8 @@
 package io.github.sefiraat.slimetinker.runnables.event;
 
 import org.bukkit.entity.Wolf;
-import org.bukkit.scheduler.BukkitRunnable;
 
-public class RemoveWolf extends BukkitRunnable {
+public class RemoveWolf implements Runnable {
 
     private final Wolf wolf;
 
@@ -13,7 +12,8 @@ public class RemoveWolf extends BukkitRunnable {
 
     @Override
     public void run() {
-        wolf.remove();
-        this.cancel();
+        if (wolf.isValid()) {
+            wolf.remove();
+        }
     }
 }

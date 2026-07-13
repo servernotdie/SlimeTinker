@@ -236,7 +236,7 @@ public final class TinkersSmelteryCache extends AbstractCache {
 
         // Cast item is null or not a cast
         if (inputItem == null || !SlimeTinker.getInstance().getCmManager().castingRecipes.containsKey(StackUtils.getIdOrType(inputItem))) {
-            player.sendMessage(ThemeUtils.WARNING + "浇铸前请在模具/模具原型栏放入模具或模具原型");
+            player.sendMessage(ThemeUtils.WARNING + "Trước khi đúc, hãy đặt khuôn hoặc khuôn mẫu vào ô khuôn/khuôn mẫu");
             return;
         }
 
@@ -244,7 +244,7 @@ public final class TinkersSmelteryCache extends AbstractCache {
 
         // No metals in the tank - cant pour
         if (!first.isPresent()) {
-            player.sendMessage(ThemeUtils.WARNING + "没有任何可供浇铸的金属");
+            player.sendMessage(ThemeUtils.WARNING + "Không có kim loại nào để đúc");
             return;
         }
 
@@ -254,7 +254,7 @@ public final class TinkersSmelteryCache extends AbstractCache {
 
         // Cast valid, but this cast and metal combination doesn't work
         if (!result.getOutputs().containsKey(tinkerMaterial)) {
-            player.sendMessage(ThemeUtils.WARNING + "该金属无法用于此模具的浇铸");
+            player.sendMessage(ThemeUtils.WARNING + "Kim loại này không thể dùng để đúc với khuôn này");
             return;
         }
 
@@ -263,13 +263,13 @@ public final class TinkersSmelteryCache extends AbstractCache {
 
         // Does not have enough metal to cats this specific item
         if (tankContent.get(metalID) < metalAmount) {
-            player.sendMessage(ThemeUtils.WARNING + "没有足够的金属填充模具");
+            player.sendMessage(ThemeUtils.WARNING + "Không đủ kim loại để đổ đầy khuôn");
             return;
         }
 
         // Lastly, can we fit the output?
         if (!blockMenu.fits(outputItem, TinkersSmeltery.OUTPUT_SLOT)) {
-            player.sendMessage(ThemeUtils.WARNING + "输出栏已满");
+            player.sendMessage(ThemeUtils.WARNING + "Ô đầu ra đã đầy");
             return;
         }
 

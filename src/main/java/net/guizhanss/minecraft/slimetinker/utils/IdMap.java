@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 包含大部分 {@link Ids} 对应的中文
+ * Chứa hầu hết bản dịch của {@link Ids}
  */
 public class IdMap {
 
@@ -18,122 +18,122 @@ public class IdMap {
 
     static {
         // Vanilla + Core Sf
-        idMap.put(Ids.IRON, "铁");
-        idMap.put(Ids.GOLD, "金");
-        idMap.put(Ids.COPPER, "铜");
-        idMap.put(Ids.SILVER, "银");
-        idMap.put(Ids.TIN, "锡");
-        idMap.put(Ids.MAGNESIUM, "镁");
-        idMap.put(Ids.ALUMINUM, "铝");
-        idMap.put(Ids.LEAD, "铅");
-        idMap.put(Ids.ZINC, "锌");
-        idMap.put(Ids.COAL, "煤");
-        idMap.put(Ids.STEEL, "钢");
-        idMap.put(Ids.DAMASCUS_STEEL, "大马士革钢");
-        idMap.put(Ids.DURALUMIN, "硬铝");
-        idMap.put(Ids.BRONZE, "青铜");
-        idMap.put(Ids.ALUMINUM_BRONZE, "铝青铜");
-        idMap.put(Ids.HARDENED_METAL, "硬化金属");
-        idMap.put(Ids.CORINTHIAN_BRONZE, "科林斯青铜");
-        idMap.put(Ids.SOLDER, "焊锡");
-        idMap.put(Ids.BILLON, "银铜合金");
-        idMap.put(Ids.BRASS, "黄铜");
-        idMap.put(Ids.ALUMINUM_BRASS, "铝黄铜");
-        idMap.put(Ids.NICKEL, "镍");
-        idMap.put(Ids.COBALT, "钴");
-        idMap.put(Ids.REINFORCED_ALLOY, "强化合金");
-        idMap.put(Ids.STRING, "线");
-        idMap.put(Ids.VINE, "藤蔓");
-        idMap.put(Ids.CRIMSON_ROOTS, "绯红菌索");
-        idMap.put(Ids.WARPED_ROOTS, "诡异菌索");
-        idMap.put(Ids.WEEPING_VINES, "垂泪藤");
-        idMap.put(Ids.TWISTING_VINES, "缠怨藤");
-        idMap.put(Ids.SLIME, "粘液");
-        idMap.put(Ids.LEATHER, "皮革");
-        idMap.put(Ids.DIAMOND, "钻石");
-        idMap.put(Ids.REDSTONE, "红石");
-        idMap.put(Ids.REDSTONE_ALLOY, "红石合金");
-        idMap.put(Ids.SILICON, "硅");
-        idMap.put(Ids.FERROSILICON, "硅铁");
-        idMap.put(Ids.BOOMERITE, "Boomer合金");
-        idMap.put(Ids.SEFIRITE, "Sefi合金");
-        idMap.put(Ids.LIQUID_CHRISTMAS, "圣诞礼物");
-        idMap.put(Ids.CRINGLEIUM, "圣诞合金");
-        idMap.put(Ids.FLOWING_FONDNESS, "喜爱");
-        idMap.put(Ids.DETAILED_DEVOTION, "深爱");
-        idMap.put(Ids.PURIFIED_PASSION, "热情");
-        idMap.put(Ids.LIQUID_LOVE, "爱");
-        idMap.put(Ids.NICEINIUM, "Nice");
-        idMap.put(Ids.DRACONIC, "龙息");
-        idMap.put(Ids.REINFORCED_DRACONIUM, "强化龙");
+        idMap.put(Ids.IRON, "Sắt");
+        idMap.put(Ids.GOLD, "Vàng");
+        idMap.put(Ids.COPPER, "Đồng");
+        idMap.put(Ids.SILVER, "Bạc");
+        idMap.put(Ids.TIN, "Thiếc");
+        idMap.put(Ids.MAGNESIUM, "Magiê");
+        idMap.put(Ids.ALUMINUM, "Nhôm");
+        idMap.put(Ids.LEAD, "Chì");
+        idMap.put(Ids.ZINC, "Kẽm");
+        idMap.put(Ids.COAL, "Than");
+        idMap.put(Ids.STEEL, "Thép");
+        idMap.put(Ids.DAMASCUS_STEEL, "Thép Damascus");
+        idMap.put(Ids.DURALUMIN, "Duralumin");
+        idMap.put(Ids.BRONZE, "Đồng thau");
+        idMap.put(Ids.ALUMINUM_BRONZE, "Đồng nhôm");
+        idMap.put(Ids.HARDENED_METAL, "Kim loại cứng");
+        idMap.put(Ids.CORINTHIAN_BRONZE, "Đồng Corinthian");
+        idMap.put(Ids.SOLDER, "Chất hàn");
+        idMap.put(Ids.BILLON, "Bạc đồng");
+        idMap.put(Ids.BRASS, "Đồng thau");
+        idMap.put(Ids.ALUMINUM_BRASS, "Đồng nhôm");
+        idMap.put(Ids.NICKEL, "Niken");
+        idMap.put(Ids.COBALT, "Coban");
+        idMap.put(Ids.REINFORCED_ALLOY, "Hợp kim gia cố");
+        idMap.put(Ids.STRING, "Sợi chỉ");
+        idMap.put(Ids.VINE, "Dây leo");
+        idMap.put(Ids.CRIMSON_ROOTS, "Rễ nấm đỏ");
+        idMap.put(Ids.WARPED_ROOTS, "Rễ nấm kỳ dị");
+        idMap.put(Ids.WEEPING_VINES, "Dây leo rủ");
+        idMap.put(Ids.TWISTING_VINES, "Dây leo xoắn");
+        idMap.put(Ids.SLIME, "Slime");
+        idMap.put(Ids.LEATHER, "Da");
+        idMap.put(Ids.DIAMOND, "Kim cương");
+        idMap.put(Ids.REDSTONE, "Đá đỏ");
+        idMap.put(Ids.REDSTONE_ALLOY, "Hợp kim đá đỏ");
+        idMap.put(Ids.SILICON, "Silic");
+        idMap.put(Ids.FERROSILICON, "Ferrosilicon");
+        idMap.put(Ids.BOOMERITE, "Hợp kim Boomer");
+        idMap.put(Ids.SEFIRITE, "Hợp kim Sefi");
+        idMap.put(Ids.LIQUID_CHRISTMAS, "Quà Giáng sinh");
+        idMap.put(Ids.CRINGLEIUM, "Hợp kim Giáng sinh");
+        idMap.put(Ids.FLOWING_FONDNESS, "Yêu thích");
+        idMap.put(Ids.DETAILED_DEVOTION, "Yêu sâu đậm");
+        idMap.put(Ids.PURIFIED_PASSION, "Đam mê");
+        idMap.put(Ids.LIQUID_LOVE, "Tình yêu");
+        idMap.put(Ids.NICEINIUM, "Tốt bụng");
+        idMap.put(Ids.DRACONIC, "Hơi thở Rồng");
+        idMap.put(Ids.REINFORCED_DRACONIUM, "Rồng gia cố");
 
         // Mods
-        idMap.put("QUARTZ", "石英");
-        idMap.put("LAPIS_LAZULI", "青金石");
-        idMap.put("MOD_PLATE", "强化合金板");
-        idMap.put("EMERALD", "绿宝石");
+        idMap.put("QUARTZ", "Thạch anh");
+        idMap.put("LAPIS_LAZULI", "Ngọc lưu ly");
+        idMap.put("MOD_PLATE", "Tấm hợp kim gia cố");
+        idMap.put("EMERALD", "Ngọc lục bảo");
 
         // Infinity Expansion (SlimefunGuguProject)
-        idMap.put(Ids.VOID, "虚空");
-        idMap.put(Ids.INFINITY, "无尽");
-        idMap.put(Ids.FORTUNE_SINGULARITY, "时运奇点");
-        idMap.put(Ids.MAGIC_SINGULARITY, "魔法奇点");
-        idMap.put(Ids.EARTH_SINGULARITY, "地球奇点");
-        idMap.put(Ids.METAL_SINGULARITY, "金属奇点");
-        idMap.put(Ids.MAGSTEEL, "磁钢");
-        idMap.put(Ids.TITANIUM, "钛");
-        idMap.put(Ids.MYTHRIL, "秘银");
-        idMap.put(Ids.ADAMANTITE, "精金");
-        idMap.put(Ids.MAGNONIUM, "磁金");
-        idMap.put(Ids.COPPER_SINGULARITY, "铜奇点");
-        idMap.put(Ids.ZINC_SINGULARITY, "锌奇点");
-        idMap.put(Ids.TIN_SINGULARITY, "锡奇点");
-        idMap.put(Ids.ALUMINUM_SINGULARITY, "铝奇点");
-        idMap.put(Ids.SILVER_SINGULARITY, "银奇点");
-        idMap.put(Ids.MAGNESIUM_SINGULARITY, "镁奇点");
-        idMap.put(Ids.LEAD_SINGULARITY, "铅奇点");
-        idMap.put(Ids.GOLD_SINGULARITY, "金奇点");
-        idMap.put(Ids.IRON_SINGULARITY, "铁奇点");
-        idMap.put(Ids.DIAMOND_SINGULARITY, "钻石奇点");
-        idMap.put(Ids.INFINITY_SINGULARITY, "无尽奇点");
+        idMap.put(Ids.VOID, "Hư không");
+        idMap.put(Ids.INFINITY, "Vô cực");
+        idMap.put(Ids.FORTUNE_SINGULARITY, "Điểm kỳ dị Gia tài");
+        idMap.put(Ids.MAGIC_SINGULARITY, "Điểm kỳ dị Phép thuật");
+        idMap.put(Ids.EARTH_SINGULARITY, "Điểm kỳ dị Trái Đất");
+        idMap.put(Ids.METAL_SINGULARITY, "Điểm kỳ dị Kim loại");
+        idMap.put(Ids.MAGSTEEL, "Thép từ");
+        idMap.put(Ids.TITANIUM, "Titan");
+        idMap.put(Ids.MYTHRIL, "Mythril");
+        idMap.put(Ids.ADAMANTITE, "Adamantite");
+        idMap.put(Ids.MAGNONIUM, "Magnonium");
+        idMap.put(Ids.COPPER_SINGULARITY, "Điểm kỳ dị Đồng");
+        idMap.put(Ids.ZINC_SINGULARITY, "Điểm kỳ dị Kẽm");
+        idMap.put(Ids.TIN_SINGULARITY, "Điểm kỳ dị Thiếc");
+        idMap.put(Ids.ALUMINUM_SINGULARITY, "Điểm kỳ dị Nhôm");
+        idMap.put(Ids.SILVER_SINGULARITY, "Điểm kỳ dị Bạc");
+        idMap.put(Ids.MAGNESIUM_SINGULARITY, "Điểm kỳ dị Magiê");
+        idMap.put(Ids.LEAD_SINGULARITY, "Điểm kỳ dị Chì");
+        idMap.put(Ids.GOLD_SINGULARITY, "Điểm kỳ dị Vàng");
+        idMap.put(Ids.IRON_SINGULARITY, "Điểm kỳ dị Sắt");
+        idMap.put(Ids.DIAMOND_SINGULARITY, "Điểm kỳ dị Kim cương");
+        idMap.put(Ids.INFINITY_SINGULARITY, "Điểm kỳ dị Vô cực");
 
         // Slimefun Warfare
-        idMap.put(Ids.SLIMESTEEL, "软钢");
-        idMap.put(Ids.REINFORCED_SLIMESTEEL, "强化软钢");
-        idMap.put(Ids.OSMIUM_SUPERALLOY, "锇高温合金");
-        idMap.put(Ids.OSMIUM, "锇");
-        idMap.put(Ids.SEGGANESSON, "塞格尼森");
-        idMap.put(Ids.UNPATENTABLIUM, "非专利品");
+        idMap.put(Ids.SLIMESTEEL, "Thép mềm");
+        idMap.put(Ids.REINFORCED_SLIMESTEEL, "Thép mềm gia cố");
+        idMap.put(Ids.OSMIUM_SUPERALLOY, "Siêu hợp kim Osmium");
+        idMap.put(Ids.OSMIUM, "Osmium");
+        idMap.put(Ids.SEGGANESSON, "Segganesson");
+        idMap.put(Ids.UNPATENTABLIUM, "Unpatentablium");
 
         // DynaTech
-        idMap.put(Ids.STAINLESS_STEEL, "不锈钢");
-        idMap.put(Ids.VEX_GEM, "恼鬼宝石");
-        idMap.put(Ids.STARDUST, "星尘");
-        idMap.put(Ids.GHOSTLY_ESSENCE, "幽灵精华");
-        idMap.put(Ids.TESSERACT, "光学材料");
+        idMap.put(Ids.STAINLESS_STEEL, "Thép không gỉ");
+        idMap.put(Ids.VEX_GEM, "Ngọc Vex");
+        idMap.put(Ids.STARDUST, "Bụi sao");
+        idMap.put(Ids.GHOSTLY_ESSENCE, "Tinh hoa ma quái");
+        idMap.put(Ids.TESSERACT, "Vật liệu quang học");
 
         // LiteXpansion
-        idMap.put(Ids.RUBBER, "橡胶");
-        idMap.put(Ids.REFINED_IRON, "精炼铁");
-        idMap.put(Ids.MIXED_METAL, "合金");
-        idMap.put(Ids.ADVANCED_ALLOY, "高级合金");
-        idMap.put(Ids.THORIUM, "钍");
-        idMap.put(Ids.MAG_THOR, "镁钍合金");
-        idMap.put(Ids.CARBON_MESH, "粗制碳板");
-        idMap.put(Ids.SCRAP, "废料");
-        idMap.put(Ids.IRIDIUM, "铱");
+        idMap.put(Ids.RUBBER, "Cao su");
+        idMap.put(Ids.REFINED_IRON, "Sắt tinh luyện");
+        idMap.put(Ids.MIXED_METAL, "Hợp kim");
+        idMap.put(Ids.ADVANCED_ALLOY, "Hợp kim cao cấp");
+        idMap.put(Ids.THORIUM, "Thorium");
+        idMap.put(Ids.MAG_THOR, "Hợp kim Mag-Thor");
+        idMap.put(Ids.CARBON_MESH, "Lưới carbon thô");
+        idMap.put(Ids.SCRAP, "Phế liệu");
+        idMap.put(Ids.IRIDIUM, "Iridium");
 
         // TranscEndence
-        idMap.put(Ids.DAXI_STRENGTH, "超能力核心(S)");
-        idMap.put(Ids.DAXI_ABSORPTION, "超能力核心(A)");
-        idMap.put(Ids.DAXI_FORTITUDE, "超能力核心(F)");
-        idMap.put(Ids.DAXI_SATURATION, "超能力核心(H)");
-        idMap.put(Ids.DAXI_REGENERATION, "超能力核心(R)");
+        idMap.put(Ids.DAXI_STRENGTH, "Lõi siêu năng lực (S)");
+        idMap.put(Ids.DAXI_ABSORPTION, "Lõi siêu năng lực (A)");
+        idMap.put(Ids.DAXI_FORTITUDE, "Lõi siêu năng lực (F)");
+        idMap.put(Ids.DAXI_SATURATION, "Lõi siêu năng lực (H)");
+        idMap.put(Ids.DAXI_REGENERATION, "Lõi siêu năng lực (R)");
 
         // Networks
-        idMap.put(Ids.MOLTEN_PRESENCE, "跨越维度的存在");
-        idMap.put(Ids.REMOTININIUM, "古代远程访问");
-        idMap.put(Ids.ULTIMANINIUM, "终极远程访问");
+        idMap.put(Ids.MOLTEN_PRESENCE, "Sự tồn tại xuyên chiều không gian");
+        idMap.put(Ids.REMOTININIUM, "Truy cập từ xa cổ đại");
+        idMap.put(Ids.ULTIMANINIUM, "Truy cập từ xa tối thượng");
     }
 
     public static Map<String, String> getMap() {

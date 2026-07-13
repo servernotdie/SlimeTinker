@@ -17,15 +17,15 @@ public final class LangUtils {
     public static String getToolName(String type){
         switch (type.toUpperCase()) {
             case Ids.PICKAXE:
-                return "镐";
+                return "Cúp";
             case Ids.SHOVEL:
-                return "铲";
+                return "Xẻng";
             case Ids.AXE:
-                return "斧";
+                return "Rìu";
             case Ids.SWORD:
-                return "剑";
+                return "Kiếm";
             case Ids.HOE:
-                return "锄";
+                return "Cuốc";
             default:
                 return ThemeUtils.toTitleCase(type);
         }
@@ -34,15 +34,15 @@ public final class LangUtils {
     public static String getToolHead(String type){
         switch (type.toUpperCase()) {
             case Ids.PICKAXE:
-                return "镐头";
+                return "Đầu cúp";
             case Ids.SHOVEL:
-                return "铲头";
+                return "Đầu xẻng";
             case Ids.AXE:
-                return "斧刃";
+                return "Lưỡi rìu";
             case Ids.SWORD:
-                return "剑刃";
+                return "Lưỡi kiếm";
             case Ids.HOE:
-                return "锄头";
+                return "Đầu cuốc";
             default:
                 return ThemeUtils.toTitleCase(type);
         }
@@ -51,13 +51,13 @@ public final class LangUtils {
     public static String getArmorPart(String part) {
         switch (part.toUpperCase()) {
             case Ids.HELMET:
-                return "头盔";
+                return "Mũ giáp";
             case Ids.CHESTPLATE:
-                return "胸甲";
+                return "Áo giáp ngực";
             case Ids.LEGGINGS:
-                return "护腿";
+                return "Quần giáp";
             case Ids.BOOTS:
-                return "靴子";
+                return "Giày giáp";
             default:
                 return ThemeUtils.toTitleCase(part);
         }

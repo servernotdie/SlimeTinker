@@ -1,11 +1,11 @@
 package io.github.sefiraat.slimetinker.runnables;
 
+import io.github.sefiraat.slimetinker.scheduler.SlimeScheduler;
 import org.bukkit.Bukkit;
 import org.bukkit.Color;
 import org.bukkit.Location;
 import org.bukkit.Particle;
 import org.bukkit.entity.Player;
-import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.Vector;
 
 import javax.annotation.Nonnull;
@@ -14,14 +14,13 @@ import java.util.Set;
 import java.util.UUID;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class TrailTick extends BukkitRunnable {
+public class TrailTick implements Runnable {
 
     private static final Set<UUID> PLAYERS = new HashSet<>();
 
     @Override
     public void run() {
-        // TODO Expand to further/previous trails
-        for (UUID uuid : PLAYERS) {
+        for (UUID uuid : new HashSet<>(PLAYERS)) {
             Player player = Bukkit.getPlayer(uuid);
 
             if (player == null) {
@@ -29,19 +28,23 @@ public class TrailTick extends BukkitRunnable {
                 continue;
             }
 
-            Location location = player.getLocation();
-            Vector back = player.getEyeLocation().getDirection().multiply(-1);
-            Location backLocation = location.add(back);
-            Particle.DustOptions dustOptionsG = new Particle.DustOptions(Color.fromRGB(50, 180, 30), 1);
-            Particle.DustOptions dustOptionsW = new Particle.DustOptions(Color.fromRGB(255, 255, 255), 1);
-            for (int i = 0; i <= 10; i++) {
-                boolean p = ThreadLocalRandom.current().nextBoolean();
-                double y = ThreadLocalRandom.current().nextDouble(-1, 1);
-                double x = ThreadLocalRandom.current().nextDouble(-0.5, 0.5);
-                double z = ThreadLocalRandom.current().nextDouble(-0.5, 0.5);
-                Location spawnLocation = backLocation.clone().add(x, y, z);
-                location.getWorld().spawnParticle(Particle.REDSTONE, spawnLocation, 1, p ? dustOptionsG : dustOptionsW);
-            }
+            SlimeScheduler.runAtEntity(player, () -> spawnTrail(player));
+        }
+    }
+
+    private void spawnTrail(@Nonnull Player player) {
+        Location location = player.getLocation();
+        Vector back = player.getEyeLocation().getDirection().multiply(-1);
+        Location backLocation = location.add(back);
+        Particle.DustOptions dustOptionsG = new Particle.DustOptions(Color.fromRGB(50, 180, 30), 1);
+        Particle.DustOptions dustOptionsW = new Particle.DustOptions(Color.fromRGB(255, 255, 255), 1);
+        for (int i = 0; i <= 10; i++) {
+            boolean p = ThreadLocalRandom.current().nextBoolean();
+            double y = ThreadLocalRandom.current().nextDouble(-1, 1);
+            double x = ThreadLocalRandom.current().nextDouble(-0.5, 0.5);
+            double z = ThreadLocalRandom.current().nextDouble(-0.5, 0.5);
+            Location spawnLocation = backLocation.clone().add(x, y, z);
+            location.getWorld().spawnParticle(Particle.DUST, spawnLocation, 1, p ? dustOptionsG : dustOptionsW);
         }
     }
 

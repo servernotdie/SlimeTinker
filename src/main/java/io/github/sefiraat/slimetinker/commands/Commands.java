@@ -24,14 +24,14 @@ public class Commands extends BaseCommand {
     @Default
     public void onDefault(CommandSender sender) {
         if (sender instanceof Player) {
-            sender.sendMessage(ThemeUtils.ERROR + "必须有子指令");
+            sender.sendMessage(ThemeUtils.ERROR + "Phải có lệnh phụ");
         }
     }
 
     @Subcommand("AddExp")
     @CommandPermission("SlimeTinker.Admin")
     @CommandCompletion("<amount>")
-    @Description("向手持物品增加经验")
+    @Description("Thêm kinh nghiệm vào vật phẩm cầm trên tay")
     public void tool(CommandSender sender, int amount) {
         if (sender instanceof Player) {
             Player p = (Player) sender;
@@ -40,31 +40,31 @@ public class Commands extends BaseCommand {
                 Experience.addExp(i, amount, p, false);
             }
         } else {
-            sender.sendMessage(ThemeUtils.ERROR + "只有玩家才能执行该指令");
+            sender.sendMessage(ThemeUtils.ERROR + "Chỉ người chơi mới có thể dùng lệnh này");
         }
     }
 
     @Subcommand("GenerateItem")
     @CommandPermission("SlimeTinker.Admin")
-    @Description("生成匠魂物品")
+    @Description("Tạo vật phẩm SlimeTinker")
     public class GenerateItem extends BaseCommand {
 
         @Subcommand("Armour")
         @CommandCompletion("@ITEM_CLASS_ARMOUR @PART_MATERIALS_PLATE @PART_MATERIALS_GAMBESON @PART_MATERIALS_LINKS")
-        @Description("使用指定的材料生成匠魂防具")
+        @Description("Tạo áo giáp SlimeTinker bằng các vật liệu được chỉ định")
         public void armour(CommandSender sender, String type, String plateMat, String gambesonMat, String linksMat) {
             if (sender instanceof Player) {
                 Player p = (Player) sender;
                 ArmourDefinition armour = new ArmourDefinition(Ids.PLATE, type, plateMat, gambesonMat, linksMat);
                 p.getInventory().addItem(Guide.HELM.getStack(armour));
             } else {
-                sender.sendMessage(ThemeUtils.ERROR + "只有玩家才能执行该指令");
+                sender.sendMessage(ThemeUtils.ERROR + "Chỉ người chơi mới có thể dùng lệnh này");
             }
         }
 
         @Subcommand("Tool")
         @CommandCompletion("@ITEM_CLASS_TOOL @PART_MATERIALS_HEAD @PART_MATERIALS_BINDER @PART_MATERIALS_ROD")
-        @Description("使用指定的材料生成匠魂工具")
+        @Description("Tạo công cụ SlimeTinker bằng các vật liệu được chỉ định")
         public void tool(CommandSender sender, String type, String headMat, String binderMat, String rodMat) {
             if (sender instanceof Player) {
                 Player p = (Player) sender;
@@ -75,7 +75,7 @@ public class Commands extends BaseCommand {
                     p.getInventory().addItem(Guide.SHOVEL.getStack(tool));
                 }
             } else {
-                sender.sendMessage(ThemeUtils.ERROR + "只有玩家才能执行该指令");
+                sender.sendMessage(ThemeUtils.ERROR + "Chỉ người chơi mới có thể dùng lệnh này");
             }
         }
 

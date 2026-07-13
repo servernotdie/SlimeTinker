@@ -1,9 +1,8 @@
 package io.github.sefiraat.slimetinker.runnables;
 
 import io.github.sefiraat.slimetinker.SlimeTinker;
-import org.bukkit.scheduler.BukkitRunnable;
 
-public class FirstTick extends BukkitRunnable {
+public class FirstTick implements Runnable {
 
     @Override
     public void run() {

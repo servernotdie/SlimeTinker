@@ -153,11 +153,11 @@ public class ArmourTable extends MenuBlock {
         ItemStack links = blockMenu.getItemInSlot(INPUT_MAIL_LINK);
 
         if (plates == null || gambeson == null || links == null) { // Missing one or more items
-            player.sendMessage(ThemeUtils.ERROR + "需要放入所有部件");
+            player.sendMessage(ThemeUtils.ERROR + "Cần đặt tất cả các bộ phận");
             return;
         }
         if (!validate(plates, gambeson, links)) { // One or more items are not the correct part
-            player.sendMessage(ThemeUtils.WARNING + "某栏位的部件无效");
+            player.sendMessage(ThemeUtils.WARNING + "Bộ phận ở ô nào đó không hợp lệ");
             return;
         }
 

@@ -30,11 +30,11 @@ public final class Workstations {
         "TINKERS_SMELTERY_CORE",
         Material.CHISELED_POLISHED_BLACKSTONE,
         ThemeItemType.MACHINE,
-        "匠魂冶炼炉",
-        "把金属熔化为液体",
-        "然后可以冶炼合金",
-        "或根据模具浇铸出各种物品",
-        "需要岩浆作为燃料"
+        "Lò luyện kim SlimeTinker",
+        "Làm tan chảy kim loại thành chất lỏng",
+        "Sau đó có thể luyện hợp kim",
+        "Hoặc đúc các vật phẩm khác nhau theo khuôn",
+        "Cần dung nham làm nhiên liệu"
     );
 
     // Workbench
@@ -42,10 +42,10 @@ public final class Workstations {
         "TINKERS_WORKBENCH",
         Material.FLETCHING_TABLE,
         ThemeItemType.MACHINE,
-        "匠魂合成站",
-        "用来合成各种物品",
-        "包括匠魂工具的部件与建筑材料",
-        "也可以当成增强型工作台使用"
+        "Trạm chế tạo SlimeTinker",
+        "Được sử dụng để chế tạo các vật phẩm khác nhau",
+        "Bao gồm các bộ phận và vật liệu xây dựng cho các công cụ SlimeTinker",
+        "Cũng có thể được sử dụng như một Bàn chế tạo nâng cao"
     );
 
     // Tool Table
@@ -53,8 +53,8 @@ public final class Workstations {
         "TINKERS_TABLE",
         Material.SMITHING_TABLE,
         ThemeItemType.MACHINE,
-        "匠魂工具组装台",
-        "将部件组装为工具"
+        "Bàn lắp ráp công cụ SlimeTinker",
+        "Lắp ráp các bộ phận thành công cụ"
     );
 
     // Armour Table
@@ -62,8 +62,8 @@ public final class Workstations {
         "TINKERS_ARMOUR_TABLE",
         Material.SMITHING_TABLE,
         ThemeItemType.MACHINE,
-        "匠魂防具组装台",
-        "将部件组装为防具"
+        "Bàn lắp ráp áo giáp SlimeTinker",
+        "Lắp ráp các bộ phận thành áo giáp"
     );
 
     // Repair
@@ -71,8 +71,8 @@ public final class Workstations {
         "TINKERS_REPAIR_BENCH",
         Material.CARTOGRAPHY_TABLE,
         ThemeItemType.MACHINE,
-        "匠魂修复台",
-        "修复匠魂装备"
+        "Bàn sửa chữa SlimeTinker",
+        "Sửa chữa trang bị SlimeTinker"
     );
 
     // Swapping
@@ -80,8 +80,8 @@ public final class Workstations {
         "TINKERS_SWAPPING_STATION",
         Material.LOOM,
         ThemeItemType.MACHINE,
-        "匠魂部件更换台",
-        "使用新的部件替换已有部件"
+        "Trạm tráo đổi SlimeTinker",
+        "Sử dụng các bộ phận mới để thay thế các bộ phận hiện có"
     );
 
     // Modification
@@ -89,8 +89,8 @@ public final class Workstations {
         "TINKERS_MOD_STATION",
         Material.GRINDSTONE,
         ThemeItemType.MACHINE,
-        "匠魂模组工作站",
-        "将模组安装到匠魂装备上"
+        "Trạm sửa đổi SlimeTinker",
+        "Cài đặt các bản sửa đổi vào trang bị SlimeTinker"
     );
 
     private static final ItemStack[] RECIPE_TINKERS_SMELTERY_MULTI = new ItemStack[]{

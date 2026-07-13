@@ -43,17 +43,17 @@ public class SwappingStation extends MenuBlock {
 
         // No tool dummy!
         if (item == null) {
-            player.sendMessage(ThemeUtils.WARNING + "在第一格内放入匠魂装备");
+            player.sendMessage(ThemeUtils.WARNING + "Đặt trang bị Tinker vào ô thứ nhất");
             return;
         }
 
         if (item.getAmount() > 1) {
-            player.sendMessage(ThemeUtils.WARNING + "匠魂装备不能堆叠");
+            player.sendMessage(ThemeUtils.WARNING + "Trang bị Tinker không thể xếp chồng");
             return;
         }
 
         if (part == null) {
-            player.sendMessage(ThemeUtils.WARNING + "在第二格内放入替换的部件");
+            player.sendMessage(ThemeUtils.WARNING + "Đặt bộ phận thay thế vào ô thứ hai");
             return;
         }
 
@@ -65,16 +65,16 @@ public class SwappingStation extends MenuBlock {
             if (partClass != null && ItemUtils.partIsTool(partClass)) {
                 swapTool(blockMenu, player, item, partClass, partType, partMaterial);
             } else {
-                player.sendMessage(ThemeUtils.WARNING + "该部件不能替换到此工具/武器上");
+                player.sendMessage(ThemeUtils.WARNING + "Bộ phận này không thể thay thế vào công cụ/vũ khí này");
             }
         } else if (ItemUtils.isArmour(item)) {
             if (partClass != null && ItemUtils.partIsArmour(partClass)) {
                 swapArmour(blockMenu, player, item, partClass, partType, partMaterial);
             } else {
-                player.sendMessage(ThemeUtils.WARNING + "该部件不能替换到此防具上");
+                player.sendMessage(ThemeUtils.WARNING + "Bộ phận này không thể thay thế vào giáp này");
             }
         } else {
-            player.sendMessage(ThemeUtils.WARNING + "第一格内的物品不是匠魂工具/武器/防具");
+            player.sendMessage(ThemeUtils.WARNING + "Vật phẩm trong ô thứ nhất không phải công cụ/vũ khí/giáp Tinker");
         }
     }
 
@@ -87,7 +87,7 @@ public class SwappingStation extends MenuBlock {
     ) {
         // The part is a head part but the type is either null or not matching the tool (Axe head part for shovel etc.)
         if (partClass.equals(Ids.HEAD) && (partType != null && !partType.equals(ItemUtils.getToolTypeName(item)))) {
-            player.sendMessage(ThemeUtils.WARNING + "该工具头部与工具类型不一致,无法替换");
+            player.sendMessage(ThemeUtils.WARNING + "Đầu công cụ không khớp với loại công cụ, không thể thay thế");
             return;
         }
 
@@ -129,7 +129,7 @@ public class SwappingStation extends MenuBlock {
     ) {
         // The part is a plate part but the type is either null or not matching the armour (Helm plates for boots etc..)
         if (partClass.equals(Ids.PLATE) && (partType != null && !partType.equals(ItemUtils.getArmourTypeName(item)))) {
-            player.sendMessage(ThemeUtils.WARNING + "该盔甲板与防具类型不一致,无法替换");
+            player.sendMessage(ThemeUtils.WARNING + "Tấm giáp không khớp với loại giáp, không thể thay thế");
             return;
         }
 

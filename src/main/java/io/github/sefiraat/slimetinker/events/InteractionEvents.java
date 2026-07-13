@@ -4,11 +4,12 @@ import com.google.common.base.Preconditions;
 import io.github.sefiraat.networks.slimefun.network.grid.NetworkGrid;
 import io.github.sefiraat.networks.slimefun.tools.NetworkRemote;
 import io.github.sefiraat.networks.utils.Theme;
-import io.github.sefiraat.slimetinker.SlimeTinker;
 import io.github.sefiraat.slimetinker.events.friend.ActiveFriendElement;
 import io.github.sefiraat.slimetinker.events.friend.EventFriend;
 import io.github.sefiraat.slimetinker.managers.MemoryManager;
+import com.tcoded.folialib.wrapper.task.WrappedTask;
 import io.github.sefiraat.slimetinker.runnables.event.KingsmanSpam;
+import io.github.sefiraat.slimetinker.scheduler.SlimeScheduler;
 import io.github.sefiraat.slimetinker.utils.BlockUtils;
 import io.github.sefiraat.slimetinker.utils.EntityUtils;
 import io.github.sefiraat.slimetinker.utils.GeneralUtils;
@@ -78,21 +79,21 @@ public final class InteractionEvents {
             if (p.isSneaking()) {
                 // Setting location
                 PersistentDataAPI.setString(im, keyLoc, GeneralUtils.serializeLocation(p.getLocation()));
-                p.sendMessage(ThemeUtils.SUCCESS + "已设置位置!");
+                p.sendMessage(ThemeUtils.SUCCESS + "Đã thiết lập vị trí!");
                 i.setItemMeta(im);
             } else {
                 // Actioning location
                 if (ItemUtils.onCooldown(i, cooldownName)) {
-                    p.sendMessage(ThemeUtils.WARNING + "召回技能冷却中");
+                    p.sendMessage(ThemeUtils.WARNING + "Kỹ năng Dịch chuyển đang trong thời gian hồi chiêu");
                     return;
                 } else if (!PersistentDataAPI.hasString(im, keyLoc)) {
-                    p.sendMessage(ThemeUtils.WARNING + "你还没有设置召回的位置");
+                    p.sendMessage(ThemeUtils.WARNING + "Bạn chưa thiết lập vị trí Dịch chuyển");
                     return;
                 }
                 String sl = PersistentDataAPI.getString(im, keyLoc);
                 Location l = GeneralUtils.deserializeLocation(sl);
-                p.teleport(l);
-                p.sendMessage(ThemeUtils.SUCCESS + "正在召回!");
+                p.teleportAsync(l);
+                p.sendMessage(ThemeUtils.SUCCESS + "Đang dịch chuyển!");
                 ItemUtils.setCooldown(i, cooldownName, 300000);
             }
 
@@ -116,11 +117,11 @@ public final class InteractionEvents {
             if (p.getWorld().getBlockAt(location).getType() == Material.AIR
                 && Slimefun.getProtectionManager().hasPermission(p, location, Interaction.PLACE_BLOCK)
             ) {
-                p.teleport(location);
+                p.teleportAsync(location);
                 p.getWorld().playEffect(friend.getPlayer().getLocation(), Effect.ENDEREYE_LAUNCH, 10);
                 ItemUtils.setCooldown(i, "NOCLIP", 300000);
             } else {
-                p.sendMessage(ThemeUtils.WARNING + "无法传送，请稍后再试");
+                p.sendMessage(ThemeUtils.WARNING + "Không thể dịch chuyển, vui lòng thử lại sau");
             }
         }
     }
@@ -153,7 +154,7 @@ public final class InteractionEvents {
         ItemStack i = friend.getActiveStack();
         int cdMinutes = 2;
         if (ItemUtils.onCooldown(i, cdName)) {
-            p.sendMessage(ThemeUtils.WARNING + "自然法则技能冷却中");
+            p.sendMessage(ThemeUtils.WARNING + "Kỹ năng Quy luật Tự nhiên đang trong thời gian hồi chiêu");
         } else {
             List<Animals> animals = EntityUtils.getNearbyEntitiesByType(Animals.class, p, 3, 3, 3);
             if (animals.size() >= 2) {
@@ -180,10 +181,11 @@ public final class InteractionEvents {
             String cdName = "kingsman";
             if (!ItemUtils.onCooldown(i, cdName)) {
                 KingsmanSpam task = new KingsmanSpam(p, 10);
-                task.runTaskTimer(SlimeTinker.getInstance(), 0, 20);
+                WrappedTask handle = SlimeScheduler.runAtEntityTimer(p, task, 0, 20);
+                task.setHandle(handle);
                 ItemUtils.setCooldown(i, cdName, 20 * 60000L);
             } else {
-                p.sendMessage(ThemeUtils.WARNING + "王牌特工技能冷却中");
+                p.sendMessage(ThemeUtils.WARNING + "Kỹ năng Đặc vụ Kingsman đang trong thời gian hồi chiêu");
             }
         }
     }
@@ -259,7 +261,7 @@ public final class InteractionEvents {
                 ItemUtils.setCooldown(tool, "celebrate", 3600000);
             }
         } else {
-            player.sendMessage(ThemeUtils.WARNING + "庆祝技能冷却中");
+            player.sendMessage(ThemeUtils.WARNING + "Kỹ năng Ăn mừng đang trong thời gian hồi chiêu");
         }
     }
 
@@ -286,7 +288,7 @@ public final class InteractionEvents {
             ) {
                 NetworkRemote.setGrid(friend.getActiveStack(), block, player);
             } else {
-                player.sendMessage(Theme.ERROR + "必须连接一个网格 (不能是带合成的).");
+                player.sendMessage(Theme.ERROR + "Phải kết nối với một mạng lưới (không thể là loại có chế tạo).");
             }
         } else if (friend.getAction() == Action.LEFT_CLICK_AIR) {
             NetworkRemote.tryOpenGrid(friend.getActiveStack(), player, -1);

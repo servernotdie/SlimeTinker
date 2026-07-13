@@ -23,149 +23,149 @@ public final class GUIItems {
 
     public static final CustomItemStack MENU_BACKGROUND_INPUT = new CustomItemStack(
         Material.LIGHT_BLUE_STAINED_GLASS_PANE,
-        ChatColor.BLUE + "输入",
+        ChatColor.BLUE + "Đầu vào",
         " "
     );
 
     public static final CustomItemStack MENU_BACKGROUND_OUTPUT = new CustomItemStack(
         Material.ORANGE_STAINED_GLASS_PANE,
-        ChatColor.RED + "输出",
+        ChatColor.RED + "Đầu ra",
         " "
     );
 
     public static final CustomItemStack MENU_BACKGROUND_CAST = new CustomItemStack(
         Material.LIME_STAINED_GLASS_PANE,
-        ChatColor.GREEN + "模具/模具原型",
+        ChatColor.GREEN + "Khuôn/Nguyên mẫu khuôn",
         " "
     );
 
     public static final CustomItemStack MENU_PREVIEW = new CustomItemStack(
         Material.LIME_STAINED_GLASS_PANE,
-        ChatColor.GREEN + "预览",
+        ChatColor.GREEN + "Xem trước",
         " "
     );
 
     public static final CustomItemStack MENU_BACKGROUND_PREVIEW = new CustomItemStack(
         Material.LIME_STAINED_GLASS_PANE,
-        ChatColor.GREEN + "预览",
+        ChatColor.GREEN + "Xem trước",
         " "
     );
 
     public static final CustomItemStack MENU_MARKER_ROD = new CustomItemStack(
         Material.RED_STAINED_GLASS_PANE,
-        ChatColor.RED + "放入手柄",
-        ThemeUtils.PASSIVE + "在下面的栏位放入手柄部件"
+        ChatColor.RED + "Đặt tay cầm vào",
+        ThemeUtils.PASSIVE + "Đặt bộ phận tay cầm vào ô bên dưới"
     );
 
 
     public static final CustomItemStack MENU_MARKER_BINDER = new CustomItemStack(
         Material.RED_STAINED_GLASS_PANE,
-        ChatColor.RED + "放入绑定结",
-        ThemeUtils.PASSIVE + "在下面的栏位放入绑定结部件"
+        ChatColor.RED + "Đặt dây buộc vào",
+        ThemeUtils.PASSIVE + "Đặt bộ phận dây buộc vào ô bên dưới"
     );
 
     public static final CustomItemStack MENU_MARKER_HEAD = new CustomItemStack(
         Material.RED_STAINED_GLASS_PANE,
-        ChatColor.RED + "放入工具/武器头",
-        ThemeUtils.PASSIVE + "在下面的栏位放入工具/武器头部件"
+        ChatColor.RED + "Đặt đầu công cụ/vũ khí vào",
+        ThemeUtils.PASSIVE + "Đặt bộ phận đầu công cụ/vũ khí vào ô bên dưới"
     );
 
     public static final CustomItemStack MENU_MARKER_LINKS = new CustomItemStack(
         Material.RED_STAINED_GLASS_PANE,
-        ChatColor.RED + "放入盔甲接合物",
-        ThemeUtils.PASSIVE + "在下面的栏位放入盔甲接合物部件"
+        ChatColor.RED + "Đặt khớp nối giáp vào",
+        ThemeUtils.PASSIVE + "Đặt bộ phận khớp nối giáp vào ô bên dưới"
     );
 
     public static final CustomItemStack MENU_MARKER_GAMBESON = new CustomItemStack(
         Material.RED_STAINED_GLASS_PANE,
-        ChatColor.RED + "放入护身软甲",
-        ThemeUtils.PASSIVE + "在下面的栏位放入护身软甲"
+        ChatColor.RED + "Đặt lớp đệm giáp vào",
+        ThemeUtils.PASSIVE + "Đặt lớp đệm giáp vào ô bên dưới"
     );
 
 
     public static final CustomItemStack MENU_MARKER_PLATES = new CustomItemStack(
         Material.RED_STAINED_GLASS_PANE,
-        ChatColor.RED + "放入盔甲板",
-        ThemeUtils.PASSIVE + "在下面的栏位放入盔甲板"
+        ChatColor.RED + "Đặt tấm giáp vào",
+        ThemeUtils.PASSIVE + "Đặt tấm giáp vào ô bên dưới"
     );
 
     public static final CustomItemStack MENU_PURGE = new CustomItemStack(
         PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.BUTTON_PURGE)),
-        ThemeUtils.GUI_HEAD + "清除金属",
+        ThemeUtils.GUI_HEAD + "Loại bỏ kim loại",
         "",
-        ThemeUtils.PASSIVE + "可以从金属罐中直接清除不需要的金属",
+        ThemeUtils.PASSIVE + "Có thể trực tiếp loại bỏ kim loại không mong muốn khỏi bình chứa",
         "",
-        ThemeUtils.CLICK_INFO + "左键点击" + ChatColor.WHITE + "移除最上层金属",
-        ThemeUtils.CLICK_INFO + "右键点击" + ChatColor.WHITE + "移除所有金属"
+        ThemeUtils.CLICK_INFO + "Chuột trái để " + ChatColor.WHITE + "loại bỏ lớp kim loại trên cùng",
+        ThemeUtils.CLICK_INFO + "Chuột phải để " + ChatColor.WHITE + "loại bỏ tất cả kim loại"
     );
 
     public static final CustomItemStack MENU_ALLOY = new CustomItemStack(
         PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.BUTTON_ALLOY)),
-        ThemeUtils.GUI_HEAD + "冶炼合金",
+        ThemeUtils.GUI_HEAD + "Hợp kim",
         "",
-        ThemeUtils.PASSIVE + "混合金属罐中的液体",
-        ThemeUtils.PASSIVE + "来尝试冶炼合金"
+        ThemeUtils.PASSIVE + "Trộn chất lỏng trong bình kim loại",
+        ThemeUtils.PASSIVE + "để thử tạo ra hợp kim"
     );
 
     public static final CustomItemStack MENU_POUR = new CustomItemStack(
         PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.BUCKET_ORANGE)),
-        ThemeUtils.GUI_HEAD + "浇铸",
+        ThemeUtils.GUI_HEAD + "Đúc",
         "",
-        ThemeUtils.PASSIVE + "将最上层的金属进行浇铸",
-        ThemeUtils.PASSIVE + "模具将决定熔融金属的样式",
-        ThemeUtils.PASSIVE + "成品将在输出栏中"
+        ThemeUtils.PASSIVE + "Đúc lớp kim loại trên cùng",
+        ThemeUtils.PASSIVE + "Khuôn sẽ xác định hình dạng của kim loại nóng chảy",
+        ThemeUtils.PASSIVE + "Sản phẩm sẽ nằm trong ô đầu ra"
     );
 
     public static final CustomItemStack MENU_CRAFT_WORKBENCH = new CustomItemStack(
         Material.FLETCHING_TABLE,
-        ThemeUtils.GUI_HEAD + "合成",
+        ThemeUtils.GUI_HEAD + "Chế tạo",
         "",
-        ThemeUtils.CLICK_INFO + "点击此处" + ChatColor.WHITE + "合成物品"
+        ThemeUtils.CLICK_INFO + "Nhấn vào đây " + ChatColor.WHITE + "để chế tạo vật phẩm"
     );
 
     public static final CustomItemStack MENU_CRAFT_TOOL_TABLE = new CustomItemStack(
         Material.SMITHING_TABLE,
-        ThemeUtils.GUI_HEAD + "组装工具/武器",
+        ThemeUtils.GUI_HEAD + "Lắp ráp công cụ/vũ khí",
         "",
-        ThemeUtils.PASSIVE + "将三个部件组装成工具/武器:",
-        ThemeUtils.PASSIVE + "手柄,绑定结,工具/武器头",
-        ThemeUtils.CLICK_INFO + "点击此处" + ChatColor.WHITE + "组装"
+        ThemeUtils.PASSIVE + "Lắp ráp ba bộ phận thành công cụ/vũ khí:",
+        ThemeUtils.PASSIVE + "Tay cầm, Dây buộc, Đầu công cụ/vũ khí",
+        ThemeUtils.CLICK_INFO + "Nhấn vào đây " + ChatColor.WHITE + "để lắp ráp"
     );
 
     public static final CustomItemStack MENU_CRAFT_ARMOUR_TABLE = new CustomItemStack(
         Material.SMITHING_TABLE,
-        ThemeUtils.GUI_HEAD + "组装防具",
+        ThemeUtils.GUI_HEAD + "Lắp ráp áo giáp",
         "",
-        ThemeUtils.PASSIVE + "将三个部件组装成防具:",
-        ThemeUtils.PASSIVE + "盔甲板,护身软甲,盔甲接合物",
-        ThemeUtils.CLICK_INFO + "点击此处" + ChatColor.WHITE + "组装"
+        ThemeUtils.PASSIVE + "Lắp ráp ba bộ phận thành áo giáp:",
+        ThemeUtils.PASSIVE + "Tấm giáp, Lớp đệm giáp, Khớp nối giáp",
+        ThemeUtils.CLICK_INFO + "Nhấn vào đây " + ChatColor.WHITE + "để lắp ráp"
     );
 
     public static final CustomItemStack MENU_CRAFT_REPAIR = new CustomItemStack(
         Material.CARTOGRAPHY_TABLE,
-        ThemeUtils.GUI_HEAD + "修复",
+        ThemeUtils.GUI_HEAD + "Sửa chữa",
         "",
-        ThemeUtils.PASSIVE + "在第一格中放入需要修复的匠魂装备",
-        ThemeUtils.PASSIVE + "在第二格中放入工具头/盔甲板对应材质的修复工具",
-        ThemeUtils.CLICK_INFO + "点击此处" + ChatColor.WHITE + "修复"
+        ThemeUtils.PASSIVE + "Đặt trang bị SlimeTinker cần sửa chữa vào ô đầu tiên",
+        ThemeUtils.PASSIVE + "Đặt bộ công cụ sửa chữa có chất liệu tương ứng với đầu công cụ/tấm giáp vào ô thứ hai",
+        ThemeUtils.CLICK_INFO + "Nhấn vào đây " + ChatColor.WHITE + "để sửa chữa"
     );
 
     public static final CustomItemStack MENU_CRAFT_MOD = new CustomItemStack(
         Material.GRINDSTONE,
-        ThemeUtils.GUI_HEAD + "安装模组",
+        ThemeUtils.GUI_HEAD + "Cài đặt bản sửa đổi",
         "",
-        ThemeUtils.PASSIVE + "在第一格中放入匠魂装备",
-        ThemeUtils.PASSIVE + "在第二格中放入要安装的模组",
-        ThemeUtils.CLICK_INFO + "点击此处" + ChatColor.WHITE + "安装模组"
+        ThemeUtils.PASSIVE + "Đặt trang bị SlimeTinker vào ô đầu tiên",
+        ThemeUtils.PASSIVE + "Đặt bản sửa đổi cần cài đặt vào ô thứ hai",
+        ThemeUtils.CLICK_INFO + "Nhấn vào đây " + ChatColor.WHITE + "để cài đặt bản sửa đổi"
     );
 
     public static final CustomItemStack MENU_CRAFT_SWAP = new CustomItemStack(
         Material.LOOM,
-        ThemeUtils.GUI_HEAD + "更换部件",
+        ThemeUtils.GUI_HEAD + "Thay thế bộ phận",
         "",
-        ThemeUtils.PASSIVE + "在第一格中放入匠魂装备",
-        ThemeUtils.PASSIVE + "在第二格中放入要更换的部件",
-        ThemeUtils.CLICK_INFO + "点击此处" + ChatColor.WHITE + "更换部件"
+        ThemeUtils.PASSIVE + "Đặt trang bị SlimeTinker vào ô đầu tiên",
+        ThemeUtils.PASSIVE + "Đặt bộ phận cần thay thế vào ô thứ hai",
+        ThemeUtils.CLICK_INFO + "Nhấn vào đây " + ChatColor.WHITE + "để thay thế bộ phận"
     );
 
     @Nonnull
@@ -185,9 +185,9 @@ public final class GUIItems {
             skull = PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.TANK_EMPTY));
         }
         List<String> meta = new ArrayList<>();
-        meta.add(ThemeUtils.GUI_HEAD + "岩浆罐");
+        meta.add(ThemeUtils.GUI_HEAD + "Bình dung nham");
         meta.add("");
-        meta.add(ThemeUtils.CLICK_INFO + "岩浆: " + ChatColor.WHITE + fillAmt + " / " + fillMax);
+        meta.add(ThemeUtils.CLICK_INFO + "Dung nham: " + ChatColor.WHITE + fillAmt + " / " + fillMax);
         return new CustomItemStack(
             skull,
             meta
@@ -211,9 +211,9 @@ public final class GUIItems {
             skull = PlayerHead.getItemStack(PlayerSkin.fromBase64(SkullTextures.TANK_EMPTY));
         }
         List<String> meta = new ArrayList<>();
-        meta.add(ThemeUtils.GUI_HEAD + "金属罐");
+        meta.add(ThemeUtils.GUI_HEAD + "Bình kim loại");
         meta.add("");
-        meta.add(ThemeUtils.CLICK_INFO + "金属容量: " + ChatColor.WHITE + fillAmt + " / " + fillMax);
+        meta.add(ThemeUtils.CLICK_INFO + "Dung tích kim loại: " + ChatColor.WHITE + fillAmt + " / " + fillMax);
         meta.add("");
         if (map != null) {
             for (Map.Entry<String, Integer> e : map.entrySet()) {
@@ -221,13 +221,13 @@ public final class GUIItems {
                     TinkerMaterialManager.getById(e.getKey()).getColor() +
                         LangUtils.getMaterialName(e.getKey());
                 String amount = e.getValue().toString();
-                meta.add(ThemeUtils.CLICK_INFO + name + ": " + ChatColor.WHITE + amount + " 单位");
+                meta.add(ThemeUtils.CLICK_INFO + name + ": " + ChatColor.WHITE + amount + " Đơn vị");
             }
         }
         meta.add("");
-        meta.add(ThemeUtils.PASSIVE + "浇铸将从" + ChatColor.BOLD + "最上层" + ThemeUtils.PASSIVE + "的金属开始");
+        meta.add(ThemeUtils.PASSIVE + "Việc đúc sẽ bắt đầu từ kim loại ở " + ChatColor.BOLD + "lớp trên cùng" + ThemeUtils.PASSIVE + "");
         meta.add("");
-        meta.add(ThemeUtils.CLICK_INFO + "点击" + ChatColor.WHITE + "将最上层的金属移至最下层");
+        meta.add(ThemeUtils.CLICK_INFO + "Nhấn để " + ChatColor.WHITE + "di chuyển kim loại ở lớp trên cùng xuống lớp dưới cùng");
         return new CustomItemStack(
             skull,
             meta
