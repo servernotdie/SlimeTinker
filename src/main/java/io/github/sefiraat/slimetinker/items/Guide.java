@@ -42,98 +42,98 @@ public final class Guide {
         "TOOL_SHOVEL_DUMMY",
         Material.STONE_SHOVEL,
         ThemeItemType.TOOL,
-        "匠魂铲",
-        ThemeUtils.PASSIVE + "由手柄,绑定结,铲头三个部件组成",
-        ThemeUtils.PASSIVE + "匠魂工具根据不同部件的材质拥有不同属性",
-        ThemeUtils.PASSIVE + "升级后还能获得模组栏位"
+        "Xẻng SlimeTinker",
+        ThemeUtils.PASSIVE + "Bao gồm ba phần: Tay cầm, Dây buộc, Đầu xẻng",
+        ThemeUtils.PASSIVE + "Công cụ SlimeTinker có các thuộc tính khác nhau tùy thuộc vào vật liệu của từng bộ phận",
+        ThemeUtils.PASSIVE + "Nâng cấp có thể nhận được khe cắm bản sửa đổi"
     );
 
     public static final SlimefunItemStack TOOL_PICKAXE_DUMMY = ThemeUtils.themedItemStack(
         "TOOL_PICKAXE_DUMMY",
         Material.STONE_PICKAXE,
         ThemeItemType.TOOL,
-        "匠魂镐",
-        ThemeUtils.PASSIVE + "由手柄,绑定结,镐头三个部件组成",
-        ThemeUtils.PASSIVE + "匠魂工具根据不同部件的材质拥有不同属性",
-        ThemeUtils.PASSIVE + "升级后还能获得模组栏位"
+        "Cúp SlimeTinker",
+        ThemeUtils.PASSIVE + "Bao gồm ba phần: Tay cầm, Dây buộc, Đầu cúp",
+        ThemeUtils.PASSIVE + "Công cụ SlimeTinker có các thuộc tính khác nhau tùy thuộc vào vật liệu của từng bộ phận",
+        ThemeUtils.PASSIVE + "Nâng cấp có thể nhận được khe cắm bản sửa đổi"
     );
 
     public static final SlimefunItemStack TOOL_AXE_DUMMY = ThemeUtils.themedItemStack(
         "TOOL_AXE_DUMMY",
         Material.STONE_AXE,
         ThemeItemType.TOOL,
-        "匠魂斧",
-        ThemeUtils.PASSIVE + "由手柄,绑定结,斧刃三个部件组成",
-        ThemeUtils.PASSIVE + "匠魂工具根据不同部件的材质拥有不同属性",
-        ThemeUtils.PASSIVE + "升级后还能获得模组栏位"
+        "Rìu SlimeTinker",
+        ThemeUtils.PASSIVE + "Bao gồm ba phần: Tay cầm, Dây buộc, Lưỡi rìu",
+        ThemeUtils.PASSIVE + "Công cụ SlimeTinker có các thuộc tính khác nhau tùy thuộc vào vật liệu của từng bộ phận",
+        ThemeUtils.PASSIVE + "Nâng cấp có thể nhận được khe cắm bản sửa đổi"
     );
 
     public static final SlimefunItemStack TOOL_HOE_DUMMY = ThemeUtils.themedItemStack(
         "TOOL_HOE_DUMMY",
         Material.STONE_HOE,
         ThemeItemType.TOOL,
-        "匠魂锄",
-        ThemeUtils.PASSIVE + "由手柄,绑定结,锄头三个部件组成",
-        ThemeUtils.PASSIVE + "匠魂工具根据不同部件的材质拥有不同属性",
-        ThemeUtils.PASSIVE + "升级后还能获得模组栏位"
+        "Cuốc SlimeTinker",
+        ThemeUtils.PASSIVE + "Bao gồm ba phần: Tay cầm, Dây buộc, Đầu cuốc",
+        ThemeUtils.PASSIVE + "Công cụ SlimeTinker có các thuộc tính khác nhau tùy thuộc vào vật liệu của từng bộ phận",
+        ThemeUtils.PASSIVE + "Nâng cấp có thể nhận được khe cắm bản sửa đổi"
     );
 
     public static final SlimefunItemStack TOOL_SWORD_DUMMY = ThemeUtils.themedItemStack(
         "TOOL_SWORD_DUMMY",
         Material.STONE_SWORD,
         ThemeItemType.TOOL,
-        "匠魂剑",
-        ThemeUtils.PASSIVE + "由手柄,绑定结,剑刃三个部件组成",
-        ThemeUtils.PASSIVE + "匠魂武器根据不同部件的材质拥有不同属性",
-        ThemeUtils.PASSIVE + "升级后还能获得模组栏位"
+        "Kiếm SlimeTinker",
+        ThemeUtils.PASSIVE + "Bao gồm ba phần: Tay cầm, Dây buộc, Lưỡi kiếm",
+        ThemeUtils.PASSIVE + "Vũ khí SlimeTinker có các thuộc tính khác nhau tùy thuộc vào vật liệu của từng bộ phận",
+        ThemeUtils.PASSIVE + "Nâng cấp có thể nhận được khe cắm bản sửa đổi"
     );
 
     public static final SlimefunItemStack ARMOUR_HELMET_DUMMY = ThemeUtils.themedItemStack(
         "ARMOUR_HELMET_DUMMY",
         Material.LEATHER_HELMET,
         ThemeItemType.ARMOUR,
-        "匠魂头盔",
-        ThemeUtils.PASSIVE + "由头盔板,护身软甲,盔甲接合物三个部件组成",
-        ThemeUtils.PASSIVE + "匠魂防具根据不同部件的材质拥有不同属性",
-        ThemeUtils.PASSIVE + "升级后还能获得模组栏位与额外属性",
-        ThemeUtils.PASSIVE + "会在损坏后自动卸下至物品栏中",
-        ThemeUtils.WARNING + "如果物品栏没有空间则会掉到地上"
+        "Mũ giáp SlimeTinker",
+        ThemeUtils.PASSIVE + "Bao gồm ba phần: Tấm mũ giáp, Lớp đệm giáp, Khớp nối giáp",
+        ThemeUtils.PASSIVE + "Áo giáp SlimeTinker có các thuộc tính khác nhau tùy thuộc vào vật liệu của từng bộ phận",
+        ThemeUtils.PASSIVE + "Nâng cấp có thể nhận được khe cắm bản sửa đổi và thuộc tính bổ sung",
+        ThemeUtils.PASSIVE + "Sẽ tự động tháo vào kho đồ khi bị hỏng",
+        ThemeUtils.WARNING + "Nếu kho đồ không còn chỗ, nó sẽ rơi xuống đất"
     );
 
     public static final SlimefunItemStack ARMOUR_CHESTPLATE_DUMMY = ThemeUtils.themedItemStack(
         "ARMOUR_CHESTPLATE_DUMMY",
         Material.LEATHER_CHESTPLATE,
         ThemeItemType.ARMOUR,
-        "匠魂胸甲",
-        ThemeUtils.PASSIVE + "由胸甲板,护身软甲,盔甲接合物三个部件组成",
-        ThemeUtils.PASSIVE + "匠魂防具根据不同部件的材质拥有不同属性",
-        ThemeUtils.PASSIVE + "升级后还能获得模组栏位与额外属性",
-        ThemeUtils.PASSIVE + "会在损坏后自动卸下至物品栏中",
-        ThemeUtils.WARNING + "如果物品栏没有空间则会掉到地上"
+        "Áo giáp ngực SlimeTinker",
+        ThemeUtils.PASSIVE + "Bao gồm ba phần: Tấm giáp ngực, Lớp đệm giáp, Khớp nối giáp",
+        ThemeUtils.PASSIVE + "Áo giáp SlimeTinker có các thuộc tính khác nhau tùy thuộc vào vật liệu của từng bộ phận",
+        ThemeUtils.PASSIVE + "Nâng cấp có thể nhận được khe cắm bản sửa đổi và thuộc tính bổ sung",
+        ThemeUtils.PASSIVE + "Sẽ tự động tháo vào kho đồ khi bị hỏng",
+        ThemeUtils.WARNING + "Nếu kho đồ không còn chỗ, nó sẽ rơi xuống đất"
     );
 
     public static final SlimefunItemStack ARMOUR_LEGGINGS_DUMMY = ThemeUtils.themedItemStack(
         "ARMOUR_LEGGINGS_DUMMY",
         Material.LEATHER_LEGGINGS,
         ThemeItemType.ARMOUR,
-        "匠魂护腿",
-        ThemeUtils.PASSIVE + "由护腿板,护身软甲,盔甲接合物三个部件组成",
-        ThemeUtils.PASSIVE + "匠魂防具根据不同部件的材质拥有不同属性",
-        ThemeUtils.PASSIVE + "升级后还能获得模组栏位与额外属性",
-        ThemeUtils.PASSIVE + "会在损坏后自动卸下至物品栏中",
-        ThemeUtils.WARNING + "如果物品栏没有空间则会掉到地上"
+        "Quần giáp SlimeTinker",
+        ThemeUtils.PASSIVE + "Bao gồm ba phần: Tấm quần giáp, Lớp đệm giáp, Khớp nối giáp",
+        ThemeUtils.PASSIVE + "Áo giáp SlimeTinker có các thuộc tính khác nhau tùy thuộc vào vật liệu của từng bộ phận",
+        ThemeUtils.PASSIVE + "Nâng cấp có thể nhận được khe cắm bản sửa đổi và thuộc tính bổ sung",
+        ThemeUtils.PASSIVE + "Sẽ tự động tháo vào kho đồ khi bị hỏng",
+        ThemeUtils.WARNING + "Nếu kho đồ không còn chỗ, nó sẽ rơi xuống đất"
     );
 
     public static final SlimefunItemStack ARMOUR_BOOTS_DUMMY = ThemeUtils.themedItemStack(
         "ARMOUR_BOOTS_DUMMY",
         Material.LEATHER_BOOTS,
         ThemeItemType.ARMOUR,
-        "匠魂靴子",
-        ThemeUtils.PASSIVE + "由靴子板,护身软甲,盔甲接合物三个部件组成",
-        ThemeUtils.PASSIVE + "匠魂防具根据不同部件的材质拥有不同属性",
-        ThemeUtils.PASSIVE + "升级后还能获得模组栏位与额外属性",
-        ThemeUtils.PASSIVE + "会在损坏后自动卸下至物品栏中",
-        ThemeUtils.WARNING + "如果物品栏没有空间则会掉到地上"
+        "Giày giáp SlimeTinker",
+        ThemeUtils.PASSIVE + "Bao gồm ba phần: Tấm giày giáp, Lớp đệm giáp, Khớp nối giáp",
+        ThemeUtils.PASSIVE + "Áo giáp SlimeTinker có các thuộc tính khác nhau tùy thuộc vào vật liệu của từng bộ phận",
+        ThemeUtils.PASSIVE + "Nâng cấp có thể nhận được khe cắm bản sửa đổi và thuộc tính bổ sung",
+        ThemeUtils.PASSIVE + "Sẽ tự động tháo vào kho đồ khi bị hỏng",
+        ThemeUtils.WARNING + "Nếu kho đồ không còn chỗ, nó sẽ rơi xuống đất"
     );
 
     public static final SlimefunItemStack TOOL_AXE = ThemeUtils.themedItemStack(
@@ -252,24 +252,24 @@ public final class Guide {
         "TOOL_INFO",
         SkullTextures.INFO,
         ThemeItemType.INFO,
-        "匠魂工具信息",
-        ThemeUtils.PASSIVE + "匠魂的工具或武器在使用时",
-        ThemeUtils.PASSIVE + "会获得熟练度经验",
-        ThemeUtils.PASSIVE + "积累一定经验可以获得升级",
-        ThemeUtils.PASSIVE + "每次升级后可以获得1个模组栏位",
-        ThemeUtils.PASSIVE + "品质依次为: 石 > 金 > 铁 > 钻石 > 下界合金"
+        "Thông tin công cụ SlimeTinker",
+        ThemeUtils.PASSIVE + "Khi sử dụng công cụ hoặc vũ khí SlimeTinker,",
+        ThemeUtils.PASSIVE + "bạn sẽ nhận được kinh nghiệm độ thông thạo",
+        ThemeUtils.PASSIVE + "Tích lũy đủ kinh nghiệm có thể được nâng cấp",
+        ThemeUtils.PASSIVE + "Mỗi lần nâng cấp sẽ nhận được 1 khe cắm bản sửa đổi",
+        ThemeUtils.PASSIVE + "Thứ tự chất lượng: Đá > Vàng > Sắt > Kim cương > Netherite"
     );
 
     public static final SlimefunItemStack ARMOUR_INFO = ThemeUtils.themedItemStack(
         "ARMOUR_INFO",
         SkullTextures.INFO,
         ThemeItemType.INFO,
-        "匠魂防具信息",
-        ThemeUtils.PASSIVE + "匠魂的防具在使用时",
-        ThemeUtils.PASSIVE + "会获得熟练度经验",
-        ThemeUtils.PASSIVE + "积累一定经验可以获得升级",
-        ThemeUtils.PASSIVE + "每次升级后可以获得1个模组栏位",
-        ThemeUtils.PASSIVE + "品质依次为: 皮革 > 锁链 > 铁 > 钻石 > 下界合金"
+        "Thông tin áo giáp SlimeTinker",
+        ThemeUtils.PASSIVE + "Khi sử dụng áo giáp SlimeTinker,",
+        ThemeUtils.PASSIVE + "bạn sẽ nhận được kinh nghiệm độ thông thạo",
+        ThemeUtils.PASSIVE + "Tích lũy đủ kinh nghiệm có thể được nâng cấp",
+        ThemeUtils.PASSIVE + "Mỗi lần nâng cấp sẽ nhận được 1 khe cắm bản sửa đổi",
+        ThemeUtils.PASSIVE + "Thứ tự chất lượng: Da > Xích > Sắt > Kim cương > Netherite"
     );
 
     public static final ToolTemplate SHOVEL = new ToolTemplate(ItemGroups.DUMMY, TOOL_SHOVEL, DummyToolTable.TYPE, new ItemStack[9]);

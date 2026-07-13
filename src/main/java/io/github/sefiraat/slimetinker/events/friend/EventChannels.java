@@ -36,7 +36,7 @@ public final class EventChannels {
             int amplifier = entry.getValue() - 1;
             friend.getPlayer().addPotionEffect(new PotionEffect(potionEffectType, tickDuration, amplifier, false, false, true));
             if (resetHealth) {
-                double maxHealth = p.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue();
+                double maxHealth = p.getAttribute(Attribute.MAX_HEALTH).getValue();
                 if (health > maxHealth) {
                     health = maxHealth;
                 }
@@ -53,7 +53,7 @@ public final class EventChannels {
      * @return int for number of bonus ticks required
      */
     private static int getBonusTicks(PotionEffectType potionEffectType) {
-        if (potionEffectType.equals(PotionEffectType.CONFUSION)) {
+        if (potionEffectType.equals(PotionEffectType.NAUSEA)) {
             return 70;
         } else if (potionEffectType.equals(PotionEffectType.NIGHT_VISION)) {
             return 210;
@@ -72,7 +72,7 @@ public final class EventChannels {
         if (eventShouldCancelIfBroken(i, friend.getEventType())) {
             friend.setActionTaken(true);
             friend.setCancelEvent(true);
-            friend.getPlayer().sendMessage(ThemeUtils.WARNING + "你的工具已经损坏,需要修复!");
+            friend.getPlayer().sendMessage(ThemeUtils.WARNING + "Công cụ của bạn đã hỏng, cần được sửa chữa!");
             return;
         }
 

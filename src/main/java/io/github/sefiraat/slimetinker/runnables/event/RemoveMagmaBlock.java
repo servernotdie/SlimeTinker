@@ -2,9 +2,8 @@ package io.github.sefiraat.slimetinker.runnables.event;
 
 import org.bukkit.Material;
 import org.bukkit.block.Block;
-import org.bukkit.scheduler.BukkitRunnable;
 
-public class RemoveMagmaBlock extends BukkitRunnable {
+public class RemoveMagmaBlock implements Runnable {
 
     private final Block block;
 

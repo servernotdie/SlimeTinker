@@ -83,7 +83,7 @@ public final class DurabilityEvents {
         if (friend.getPlayer().getInventory().containsAtLeast(new ItemStack(Material.IRON_INGOT), 1)) {
             ItemUtils.repairItem(friend.getTool(), 50);
             friend.getPlayer().getInventory().removeItem(i);
-            friend.getPlayer().sendMessage(ThemeUtils.SUCCESS + "你的工具使用了1个铁锭来恢复部分耐久!");
+            friend.getPlayer().sendMessage(ThemeUtils.SUCCESS + "Công cụ của bạn đã sử dụng 1 phôi sắt để phục hồi một phần độ bền!");
         }
 
     }

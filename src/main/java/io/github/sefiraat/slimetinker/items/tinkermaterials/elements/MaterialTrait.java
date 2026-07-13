@@ -63,7 +63,7 @@ public class MaterialTrait {
             || getPartType() == MaterialTrait.PROP_ROD) {
             String[] appendix = new String[] {
                 "",
-                ThemeUtils.ITEM_MOLTEN_METAL + "必须手持工具或武器才有效果"
+                ThemeUtils.ITEM_MOLTEN_METAL + "Phải cầm công cụ hoặc vũ khí mới có hiệu quả"
             };
             List<String> list = new ArrayList<>();
             Collections.addAll(list, lore);
@@ -132,10 +132,10 @@ public class MaterialTrait {
     public void setupTrait(@Nonnull TinkerMaterial parentCM) {
         List<String> newLore = new ArrayList<>(Arrays.asList(lore));
         newLore.add("");
-        newLore.add(ThemeUtils.ITEM_TYPEDESC + "来自: " + addedBy);
+        newLore.add(ThemeUtils.ITEM_TYPEDESC + "Từ: " + addedBy);
         if (this.sponsor != null) {
             newLore.add("");
-            newLore.add(ThemeUtils.ITEM_TYPEDESC + "由 " + sponsor + " 赞助");
+            newLore.add(ThemeUtils.ITEM_TYPEDESC + "Tài trợ bởi " + sponsor);
         }
         this.itemStack =
             ThemeUtils.themedItemStack(
@@ -147,7 +147,7 @@ public class MaterialTrait {
                 ),
                 getTraitTexture(addedBy),
                 ThemeItemType.PROP,
-                "特性: " + traitName,
+                "Đặc tính: " + traitName,
                 newLore
             );
         this.item = new SlimefunItem(ItemGroups.TRAITS, itemStack, DummySmelteryTrait.TYPE, propRecipe(partType, parentCM.getRepresentativeStack()));
@@ -184,50 +184,50 @@ public class MaterialTrait {
         "PROP_HEAD",
         SkullTextures.PART_SWORD_BLADE,
         ThemeItemType.PART,
-        "部件: 头部",
-        ThemeUtils.PASSIVE + "任何头部部件",
-        ThemeUtils.PASSIVE + "(例如: 镐头,铲头,斧刃等)"
+        "Bộ phận: Đầu",
+        ThemeUtils.PASSIVE + "Bất kỳ bộ phận đầu nào",
+        ThemeUtils.PASSIVE + "(Ví dụ: đầu cúp, đầu xẻng, lưỡi rìu...)"
     );
 
     public static final SlimefunItemStack PROP_BINDING = ThemeUtils.themedItemStack(
         "PROP_BINDING",
         SkullTextures.PART_BINDING,
         ThemeItemType.PART,
-        "部件: 绑定结",
-        ThemeUtils.PASSIVE + "任何绑定结部件"
+        "Bộ phận: Dây buộc",
+        ThemeUtils.PASSIVE + "Bất kỳ bộ phận dây buộc nào"
     );
 
     public static final SlimefunItemStack PROP_ROD = ThemeUtils.themedItemStack(
         "PROP_ROD",
         SkullTextures.PART_TOOL_ROD,
         ThemeItemType.PART,
-        "部件: 手柄",
-        ThemeUtils.PASSIVE + "任何手柄部件"
+        "Bộ phận: Tay cầm",
+        ThemeUtils.PASSIVE + "Bất kỳ bộ phận tay cầm nào"
     );
 
     public static final SlimefunItemStack PROP_PLATES = ThemeUtils.themedItemStack(
         "PROP_PLATES",
         SkullTextures.PART_CHEST_PLATES,
         ThemeItemType.PART,
-        "部件: 盔甲板",
-        ThemeUtils.PASSIVE + "任何盔甲板部件",
-        ThemeUtils.PASSIVE + "(例如: 头盔板,胸甲板等)"
+        "Bộ phận: Tấm giáp",
+        ThemeUtils.PASSIVE + "Bất kỳ bộ phận tấm giáp nào",
+        ThemeUtils.PASSIVE + "(Ví dụ: tấm mũ, tấm ngực...)"
     );
 
     public static final SlimefunItemStack PROP_GAMBESON = ThemeUtils.themedItemStack(
         "PROP_GAMBESON",
         SkullTextures.PART_GAMBESON,
         ThemeItemType.PART,
-        "部件: 护身软甲",
-        ThemeUtils.PASSIVE + "任何护身软甲部件"
+        "Bộ phận: Lớp đệm giáp",
+        ThemeUtils.PASSIVE + "Bất kỳ bộ phận lớp đệm giáp nào"
     );
 
     public static final SlimefunItemStack PROP_LINKS = ThemeUtils.themedItemStack(
         "PROP_LINKS",
         SkullTextures.PART_LINKS,
         ThemeItemType.PART,
-        "部件: 盔甲接合物",
-        ThemeUtils.PASSIVE + "任何盔甲接合物部件"
+        "Bộ phận: Khớp nối giáp",
+        ThemeUtils.PASSIVE + "Bất kỳ bộ phận khớp nối giáp nào"
     );
 
     @Nonnull

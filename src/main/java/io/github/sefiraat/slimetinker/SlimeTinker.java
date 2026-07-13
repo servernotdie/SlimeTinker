@@ -20,6 +20,7 @@ import io.github.sefiraat.slimetinker.managers.DispatchManager;
 import io.github.sefiraat.slimetinker.managers.MemoryManager;
 import io.github.sefiraat.slimetinker.managers.TraitManager;
 import io.github.sefiraat.slimetinker.runnables.RunnableManager;
+import io.github.sefiraat.slimetinker.scheduler.SlimeScheduler;
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import net.guizhanss.guizhanlibplugin.updater.GuizhanUpdater;
 
@@ -56,8 +57,8 @@ public class SlimeTinker extends JavaPlugin implements SlimefunAddon {
     public void onEnable() {
 
         if (!getServer().getPluginManager().isPluginEnabled("GuizhanLibPlugin")) {
-            getLogger().log(Level.SEVERE, "本插件需要 鬼斩前置库插件(GuizhanLibPlugin) 才能运行!");
-            getLogger().log(Level.SEVERE, "从此处下载: https://50l.cc/gzlib");
+            getLogger().log(Level.SEVERE, "Plugin này yêu cầu thư viện GuizhanLibPlugin để chạy!");
+            getLogger().log(Level.SEVERE, "Tải về tại đây: https://50l.cc/gzlib");
             getServer().getPluginManager().disablePlugin(this);
             return;
         }
@@ -66,9 +67,10 @@ public class SlimeTinker extends JavaPlugin implements SlimefunAddon {
 
         instance = this;
 
+        SlimeScheduler.init(this);
+
         getLogger().info("########################################");
-        getLogger().info("         Slime Tinker  粘液匠魂          ");
-        getLogger().info("       作者: Sefiraat 汉化: ybw0014      ");
+        getLogger().info("         Slime Tinker           ");
         getLogger().info("########################################");
 
         ItemGroups.set(this);
@@ -96,6 +98,7 @@ public class SlimeTinker extends JavaPlugin implements SlimefunAddon {
     @Override
     public void onDisable() {
         saveConfig();
+        SlimeScheduler.shutdown();
         instance = null;
     }
 

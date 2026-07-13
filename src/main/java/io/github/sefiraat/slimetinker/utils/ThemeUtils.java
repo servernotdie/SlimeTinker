@@ -51,21 +51,21 @@ public final class ThemeUtils {
     public static final ChatColor ADD_NETWORKS = ChatColor.of("#05ad08");
     public static final ChatColor GUIDE = ChatColor.of("#444444");
 
-    public static final String LORE_TYPE_CRAFT = ITEM_TYPEDESC + "合成材料";
-    public static final String LORE_TYPE_MACHINE = ITEM_TYPEDESC + "机器";
-    public static final String LORE_TYPE_DROP = ITEM_TYPEDESC + "掉落物";
-    public static final String LORE_TYPE_BASE = ITEM_TYPEDESC + "基础资源";
-    public static final String LORE_TYPE_CHEST = ITEM_TYPEDESC + "箱子";
-    public static final String LORE_MOLTEN_METAL = ITEM_TYPEDESC + "熔融金属";
-    public static final String LORE_LIQUID = ITEM_TYPEDESC + "部件材料";
-    public static final String LORE_CAST = ITEM_TYPEDESC + "铸件";
-    public static final String LORE_PART = ITEM_TYPEDESC + "部件";
-    public static final String LORE_TOOL = ITEM_TYPEDESC + "匠魂工具";
-    public static final String LORE_ARMOUR = ITEM_TYPEDESC + "匠魂防具";
-    public static final String LORE_INFO = ITEM_TYPEDESC + "信息";
-    public static final String LORE_MOD = ITEM_TYPEDESC + "模组";
-    public static final String LORE_PROP = ITEM_TYPEDESC + "特性";
-    public static final String LORE_MULTIBLOCK = ITEM_TYPEDESC + "多方块结构";
+    public static final String LORE_TYPE_CRAFT = ITEM_TYPEDESC + "Vật liệu chế tạo";
+    public static final String LORE_TYPE_MACHINE = ITEM_TYPEDESC + "Máy móc";
+    public static final String LORE_TYPE_DROP = ITEM_TYPEDESC + "Vật phẩm rơi ra";
+    public static final String LORE_TYPE_BASE = ITEM_TYPEDESC + "Tài nguyên cơ bản";
+    public static final String LORE_TYPE_CHEST = ITEM_TYPEDESC + "Rương";
+    public static final String LORE_MOLTEN_METAL = ITEM_TYPEDESC + "Kim loại nóng chảy";
+    public static final String LORE_LIQUID = ITEM_TYPEDESC + "Vật liệu bộ phận";
+    public static final String LORE_CAST = ITEM_TYPEDESC + "Vật đúc";
+    public static final String LORE_PART = ITEM_TYPEDESC + "Bộ phận";
+    public static final String LORE_TOOL = ITEM_TYPEDESC + "Công cụ SlimeTinker";
+    public static final String LORE_ARMOUR = ITEM_TYPEDESC + "Áo giáp SlimeTinker";
+    public static final String LORE_INFO = ITEM_TYPEDESC + "Thông tin";
+    public static final String LORE_MOD = ITEM_TYPEDESC + "Bản sửa đổi";
+    public static final String LORE_PROP = ITEM_TYPEDESC + "Thuộc tính";
+    public static final String LORE_MULTIBLOCK = ITEM_TYPEDESC + "Cấu trúc nhiều khối";
 
     @Nonnull
     @ParametersAreNonnullByDefault

@@ -17,61 +17,61 @@ public final class Dies {
         throw new UnsupportedOperationException("Utility Class");
     }
 
-    public static final String DIE_DESC = "用于制作模具";
+    public static final String DIE_DESC = "Được sử dụng để làm khuôn";
     public static final SlimefunItemStack DIE_SHOVEL_HEAD = ThemeUtils.themedItemStack(
         "DIE_SHOVEL_HEAD",
         SkullTextures.PART_SHOVEL_HEAD,
         ThemeItemType.CAST,
-        "模具原型: 石制铲子头",
+        "Nguyên mẫu khuôn: Đầu xẻng đá",
         ThemeUtils.PASSIVE + DIE_DESC
     );
     public static final SlimefunItemStack DIE_PICKAXE_HEAD = ThemeUtils.themedItemStack(
         "DIE_PICKAXE_HEAD",
         SkullTextures.PART_PICKAXE_HEAD,
         ThemeItemType.CAST,
-        "模具原型: 石制镐子头",
+        "Nguyên mẫu khuôn: Đầu cúp đá",
         ThemeUtils.PASSIVE + DIE_DESC
     );
     public static final SlimefunItemStack DIE_AXE_HEAD = ThemeUtils.themedItemStack(
         "DIE_AXE_HEAD",
         SkullTextures.PART_AXE_HEAD,
         ThemeItemType.CAST,
-        "模具原型: 石制斧头",
+        "Nguyên mẫu khuôn: Đầu rìu đá",
         ThemeUtils.PASSIVE + DIE_DESC
     );
     public static final SlimefunItemStack DIE_HOE_HEAD = ThemeUtils.themedItemStack(
         "DIE_HOE_HEAD",
         SkullTextures.PART_HOE_HEAD,
         ThemeItemType.CAST,
-        "模具原型: 石制锄头",
+        "Nguyên mẫu khuôn: Đầu cuốc đá",
         ThemeUtils.PASSIVE + DIE_DESC
     );
     public static final SlimefunItemStack DIE_SWORD_BLADE = ThemeUtils.themedItemStack(
         "DIE_SWORD_BLADE",
         SkullTextures.PART_SWORD_BLADE,
         ThemeItemType.CAST,
-        "模具原型: 石制剑身",
+        "Nguyên mẫu khuôn: Lưỡi kiếm đá",
         ThemeUtils.PASSIVE + DIE_DESC
     );
     public static final SlimefunItemStack DIE_TOOL_ROD = ThemeUtils.themedItemStack(
         "DIE_TOOL_ROD",
         SkullTextures.PART_TOOL_ROD,
         ThemeItemType.CAST,
-        "模具原型: 手柄",
+        "Nguyên mẫu khuôn: Tay cầm",
         ThemeUtils.PASSIVE + DIE_DESC
     );
     public static final SlimefunItemStack DIE_HELM_PLATE = ThemeUtils.themedItemStack(
         "DIE_HELM_PLATE",
         SkullTextures.PART_HELM_PLATES,
         ThemeItemType.CAST,
-        "模具原型: 石制头盔板",
+        "Nguyên mẫu khuôn: Tấm mũ giáp đá",
         ThemeUtils.PASSIVE + DIE_DESC
     );
     public static final SlimefunItemStack DIE_CHEST_PLATE = ThemeUtils.themedItemStack(
         "DIE_CHEST_PLATE",
         SkullTextures.PART_CHEST_PLATES,
         ThemeItemType.CAST,
-        "模具原型: 石制胸甲板",
+        "Nguyên mẫu khuôn: Tấm giáp ngực đá",
         ThemeUtils.PASSIVE + DIE_DESC
     );
 
@@ -79,7 +79,7 @@ public final class Dies {
         "DIE_LEG_PLATE",
         SkullTextures.PART_LEG_PLATES,
         ThemeItemType.CAST,
-        "模具原型: 石制护腿板",
+        "Nguyên mẫu khuôn: Tấm quần giáp đá",
         ThemeUtils.PASSIVE + DIE_DESC
     );
 
@@ -87,7 +87,7 @@ public final class Dies {
         "DIE_BOOT_PLATE",
         SkullTextures.PART_BOOTS_PLATES,
         ThemeItemType.CAST,
-        "模具原型: 石制靴子板",
+        "Nguyên mẫu khuôn: Tấm giày giáp đá",
         ThemeUtils.PASSIVE + DIE_DESC
     );
 
@@ -95,7 +95,7 @@ public final class Dies {
         "DIE_MAIL_LINK",
         SkullTextures.PART_LINKS,
         ThemeItemType.CAST,
-        "模具原型: 盔甲接合物",
+        "Nguyên mẫu khuôn: Khớp nối giáp",
         ThemeUtils.PASSIVE + DIE_DESC
     );
 
@@ -103,7 +103,7 @@ public final class Dies {
         "DIE_REPAIR_KIT",
         Material.MINECART,
         ThemeItemType.CAST,
-        "模具原型: 修复工具",
+        "Nguyên mẫu khuôn: Bộ sửa chữa",
         ThemeUtils.PASSIVE + DIE_DESC
     );
 
@@ -159,7 +159,7 @@ public final class Dies {
     };
     protected static final ItemStack[] RECIPE_DIE_MAIL_LINKS = new ItemStack[]{
         null, null, null,
-        null, new ItemStack(Material.CHAIN), null,
+        null, new ItemStack(Material.IRON_CHAIN), null,
         null, null, null
     };
     protected static final ItemStack[] RECIPE_DIE_REPAIR_KIT = new ItemStack[]{

@@ -489,7 +489,7 @@ public class TinkerMaterial {
             skullTexture,
             ThemeItemType.PART,
             getColor() + titName + ThemeUtils.ITEM_PART + " " + headName,
-            ThemeUtils.PASSIVE + "由" + titName + "制成的" + headName
+            ThemeUtils.PASSIVE + "Đầu " + headName + " làm từ " + titName
         );
     }
 
@@ -500,8 +500,8 @@ public class TinkerMaterial {
             "PART_BINDING_" + name,
             SkullTextures.PART_BINDING,
             ThemeItemType.PART,
-            getColor() + titName + ThemeUtils.ITEM_PART +  " 绑定结",
-            ThemeUtils.PASSIVE + "由" + titName + "制成的绑定结"
+            getColor() + titName + ThemeUtils.ITEM_PART + " Dây buộc",
+            ThemeUtils.PASSIVE + "Dây buộc làm từ " + titName
         );
 
         ItemMeta im = i.getItemMeta();
@@ -520,8 +520,8 @@ public class TinkerMaterial {
             "PART_ROD_" + name,
             SkullTextures.PART_TOOL_ROD,
             ThemeItemType.PART,
-            getColor() + titName + ThemeUtils.ITEM_PART + " 手柄",
-            ThemeUtils.PASSIVE + "由" + titName + "制成的手柄"
+            getColor() + titName + ThemeUtils.ITEM_PART + " Tay cầm",
+            ThemeUtils.PASSIVE + "Tay cầm làm từ " + titName
         );
     }
 
@@ -533,8 +533,8 @@ public class TinkerMaterial {
             "PART_PLATES_" + type + name,
             skullTexture,
             ThemeItemType.PART,
-            getColor() + titName + ThemeUtils.ITEM_PART + " " + partName + "板",
-            ThemeUtils.PASSIVE + "由" + titName + "制成的盔甲板"
+            getColor() + titName + ThemeUtils.ITEM_PART + " " + partName,
+            ThemeUtils.PASSIVE + "Tấm giáp làm từ " + titName
         );
     }
 
@@ -545,8 +545,8 @@ public class TinkerMaterial {
             "PART_GAMBESON_" + name,
             SkullTextures.PART_GAMBESON,
             ThemeItemType.PART,
-            getColor() + titName + ThemeUtils.ITEM_PART + " 护身软甲",
-            ThemeUtils.PASSIVE + "由" + titName + "制成的护身软甲"
+            getColor() + titName + ThemeUtils.ITEM_PART + " Lớp đệm giáp",
+            ThemeUtils.PASSIVE + "Lớp đệm giáp làm từ " + titName
         );
 
         ItemMeta im = i.getItemMeta();
@@ -564,8 +564,8 @@ public class TinkerMaterial {
             "PART_LINKS_" + name,
             SkullTextures.PART_LINKS,
             ThemeItemType.PART,
-            getColor() + titName + ThemeUtils.ITEM_PART + " 盔甲接合物",
-            ThemeUtils.PASSIVE + "由" + titName + "制成的盔甲接合物"
+            getColor() + titName + ThemeUtils.ITEM_PART + " Khớp nối giáp",
+            ThemeUtils.PASSIVE + "Khớp nối giáp làm từ " + titName
         );
     }
 
@@ -576,8 +576,8 @@ public class TinkerMaterial {
             "PART_REPAIR_KIT_" + name,
             Material.CHEST_MINECART,
             ThemeItemType.PART,
-            getColor() + titName + ThemeUtils.ITEM_PART + " 修复工具",
-            ThemeUtils.PASSIVE + "由" + titName + "制成的修复工具"
+            getColor() + titName + ThemeUtils.ITEM_PART + " Bộ sửa chữa",
+            ThemeUtils.PASSIVE + "Bộ sửa chữa làm từ " + titName
         );
     }
 

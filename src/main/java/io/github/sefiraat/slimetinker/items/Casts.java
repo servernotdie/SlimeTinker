@@ -19,185 +19,185 @@ public final class Casts {
         throw new UnsupportedOperationException("Utility Class");
     }
 
-    public static final String CAST_DESC = "将液体浇铸成模具的样式";
-    public static final String INPUT_DESC = "消耗 : ";
-    public static final String OUTPUT_DESC = "获取 : ";
-    public static final String UNIT_DESC = " 单位";
+    public static final String CAST_DESC = "Đúc chất lỏng vào khuôn để tạo ra hình dạng";
+    public static final String INPUT_DESC = "Tiêu thụ : ";
+    public static final String OUTPUT_DESC = "Nhận được : ";
+    public static final String UNIT_DESC = " Đơn vị";
     public static final SlimefunItemStack CAST_NUGGET =
         ThemeUtils.themedItemStack(
             "CAST_NUGGET",
             Material.YELLOW_CARPET,
             ThemeItemType.CAST,
-            "模具: 金属粒",
+            "Khuôn: Hạt kim loại",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
             ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_NUGGET + UNIT_DESC,
-            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 粒"
+            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 Hạt"
         );
     public static final SlimefunItemStack CAST_BLOCK =
         ThemeUtils.themedItemStack(
             "CAST_BLOCK",
             Material.YELLOW_CARPET,
             ThemeItemType.CAST,
-            "模具: 块",
+            "Khuôn: Khối kim loại",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
             ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_BLOCK + UNIT_DESC,
-            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 块"
+            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 Khối"
         );
     public static final SlimefunItemStack CAST_INGOT =
         ThemeUtils.themedItemStack(
             "CAST_INGOT",
             Material.YELLOW_CARPET,
             ThemeItemType.CAST,
-            "模具: 金属锭",
+            "Khuôn: Phôi kim loại",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
             ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_INGOT + UNIT_DESC,
-            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 锭"
+            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 Phôi"
         );
     public static final SlimefunItemStack CAST_GEM =
         ThemeUtils.themedItemStack(
             "CAST_GEM",
             Material.YELLOW_CARPET,
             ThemeItemType.CAST,
-            "模具: 宝石",
-            ThemeUtils.PASSIVE + "适用于非金属液体",
+            "Khuôn: Đá quý",
+            ThemeUtils.PASSIVE + "Áp dụng cho chất lỏng phi kim loại",
             "",
             ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_GEM + UNIT_DESC,
-            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 宝石"
+            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 Đá quý"
         );
     public static final SlimefunItemStack CAST_SHOVELHEAD =
         ThemeUtils.themedItemStack(
             "CAST_SHOVELHEAD",
             Material.ORANGE_CARPET,
             ThemeItemType.CAST,
-            "模具: 铲头",
+            "Khuôn: Đầu xẻng",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
             ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_SHOVELHEAD + UNIT_DESC,
-            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 铲头"
+            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 Đầu xẻng"
         );
     public static final SlimefunItemStack CAST_PICKAXEHEAD =
         ThemeUtils.themedItemStack(
             "CAST_PICKAXEHEAD",
             Material.ORANGE_CARPET,
             ThemeItemType.CAST,
-            "模具: 镐头",
+            "Khuôn: Đầu cúp",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
             ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_PICKAXEHEAD + UNIT_DESC,
-            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 镐头"
+            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 Đầu cúp"
         );
     public static final SlimefunItemStack CAST_AXEHEAD =
         ThemeUtils.themedItemStack(
             "CAST_AXE_HEAD",
             Material.ORANGE_CARPET,
             ThemeItemType.CAST,
-            "模具: 斧刃",
+            "Khuôn: Lưỡi rìu",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
             ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_AXEHEAD + UNIT_DESC,
-            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 斧刃"
+            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 Lưỡi rìu"
         );
     public static final SlimefunItemStack CAST_HOEHEAD =
         ThemeUtils.themedItemStack(
             "CAST_HOEHEAD",
             Material.ORANGE_CARPET,
             ThemeItemType.CAST,
-            "模具: 锄头",
+            "Khuôn: Đầu cuốc",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
             ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_HOEHEAD + UNIT_DESC,
-            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 锄头"
+            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 Đầu cuốc"
         );
     public static final SlimefunItemStack CAST_SWORDBLADE =
         ThemeUtils.themedItemStack(
             "CAST_SWORDBLADE",
             Material.ORANGE_CARPET,
             ThemeItemType.CAST,
-            "模具: 剑刃",
+            "Khuôn: Lưỡi kiếm",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
             ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_SWORDBLADE + UNIT_DESC,
-            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 剑刃"
+            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 Lưỡi kiếm"
         );
     public static final SlimefunItemStack CAST_TOOLROD =
         ThemeUtils.themedItemStack(
             "CAST_TOOLROD",
             Material.ORANGE_CARPET,
             ThemeItemType.CAST,
-            "模具: 手柄",
+            "Khuôn: Tay cầm",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
             ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_TOOLROD + UNIT_DESC,
-            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 手柄"
+            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 Tay cầm"
         );
     public static final SlimefunItemStack CAST_HELM_PLATE =
         ThemeUtils.themedItemStack(
             "CAST_HELM_PLATE",
             Material.ORANGE_CARPET,
             ThemeItemType.CAST,
-            "模具: 头盔板",
+            "Khuôn: Tấm mũ giáp",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
             ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_ARM_HELM + UNIT_DESC,
-            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 头盔板"
+            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 Tấm mũ giáp"
         );
     public static final SlimefunItemStack CAST_CHEST_PLATE =
         ThemeUtils.themedItemStack(
             "CAST_CHEST_PLATE",
             Material.ORANGE_CARPET,
             ThemeItemType.CAST,
-            "模具: 胸甲板",
+            "Khuôn: Tấm giáp ngực",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
             ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_ARM_CHEST + UNIT_DESC,
-            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 胸甲板"
+            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 Tấm giáp ngực"
         );
     public static final SlimefunItemStack CAST_LEG_PLATE =
         ThemeUtils.themedItemStack(
             "CAST_LEG_PLATE",
             Material.ORANGE_CARPET,
             ThemeItemType.CAST,
-            "模具: 护腿板",
+            "Khuôn: Tấm quần giáp",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
             ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_ARM_LEG + UNIT_DESC,
-            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 护腿板"
+            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 Tấm quần giáp"
         );
     public static final SlimefunItemStack CAST_BOOT_PLATE =
         ThemeUtils.themedItemStack(
             "CAST_BOOT_PLATE",
             Material.ORANGE_CARPET,
             ThemeItemType.CAST,
-            "模具: 靴子板",
+            "Khuôn: Tấm giày giáp",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
             ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_ARM_BOOT + UNIT_DESC,
-            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 靴子板"
+            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 Tấm giày giáp"
         );
     public static final SlimefunItemStack CAST_MAIL_LINK =
         ThemeUtils.themedItemStack(
             "CAST_MAIL_LINK",
             Material.ORANGE_CARPET,
             ThemeItemType.CAST,
-            "模具: 盔甲接合物",
+            "Khuôn: Khớp nối giáp",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
             ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_ARM_LINKS + UNIT_DESC,
-            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 盔甲接合物"
+            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 Khớp nối giáp"
         );
     public static final SlimefunItemStack CAST_REPAIRKIT =
         ThemeUtils.themedItemStack(
             "CAST_REPAIRKIT",
             Material.YELLOW_CARPET,
             ThemeItemType.CAST,
-            "模具: 修复工具",
+            "Khuôn: Bộ sửa chữa",
             ThemeUtils.PASSIVE + CAST_DESC,
             "",
             ThemeUtils.CLICK_INFO + INPUT_DESC + ChatColor.WHITE + TinkerMaterialManager.AMOUNT_KIT + UNIT_DESC,
-            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 修复工具"
+            ThemeUtils.CLICK_INFO + OUTPUT_DESC + ChatColor.WHITE + "1 Bộ sửa chữa"
         );
     protected static final ItemStack[] RECIPE_CAST_NUGGET = new ItemStack[]{
         new ItemStack(Material.GOLD_INGOT, 2), new ItemStack(Material.IRON_NUGGET), null,

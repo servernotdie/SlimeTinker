@@ -13,8 +13,8 @@ public final class DummyModificationStation {
         "DUMMY_MODIFICATION_STATION",
         Material.GRINDSTONE,
         ThemeItemType.MACHINE,
-        "匠魂模组工作站",
-        "在匠魂模组工作站中给匠魂装备安装模组"
+        "Trạm sửa đổi Tinker",
+        "Cài đặt bản sửa đổi cho trang bị Tinker tại trạm sửa đổi"
     );
     public static final RecipeType TYPE = new RecipeType(Keys.WS_DUMMY_TOOL_TABLE, STACK);
 

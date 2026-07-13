@@ -1,60 +1,69 @@
 ![](https://cdn.jsdelivr.net/gh/Sefiraat/SlimeTinker/images/logo/logo_large.png)
 
-SlimeTinker 是一个 Slimefun4 的附属插件，致力于在非模组服务器中还原知名模组 [匠魂](https://www.curseforge.com/minecraft/mc-mods/tinkers-construct) 的体验。
+SlimeTinker là một plugin phụ của Slimefun4, nhằm tái hiện trải nghiệm của mod nổi tiếng [Tinkers' Construct](https://www.curseforge.com/minecraft/mc-mods/tinkers-construct) trên máy chủ không mod.
 
-SlimeTinker 的非官方中文 Wiki 包含了所有特性的列表: [点击前往](https://slimefun-addons-wiki.guizhanss.cn/slime-tinker/)
+Wiki tiếng Trung không chính thức của SlimeTinker chứa danh sách tất cả các đặc tính: [Nhấn vào đây](https://slimefun-addons-wiki.guizhanss.cn/slime-tinker/)
 
-## 下载
+## Tải xuống
 
 [![Build Status](https://builds.guizhanss.com/api/badge/SlimefunGuguProject/SlimeTinker/master/latest)](https://builds.guizhanss.com/SlimefunGuguProject/SlimeTinker/master)
 
-## 功能包括:
+## Tính năng bao gồm:
 
-* 可以熔化所有原版以及 Slimefun 中的金属与合金。
-* 可以将金属冶炼成粒、锭和块。
-* 可以将金属铸造成工具头(例如镐头、剑刃等)、盔甲板与盔甲接合物。
-* 使用任意工具头、绑定结与手柄部件的组合，制造独特的工具。
-* 使用任意盔甲板、护身软甲与盔甲接合物部件的组合，制造独特的防具。
-* 每个部件都有不同的特性，包括自动熔炼、漂浮、隐身、3x3开采等。
-* 工具与防具会在你使用时升级。升级可以增加新的模组栏位并提升品质。工具品质依次为: 石 > 金 > 铁 > 钻石 > 下界合金; 防具品质依次为: 皮革 > 锁链 > 铁 > 钻石 > 下界合金。
-* 模组栏位可用于向工具与防具添加模组,包括额外掉落(支持与抢夺/时运叠加)、急迫、增加伤害等。
-* 工具与防具不会损坏，但你需要在它们损坏后使用同一类型的金属修复，否则你将无法继续使用工具。护甲则会自动卸到物品栏中。
-* 可以随时更换部件，工具/防具等级会保留。
-* 所有适用的效果和模组都能与原版附魔一起使用。
-* 支持启用/禁用特性。
+* Nấu chảy tất cả kim loại và hợp kim nguyên bản cũng như trong Slimefun.
+* Luyện kim loại thành hạt, thỏi và khối.
+* Đúc kim loại thành đầu dụng cụ (ví dụ đầu cuốc, lưỡi kiếm...), tấm giáp và mối nối giáp.
+* Sử dụng bất kỳ tổ hợp đầu dụng cụ, dây buộc và cán để tạo ra công cụ độc đáo.
+* Sử dụng bất kỳ tổ hợp tấm giáp, áo giáp mềm và mối nối giáp để tạo ra bộ giáp độc đáo.
+* Mỗi bộ phận có đặc tính khác nhau, bao gồm tự động nấu chảy, nổi, tàng hình, khai thác 3x3...
+* Công cụ và giáp sẽ nâng cấp khi bạn sử dụng. Nâng cấp có thể thêm ô mod mới và tăng phẩm chất. Phẩm chất công cụ: Đá > Vàng > Sắt > Kim cương > Netherite; Phẩm chất giáp: Da > Xích > Sắt > Kim cương > Netherite.
+* Ô mod có thể dùng để thêm mod vào công cụ và giáp, bao gồm rơi thêm (hỗ trợ cộng dồn với Cướp/May mắn), Gấp gáp, tăng sát thương...
+* Công cụ và giáp không bị hỏng, nhưng bạn cần sửa chúng bằng cùng loại kim loại sau khi hỏng, nếu không bạn sẽ không thể tiếp tục sử dụng. Giáp sẽ tự động tháo vào túi đồ.
+* Có thể thay đổi bộ phận bất kỳ lúc nào, cấp độ công cụ/giáp sẽ được giữ lại.
+* Tất cả hiệu ứng và mod phù hợp đều có thể dùng chung với enchant nguyên bản.
+* Hỗ trợ bật/tắt đặc tính.
 
-查看由 Boomer_1 制作的插件介绍视频: [Youtube](https://youtu.be/gAUoxj-h26s)
+Xem video giới thiệu plugin do Boomer_1 thực hiện: [Youtube](https://youtu.be/gAUoxj-h26s)
 
-## 配置
+## Cấu hình
 
-SlimeTinker 现已支持禁用特性。所有的特性默认启用。  
-要禁用特性，打开 `/plugins/SlimeTinker/traits.yml`,  
-将指定材料的部件设置为 `false` 即可。
+SlimeTinker hiện hỗ trợ vô hiệu hóa đặc tính. Tất cả đặc tính được bật theo mặc định.  
+Để vô hiệu hóa, mở `/plugins/SlimeTinker/traits.yml`,  
+đặt bộ phận của vật liệu chỉ định thành `false`.
 
-部件对应：
+Bộ phận tương ứng:
 
-- `HEAD`: 工具头
-- `BINDING`: 绑定结
-- `ROD`: 手柄
-- `PLATE`: 盔甲板
-- `GAMBESON`: 护身软甲
-- `LINKS`: 盔甲接合物
+- `HEAD`: Đầu dụng cụ
+- `BINDING`: Dây buộc
+- `ROD`: Cán
+- `PLATE`: Tấm giáp
+- `GAMBESON`: Áo giáp mềm
+- `LINKS`: Mối nối giáp
 
-## 计划中的新功能:
+## Tính năng dự kiến:
 
-* 增加对更多附属插件中的金属的支持
-* 增加更高级的冶炼炉，以支持自动化
+* Thêm hỗ trợ kim loại từ nhiều plugin phụ khác
+* Thêm lò luyện cao cấp hơn để hỗ trợ tự động hóa
 
-## 建议
+## Góp ý
 
-SlimeTinker 有**大量**的特性与效果，我没有足够的想法来充实。所以我欢迎任何人在 Slimefun Addon Community 的 Discord 服务器中反馈 (记得在 slime-tinker 频道里)。 如果你有任何想法，请点击 [邀请链接](https://discord.gg/SqD3gg5SAU) 加入服务器。
+SlimeTinker có **rất nhiều** đặc tính và hiệu ứng, tôi không có đủ ý tưởng để làm đầy. Vì vậy tôi hoan nghênh mọi người phản hồi trong máy chủ Discord của Slimefun Addon Community (nhớ vào kênh slime-tinker). Nếu bạn có bất kỳ ý tưởng nào, hãy nhấp vào [liên kết mời](https://discord.gg/SqD3gg5SAU) để tham gia máy chủ.
 
-## 感谢
+## Cảm ơn
 
-感谢 [Riley](https://github.com/Mooy1) 提供的 InfinityLib, 它加快了开发进度。另外要感谢 [Martin](https://github.com/martinbrom) 帮我们提出许多点子与开发方向。感谢 [Boomer](https://www.youtube.com/channel/UC2ZmER18YBRYube-62-JVpA) 测试并提供反馈。
+Cảm ơn [Riley](https://github.com/Mooy1) đã cung cấp InfinityLib, nó đã tăng tốc quá trình phát triển. Cũng cảm ơn [Martin](https://github.com/martinbrom) đã giúp chúng tôi đưa ra nhiều ý tưởng và hướng phát triển. Cảm ơn [Boomer](https://www.youtube.com/channel/UC2ZmER18YBRYube-62-JVpA) đã kiểm thử và cung cấp phản hồi.
 
-感谢 **mct.tantrum.org** 的服主提供的测试环境。
+Cảm ơn chủ server **mct.tantrum.org** đã cung cấp môi trường kiểm thử.
 
-## 感谢
+## Cảm ơn
 
-详见上游文档。
+Xem tài liệu thượng nguồn để biết thêm chi tiết.
+
+## Này bản fork từ upstream của nhóm dev người TQ xong dịch :D ờ có công tui patch hỗ trợ folia nữa :D 
+
+- Mà mấy đường link tải trực tiếp trên readme này tại tui lười chỉnh với muốn ghi công của họ , khuyên nên tải từ release.
+- Có thể bản dịch không đúng lắm mong thông cảm dùm.
+
+Credit: 
+---
+[SlimefunGuguProject](https://github.com/SlimefunGuguProject/SlimeTinker)

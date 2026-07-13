@@ -23,48 +23,48 @@ public final class Traits {
     public static final MaterialTrait CORE_IRON_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("稳定")
+        .setTraitName("Ổn định")
         .setLore(
-            "没有特性!"
+            "Không có đặc tính!"
         );
 
     public static final MaterialTrait CORE_IRON_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("锋利 1")
+        .setTraitName("Sắc bén 1")
         .setLore(
-            "获得力量效果 (可叠加)"
+            "Nhận hiệu ứng Sức Mạnh (có thể cộng dồn)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodIron);
 
     public static final MaterialTrait CORE_IRON_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("坚固")
+        .setTraitName("Kiên cố")
         .setLore(
-            "有33%的几率免疫爆炸伤害"
+            "33% tỷ lệ miễn nhiễm sát thương nổ"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateIron);
 
     public static final MaterialTrait CORE_IRON_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("腐蚀")
+        .setTraitName("Ăn mòn")
         .setLore(
-            "-10% 输出伤害",
-            "+10% 玩家经验获取"
+            "-10% sát thương đầu ra",
+            "+10% nhận kinh nghiệm người chơi"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::linksIron);
 
     public static final MaterialTrait CORE_GOLD_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("金色面纱")
+        .setTraitName("Mạng che vàng")
         .setLore(
-            "获得隐身效果",
+            "Nhận hiệu ứng T trị",
             "",
-            "应用在武器上时: ",
-            "-100% 输出伤害"
+            "Khi áp dụng lên vũ khí: ",
+            "-100% sát thương đầu ra"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headGold)
         .addConsumer(TraitEventType.TICK, TickEvents::headGold);
@@ -72,39 +72,39 @@ public final class Traits {
     public static final MaterialTrait CORE_GOLD_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("闪闪发光")
+        .setTraitName("Lấp lánh")
         .setLore(
-            "获得发光效果"
+            "Nhận hiệu ứng Phát sáng"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodGold);
 
     public static final MaterialTrait CORE_GOLD_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("繁荣")
+        .setTraitName("Thịnh vượng")
         .setLore(
-            "在受到伤害时",
-            "有1%几率掉落1个金粒"
+            "Khi bị sát thương",
+            "1% tỷ lệ rơi 1 hạt vàng"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateGold);
 
     public static final MaterialTrait CORE_GOLD_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("来个交易")
+        .setTraitName("Đổi chác")
         .setLore(
-            "猪灵会被你吸引",
-            "(周围5格内的猪灵不会攻击你)"
+            "Piglin sẽ bị bạn thu hút",
+            "(Piglin trong phạm vi 5 ô sẽ không tấn công bạn)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksGold);
 
     public static final MaterialTrait CORE_COPPER_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("这是个脑力活")
+        .setTraitName("Việc trí óc")
         .setLore(
-            "+100% 工具经验获取",
-            "-50% 输出伤害"
+            "+100% nhận kinh nghiệm công cụ",
+            "-50% sát thương đầu ra"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headCopper)
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headCopper);
@@ -113,18 +113,18 @@ public final class Traits {
         // Consumer not required - effect handled directly within Experience.java
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("经验传导")
+        .setTraitName("Truyền kinh nghiệm")
         .setLore(
-            "所有工具经验转化为玩家经验"
+            "Tất cả kinh nghiệm công cụ chuyển thành kinh nghiệm người chơi"
         );
 
     public static final MaterialTrait CORE_COPPER_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("新手")
+        .setTraitName("Tân thủ")
         .setLore(
-            "+20% 防具经验获取",
-            "+25% 承受伤害"
+            "+20% nhận kinh nghiệm giáp",
+            "+25% sát thương phải chịu"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateCopper)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::plateCopper);
@@ -132,47 +132,47 @@ public final class Traits {
     public static final MaterialTrait CORE_COPPER_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("暗淡")
+        .setTraitName("Mờ nhạt")
         .setLore(
-            "-20% 输出伤害",
-            "+20% 防具经验获取"
+            "-20% sát thương đầu ra",
+            "+20% nhận kinh nghiệm giáp"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::linksCopper);
 
     public static final MaterialTrait CORE_LEAD_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("剧毒")
+        .setTraitName("Độc tố")
         .setLore(
-            "命中时有25%的几率附加中毒效果"
+            "25% tỷ lệ gây hiệu ứng Độc khi trúng"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headLead);
 
     public static final MaterialTrait CORE_LEAD_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("蚂蟥")
+        .setTraitName("Đỉa")
         .setLore(
-            "获得额外血量,但会消耗能量",
-            "(获得饥饿,生命提升III效果)"
+            "Nhận thêm máu, nhưng tiêu hao năng lượng",
+            "(Nhận hiệu ứng Đói, Nâng cao Sinh lực III)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodLead);
 
     public static final MaterialTrait CORE_LEAD_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("生病了")
+        .setTraitName("Ốm rồi")
         .setLore(
-            "铅制防具并不是个好主意"
+            "Giáp chì không phải ý hay"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateLead);
 
     public static final MaterialTrait CORE_LEAD_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("生病了")
+        .setTraitName("Ốm rồi")
         .setLore(
-            "铅制防具并不是个好主意"
+            "Giáp chì không phải ý hay"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksLead);
 
@@ -180,31 +180,31 @@ public final class Traits {
         // Consumer not required - effect handled directly within Experience.java
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("附魔")
+        .setTraitName("Phù phép")
         .setLore(
-            "-50% 工具经验获取",
+            "-50% nhận kinh nghiệm công cụ",
             "",
-            "工具升级时获得随机附魔",
-            "附魔可能并不适用于该工具"
+            "Khi công cụ lên cấp, nhận phù phép ngẫu nhiên",
+            "Phù phép có thể không phù hợp với công cụ này"
         );
 
     public static final MaterialTrait CORE_SILVER_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("轻触")
+        .setTraitName("Nhẹ nhàng")
         .setLore(
-            "你感觉轻松多了",
-            "(获得缓降III效果)"
+            "Bạn cảm thấy nhẹ nhõm hơn nhiều",
+            "(Nhận hiệu ứng Rơi chậm III)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodSilver);
 
     public static final MaterialTrait CORE_SILVER_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("导电")
+        .setTraitName("Dẫn điện")
         .setLore(
-            "免疫闪电伤害",
-            "被闪电击中时在周围召唤闪电"
+            "Miễn nhiễm sát thương sét",
+            "Khi bị sét đánh, triệu hồi sét xung quanh"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateSilver);
 
@@ -212,28 +212,28 @@ public final class Traits {
         // Consumer not required - effect handled directly within Experience.java
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("附魔")
+        .setTraitName("Phù phép")
         .setLore(
-            "防具升级时获得随机附魔",
-            "附魔可能并不适用于该防具"
+            "Khi giáp lên cấp, nhận phù phép ngẫu nhiên",
+            "Phù phép có thể không phù hợp với loại giáp này"
         );
 
     public static final MaterialTrait CORE_ALUMINUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("再生资源")
+        .setTraitName("Tái sinh")
         .setLore(
-            "使用时有25%的几率恢复耐久"
+            "25% tỷ lệ hồi phục độ bền khi sử dụng"
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::headAluminum);
 
     public static final MaterialTrait CORE_ALUMINUM_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("柔韧")
+        .setTraitName("Dẻo dai")
         .setLore(
-            "+100% 耐久消耗",
-            "+50% 工具经验获取"
+            "+100% tiêu hao độ bền",
+            "+50% kinh nghiệm công cụ"
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::rodAluminum)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::rodAluminum)
@@ -242,10 +242,10 @@ public final class Traits {
     public static final MaterialTrait CORE_ALUMINUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("快跑")
+        .setTraitName("Chạy nhanh")
         .setLore(
-            "+50% 承受伤害",
-            "获得速度效果"
+            "+50% sát thương phải chịu",
+            "Nhận hiệu ứng Tốc độ"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateAluminum)
         .addConsumer(TraitEventType.TICK, TickEvents::plateAluminum);
@@ -254,18 +254,18 @@ public final class Traits {
         // Special case - in RepairBench.java. Will have to stay there
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("快速修复")
+        .setTraitName("Sửa nhanh")
         .setLore(
-            "只需要1个修复工具即可完全修复"
+            "Chỉ cần 1 dụng cụ sửa chữa là sửa hoàn toàn"
         );
 
     public static final MaterialTrait CORE_TIN_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("幸运")
+        .setTraitName("May mắn")
         .setLore(
-            "-50% 输出伤害",
-            "获得幸运效果"
+            "-50% sát thương đầu ra",
+            "Nhận hiệu ứng May mắn"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headTin)
         .addConsumer(TraitEventType.TICK, TickEvents::headTin);
@@ -273,96 +273,96 @@ public final class Traits {
     public static final MaterialTrait CORE_TIN_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("罐头")
+        .setTraitName("Đồ hộp")
         .setLore(
-            "你不再饥饿",
-            "(获得饱和效果)"
+            "Bạn không còn đói",
+            "(Nhận hiệu ứng No)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodTin);
 
     public static final MaterialTrait CORE_TIN_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("抗毒")
+        .setTraitName("Kháng độc")
         .setLore(
-            "免疫中毒效果"
+            "Miễn nhiễm hiệu ứng Độc"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateTin);
 
     public static final MaterialTrait CORE_TIN_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("承伤")
+        .setTraitName("Chịu đòn")
         .setLore(
-            "当受到伤害时,获得伤害吸收效果"
+            "Khi bị sát thương, nhận hiệu ứng Hấp thụ"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksTin);
 
     public static final MaterialTrait CORE_ZINC_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("海豚的恩惠")
+        .setTraitName("Ân huệ cá heo")
         .setLore(
-            "激活海豚的力量!",
-            "(获得海豚的恩惠效果)"
+            "Kích hoạt sức mạnh cá heo!",
+            "(Nhận hiệu ứng Ân huệ cá heo)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::headZinc);
 
     public static final MaterialTrait CORE_ZINC_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("飘浮")
+        .setTraitName("Bay bổng")
         .setLore(
-            "未蹲下时让你变得比空气还轻",
-            "(获得飘浮II效果)"
+            "Khi không ngồi, làm bạn nhẹ hơn không khí",
+            "(Nhận hiệu ứng Bay bổng II)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodZinc);
 
     public static final MaterialTrait CORE_ZINC_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("偷袭")
+        .setTraitName("Đột kích")
         .setLore(
-            "当目标看向别处时,",
-            "+100% 对其造成的伤害"
+            "Khi mục tiêu nhìn chỗ khác,",
+            "+100% sát thương gây ra cho chúng"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::plateZinc);
 
     public static final MaterialTrait CORE_ZINC_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("针灸")
+        .setTraitName("Châm cứu")
         .setLore(
-            "免疫来自仙人掌的伤害"
+            "Miễn nhiễm sát thương từ xương rồng"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksZinc);
 
     public static final MaterialTrait CORE_MAGNESIUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("燃烧")
+        .setTraitName("Thiêu đốt")
         .setLore(
-            "有(工具等级 x 5)%的几率",
-            "让敌人着火"
+            "Có (cấp công cụ x 5)% tỷ lệ",
+            "khiến kẻ địch bốc cháy"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headMagnesium);
 
     public static final MaterialTrait CORE_MAGNESIUM_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("磁铁")
+        .setTraitName("Nam châm")
         .setLore(
-            "随机捡起附近5格范围内的物品"
+            "Nhặt ngẫu nhiên vật phẩm trong phạm vi 5 ô"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodMagnesium);
 
     public static final MaterialTrait CORE_MAGNESIUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("快溜")
+        .setTraitName("Chuồn nhanh")
         .setLore(
-            "-25% 输出伤害",
-            "获得速度效果"
+            "-25% sát thương đầu ra",
+            "Nhận hiệu ứng Tốc độ"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::plateMagnesium)
         .addConsumer(TraitEventType.TICK, TickEvents::plateMagnesium);
@@ -370,102 +370,102 @@ public final class Traits {
     public static final MaterialTrait CORE_MAGNESIUM_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("镁地™夜视")
+        .setTraitName("Magie™ nhìn đêm")
         .setLore(
-            "获得夜视效果"
+            "Nhận hiệu ứng Nhìn đêm"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksMagnesium);
 
     public static final MaterialTrait CORE_STEEL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("不锈钢")
+        .setTraitName("Inox")
         .setLore(
-            "可以抵挡鲜血",
-            "(仅视觉效果)"
+            "Có thể ngăn máu",
+            "(Chỉ hiệu ứng hình ảnh)"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headSteel);
 
     public static final MaterialTrait CORE_STEEL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("轻量")
+        .setTraitName("Nhẹ")
         .setLore(
-            "+50% 工具经验获取",
-            "获得速度效果"
+            "+50% kinh nghiệm công cụ",
+            "Nhận hiệu ứng Tốc độ"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodSteel);
 
     public static final MaterialTrait CORE_STEEL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("坚硬")
+        .setTraitName("Cứng rắn")
         .setLore(
-            "-25% 受到的爆炸伤害"
+            "-25% sát thương nổ phải chịu"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateSteel);
 
     public static final MaterialTrait CORE_STEEL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("强壮")
+        .setTraitName("Mạnh mẽ")
         .setLore(
-            "获得生命提升效果"
+            "Nhận hiệu ứng Nâng cao sinh lực"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksSteel);
 
     public static final MaterialTrait CORE_DAMASCUS_STEEL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("吸血鬼")
+        .setTraitName("Ma cà rồng")
         .setLore(
-            "造成伤害时有33%的几率恢复1点血量",
-            "-50% 伤害 (日间)",
-            "+50% 伤害 (夜间)"
+            "33% tỷ lệ hồi 1 máu khi gây sát thương",
+            "-50% sát thương (ban ngày)",
+            "+50% sát thương (ban đêm)"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headDamsteel);
 
     public static final MaterialTrait CORE_DAMASCUS_STEEL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("夜行者")
+        .setTraitName("Kẻ đêm")
         .setLore(
-            "获得夜视效果"
+            "Nhận hiệu ứng Nhìn đêm"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodDamsteel);
 
     public static final MaterialTrait CORE_DAMASCUS_STEEL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("复用")
+        .setTraitName("Tái sử dụng")
         .setLore(
-            "获得生命提升效果",
-            "其等级取决于含有复用特性的防具数量",
-            "1件 \u21e8 1级",
-            "2件 \u21e8 3级",
-            "3件 \u21e8 6级",
-            "4件 \u21e8 10级"
+            "Nhận hiệu ứng Nâng cao sinh lực",
+            "Cấp độ phụ thuộc vào số lượng giáp có đặc tính Tái sử dụng",
+            "1 cái ⇒ Cấp 1",
+            "2 cái ⇒ Cấp 3",
+            "3 cái ⇒ Cấp 6",
+            "4 cái ⇒ Cấp 10"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateDamSteel);
 
     public static final MaterialTrait CORE_DAMASCUS_STEEL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("荆棘")
+        .setTraitName("Gai")
         .setLore(
-            "免疫并反弹荆棘伤害"
+            "Miễn nhiễm và phản xạ sát thương Gai"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksDamSteel);
 
     public static final MaterialTrait CORE_DURALUMIN_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("耐用")
+        .setTraitName("Bền bỉ")
         .setLore(
-            "工具损坏时依然可用,但:",
-            "-50% 输出伤害",
-            "获得挖掘疲劳效果",
-            "无法获得工具经验"
+            "Công cụ hỏng vẫn dùng được, nhưng:",
+            "-50% sát thương đầu ra",
+            "Nhận hiệu ứng Mỏi đào",
+            "Không thể nhận kinh nghiệm công cụ"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headDuralium)
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headDuralium)
@@ -475,191 +475,191 @@ public final class Traits {
         // Special case - in RepairBench.java. Will have to stay there
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("完全修复")
+        .setTraitName("Sửa hoàn toàn")
         .setLore(
-            "只需要1格修复工具即可完全修复"
+            "Chỉ cần 1 ô sửa chữa là sửa hoàn toàn"
         );
 
     public static final MaterialTrait CORE_DURALUMIN_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("耐用")
+        .setTraitName("Bền bỉ")
         .setLore(
-            "防具损坏时依然可用,但:",
-            "+20% 承受伤害"
+            "Giáp hỏng vẫn dùng được, nhưng:",
+            "+20% sát thương phải chịu"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateDuralium);
 
     public static final MaterialTrait CORE_DURALUMIN_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("减震剂")
+        .setTraitName("Giảm xóc")
         .setLore(
-            "有10%的几率免疫伤害",
-            "多个特性不会提高该几率"
+            "10% tỷ lệ miễn nhiễm sát thương",
+            "Nhiều đặc tính sẽ không tăng tỷ lệ này"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksDuralium);
 
     public static final MaterialTrait CORE_BRONZE_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("防火")
+        .setTraitName("Chống cháy")
         .setLore(
-            "获得防火效果"
+            "Nhận hiệu ứng Chống cháy"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::headBronze);
 
     public static final MaterialTrait CORE_BRONZE_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("不对劲")
+        .setTraitName("Sai sai")
         .setLore(
-            "一定是这个工具有问题,一定是..."
+            "Chắc chắn là công cụ này có vấn đề..."
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodBronze);
 
     public static final MaterialTrait CORE_BRONZE_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("农民")
+        .setTraitName("Nông dân")
         .setLore(
-            "收获农作物时增加1个掉落物",
-            "该效果不会受到时运的影响",
-            "该效果不会叠加,但可被其他特性影响"
+            "Tăng 1 vật phẩm rơi khi thu hoạch cây trồng",
+            "Hiệu ứng này không bị ảnh hưởng bởi May mắn",
+            "Hiệu ứng này không cộng dồn, nhưng có thể bị ảnh hưởng bởi đặc tính khác"
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::plateBronze);
 
     public static final MaterialTrait CORE_BRONZE_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("脆弱")
+        .setTraitName("Mỏng manh")
         .setLore(
-            "+100% 耐久消耗"
+            "+100% tiêu hao độ bền"
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::linksBrass);
 
     public static final MaterialTrait CORE_ALUMINUM_BRONZE_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("锋利 2")
+        .setTraitName("Sắc bén 2")
         .setLore(
-            "获得力量效果 (可叠加)"
+            "Nhận hiệu ứng Sức mạnh (có thể cộng dồn)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::headAlubronze);
 
     public static final MaterialTrait CORE_ALUMINUM_BRONZE_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("脆弱")
+        .setTraitName("Mỏng manh")
         .setLore(
-            "+100% 耐久消耗"
+            "+100% tiêu hao độ bền"
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::rodAluBronze);
 
     public static final MaterialTrait CORE_ALUMINUM_BRONZE_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("鲜花")
+        .setTraitName("Hoa tươi")
         .setLore(
-            "在行走时有几率让周围的草地上开花"
+            "Có tỷ lệ khiến cỏ xung quanh nở hoa khi đi"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateAluBronze);
 
     public static final MaterialTrait CORE_ALUMINUM_BRONZE_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("弹射!")
+        .setTraitName("Bắn tung!")
         .setLore(
-            "当血量低于一半时受到伤害",
-            "会弹射起飞!",
-            "(获得飘浮III效果)"
+            "Khi bị sát thương khi máu dưới một nửa",
+            "Sẽ bắn tung lên!",
+            "(Nhận hiệu ứng Bay bổng III)"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksAluBronze);
 
     public static final MaterialTrait CORE_HARDENED_METAL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("击退")
+        .setTraitName("Đẩy lùi")
         .setLore(
-            "击退任何命中的生物",
-            "有几率禁锢目标"
+            "Đẩy lùi bất kỳ sinh vật nào trúng",
+            "Có tỷ lệ giam cầm mục tiêu"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headHard);
 
     public static final MaterialTrait CORE_HARDENED_METAL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("锤子")
+        .setTraitName("Búa")
         .setLore(
-            "可挖掘 3x3x3 区域"
+            "Có thể đào khu vực 3x3x3"
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::explosive);
 
     public static final MaterialTrait CORE_HARDENED_METAL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("坚韧")
+        .setTraitName("Kiên nhẫn")
         .setLore(
-            "不消耗耐久"
+            "Không tiêu hao độ bền"
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::plateHardened);
 
     public static final MaterialTrait CORE_HARDENED_METAL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("地精")
+        .setTraitName("Yêu tinh")
         .setLore(
-            "在挖矿时有几率找到额外的物品",
-            "该几率可以叠加"
+            "Có tỷ lệ tìm thấy vật phẩm thêm khi đào",
+            "Tỷ lệ này có thể cộng dồn"
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::linksHardened);
 
     public static final MaterialTrait CORE_CORINTHIAN_BRONZE_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("炽热")
+        .setTraitName("Nóng bỏng")
         .setLore(
-            "可熔炼掉落物",
+            "Có thể nấu chảy vật rơi",
             "",
-            "这也许是把熔炉镐?"
+            "Có lẽ đây là cúp lò?"
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headCorbronze);
 
     public static final MaterialTrait CORE_CORINTHIAN_BRONZE_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("烫烫烫")
+        .setTraitName("Nóng hổi")
         .setLore(
-            "&k锟斤拷"
+            "&kNóng hổi"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodCorbronze);
 
     public static final MaterialTrait CORE_CORINTHIAN_BRONZE_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("高温")
+        .setTraitName("Cao nhiệt")
         .setLore(
-            "有几率使周围实体着火"
+            "Có tỷ lệ khiến thực thể xung quanh bốc cháy"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateCorBronze);
 
     public static final MaterialTrait CORE_CORINTHIAN_BRONZE_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("温血")
+        .setTraitName("Máu nóng")
         .setLore(
-            "在地狱获得速度II效果",
-            "在末地获得缓慢效果"
+            "Ở địa ngục nhận hiệu ứng Tốc độ II",
+            "Ở end nhận hiệu ứng Chậm"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksCorBronze);
 
     public static final MaterialTrait CORE_SOLDER_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("隐身")
+        .setTraitName("Tàng hình")
         .setLore(
-            "获得隐身效果",
-            "但在使用时会立即损坏"
+            "Nhận hiệu ứng Tàng hình",
+            "Nhưng sẽ hỏng ngay khi sử dụng"
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::headSolder)
         .addConsumer(TraitEventType.TICK, TickEvents::headSolder);
@@ -668,18 +668,18 @@ public final class Traits {
         // Special Case - in EntityKilledListener.java and DropItemListener.java - likely wont move
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("绑定")
+        .setTraitName("Ràng buộc")
         .setLore(
-            "工具无法被丢弃",
-            "也不会在死亡时掉落"
+            "Công cụ không thể vứt bỏ",
+            "cũng không rơi khi chết"
         );
 
     public static final MaterialTrait CORE_SOLDER_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("软着陆")
+        .setTraitName("Hạ cánh mềm")
         .setLore(
-            "免疫鞘翅的撞击伤害"
+            "Miễn nhiễm sát thương va chạm của cánh"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateSolder);
 
@@ -687,58 +687,58 @@ public final class Traits {
         // Special Case - in EntityKilledListener.java and DropItemListener.java - likely wont move
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("绑定")
+        .setTraitName("Ràng buộc")
         .setLore(
-            "防具无法被丢弃",
-            "也不会在死亡时掉落"
+            "Giáp không thể vứt bỏ",
+            "cũng không rơi khi chết"
         );
 
     public static final MaterialTrait CORE_BILLON_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("速掘")
+        .setTraitName("Đào nhanh")
         .setLore(
-            "获得急迫效果",
-            "(可叠加)"
+            "Nhận hiệu ứng Gấp gáp",
+            "(Có thể cộng dồn)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::headBillon);
 
     public static final MaterialTrait CORE_BILLON_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("弹簧")
+        .setTraitName("Lò xo")
         .setLore(
-            "让你跳的更高",
-            "(获得跳跃提升IV效果)"
+            "Giúp bạn nhảy cao hơn",
+            "(Nhận hiệu ứng Nhảy cao IV)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodBillon);
 
     public static final MaterialTrait CORE_BILLON_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("天使降临")
+        .setTraitName("Thiên thần giáng thế")
         .setLore(
-            "你的攻击将治疗目标",
-            "而不是伤害目标"
+            "Đòn tấn công của bạn sẽ chữa lành mục tiêu",
+            "thay vì gây sát thương"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::plateBillon);
 
     public static final MaterialTrait CORE_BILLON_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("热导体")
+        .setTraitName("Dẫn nhiệt")
         .setLore(
-            "免疫岩浆块的伤害"
+            "Miễn nhiễm sát thương từ khối magma"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksBillon);
 
     public static final MaterialTrait CORE_BRASS_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("倒霉鬼")
+        .setTraitName("Xui xẻo")
         .setLore(
-            "+50% 输出伤害",
-            "获得厄运III效果"
+            "+50% sát thương đầu ra",
+            "Nhận hiệu ứng Xui xẻo III"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headBrass)
         .addConsumer(TraitEventType.TICK, TickEvents::headBrass);
@@ -746,21 +746,21 @@ public final class Traits {
     public static final MaterialTrait CORE_BRASS_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("氧气")
+        .setTraitName("Oxy")
         .setLore(
-            "获得水下呼吸效果"
+            "Nhận hiệu ứng Thở dưới nước"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodBrass);
 
     public static final MaterialTrait CORE_BRASS_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("绑定环")
+        .setTraitName("Vòng ràng buộc")
         .setLore(
-            "+200% 耐久消耗",
-            "承受伤害将根据耐久度计算:",
-            "耐久高于一半时减少承受伤害,满耐久度时最多减少25%",
-            "耐久低于一半时增加承受伤害,1耐久度时最多增加25%"
+            "+200% tiêu hao độ bền",
+            "Sát thương phải chịu dựa theo độ bền:",
+            "Độ bền trên một nửa giảm sát thương phải chịu, tối đa giảm 25% khi đầy độ bền",
+            "Độ bền dưới một nửa tăng sát thương phải chịu, tối đa tăng 25% khi 1 độ bền"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateBrass)
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::plateBrass);
@@ -768,32 +768,32 @@ public final class Traits {
     public static final MaterialTrait CORE_BRASS_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("崩!撤!卖!溜!")
+        .setTraitName("Chạy! Mau!")
         .setLore(
-            "+100% 耐久消耗",
-            "当血量低于一半时受到伤害",
-            "获得速度III效果"
+            "+100% tiêu hao độ bền",
+            "Khi bị sát thương khi máu dưới một nửa",
+            "Nhận hiệu ứng Tốc độ III"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksBrass);
 
     public static final MaterialTrait CORE_ALUMINUM_BRASS_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("阿布拉")
+        .setTraitName("Abra")
         .setLore(
-            "命中生物时有33%的几率",
-            "使目标随机传送"
+            "33% tỷ lệ khi trúng sinh vật",
+            "dịch chuyển mục tiêu ngẫu nhiên"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headAluBrass);
 
     public static final MaterialTrait CORE_ALUMINUM_BRASS_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("好学")
+        .setTraitName("Hiếu học")
         .setLore(
-            "+50% 工具经验获取",
-            "+50% 玩家经验获取",
-            "-50% 输出伤害"
+            "+50% kinh nghiệm công cụ",
+            "+50% kinh nghiệm người chơi",
+            "-50% sát thương đầu ra"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::rodAlubrass)
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::rodAluBrass);
@@ -801,124 +801,124 @@ public final class Traits {
     public static final MaterialTrait CORE_ALUMINUM_BRASS_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("巫师")
+        .setTraitName("Phù thủy")
         .setLore(
-            "-50% 承受的魔法伤害"
+            "-50% sát thương phép phải chịu"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateAluBrass);
 
     public static final MaterialTrait CORE_ALUMINUM_BRASS_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("逃脱")
+        .setTraitName("Thoát thân")
         .setLore(
-            "受到伤害时随机传送到附近",
-            "(CD: 10秒)"
+            "Khi bị sát thương, dịch chuyển ngẫu nhiên gần đó",
+            "(CD: 10 giây)"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksAluBrass);
 
     public static final MaterialTrait CORE_NICKEL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("带电(负极-)")
+        .setTraitName("Tích điện(Âm-)")
         .setLore(
-            "有20%的几率",
-            "+200% 输出伤害",
-            "并禁锢目标",
-            "(需要与正极同时存在才能生效)"
+            "20% tỷ lệ",
+            "+200% sát thương đầu ra",
+            "và giam cầm mục tiêu",
+            "(Cần tồn tại cùng với Dương+ mới có hiệu lực)"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::charged);
 
     public static final MaterialTrait CORE_NICKEL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("带电(负极-)")
+        .setTraitName("Tích điện(Âm-)")
         .setLore(
-            "有20%的几率",
-            "+200% 输出伤害",
-            "并禁锢目标",
-            "(需要与正极同时存在才能生效)"
+            "20% tỷ lệ",
+            "+200% sát thương đầu ra",
+            "và giam cầm mục tiêu",
+            "(Cần tồn tại cùng với Dương+ mới có hiệu lực)"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::charged);
 
     public static final MaterialTrait CORE_NICKEL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("磁铁(负极-)")
+        .setTraitName("Nam châm(Âm-)")
         .setLore(
-            "磁铁的负极",
-            "磁铁可以自动吸收周围的掉落物",
-            "范围 = (磁铁正极数 + 磁铁负极数) - (磁铁正级数与负极数的差异)",
-            "(即磁铁正负极数越多,且正负极数尽量一致,即可增大范围)"
+            "Âm của nam châm",
+            "Nam châm có thể tự hút vật rơi xung quanh",
+            "Phạm vi = (số DC + số NC) - (chênh lệch DC và NC)",
+            "(Càng nhiều và càng đồng đều DC & NC, phạm vi càng lớn)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateNickel);
 
     public static final MaterialTrait CORE_NICKEL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("磁铁(负极-)")
+        .setTraitName("Nam châm(Âm-)")
         .setLore(
-            "磁铁的负极",
-            "磁铁可以自动吸收周围的掉落物",
-            "范围 = (磁铁正极数 + 磁铁负极数) - (磁铁正级数与负极数的差异)",
-            "(即磁铁正负极数越多,且正负极数尽量一致,即可增大范围)"
+            "Âm của nam châm",
+            "Nam châm có thể tự hút vật rơi xung quanh",
+            "Phạm vi = (số DC + số NC) - (chênh lệch DC và NC)",
+            "(Càng nhiều và càng đồng đều DC & NC, phạm vi càng lớn)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksNickel);
 
     public static final MaterialTrait CORE_COBALT_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("带电(正极+)")
+        .setTraitName("Tích điện(Dương+)")
         .setLore(
-            "有20%的几率",
-            "+200% 输出伤害",
-            "并禁锢目标",
-            "(需要与负极同时存在才能生效)"
+            "20% tỷ lệ",
+            "+200% sát thương đầu ra",
+            "và giam cầm mục tiêu",
+            "(Cần tồn tại cùng với Âm- mới có hiệu lực)"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::charged);
 
     public static final MaterialTrait CORE_COBALT_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("带电(正极+)")
+        .setTraitName("Tích điện(Dương+)")
         .setLore(
-            "有20%的几率",
-            "+200% 输出伤害",
-            "并禁锢目标",
-            "(需要与负极同时存在才能生效)"
+            "20% tỷ lệ",
+            "+200% sát thương đầu ra",
+            "và giam cầm mục tiêu",
+            "(Cần tồn tại cùng với Âm- mới có hiệu lực)"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::charged);
 
     public static final MaterialTrait CORE_COBALT_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("磁铁(正极+)")
+        .setTraitName("Nam châm(Dương+)")
         .setLore(
-            "磁铁的正极",
-            "磁铁可以自动吸收周围的掉落物",
-            "范围 = (磁铁正极数 + 磁铁负极数) - (磁铁正级数与负极数的差异)",
-            "(即磁铁正负极数越多,且正负极数尽量一致,即可增大范围)"
+            "Dương của nam châm",
+            "Nam châm có thể tự hút vật rơi xung quanh",
+            "Phạm vi = (số DC + số NC) - (chênh lệch DC và NC)",
+            "(Càng nhiều và càng đồng đều DC & NC, phạm vi càng lớn)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateCobalt);
 
     public static final MaterialTrait CORE_COBALT_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("磁铁(正极+)")
+        .setTraitName("Nam châm(Dương+)")
         .setLore(
-            "磁铁的正极",
-            "磁铁可以自动吸收周围的掉落物",
-            "范围 = (磁铁正极数 + 磁铁负极数) - (磁铁正级数与负极数的差异)",
-            "(即磁铁正负极数越多,且正负极数尽量一致,即可增大范围)"
+            "Dương của nam châm",
+            "Nam châm có thể tự hút vật rơi xung quanh",
+            "Phạm vi = (số DC + số NC) - (chênh lệch DC và NC)",
+            "(Càng nhiều và càng đồng đều DC & NC, phạm vi càng lớn)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksCobalt);
 
     public static final MaterialTrait CORE_REINFORCED_ALLOY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("锤子")
+        .setTraitName("Búa")
         .setLore(
-            "可挖掘 3x3x3 区域"
+            "Có thể đào khu vực 3x3x3"
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::explosive);
 
@@ -926,10 +926,10 @@ public final class Traits {
         // Special Case - nested within plate mod. Will be moved when mods are changed to consumers
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("双倍强化")
+        .setTraitName("Nhân đôi gia cường")
         .setLore(
-            "强化合金板模组拥有双倍效果",
-            "(只需5个即可不消耗耐久)"
+            "Module hợp kim gia cường có hiệu ứng nhân đôi",
+            "(Chỉ cần 5 cái là không tiêu hao độ bền)"
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::explosive);
 
@@ -937,54 +937,54 @@ public final class Traits {
         // Special Case - nested within plate mod. Will be moved when mods are changed to consumers
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("双倍强化")
+        .setTraitName("Nhân đôi gia cường")
         .setLore(
-            "强化合金板模组拥有双倍效果",
-            "(只需5个即可不消耗耐久)"
+            "Module hợp kim gia cường có hiệu ứng nhân đôi",
+            "(Chỉ cần 5 cái là không tiêu hao độ bền)"
         );
 
     public static final MaterialTrait CORE_REINFORCED_ALLOY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("防凋零")
+        .setTraitName("Chống Wither")
         .setLore(
-            "免疫凋零效果"
+            "Miễn nhiễm hiệu ứng Wither"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksReinforced);
 
     public static final MaterialTrait CORE_STRING_BINDER = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("又不是不能用")
+        .setTraitName("Cũng tạm được")
         .setLore(
-            "没有任何效果",
-            "能用就行了"
+            "Không có hiệu ứng gì",
+            "Xài tạm được rồi"
         );
 
     public static final MaterialTrait CORE_STRING_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("又不是不能用")
+        .setTraitName("Cũng tạm được")
         .setLore(
-            "没有任何效果",
-            "能用就行了"
+            "Không có hiệu ứng gì",
+            "Xài tạm được rồi"
         );
 
     public static final MaterialTrait CORE_VINE_BINDER = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("生长")
+        .setTraitName("Phát triển")
         .setLore(
-            "在白天缓慢修复工具"
+            "Sửa chữa công cụ chậm vào ban ngày"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::binderVine);
 
     public static final MaterialTrait CORE_VINE_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("生长")
+        .setTraitName("Phát triển")
         .setLore(
-            "在白天缓慢修复工具"
+            "Sửa chữa công cụ chậm vào ban ngày"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::gambesonVine);
 
@@ -992,120 +992,120 @@ public final class Traits {
     public static final MaterialTrait CORE_CRIMSON_ROOT_BINDER = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("腐烂")
+        .setTraitName("Mục nát")
         .setLore(
-            "在夜间缓慢修复工具"
+            "Sửa chữa công cụ chậm vào ban đêm"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::binderCrimsonRoot);
 
     public static final MaterialTrait CORE_CRIMSON_ROOT_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("腐烂")
+        .setTraitName("Mục nát")
         .setLore(
-            "在夜间缓慢修复工具"
+            "Sửa chữa công cụ chậm vào ban đêm"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::gambesonCrimsonRoots);
 
     public static final MaterialTrait CORE_WARPED_ROOT_BINDER = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("恢复")
+        .setTraitName("Hồi phục")
         .setLore(
-            "缓慢治疗玩家"
+            "Chữa lành chậm cho người chơi"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::bindWarpedRoot);
 
     public static final MaterialTrait CORE_WARPED_ROOT_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("恢复")
+        .setTraitName("Hồi phục")
         .setLore(
-            "缓慢治疗玩家"
+            "Chữa lành chậm cho người chơi"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::gambesonWarpedRoots);
 
     public static final MaterialTrait CORE_WEEPING_VINE_BINDER = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("不祥之兆")
+        .setTraitName("Điềm gở")
         .setLore(
-            "我感觉很不好...",
-            "(获得不祥之兆效果)"
+            "Tôi cảm thấy rất tệ...",
+            "(Nhận hiệu ứng Điềm gở)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::binderWeepingVine);
 
     public static final MaterialTrait CORE_WEEPING_VINE_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("不祥之兆")
+        .setTraitName("Điềm gở")
         .setLore(
-            "我感觉很不好...",
-            "(获得不祥之兆效果)"
+            "Tôi cảm thấy rất tệ...",
+            "(Nhận hiệu ứng Điềm gở)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::gambesonWeepingVines);
 
     public static final MaterialTrait CORE_TWISTING_VINE_BINDER = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("吸引")
+        .setTraitName("Hấp dẫn")
         .setLore(
-            "自动吸收周围5格内的掉落物"
+            "Tự hút vật rơi trong phạm vi 5 ô"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::binderTwistingVine);
 
     public static final MaterialTrait CORE_TWISTING_VINE_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("吸引")
+        .setTraitName("Hấp dẫn")
         .setLore(
-            "自动吸收周围5格内的掉落物"
+            "Tự hút vật rơi trong phạm vi 5 ô"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::gambesonTwistingWines);
 
     public static final MaterialTrait CORE_SLIME_BINDER = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("弹性")
+        .setTraitName("Đàn hồi")
         .setLore(
-            "-50% 摔落伤害"
+            "-50% sát thương rơi"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::bindSlime);
 
     public static final MaterialTrait CORE_SLIME_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("弹性")
+        .setTraitName("Đàn hồi")
         .setLore(
-            "-25% 摔落伤害"
+            "-25% sát thương rơi"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::gambesonSlime);
 
     public static final MaterialTrait CORE_SILICON_BINDER = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("缓慢学习")
+        .setTraitName("Học chậm")
         .setLore(
-            "破坏方块时",
-            "+(5 * 工具等级)% 工具经验获取"
+            "Khi phá khối",
+            "+(5 * cấp công cụ)% kinh nghiệm công cụ"
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::bindSilicon);
 
     public static final MaterialTrait CORE_SILICON_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("缓慢学习")
+        .setTraitName("Học chậm")
         .setLore(
-            "+(5 * 防具等级)% 防具经验获取"
+            "+(5 * cấp giáp)% kinh nghiệm giáp"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::gambesonSilicon);
 
     public static final MaterialTrait CORE_LEATHER_BINDER = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("厚皮革")
+        .setTraitName("Da dày")
         .setLore(
-            "+50% 工具经验获取"
+            "+50% kinh nghiệm công cụ"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::binderLeather)
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::binderLeather);
@@ -1113,77 +1113,77 @@ public final class Traits {
     public static final MaterialTrait CORE_LEATHER_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("厚皮革")
+        .setTraitName("Da dày")
         .setLore(
-            "+10% 防具经验获取"
+            "+10% kinh nghiệm giáp"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::gambesonLeather);
 
     public static final MaterialTrait CORE_FERROSILICON_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("氢气")
+        .setTraitName("Hydro")
         .setLore(
-            "受到伤害时",
-            "获得飘浮效果"
+            "Khi bị sát thương",
+            "nhận hiệu ứng Bay bổng"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::headFerrosilicon);
 
     public static final MaterialTrait CORE_FERROSILICON_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("太阳能")
+        .setTraitName("Năng lượng mặt trời")
         .setLore(
-            "在白天持续恢复耐久"
+            "Hồi phục độ bền liên tục vào ban ngày"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateFerrosilicon);
 
     public static final MaterialTrait CORE_FERROSILICON_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("魔童")
+        .setTraitName("Ma đồng")
         .setLore(
-            "获得1层魔童效果",
-            "当拥有4层及以上的魔童效果时",
-            "击退周围5格内的所有的生物",
-            "(凋灵与末影龙除外)"
+            "Nhận 1 lớp hiệu ứng Ma đồng",
+            "Khi có 4 lớp Ma đồng trở lên",
+            "Đẩy lùi tất cả sinh vật trong phạm vi 5 ô",
+            "(Trừ Wither và Ender Dragon)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::brightBurn);
 
     public static final MaterialTrait CORE_REDSTONE_ALLOY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("电棍")
+        .setTraitName("Dùi cui điện")
         .setLore(
-            "有几率在命中生物时召唤闪电"
+            "Có tỷ lệ triệu hồi sét khi trúng sinh vật"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::rodRedstoneAlloy);
 
     public static final MaterialTrait CORE_REDSTONE_ALLOY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("充能")
+        .setTraitName("Nạp năng lượng")
         .setLore(
-            "在 5x2x5 范围内随机充能方块",
-            "(激活红石信号)"
+            "Nạp năng lượng ngẫu nhiên khối trong phạm vi 5x2x5",
+            "(Kích hoạt tín hiệu Redstone)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateRedstoneAlloy);
 
     public static final MaterialTrait CORE_REDSTONE_ALLOY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("谁还要压力板?")
+        .setTraitName("Cần gì áp lực?")
         .setLore(
-            "你脚下的方块是充能的"
+            "Khối dưới chân bạn được nạp năng lượng"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksRedstoneAlloy);
 
     public static final MaterialTrait CORE_BOOMERITE_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("梯子模拟器™")
+        .setTraitName("Mô phỏng thang™")
         .setLore(
-            "右键点击时生成梯子"
+            "Click chuột phải để tạo thang"
         )
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::headBoomerite);
 
@@ -1192,35 +1192,35 @@ public final class Traits {
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
         .setTraitName("Go Boomer")
         .setLore(
-            "警告: 即将发生爆炸"
+            "Cảnh báo: Sắp phát nổ"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateBoomerite);
 
     public static final MaterialTrait CORE_SEFIRITE_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("庆祝")
+        .setTraitName("Ăn mừng")
         .setLore(
-            "是时候庆祝一下Sefi的生日了"
+            "Đến lúc ăn mừng sinh nhật Sefi rồi"
         )
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::headSefirite);
 
     public static final MaterialTrait CORE_CRINGLEIUM_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("庆祝节日")
+        .setTraitName("Ăn mừng lễ hội")
         .setLore(
-            "一起来庆祝圣诞节吧!"
+            "Cùng ăn mừng Giáng Sinh nào!"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksCringleium);
 
     public static final MaterialTrait CORE_LOVE_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("这是你要的一切")
+        .setTraitName("Mọi điều bạn cần")
         .setLore(
-            "你被关爱了",
-            "(获得生命回复效果)"
+            "Bạn được yêu thương",
+            "(Nhận hiệu ứng hồi máu)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksLove);
 
@@ -1237,21 +1237,21 @@ public final class Traits {
     public static final MaterialTrait CORE_SMITHIUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("坚毅")
+        .setTraitName("Nghị lực")
         .setLore(
-            "有 50% 几率不消耗耐久。"
+            "Có 50% tỷ lệ không tiêu hao độ bền."
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::headSmithium);
 
     public static final MaterialTrait CORE_SMITHIUM_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("勤勉")
+        .setTraitName("Cần cù")
         .setLore(
-            "Shift + 右键点击来激活急速爆裂效果，持续30秒。",
-            "急速爆裂效果生效期间，",
-            "每破坏一个方块有 [50 ÷ 急迫等级]% 几率",
-            "增加1级急迫效果，最高为急迫 10。冷却时间5分钟。"
+            "Shift + chuột phải để kích hoạt hiệu ứng Bùng nổ Tốc độ, kéo dài 30 giây.",
+            "Trong thời gian hiệu ứng Bùng nổ Tốc độ có hiệu lực,",
+            "mỗi khi phá một khối có [50 ÷ cấp Haste]% tỷ lệ",
+            "tăng 1 cấp Haste, tối đa Haste 10. Hồi chiêu 5 phút."
         )
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::rodSmithium)
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::rodSmithium);
@@ -1259,28 +1259,28 @@ public final class Traits {
     public static final MaterialTrait CORE_SMITHIUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("抗热")
+        .setTraitName("Chịu nhiệt")
         .setLore(
-            "有 25% 几率无视火焰/岩浆伤害。"
+            "Có 25% tỷ lệ bỏ qua sát thương lửa/lava."
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::platesSmithium);
 
     public static final MaterialTrait CORE_SMITHIUM_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("工匠技术")
+        .setTraitName("Kỹ thuật thợ thủ công")
         .setLore(
-            "有 25% 几率返还维修花费。"
+            "Có 25% tỷ lệ hoàn trả chi phí sửa chữa."
         );
 
     public static final MaterialTrait CORE_ANNIVERSARIUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.CORE_NOTE)
-        .setTraitName("粘液科技10周年!")
+        .setTraitName("Slimefun 10 năm!")
         .setLore(
-            "庆祝粘液科技10周年!",
+            "Ăn mừng Slimefun 10 năm!",
             "",
-            "需要全套护甲才能生效."
+            "Cần đủ bộ giáp mới có hiệu lực."
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateAnniversary);
 
@@ -1291,168 +1291,168 @@ public final class Traits {
     public static final MaterialTrait INFINITY_VOID_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("虚空矿工")
+        .setTraitName("Thợ mỏ hư vô")
         .setLore(
-            "在挖掘时有几率掉落随机的矿产"
+            "Khi đào có tỷ lệ rơi quặng ngẫu nhiên"
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headVoid);
 
     public static final MaterialTrait INFINITY_VOID_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("虚空恐惧")
+        .setTraitName("Khiếp sợ hư vô")
         .setLore(
-            "+150% 输出伤害",
-            "在末地时:",
-            "+250% 输出伤害"
+            "+150% sát thương đầu ra",
+            "Ở The End:",
+            "+250% sát thương đầu ra"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::rodVoid);
 
     public static final MaterialTrait INFINITY_VOID_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("虚空行者")
+        .setTraitName("Hành giả hư vô")
         .setLore(
-            "虚空不再是你的敌人",
-            "(落入虚空时自动传送至当前位置向上200格的位置)"
+            "Hư vô không còn là kẻ thù của bạn",
+            "(Khi rơi xuống hư vô tự động dịch chuyển lên vị trí cao hơn 200 khối)"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateVoid);
 
     public static final MaterialTrait INFINITY_VOID_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("末地领主")
+        .setTraitName("Chúa tể End")
         .setLore(
-            "-10% 来自末影龙,末影人,潜影贝的伤害"
+            "-10% sát thương từ Ender Dragon, Enderman, Shulker"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksVoid);
 
     public static final MaterialTrait INFINITY_MAGSTEEL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("真的是不锈钢")
+        .setTraitName("Thực sự là inox")
         .setLore(
-            "很像不锈钢,但真的是可以抵挡鲜血",
-            "(更炫酷的视觉效果)"
+            "Giống inox, nhưng thực sự có thể chặn máu",
+            "(Hiệu ứng thị giác ngầu hơn)"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headMagSteel);
 
     public static final MaterialTrait INFINITY_MAGSTEEL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("燃烧")
+        .setTraitName("Thiêu đốt")
         .setLore(
-            "有(工具等级 x 5)%的几率",
-            "让敌人着火"
+            "Có (cấp công cụ x 5)% tỷ lệ",
+            "khiến kẻ địch bốc cháy"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headMagnesium);
 
     public static final MaterialTrait INFINITY_MAGSTEEL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("暗淡")
+        .setTraitName("Mờ nhạt")
         .setLore(
-            "-20% 输出伤害",
-            "+20% 防具经验获取"
+            "-20% sát thương đầu ra",
+            "+20% nhận kinh nghiệm giáp"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::linksCopper);
 
     public static final MaterialTrait INFINITY_MAGSTEEL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("防御")
+        .setTraitName("Phòng thủ")
         .setLore(
-            "受到伤害时,有5%的几率",
-            "免疫伤害并获得伤害吸收效果"
+            "Khi bị sát thương, có 5% tỷ lệ",
+            "miễn nhiễm sát thương và nhận hiệu ứng hấp thụ sát thương"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksMagSteel);
 
     public static final MaterialTrait INFINITY_TITANIUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("双倍强化")
+        .setTraitName("Nhân đôi gia cường")
         .setLore(
-            "强化合金板模组拥有双倍效果",
-            "(只需5个即可不消耗耐久)"
+            "Module hợp kim gia cường có hiệu ứng nhân đôi",
+            "(Chỉ cần 5 cái là không tiêu hao độ bền)"
         );
 
     public static final MaterialTrait INFINITY_TITANIUM_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("耐用")
+        .setTraitName("Bền bỉ")
         .setLore(
-            "工具损坏时依然可用,但:",
-            "-50% 输出伤害",
-            "获得挖掘疲劳效果",
-            "无法获得工具经验"
+            "Công cụ hỏng vẫn dùng được, nhưng:",
+            "-50% sát thương đầu ra",
+            "Nhận hiệu ứng Mệt mỏi",
+            "Không thể nhận kinh nghiệm công cụ"
         );
 
     public static final MaterialTrait INFINITY_TITANIUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("地精")
+        .setTraitName("Yêu tinh")
         .setLore(
-            "在挖矿时有几率找到额外的物品",
-            "该几率可以叠加"
+            "Khi đào có tỷ lệ tìm thấy vật phẩm thêm",
+            "Tỷ lệ này có thể cộng dồn"
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::linksHardened);
 
     public static final MaterialTrait INFINITY_TITANIUM_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("防火")
+        .setTraitName("Chống cháy")
         .setLore(
-            "免疫来自火焰、岩浆与岩浆块的伤害"
+            "Miễn nhiễm sát thương từ lửa, lava và khối magma"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksTitanium);
 
     public static final MaterialTrait INFINITY_IRON_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("稳定 II")
+        .setTraitName("Ổn định II")
         .setLore(
-            "还是没有特性"
+            "Vẫn không có đặc tính"
         );
 
     public static final MaterialTrait INFINITY_IRON_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("锋利 1 II")
+        .setTraitName("Sắc bén 1 II")
         .setLore(
-            "获得力量II效果 (可叠加)",
-            "(不要在意这糟糕的名字)"
+            "Nhận hiệu ứng Lực II (có thể cộng dồn)",
+            "(Đừng để ý cái tên tệ này)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodSingIron);
 
     public static final MaterialTrait INFINITY_IRON_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("坚固 II")
+        .setTraitName("Kiên cố II")
         .setLore(
-            "爆炸将治疗你",
-            "而不会造成伤害"
+            "Vụ nổ sẽ chữa lành cho bạn",
+            "thay vì gây sát thương"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateSingIron);
 
     public static final MaterialTrait INFINITY_IRON_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("腐蚀 II")
+        .setTraitName("Ăn mòn II")
         .setLore(
-            "-10% 输出伤害",
-            "+10% 玩家经验获取"
+            "-10% sát thương đầu ra",
+            "+10% nhận kinh nghiệm người chơi"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::linksSingIron);
 
     public static final MaterialTrait INFINITY_GOLD_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("金色面纱 II")
+        .setTraitName("Mạng che vàng II")
         .setLore(
-            "获得隐身效果",
+            "Nhận hiệu ứng T trị",
             "",
-            "应用在武器上时: ",
-            "+50% 输出伤害"
+            "Khi áp dụng lên vũ khí: ",
+            "+50% sát thương đầu ra"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::headSingGold)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headSingGold);
@@ -1460,39 +1460,39 @@ public final class Traits {
     public static final MaterialTrait INFINITY_GOLD_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("闪闪发光 II")
+        .setTraitName("Lấp lánh II")
         .setLore(
-            "获得彩虹发光效果"
+            "Nhận hiệu ứng phát sáng cầu vồng"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodSingGold);
 
     public static final MaterialTrait INFINITY_GOLD_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("繁荣 II")
+        .setTraitName("Thịnh vượng II")
         .setLore(
-            "在受到伤害时",
-            "有1%几率掉落1-4个金粒"
+            "Khi bị sát thương",
+            "có 1% tỷ lệ rơi 1-4 hạt vàng"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateSingGold);
 
     public static final MaterialTrait INFINITY_GOLD_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("来个交易 II")
+        .setTraitName("Đổi chác II")
         .setLore(
-            "猪灵会被你深深地吸引",
-            "(周围5格内的猪灵不会攻击你)"
+            "Piglin sẽ bị bạn thu hút sâu sắc",
+            "(Piglin trong 5 khối xung quanh sẽ không tấn công bạn)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksSingGold);
 
     public static final MaterialTrait INFINITY_COPPER_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("这是个脑力活 II")
+        .setTraitName("Việc trí óc II")
         .setLore(
-            "+200% 工具经验获取",
-            "-50% 输出伤害"
+            "+200% nhận kinh nghiệm công cụ",
+            "-50% sát thương đầu ra"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headSingCopper)
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headSingCopper);
@@ -1501,19 +1501,19 @@ public final class Traits {
         // Special case, handled in Experience.java
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("经验传导 II")
+        .setTraitName("Truyền kinh nghiệm II")
         .setLore(
-            "所有工具经验转化为玩家经验",
-            "并获得额外50%的加成"
+            "Tất cả kinh nghiệm công cụ chuyển thành kinh nghiệm người chơi",
+            "và nhận thêm 50% thưởng"
         );
 
     public static final MaterialTrait INFINITY_COPPER_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("新手 II")
+        .setTraitName("Tân thủ II")
         .setLore(
-            "+40% 防具经验获取",
-            "+50% 承受伤害"
+            "+40% nhận kinh nghiệm giáp",
+            "+50% sát thương phải chịu"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateSingCopper)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::plateSingCopper);
@@ -1521,47 +1521,47 @@ public final class Traits {
     public static final MaterialTrait INFINITY_COPPER_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("暗淡 II")
+        .setTraitName("Mờ nhạt II")
         .setLore(
-            "-20% 输出伤害",
-            "+40% 防具经验获取"
+            "-20% sát thương đầu ra",
+            "+40% nhận kinh nghiệm giáp"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::linksSingCopper);
 
     public static final MaterialTrait INFINITY_LEAD_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("剧毒 II")
+        .setTraitName("Độc tố II")
         .setLore(
-            "命中时有50%的几率附加中毒II效果"
+            "Khi trúng có 50% tỷ lệ gây hiệu ứng Trúng độc II"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headSingLead);
 
     public static final MaterialTrait INFINITY_LEAD_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("蚂蟥 II")
+        .setTraitName("Đỉa II")
         .setLore(
-            "获得额外血量",
-            "(获得生命提升II效果)"
+            "Nhận thêm máu",
+            "(Nhận hiệu ứng Tăng máu II)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodSingLead);
 
     public static final MaterialTrait INFINITY_LEAD_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("生病了 II")
+        .setTraitName("Ốm rồi II")
         .setLore(
-            "铅制防具真的不是个好主意"
+            "Giáp chì thực sự không phải ý hay"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateSingLead);
 
     public static final MaterialTrait INFINITY_LEAD_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("生病了 II")
+        .setTraitName("Ốm rồi II")
         .setLore(
-            "铅制防具真的不是个好主意"
+            "Giáp chì thực sự không phải ý hay"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksSingLead);
 
@@ -1569,30 +1569,30 @@ public final class Traits {
         // Special Case, handled in Experience.java
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("附魔 II")
+        .setTraitName("Phù phép II")
         .setLore(
-            "-50% 工具经验获取",
-            "工具升级时获得1-3个随机附魔",
-            "附魔可能并不适用于该工具"
+            "-50% nhận kinh nghiệm công cụ",
+            "Khi công cụ lên cấp nhận 1-3 phù phép ngẫu nhiên",
+            "Phù phép có thể không phù hợp với công cụ này"
         );
 
     public static final MaterialTrait INFINITY_SILVER_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("轻触 II")
+        .setTraitName("Nhẹ nhàng II")
         .setLore(
-            "你感觉更加轻松了",
-            "(免疫摔落伤害)"
+            "Bạn cảm thấy nhẹ nhõm hơn",
+            "(Miễn nhiễm sát thương rơi)"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::rodSingSilver);
 
     public static final MaterialTrait INFINITY_SILVER_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("导电 II")
+        .setTraitName("Dẫn điện II")
         .setLore(
-            "被闪电击中时可获得治疗",
-            "并在周围生成闪电风暴"
+            "Khi bị sét đánh có thể được chữa lành",
+            "và tạo ra bão sét xung quanh"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateSingSilver);
 
@@ -1600,28 +1600,28 @@ public final class Traits {
         // Special Case, handled in Experience.java
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("附魔 II")
+        .setTraitName("Phù phép II")
         .setLore(
-            "防具升级时获得1-3个随机附魔",
-            "附魔可能并不适用于该防具"
+            "Khi giáp lên cấp nhận 1-3 phù phép ngẫu nhiên",
+            "Phù phép có thể không phù hợp với giáp này"
         );
 
     public static final MaterialTrait INFINITY_ALUMINUM_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("再生资源 II")
+        .setTraitName("Tái sinh II")
         .setLore(
-            "使用时有33%的几率恢复耐久"
+            "Khi sử dụng có 33% tỷ lệ phục hồi độ bền"
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::headSingAluminum);
 
     public static final MaterialTrait INFINITY_ALUMINUM_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("柔韧 II")
+        .setTraitName("Dẻo dai II")
         .setLore(
-            "+100% 耐久消耗",
-            "+100% 工具经验获取"
+            "+100% tiêu hao độ bền",
+            "+100% nhận kinh nghiệm công cụ"
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::rodSingAluminum)
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::rodSingAluminum)
@@ -1630,10 +1630,10 @@ public final class Traits {
     public static final MaterialTrait INFINITY_ALUMINUM_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("快跑 II")
+        .setTraitName("Chạy nhanh II")
         .setLore(
-            "+50% 承受伤害",
-            "获得速度II效果"
+            "+50% sát thương phải chịu",
+            "Nhận hiệu ứng Tốc độ II"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateSingAluminium)
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateSingAluminium);
@@ -1641,19 +1641,19 @@ public final class Traits {
     public static final MaterialTrait INFINITY_ALUMINUM_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("快速修复 II")
+        .setTraitName("Sửa nhanh II")
         .setLore(
-            "只需要1个任意材质的修复工具即可完全修复"
+            "Chỉ cần 1 dụng cụ sửa chữa bất kỳ là sửa hoàn toàn"
         );
 
     public static final MaterialTrait INFINITY_TIN_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("幸运 II")
+        .setTraitName("May mắn II")
         .setLore(
-            "-50% 输出伤害",
-            "获得幸运II效果",
-            "获得速度II效果"
+            "-50% sát thương đầu ra",
+            "Nhận hiệu ứng May mắn II",
+            "Nhận hiệu ứng Tốc độ II"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headSingTin)
         .addConsumer(TraitEventType.TICK, TickEvents::headSingTin);
@@ -1661,98 +1661,98 @@ public final class Traits {
     public static final MaterialTrait INFINITY_TIN_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("罐头 II")
+        .setTraitName("Đồ hộp II")
         .setLore(
-            "饥饿度不会下降"
+            "Đói sẽ không giảm"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodSingTin);
 
     public static final MaterialTrait INFINITY_TIN_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("抗毒 II")
+        .setTraitName("Kháng độc II")
         .setLore(
-            "免疫中毒、饥饿、虚弱效果",
-            "中毒效果会治疗你"
+            "Miễn nhiễm hiệu ứng Trúng độc, Đói, Yếu đuối",
+            "Hiệu ứng Trúng độc sẽ chữa lành bạn"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateSingTin);
 
     public static final MaterialTrait INFINITY_TIN_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("承伤 II")
+        .setTraitName("Chịu đòn II")
         .setLore(
-            "当受到伤害时,获得伤害吸收II效果"
+            "Khi bị sát thương, nhận hiệu ứng Hấp thụ sát thương II"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksSingTin);
 
     public static final MaterialTrait INFINITY_ZINC_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("海豚的恩惠 II")
+        .setTraitName("Ân huệ cá heo II")
         .setLore(
-            "激活海豚的力量!更多的力量!",
-            "(获得海豚的恩惠II效果)"
+            "Kích hoạt sức mạnh cá heo! Thêm sức mạnh!",
+            "(Nhận hiệu ứng Ân huệ cá heo II)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::headSingZinc);
 
     public static final MaterialTrait INFINITY_ZINC_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("飘浮 II")
+        .setTraitName("Bay bổng II")
         .setLore(
-            "蹲下时让你变得比空气还轻",
-            "(获得飘浮II效果)"
+            "Khi ngồi xuống làm bạn nhẹ hơn không khí",
+            "(Nhận hiệu ứng Bay bổng II)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodSingZinc);
 
     public static final MaterialTrait INFINITY_ZINC_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("偷袭 II")
+        .setTraitName("Đột kích II")
         .setLore(
-            "当目标看向别处时,",
-            "+100% 对其造成的伤害",
-            "(看向别处的判定范围更广)"
+            "Khi mục tiêu nhìn chỗ khác,",
+            "+100% sát thương gây ra cho chúng",
+            "(Phạm vi xác định nhìn chỗ khác rộng hơn)"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::plateSingZinc);
 
     public static final MaterialTrait INFINITY_ZINC_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("针灸 II")
+        .setTraitName("Châm cứu II")
         .setLore(
-            "免疫来自仙人掌的伤害",
-            "来自仙人掌的伤害可以治疗你"
+            "Miễn nhiễm sát thương từ xương rồng",
+            "Sát thương từ xương rồng có thể chữa lành bạn"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksSingZinc);
 
     public static final MaterialTrait INFINITY_MAGNESIUM_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("燃烧 II")
+        .setTraitName("Thiêu đốt II")
         .setLore(
-            "有(工具等级 x 10)%的几率",
-            "让敌人着火更长时间"
+            "Có (cấp công cụ x 10)% tỷ lệ",
+            "khiến kẻ địch cháy lâu hơn"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headSingMagnesium);
 
     public static final MaterialTrait INFINITY_MAGNESIUM_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("磁铁 II")
+        .setTraitName("Nam châm II")
         .setLore(
-            "随机捡起附近10格范围内的物品"
+            "Ngẫu nhiên nhặt vật phẩm trong phạm vi 10 khối"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodSingMagnesium);
 
     public static final MaterialTrait INFINITY_MAGNESIUM_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("快溜 II")
+        .setTraitName("Chuồn nhanh II")
         .setLore(
-            "-50% 输出伤害",
-            "获得速度II效果"
+            "-50% sát thương đầu ra",
+            "Nhận hiệu ứng Tốc độ II"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateSingMagnesium)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::plateSingMagnesium);
@@ -1760,21 +1760,21 @@ public final class Traits {
     public static final MaterialTrait INFINITY_MAGNESIUM_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("镁地™夜视 II")
+        .setTraitName("Magie™ nhìn đêm II")
         .setLore(
-            "获得夜视效果",
-            "并标记出周围10格内所有生物"
+            "Nhận hiệu ứng Nhìn đêm",
+            "và đánh dấu tất cả sinh vật trong 10 khối"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksSingMagnesium);
 
     public static final MaterialTrait INFINITY_MYTHRIL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("精灵疾驰")
+        .setTraitName("Tinh linh phi nước đại")
         .setLore(
-            "+50% 耐久消耗",
-            "获得急迫II效果",
-            "获得速度效果"
+            "+50% tiêu hao độ bền",
+            "Nhận hiệu ứng Haste II",
+            "Nhận hiệu ứng Tốc độ"
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::headMythril)
         .addConsumer(TraitEventType.TICK, TickEvents::headMythril);
@@ -1782,44 +1782,44 @@ public final class Traits {
     public static final MaterialTrait INFINITY_MYTHRIL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("贡多林刺针")
+        .setTraitName("Kim Gondolin")
         .setLore(
-            "击退附近所有的敌对生物"
+            "Đẩy lùi tất cả sinh vật địch xung quanh"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodMythril);
 
     public static final MaterialTrait INFINITY_MYTHRIL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("魔童")
+        .setTraitName("Ma đồng")
         .setLore(
-            "获得1层魔童效果",
-            "当拥有4层及以上的魔童效果时",
-            "击退周围5格内的所有的敌对生物",
-            "(凋灵与末影龙除外)"
+            "Nhận 1 lớp hiệu ứng Ma đồng",
+            "Khi có 4 lớp Ma đồng trở lên",
+            "Đẩy lùi tất cả sinh vật địch trong phạm vi 5 ô",
+            "(Trừ Wither và Ender Dragon)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::brightBurn);
 
     public static final MaterialTrait INFINITY_MYTHRIL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("野性的呼唤")
+        .setTraitName("Tiếng gọi hoang dã")
         .setLore(
-            "当受到伤害时",
-            "有几率召唤一只狼来帮助你"
+            "Khi bị sát thương",
+            "có tỷ lệ triệu hồi một con sói giúp bạn"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksMythril);
 
     public static final MaterialTrait INFINITY_ADAMANTITE_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("神秘")
+        .setTraitName("Huyền bí")
         .setLore(
-            "挖矿时: ",
-            "+100% 玩家经验获取",
+            "Khi đào: ",
+            "+100% nhận kinh nghiệm người chơi",
             "",
-            "击杀生物时: ",
-            "+50% 玩家经验获取"
+            "Khi giết sinh vật: ",
+            "+50% nhận kinh nghiệm người chơi"
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headAdamantite)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headAdamantite);
@@ -1827,28 +1827,28 @@ public final class Traits {
     public static final MaterialTrait INFINITY_ADAMANTITE_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("坚硬")
+        .setTraitName("Cứng rắn")
         .setLore(
-            "免疫爆炸伤害"
+            "Miễn nhiễm sát thương nổ"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::rodAdamantite);
 
     public static final MaterialTrait INFINITY_ADAMANTITE_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("射歪了")
+        .setTraitName("Trượt rồi")
         .setLore(
-            "-25% 来自弹射物的伤害"
+            "-25% sát thương từ đạn bắn"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateAdamantite);
 
     public static final MaterialTrait INFINITY_ADAMANTITE_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("有经验的")
+        .setTraitName("Dày dạn")
         .setLore(
-            "+10% 工具经验获取",
-            "+10% 玩家经验获取"
+            "+10% nhận kinh nghiệm công cụ",
+            "+10% nhận kinh nghiệm người chơi"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::linksAdamantite)
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::linksAdamantite);
@@ -1856,169 +1856,169 @@ public final class Traits {
     public static final MaterialTrait INFINITY_MAGNONIUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("宽宏大量")
+        .setTraitName("Rộng lượng")
         .setLore(
-            "你真的太棒了",
-            "谢谢你"
+            "Bạn thực sự tuyệt vời",
+            "Cảm ơn bạn"
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headMagnonium);
 
     public static final MaterialTrait INFINITY_MAGNONIUM_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("炽热")
+        .setTraitName("Nóng bỏng")
         .setLore(
-            "可熔炼掉落物"
+            "Vật rơi có thể nấu chảy"
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headCorbronze);
 
     public static final MaterialTrait INFINITY_MAGNONIUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("逃脱")
+        .setTraitName("Thoát thân")
         .setLore(
-            "受到伤害时随机传送到附近",
-            "(CD: 10秒)"
+            "Khi bị sát thương, dịch chuyển ngẫu nhiên gần đó",
+            "(CD: 10 giây)"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksAluBrass);
 
     public static final MaterialTrait INFINITY_MAGNONIUM_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("有氧")
+        .setTraitName("Có oxy")
         .setLore(
-            "谁需要它呢?",
-            "(免疫溺水伤害)"
+            "Ai cần nó chứ?",
+            "(Miễn nhiễm sát thương chết đuối)"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksMagnonium);
 
     public static final MaterialTrait INFINITY_FORTUNE_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("幸运")
+        .setTraitName("May mắn")
         .setLore(
-            "获得双倍掉落物",
-            "可与青金石模组叠加"
+            "Nhận gấp đôi vật rơi",
+            "Có thể cộng dồn với module Lapis"
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headFortune);
 
     public static final MaterialTrait INFINITY_FORTUNE_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("商人面纱")
+        .setTraitName("Mạng che thương nhân")
         .setLore(
-            "没有副作用的隐身",
-            "(获得隐身III效果)"
+            "T trị không tác dụng phụ",
+            "(Nhận hiệu ứng T trị III)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodFortune);
 
     public static final MaterialTrait INFINITY_FORTUNE_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("多么幸运")
+        .setTraitName("Thật may mắn")
         .setLore(
-            "受到1点以上(初始)伤害时",
-            "有0.5%的几率获得一件礼物"
+            "Khi bị sát thương trên 1 (ban đầu)",
+            "có 0.5% tỷ lệ nhận một món quà"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateFortune);
 
     public static final MaterialTrait INFINITY_FORTUNE_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("鲜花")
+        .setTraitName("Hoa tươi")
         .setLore(
-            "在行走时有几率让周围的草地上开花"
+            "Khi đi có tỷ lệ làm cỏ xung quanh nở hoa"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateAluBronze);
 
     public static final MaterialTrait INFINITY_MAGIC_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("魔术戏法")
+        .setTraitName("Ảo thuật")
         .setLore(
-            "对周围所有生物随机释放魔术戏法,包括:",
-            "- 击退",
-            "- 中毒",
-            "- 随机传送",
-            "- 着火",
-            "- 速度"
+            "Ngẫu nhiên thi triển ảo thuật lên tất cả sinh vật xung quanh, bao gồm:",
+            "- Đẩy lùi",
+            "- Trúng độc",
+            "- Dịch chuyển ngẫu nhiên",
+            "- Bốc cháy",
+            "- Tốc độ"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::headMagic);
 
     public static final MaterialTrait INFINITY_MAGIC_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("揭露秘密")
+        .setTraitName("Vạch trần bí mật")
         .setLore(
-            "标记出周围10格内的所有的生物(也许不一定是)"
+            "Đánh dấu tất cả sinh vật trong 10 khối (có lẽ không phải tất cả)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodMagic);
 
     public static final MaterialTrait INFINITY_MAGIC_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("巫师袍")
+        .setTraitName("Áo phù thủy")
         .setLore(
-            "造成伤害时",
-            "有几率释放魔法"
+            "Khi gây sát thương",
+            "có tỷ lệ giải phóng ma thuật"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::plateMagic);
 
     public static final MaterialTrait INFINITY_MAGIC_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("魔法薄荷")
+        .setTraitName("Bạc hà ma thuật")
         .setLore(
-            "免疫龙息伤害"
+            "Miễn nhiễm sát thương rồng phun"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksMagic);
 
     public static final MaterialTrait INFINITY_EARTH_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("撼地者")
+        .setTraitName("Chấn động đất")
         .setLore(
-            "击退并禁锢命中的生物"
+            "Đẩy lùi và giam cầm sinh vật trúng đòn"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headEarth);
 
     public static final MaterialTrait INFINITY_EARTH_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("粉碎机")
+        .setTraitName("Máy nghiền")
         .setLore(
-            "破坏方块时的掉落物",
-            "就像经过了粉碎机一样"
+            "Vật rơi khi phá khối",
+            "giống như đã qua máy nghiền"
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::rodEarth);
 
     public static final MaterialTrait INFINITY_EARTH_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("岩浆行者")
+        .setTraitName("Bước trên dung nham")
         .setLore(
-            "脚下的岩浆变为岩浆块"
+            "Lava dưới chân biến thành đá magma"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateEarth);
 
     public static final MaterialTrait INFINITY_EARTH_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("自然法则")
+        .setTraitName("Quy luật tự nhiên")
         .setLore(
-            "右键点击时,喂食周围的两只动物",
-            "(CD: 2分钟)",
-            "无论是否喂食成功,该效果都会进入冷却"
+            "Chuột phải để cho ăn hai động vật xung quanh",
+            "(CD: 2 phút)",
+            "Dù cho ăn thành công hay không, hiệu ứng này vẫn vào hồi chiêu"
         )
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::linksEarth);
 
     public static final MaterialTrait INFINITY_METAL_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("干净利落")
+        .setTraitName("Sạch sẽ gọn gàng")
         .setLore(
-            "+100% 输出伤害",
-            "获得急迫II效果"
+            "+100% sát thương đầu ra",
+            "Nhận hiệu ứng Haste II"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::headMetal)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headMetal);
@@ -2026,10 +2026,10 @@ public final class Traits {
     public static final MaterialTrait INFINITY_METAL_SINGULARITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("经验导体")
+        .setTraitName("Dây dẫn kinh nghiệm")
         .setLore(
-            "所有玩家经验以10:1的比例",
-            "转化为工具经验"
+            "Tất cả kinh nghiệm người chơi theo tỷ lệ 10:1",
+            "chuyển thành kinh nghiệm công cụ"
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::rodMetal)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::rodMetal);
@@ -2037,51 +2037,51 @@ public final class Traits {
     public static final MaterialTrait INFINITY_METAL_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("圆桌骑士")
+        .setTraitName("Hiệp sĩ bàn tròn")
         .setLore(
-            "受到伤害时有几率",
-            "在周围生成圆桌骑士",
-            "(好吧,是铁傀儡)"
+            "Khi bị sát thương có tỷ lệ",
+            "sinh ra Hiệp sĩ bàn tròn xung quanh",
+            "(Ừ thì, là Iron Golem)"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateMetal);
 
     public static final MaterialTrait INFINITY_METAL_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("闪光弹")
+        .setTraitName("Lựu đạn flash")
         .setLore(
-            "受到伤害时,有几率",
-            "反弹伤害并使攻击者眩晕"
+            "Khi bị sát thương, có tỷ lệ",
+            "phản đòn sát thương và làm choáng kẻ tấn công"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksMetal);
 
     public static final MaterialTrait INFINITY_INFINITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("无尽")
+        .setTraitName("Vô tận")
         .setLore(
-            "这件工具获得了永生..."
+            "Công cụ này đã đạt được sự bất tử..."
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::headInfinity);
 
     public static final MaterialTrait INFINITY_INFINITY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("概念性防御")
+        .setTraitName("Phòng thủ khái niệm")
         .setLore(
-            "-50% 承受伤害"
+            "-50% sát thương phải chịu"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::rodInfinity);
 
     public static final MaterialTrait INFINITY_INFINITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("无尽反应盔甲")
+        .setTraitName("Giáp phản ứng vô tận")
         .setLore(
-            "每次承受伤害的10%会被存储",
-            "最多可存储10点伤害(5颗心)",
-            "右键点击对周围所有生物",
-            "释放存储的伤害"
+            "Mỗi lần chịu sát thương, 10% được lưu trữ",
+            "Tối đa lưu trữ 10 sát thương (5 trái tim)",
+            "Chuột phải để giải phóng sát thương đã lưu",
+            "lên tất cả sinh vật xung quanh"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateInfinity)
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::plateInfinity);
@@ -2089,21 +2089,21 @@ public final class Traits {
     public static final MaterialTrait INFINITY_INFINITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("衔尾蛇")
+        .setTraitName("Rắn nuốt đuôi")
         .setLore(
-            "有20%的几率反弹承受的伤害"
+            "Có 20% tỷ lệ phản đòn sát thương phải chịu"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksInfinity);
 
     public static final MaterialTrait INFINITY_INFINITY_SINGULARITY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("断点")
+        .setTraitName("Điểm dừng")
         .setLore(
-            "无法破坏",
-            "+200% 输出伤害",
-            "+200% 工具经验获取",
-            "可挖掘 3x3x3 区域"
+            "Không thể phá hủy",
+            "+200% sát thương đầu ra",
+            "+200% nhận kinh nghiệm công cụ",
+            "Có thể đào khu vực 3x3x3"
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::headSingInfinity)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headSingInfinity)
@@ -2112,21 +2112,21 @@ public final class Traits {
     public static final MaterialTrait INFINITY_INFINITY_SINGULARITY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("无尽力量")
+        .setTraitName("Sức mạnh vô tận")
         .setLore(
-            "每承受2000点伤害(减伤计算前)",
-            "可以获得一个新的随机附魔",
-            "无等级上限"
+            "Cứ chịu 2000 sát thương (trước khi giảm trừ)",
+            "có thể nhận một phù phép ngẫu nhiên mới",
+            "Không giới hạn cấp"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateSingInfinity);
 
     public static final MaterialTrait INFINITY_INFINITY_SINGULARITY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
-        .setTraitName("无尽防御")
+        .setTraitName("Phòng thủ vô tận")
         .setLore(
-            "当装备全套包含无尽防御的防具时",
-            "所有承受的伤害均减少至1点"
+            "Khi trang bị đủ bộ giáp có Phòng thủ vô tận",
+            "tất cả sát thương phải chịu đều giảm xuống còn 1"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksSingInfinity);
 
@@ -2134,12 +2134,12 @@ public final class Traits {
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.INFINITY_EXPANSION_NOTE)
         .setSponsoredBy("Bunkky/ReasonFoundDecoy")
-        .setTraitName("龙之愤怒")
+        .setTraitName("Thịnh nộ của rồng")
         .setLore(
-            "当被末影龙击中后,获得龙之愤怒效果,",
-            "每层增加10%对末影龙的伤害,持续15秒,无上限.",
-            "层数可叠加，2层为20%，3层为30%，以此类推",
-            "叠加层数后重置持续时间."
+            "Khi bị Ender Dragon đánh trúng, nhận hiệu ứng Thịnh nộ của rồng,",
+            "mỗi tầng tăng 10% sát thương lên Ender Dragon, kéo dài 15 giây, không giới hạn.",
+            "Tầng có thể cộng dồn, 2 tầng là 20%, 3 tầng là 30%, v.v.",
+            "Cộng dồn tầng sẽ đặt lại thời gian."
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::headReinforcedDraconium)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headReinforcedDraconium);
@@ -2151,42 +2151,42 @@ public final class Traits {
     public static final MaterialTrait LITE_RUBBER_BINDING = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("绝缘")
+        .setTraitName("Cách điện")
         .setLore(
-            "免疫闪电伤害"
+            "Miễn nhiễm sát thương sét"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::bindRubber);
 
     public static final MaterialTrait LITE_RUBBER_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("出汗")
+        .setTraitName("Đẫm mồ hôi")
         .setLore(
-            "橡胶护身软甲真的太热了!"
+            "Áo giáp mềm cao su thực sự quá nóng!"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::gambesonRubber);
 
     public static final MaterialTrait LITE_REFINED_IRON_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("真的稳定")
+        .setTraitName("Thực sự ổn định")
         .setLore(
-            "真的没有特性",
-            "不过也许升级后会有呢?",
+            "Thực sự không có đặc tính",
+            "Nhưng có thể sau khi nâng cấp sẽ có?",
             "",
-            "工具等级满10级后:",
-            "+(工具等级 * 10)% 输出伤害"
+            "Sau khi cấp công cụ đạt 10:",
+            "+(Cấp công cụ * 10)% sát thương đầu ra"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headRefinedIron);
 
     public static final MaterialTrait LITE_REFINED_IRON_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("不知礼，无以立也")
+        .setTraitName("Vô lễ bất lập")
         .setLore(
-            "获得速度效果",
-            "+50% 输出伤害",
-            "你的战斗过程将变得炫酷"
+            "Nhận hiệu ứng Tốc độ",
+            "+50% sát thương đầu ra",
+            "Quá trình chiến đấu của bạn sẽ trở nên ngầu"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::rodRefinedIron)
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::rodRefinedIron)
@@ -2195,45 +2195,45 @@ public final class Traits {
     public static final MaterialTrait LITE_REFINED_IRON_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("王牌特工")
+        .setTraitName("Đặc vụ số một")
         .setLore(
-            "需要满足以下全部条件才能生效:",
-            "- 装备全套有王牌特工特性的盔甲",
-            "- 熟知礼仪 (不知礼，无以立也)",
+            "Cần thỏa mãn tất cả điều kiện sau mới có hiệu lực:",
+            "- Trang bị đủ bộ giáp có đặc tính Đặc vụ số một",
+            "- Thông thạo lễ nghi (Vô lễ bất lập)",
             "",
-            "右键点击时召唤毁灭阵",
-            "对阵中的所有生物造成伤害",
-            "(CD: 20分钟)"
+            "Chuột phải để triệu hồi trận hủy diệt",
+            "Gây sát thương lên tất cả sinh vật trong trận",
+            "(CD: 20 phút)"
         )
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::plateRefinedIron);
 
     public static final MaterialTrait LITE_REFINED_IRON_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("看不到我")
+        .setTraitName("Không thấy tôi")
         .setLore(
-            "攻击者获得失明效果"
+            "Kẻ tấn công nhận hiệu ứng Mù"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksRefinedIron);
 
     public static final MaterialTrait LITE_MIXED_METAL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("合金")
+        .setTraitName("Hợp kim")
         .setLore(
-            "随机获得其冶炼材料的特性",
-            "但效果减半",
-            "(随机获得速度,防火,幸运效果)"
+            "Ngẫu nhiên nhận đặc tính của nguyên liệu chế tạo",
+            "Nhưng hiệu quả giảm một nửa",
+            "(Ngẫu nhiên nhận hiệu ứng Tốc độ, Chống cháy, May mắn)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::headMixedMetal);
 
     public static final MaterialTrait LITE_MIXED_METAL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("倒霉鬼")
+        .setTraitName("Kẻ xui xẻo")
         .setLore(
-            "+50% 输出伤害",
-            "获得厄运III效果"
+            "+50% sát thương đầu ra",
+            "Nhận hiệu ứng Xui xẻo III"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headBrass)
         .addConsumer(TraitEventType.TICK, TickEvents::headBrass);
@@ -2241,10 +2241,10 @@ public final class Traits {
     public static final MaterialTrait LITE_MIXED_METAL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("有经验的")
+        .setTraitName("Có kinh nghiệm")
         .setLore(
-            "+10% 工具经验获取",
-            "+10% 玩家经验获取"
+            "+10% nhận kinh nghiệm công cụ",
+            "+10% nhận kinh nghiệm người chơi"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::linksAdamantite)
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::linksAdamantite);
@@ -2252,30 +2252,30 @@ public final class Traits {
     public static final MaterialTrait LITE_MIXED_METAL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("混乱")
+        .setTraitName("Hỗn loạn")
         .setLore(
-            "受到攻击时",
-            "有几率与攻击者互换位置"
+            "Khi bị tấn công",
+            "có tỷ lệ hoán đổi vị trí với kẻ tấn công"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksMixedMetal);
 
     public static final MaterialTrait LITE_ADVANCED_ALLOY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("散射")
+        .setTraitName("Tán xạ")
         .setLore(
-            "攻击时对周围所有生物同时造成伤害",
-            "散射的伤害不会受到其他特性或模组的影响"
+            "Khi tấn công gây sát thương lên tất cả sinh vật xung quanh",
+            "Sát thương tán xạ không bị ảnh hưởng bởi đặc tính hoặc module khác"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headAdvancedAlloy);
 
     public static final MaterialTrait LITE_ADVANCED_ALLOY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("高负荷")
+        .setTraitName("Quá tải")
         .setLore(
-            "每损失50点耐久,会",
-            "消耗一块铁锭来恢复50点耐久"
+            "Cứ mất 50 độ bền, sẽ",
+            "tiêu hao một thỏi sắt để hồi 50 độ bền"
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::rodAdvancedAlloy);
 
@@ -2283,70 +2283,70 @@ public final class Traits {
         // Event More Advanced (mod affector)
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("更加高级")
+        .setTraitName("Cao cấp hơn")
         .setLore(
             "Advanced modifiers +1 for each piece.",
-            "(开发中的特性,暂不翻译)"
+            "(Tính năng đang phát triển, tạm chưa dịch)"
         );
 
     public static final MaterialTrait LITE_ADVANCED_ALLOY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("高温")
+        .setTraitName("Nhiệt độ cao")
         .setLore(
-            "有几率使周围实体着火"
+            "Có tỷ lệ làm thực thể xung quanh bốc cháy"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateCorBronze);
 
     public static final MaterialTrait LITE_MAG_THOR_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("耐热")
+        .setTraitName("Chịu nhiệt")
         .setLore(
-            "你可以在岩浆里游泳",
-            "(免疫火焰与岩浆伤害)"
+            "Bạn có thể bơi trong dung nham",
+            "(Miễn nhiễm sát thương lửa và dung nham)"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::headMagThor);
 
     public static final MaterialTrait LITE_MAG_THOR_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("吸血鬼")
+        .setTraitName("Ma cà rồng")
         .setLore(
-            "造成伤害时有33%的几率恢复1点血量",
-            "-50% 伤害 (日间)",
-            "+50% 伤害 (夜间)"
+            "Có 33% tỷ lệ hồi 1 máu khi gây sát thương",
+            "-50% sát thương (ban ngày)",
+            "+50% sát thương (ban đêm)"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headDamsteel);
 
     public static final MaterialTrait LITE_MAG_THOR_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("放射性盔甲板")
+        .setTraitName("Giáp phóng xạ")
         .setLore(
-            "受到伤害时",
-            "对攻击者施加中毒效果"
+            "Khi bị sát thương",
+            "gây hiệu ứng Trúng độc cho kẻ tấn công"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateMagThor);
 
     public static final MaterialTrait LITE_MAG_THOR_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("建筑狂怒")
+        .setTraitName("Nộ xây dựng")
         .setLore(
-            "有20%的几率在受到伤害时",
-            "获得速度效果",
-            "获得急迫效果"
+            "Có 20% tỷ lệ khi bị sát thương",
+            "nhận hiệu ứng Tốc độ",
+            "nhận hiệu ứng Gấp rút"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksMagThor);
 
     public static final MaterialTrait LITE_CARBON_MESH_BINDING = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("敏捷")
+        .setTraitName("Nhanh nhẹn")
         .setLore(
-            "获得速度效果",
-            "-33% 承受伤害"
+            "Nhận hiệu ứng Tốc độ",
+            "-33% sát thương phải chịu"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::bindCarbonMesh)
         .addConsumer(TraitEventType.TICK, TickEvents::bindCarbonMesh);
@@ -2354,19 +2354,19 @@ public final class Traits {
     public static final MaterialTrait LITE_CARBON_MESH_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("碳纤维")
+        .setTraitName("Sợi carbon")
         .setLore(
-            "获得速度效果"
+            "Nhận hiệu ứng Tốc độ"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::gambesonCarbonMesh);
 
     public static final MaterialTrait LITE_SCRAP_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("可怕")
+        .setTraitName("Đáng sợ")
         .setLore(
-            "+300% 耐久消耗",
-            "-100% 工具经验获取"
+            "+300% tiêu hao độ bền",
+            "-100% nhận kinh nghiệm công cụ"
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::headScrap)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headScrap)
@@ -2375,10 +2375,10 @@ public final class Traits {
     public static final MaterialTrait LITE_SCRAP_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("这是个脑力活")
+        .setTraitName("Việc trí óc")
         .setLore(
-            "+100% 工具经验获取",
-            "-50% 输出伤害"
+            "+100% nhận kinh nghiệm công cụ",
+            "-50% sát thương đầu ra"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headCopper)
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headCopper);
@@ -2386,11 +2386,11 @@ public final class Traits {
     public static final MaterialTrait LITE_SCRAP_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("可悲")
+        .setTraitName("Đáng thương")
         .setLore(
-            "警告: 不要穿上这件盔甲",
-            "会有坏事发生",
-            "+400% 玩家经验获取"
+            "Cảnh báo: Đừng mặc giáp này",
+            "Sẽ có chuyện xấu xảy ra",
+            "+400% nhận kinh nghiệm người chơi"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateScrap)
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::plateScrap);
@@ -2398,10 +2398,10 @@ public final class Traits {
     public static final MaterialTrait LITE_SCRAP_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("分崩离析")
+        .setTraitName("Tan rã")
         .setLore(
-            "+200% 玩家经验获取",
-            "受到伤害时护甲有几率直接掉落"
+            "+200% nhận kinh nghiệm người chơi",
+            "Khi bị sát thương giáp có tỷ lệ rơi ra"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::linksScrap)
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksScrap);
@@ -2409,41 +2409,41 @@ public final class Traits {
     public static final MaterialTrait LITE_IRIDIUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("保护")
+        .setTraitName("Bảo vệ")
         .setLore(
-            "使你免于死亡",
-            "(CD: 20分钟)"
+            "Giúp bạn tránh khỏi cái chết",
+            "(CD: 20 phút)"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::headIridium);
 
     public static final MaterialTrait LITE_IRIDIUM_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("别看我")
+        .setTraitName("Đừng nhìn tôi")
         .setLore(
-            "使目标看向你的朝向",
-            "(CD: 20秒)"
+            "Khiến mục tiêu nhìn về hướng của bạn",
+            "(CD: 20 giây)"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::rodIridium);
 
     public static final MaterialTrait LITE_IRIDIUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("不屈")
+        .setTraitName("Bất khuất")
         .setLore(
-            "承受伤害的10%会被反弹至攻击者"
+            "10% sát thương phải chịu sẽ bị phản đòn lại kẻ tấn công"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateIridium);
 
     public static final MaterialTrait LITE_IRIDIUM_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.LITEXPANSION_NOTE)
-        .setTraitName("非常规力量")
+        .setTraitName("Năng lượng phi quy ước")
         .setLore(
-            "承受的伤害会被转化为能源",
-            "并存储在盔甲中(伤害不会被抵消)",
-            "右键点击释放存储的能源",
-            "用于给物品栏中所有的物品充电"
+            "Sát thương phải chịu sẽ được chuyển thành năng lượng",
+            "và lưu trữ trong giáp (sát thương không bị triệt tiêu)",
+            "Chuột phải để giải phóng năng lượng đã lưu trữ",
+            "sạc cho tất cả vật phẩm trong túi đồ"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksIridium)
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::linksIridium);
@@ -2455,50 +2455,50 @@ public final class Traits {
     public static final MaterialTrait SFW_SEGGANESSON_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("超载")
+        .setTraitName("Quá tải")
         .setLore(
-            "每次攻击的初始伤害会被存储",
-            "每10次攻击会释放所有已存储的伤害"
+            "Sát thương ban đầu của mỗi lần tấn công được lưu trữ",
+            "Mỗi 10 lần tấn công sẽ giải phóng toàn bộ sát thương đã lưu"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headSegganesson);
 
     public static final MaterialTrait SFW_SEGGANESSON_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("失明速度")
+        .setTraitName("Mù tốc độ")
         .setLore(
-            "获得速度V效果",
-            "获得失明效果"
+            "Nhận hiệu ứng Tốc độ V",
+            "Nhận hiệu ứng Mù"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodSegganesson);
 
     public static final MaterialTrait SFW_SEGGANESSON_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("引力")
+        .setTraitName("Hấp dẫn")
         .setLore(
-            "所有附近的实体",
-            "会被缓慢地拖向你"
+            "Tất cả thực thể gần đó",
+            "sẽ từ từ bị kéo về phía bạn"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateSegganesson);
 
     public static final MaterialTrait SFW_SEGGANESSON_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("灵魂虹吸")
+        .setTraitName("Hút linh hồn")
         .setLore(
-            "每击杀一个敌对生物可收集1个灵魂",
-            "每100个灵魂 +1% 输出伤害"
+            "Mỗi lần tiêu diệt sinh vật địch thu thập 1 linh hồn",
+            "Mỗi 100 linh hồn +1% sát thương đầu ra"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::linksSegganesson);
 
     public static final MaterialTrait SFW_SLIMESTEEL_BINDING = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("弹性 II")
+        .setTraitName("Đàn hồi II")
         .setLore(
-            "-50% 摔落伤害",
-            "获得跳跃提升II效果"
+            "-50% sát thương rơi",
+            "Nhận hiệu ứng Nhảy cao II"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::bindSlimesteel)
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::bindSlimesteel);
@@ -2506,42 +2506,42 @@ public final class Traits {
     public static final MaterialTrait SFW_SLIMESTEEL_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("月面弹跳")
+        .setTraitName("Trăng nhảy")
         .setLore(
-            "该特性运用于靴子时: ",
-            "免疫摔落伤害"
+            "Khi áp dụng cho giày: ",
+            "Miễn nhiễm sát thương rơi"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::gambesonSlimeSteel);
 
     public static final MaterialTrait SFW_REINFORCED_SLIMESTEEL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("强力粘液")
+        .setTraitName("Chất nhờn mạnh")
         .setLore(
-            "当物品栏有空间时",
-            "掉落的方块将直接进入物品栏中"
+            "Khi túi đồ còn chỗ trống",
+            "khối rơi sẽ trực tiếp vào túi"
         )
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headReinforcedSlimesteel);
 
     public static final MaterialTrait SFW_REINFORCED_SLIMESTEEL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("灵活")
+        .setTraitName("Linh hoạt")
         .setLore(
-            "仅在工具未损坏时有效",
-            "-50% 承受伤害",
-            "消耗与初始伤害数值相同的耐久"
+            "Chỉ hiệu lực khi công cụ chưa hỏng",
+            "-50% sát thương phải chịu",
+            "Tiêu hao độ bền bằng sát thương ban đầu"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::rodReinforcedSlimesteel);
 
     public static final MaterialTrait SFW_REINFORCED_SLIMESTEEL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("刚性与柔性")
+        .setTraitName("Cương và nhu")
         .setLore(
-            "获得速度效果",
-            "获得跳跃提升效果",
-            "+10% 承受伤害"
+            "Nhận hiệu ứng Tốc độ",
+            "Nhận hiệu ứng Nhảy cao",
+            "+10% sát thương phải chịu"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateReinforcedSlimesteel)
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateReinforcedSlimesteel);
@@ -2549,38 +2549,38 @@ public final class Traits {
     public static final MaterialTrait SFW_REINFORCED_SLIMESTEEL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("射偏了")
+        .setTraitName("Bắn hụt")
         .setLore(
-            "有10%的几率免疫来自弹射物的伤害"
+            "Có 10% tỷ lệ miễn nhiễm sát thương từ đạn bắn"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksReinforcedSlimesteel);
 
     public static final MaterialTrait SFW_OSMIUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("锤子")
+        .setTraitName("Búa")
         .setLore(
-            "可挖掘 3x3x3 区域"
+            "Có thể đào khu vực 3x3x3"
         )
         .addConsumer(TraitEventType.DURABILITY, DurabilityEvents::explosive);
 
     public static final MaterialTrait SFW_OSMIUM_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("重型鞍座")
+        .setTraitName("Yên nặng")
         .setLore(
-            "命中的目标会被减速",
-            "并且无法传送"
+            "Mục tiêu trúng đòn sẽ bị làm chậm",
+            "và không thể dịch chuyển"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::rodOsmium);
 
     public static final MaterialTrait SFW_OSMIUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("增重")
+        .setTraitName("Tăng trọng")
         .setLore(
-            "获得减速效果",
-            "受到伤害时,攻击者会被击退"
+            "Nhận hiệu ứng Làm chậm",
+            "Khi bị sát thương, kẻ tấn công bị đẩy lùi"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateOsmium)
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateOsmium);
@@ -2588,21 +2588,21 @@ public final class Traits {
     public static final MaterialTrait SFW_OSMIUM_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("画笔")
+        .setTraitName("Bút vẽ")
         .setLore(
-            "有5%的几率被承受伤害治疗"
+            "Có 5% tỷ lệ được chữa trị bởi sát thương phải chịu"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::linksOsmium);
 
     public static final MaterialTrait SFW_OSMIUM_SUPERALLOY_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("野蛮人")
+        .setTraitName("Dã man")
         .setLore(
-            "获得挖掘疲劳效果",
-            "命中的目标会被禁锢",
-            "+100% 输出伤害",
-            "有33的几率额外 +100% 输出伤害"
+            "Nhận hiệu ứng Mệt mỏi đào",
+            "Mục tiêu trúng đòn bị giam cầm",
+            "+100% sát thương đầu ra",
+            "Có 33% tỷ lệ thêm +100% sát thương đầu ra"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headOsmiumSuperalloy)
         .addConsumer(TraitEventType.TICK, TickEvents::headOsmiumSuperalloy);
@@ -2610,41 +2610,41 @@ public final class Traits {
     public static final MaterialTrait SFW_OSMIUM_SUPERALLOY_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("击退")
+        .setTraitName("Đẩy lùi")
         .setLore(
-            "击退任何命中的生物",
-            "有几率禁锢目标"
+            "Đẩy lùi bất kỳ sinh vật trúng đòn",
+            "Có tỷ lệ giam cầm mục tiêu"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headHard);
 
     public static final MaterialTrait SFW_OSMIUM_SUPERALLOY_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("闪电风暴")
+        .setTraitName("Bão sét")
         .setLore(
-            "当装备全套有闪电风暴特性的盔甲时",
-            "有几率在周围召唤闪电风暴"
+            "Khi mặc đủ bộ giáp có đặc tính Bão sét",
+            "có tỷ lệ triệu hồi bão sét xung quanh"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateOsmiumSuperalloy);
 
     public static final MaterialTrait SFW_OSMIUM_SUPERALLOY_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("部分衰变")
+        .setTraitName("Phân rã một phần")
         .setLore(
-            "有几率随机对周围生物造成伤害",
-            "不会致死"
+            "Có tỷ lệ gây sát thương ngẫu nhiên lên sinh vật xung quanh",
+            "Không gây chết"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksOsmiumSuperalloy);
 
     public static final MaterialTrait SFW_UNPATENTABLIUM_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("创新")
+        .setTraitName("Sáng tạo")
         .setLore(
-            "在白天: ",
-            "+100% 工具经验获取",
-            "+100% 玩家经验获取"
+            "Vào ban ngày: ",
+            "+100% nhận kinh nghiệm công cụ",
+            "+100% nhận kinh nghiệm người chơi"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headUnpatentabilum)
         .addConsumer(TraitEventType.BLOCK_BREAK, BlockBreakEvents::headUnpatentabilum);
@@ -2653,30 +2653,30 @@ public final class Traits {
         // Special case in ItemDrop and PlayerDeath
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("无形权利")
+        .setTraitName("Quyền vô hình")
         .setLore(
-            "工具无法被丢弃",
-            "不会在死亡时掉落"
+            "Công cụ không thể bị vứt bỏ",
+            "Không rơi khi chết"
         );
 
     public static final MaterialTrait SFW_UNPATENTABLIUM_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("强力凝视")
+        .setTraitName("Nhìn chằm chằm")
         .setLore(
-            "你看向的实体会传送到你身边",
-            "不会对玩家、凋灵、末影龙生效"
+            "Thực thể bạn nhìn vào sẽ dịch chuyển đến bên bạn",
+            "Không hiệu lực với người chơi, Wither, Ender Dragon"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateUnpatentabilum);
 
     public static final MaterialTrait SFW_UNPATENTABLIUM_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.SLIMEFUN_WARFARE_NOTE)
-        .setTraitName("圆桌骑士")
+        .setTraitName("Hiệp sĩ bàn tròn")
         .setLore(
-            "受到伤害时有几率",
-            "在周围生成圆桌骑士",
-            "(好吧,是铁傀儡)"
+            "Khi bị sát thương có tỷ lệ",
+            "sinh ra Hiệp sĩ bàn tròn xung quanh",
+            "(Ừ thì, là Iron Golem)"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateMetal);
 
@@ -2687,174 +2687,174 @@ public final class Traits {
     public static final MaterialTrait DYN_STAINLESS_STEEL_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("超级不锈钢")
+        .setTraitName("Siêu inox")
         .setLore(
-            "真的，绝对是不锈钢",
-            "可以抵挡更多鲜血",
-            "(更多花里胡哨的炫酷效果)"
+            "Thật sự, tuyệt đối là inox",
+            "Có thể chặn nhiều máu hơn",
+            "(Thêm hiệu ứng hoa mỹ ngầu hơn)"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headStainlessSteel);
 
     public static final MaterialTrait DYN_STAINLESS_STEEL_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("餐具")
+        .setTraitName("Dao muỗng")
         .setLore(
-            "攻击动物可直接喂食自己",
-            "真不错..."
+            "Tấn công động vật có thể tự ăn luôn",
+            "Tuyệt vời..."
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::rodStainlessSteel);
 
     public static final MaterialTrait DYN_STAINLESS_STEEL_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("标准")
+        .setTraitName("Tiêu chuẩn")
         .setLore(
-            "-5% 承受伤害"
+            "-5% sát thương phải chịu"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::plateStainlessSteel);
 
     public static final MaterialTrait DYN_STAINLESS_STEEL_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("水里是安全的")
+        .setTraitName("An toàn dưới nước")
         .setLore(
-            "获得水下呼吸效果"
+            "Nhận hiệu ứng Thở dưới nước"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksStainlessSteel);
 
     public static final MaterialTrait DYN_VEX_GEM_BINDING = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("土遁")
+        .setTraitName("Độn thổ")
         .setLore(
-            "右键点击随机传送到附近",
-            "(CD: 5分钟)"
+            "Chuột phải để dịch chuyển ngẫu nhiên gần đó",
+            "(CD: 5 phút)"
         )
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::bindVex);
 
     public static final MaterialTrait DYN_VEX_GEM_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("真让人烦恼")
+        .setTraitName("Thật phiền phức")
         .setLore(
-            "恼鬼宝石不应该这样用!"
+            "Ngọc Vex không nên dùng thế này!"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::gambesonVex);
 
     public static final MaterialTrait DYN_STAR_DUST_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("光煞")
+        .setTraitName("Quang sát")
         .setLore(
-            "+50% 输出伤害",
-            "攻击可使目标眩晕"
+            "+50% sát thương đầu ra",
+            "Tấn công có thể làm choáng mục tiêu"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headStarDust);
 
     public static final MaterialTrait DYN_STAR_DUST_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("依凡")
+        .setTraitName("Y Phàm")
         .setLore(
-            "\"不要向流星许愿，否则它就会变成女人\"",
-            "获得发光效果",
-            "周围的村民会不断向你聚集"
+            "\"Đừng ước với sao băng, nếu không nó sẽ biến thành phụ nữ\"",
+            "Nhận hiệu ứng Phát sáng",
+            "Dân làng xung quanh sẽ liên tục tụ tập về phía bạn"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::rodStarDust);
 
     public static final MaterialTrait DYN_STAR_DUST_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("星光")
+        .setTraitName("Ánh sao")
         .setLore(
-            "有5%的几率",
-            "在夜间恢复1点血量(半颗心)"
+            "Có 5% tỷ lệ",
+            "hồi 1 máu (nửa tim) vào ban đêm"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateStardust);
 
     public static final MaterialTrait DYN_STAR_DUST_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("魔童")
+        .setTraitName("Ma đồng")
         .setLore(
-            "获得1层魔童效果",
-            "当拥有4层及以上的魔童效果时",
-            "击退周围5格内的所有的敌对生物",
-            "(凋灵与末影龙除外)"
+            "Nhận 1 lớp hiệu ứng Ma đồng",
+            "Khi có 4 lớp Ma đồng trở lên",
+            "Đẩy lùi tất cả sinh vật địch trong phạm vi 5 ô",
+            "(Trừ Wither và Ender Dragon)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::brightBurn);
 
     public static final MaterialTrait DYN_GHOSTLY_ESSENCE_BINDING = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_BINDING)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("幽灵形态")
+        .setTraitName("Hình thái ma")
         .setLore(
-            "免疫来自弹射物的伤害"
+            "Miễn nhiễm sát thương từ đạn bắn"
         )
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::bindGhostly);
 
     public static final MaterialTrait DYN_GHOSTLY_ESSENCE_ROD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_ROD)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("超立方体 [B]")
+        .setTraitName("Siêu khối lập phương [B]")
         .setLore(
-            "只有 [A] 与 [B] 同时存在时才会生效",
+            "Chỉ có hiệu lực khi [A] và [B] cùng tồn tại",
             "",
-            ThemeUtils.CLICK_INFO + "Shift + 右键点击" + ThemeUtils.PASSIVE + "存储位置",
-            ThemeUtils.CLICK_INFO + "右键点击" + ThemeUtils.PASSIVE + "传送到存储的位置",
-            "(CD: 10分钟)"
+            ThemeUtils.CLICK_INFO + "Shift + chuột phải" + ThemeUtils.PASSIVE + "lưu vị trí",
+            ThemeUtils.CLICK_INFO + "Chuột phải" + ThemeUtils.PASSIVE + "dịch chuyển đến vị trí đã lưu",
+            "(CD: 10 phút)"
         )
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::rodGhostly);
 
     public static final MaterialTrait DYN_GHOSTLY_ESSENCE_GAMBESON = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_GAMBESON)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("攻壳机动队")
+        .setTraitName("Đội cơ giới")
         .setLore(
-            "消耗耐久来缓慢攻击周围所有生物",
-            "该特性不会致死",
-            "(消耗耐久不受其他特性,模组,附魔的影响)"
+            "Tiêu hao độ bền để tấn công chậm tất cả sinh vật xung quanh",
+            "Đặc tính này sẽ không gây chết",
+            "(Tiêu hao độ bền không bị ảnh hưởng bởi đặc tính, module, phù phép khác)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::gambesonGhostly);
 
     public static final MaterialTrait DYN_GHOSTLY_ESSENCE_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("幽灵之影")
+        .setTraitName("Bóng ma")
         .setLore(
-            "像幽灵一样盘旋",
-            "(获得飘浮效果)"
+            "Lơ lửng như ma",
+            "(Nhận hiệu ứng Bay bổng)"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::linksGhostly);
 
     public static final MaterialTrait DYN_TESSERACT_HEAD = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("超立方体 [A]")
+        .setTraitName("Siêu khối lập phương [A]")
         .setLore(
-            "只有 [A] 与 [B] 同时存在时才会生效",
+            "Chỉ có hiệu lực khi [A] và [B] cùng tồn tại",
             "",
-            ThemeUtils.CLICK_INFO + "Shift + 右键点击" + ThemeUtils.PASSIVE + "存储位置",
-            ThemeUtils.CLICK_INFO + "右键点击" + ThemeUtils.PASSIVE + "传送到存储的位置",
-            "(CD: 10分钟)"
+            ThemeUtils.CLICK_INFO + "Shift + chuột phải" + ThemeUtils.PASSIVE + "lưu vị trí",
+            ThemeUtils.CLICK_INFO + "Chuột phải" + ThemeUtils.PASSIVE + "dịch chuyển đến vị trí đã lưu",
+            "(CD: 10 phút)"
         )
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::headTessMat);
 
     public static final MaterialTrait DYN_TESSERACT_PLATES = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("光学能量")
+        .setTraitName("Năng lượng quang học")
         .setLore(
-            "需要全套包含双光学能量特性的盔甲",
-            "(每件盔甲需要有2个光学能量特性)才能生效",
-            "当你处于异次元之家中时，会不断积累光学能量",
-            "当受到伤害时，光学能量会被释放用于抵消伤害",
-            "(伤害为经过增伤/减伤计算后)",
-            "1点光学能量可以抵消1点伤害",
-            "若光学能量不足以抵消全部伤害,则不会抵消任何伤害",
-            "每件盔甲最多可以存储50点光学能量",
-            "全套盔甲最多可以存储200点光学能量"
+            "Cần đủ bộ giáp có đặc tính Năng lượng quang học kép",
+            "(Mỗi món giáp cần có 2 đặc tính Năng lượng quang học) mới có hiệu lực",
+            "Khi bạn ở trong Ngôi nhà dị thứ nguyên, sẽ tích lũy Năng lượng quang học",
+            "Khi bị sát thương, Năng lượng quang học sẽ được giải phóng để triệt tiêu sát thương",
+            "(Sát thương sau khi tính tăng/giảm)",
+            "1 điểm Năng lượng quang học có thể triệt tiêu 1 sát thương",
+            "Nếu Năng lượng quang học không đủ, sẽ không triệt tiêu bất kỳ sát thương nào",
+            "Mỗi món giáp tối đa lưu trữ 50 Năng lượng quang học",
+            "Đủ bộ giáp tối đa lưu trữ 200 Năng lượng quang học"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::hyperbolic)
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::hyperbolic);
@@ -2862,17 +2862,17 @@ public final class Traits {
     public static final MaterialTrait DYN_TESSERACT_LINKS = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.DYNATECH_NOTE)
-        .setTraitName("光学能量")
+        .setTraitName("Năng lượng quang học")
         .setLore(
-            "需要8个光学能量特性才能生效",
-            "(每件盔甲需要有2个光学能量特性)",
-            "当你处于异次元之家中时，会不断积累光学能量",
-            "当受到伤害时，光学能量会被释放用于抵消伤害",
-            "(伤害为经过增伤/减伤计算后)",
-            "1点光学能量可以抵消1点伤害",
-            "若光学能量不足以抵消全部伤害,则不会抵消任何伤害",
-            "每件盔甲最多可以存储50点光学能量",
-            "全套盔甲最多可以存储200点光学能量"
+            "Cần 8 đặc tính Năng lượng quang học mới có hiệu lực",
+            "(Mỗi món giáp cần có 2 đặc tính Năng lượng quang học)",
+            "Khi bạn ở trong Ngôi nhà dị thứ nguyên, sẽ tích lũy Năng lượng quang học",
+            "Khi bị sát thương, Năng lượng quang học sẽ được giải phóng để triệt tiêu sát thương",
+            "(Sát thương sau khi tính tăng/giảm)",
+            "1 điểm Năng lượng quang học có thể triệt tiêu 1 sát thương",
+            "Nếu Năng lượng quang học không đủ, sẽ không triệt tiêu bất kỳ sát thương nào",
+            "Mỗi món giáp tối đa lưu trữ 50 Năng lượng quang học",
+            "Đủ bộ giáp tối đa lưu trữ 200 Năng lượng quang học"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::hyperbolic)
         .addConsumer(TraitEventType.PLAYER_DAMAGED, PlayerDamagedEvents::hyperbolic);
@@ -2884,50 +2884,50 @@ public final class Traits {
     public static final MaterialTrait TNS_DAXI_STRENGTH = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_HEAD)
         .setAddedBy(SupportedPluginsManager.TRANSCENDENCE_NOTE)
-        .setTraitName("超能力")
+        .setTraitName("Siêu năng lực")
         .setLore(
-            "有20%的几率释放出超能力核心的力量",
-            "造成100%额外伤害"
+            "Có 20% tỷ lệ giải phóng sức mạnh lõi siêu năng lực",
+            "gây 100% sát thương thêm"
         )
         .addConsumer(TraitEventType.ENTITY_DAMAGED, EntityDamageEvents::headDaxiStrength);
 
     public static final MaterialTrait TNS_DAXI_ABSORPTION = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.TRANSCENDENCE_NOTE)
-        .setTraitName("超能力联合(A)")
+        .setTraitName("Siêu năng lực liên hợp (A)")
         .setLore(
-            "当4种超能力(A, F, S, R)联合起来后",
-            "你死亡时可以保留超能力核心的效果"
+            "Khi 4 loại siêu năng lực (A, F, S, R) kết hợp lại",
+            "bạn có thể giữ lại hiệu ứng lõi siêu năng lực khi chết"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateDaxiAbsorption);
 
     public static final MaterialTrait TNS_DAXI_FORTITUDE = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.TRANSCENDENCE_NOTE)
-        .setTraitName("超能力联合(F)")
+        .setTraitName("Siêu năng lực liên hợp (F)")
         .setLore(
-            "当4种超能力(A, F, H, R)联合起来后",
-            "你死亡时可以保留超能力核心的效果"
+            "Khi 4 loại siêu năng lực (A, F, H, R) kết hợp lại",
+            "bạn có thể giữ lại hiệu ứng lõi siêu năng lực khi chết"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateDaxiFortitude);
 
     public static final MaterialTrait TNS_DAXI_SATURATION = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.TRANSCENDENCE_NOTE)
-        .setTraitName("超能力联合(H)")
+        .setTraitName("Siêu năng lực liên hợp (H)")
         .setLore(
-            "当4种超能力(A, F, H, R)联合起来后",
-            "你死亡时可以保留超能力核心的效果"
+            "Khi 4 loại siêu năng lực (A, F, H, R) kết hợp lại",
+            "bạn có thể giữ lại hiệu ứng lõi siêu năng lực khi chết"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateDaxiSaturation);
 
     public static final MaterialTrait TNS_DAXI_REGENERATION = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_PLATES)
         .setAddedBy(SupportedPluginsManager.TRANSCENDENCE_NOTE)
-        .setTraitName("超能力联合(R)")
+        .setTraitName("Siêu năng lực liên hợp (R)")
         .setLore(
-            "当4种超能力(A, F, H, R)联合起来后",
-            "你死亡时可以保留超能力核心的效果"
+            "Khi 4 loại siêu năng lực (A, F, H, R) kết hợp lại",
+            "bạn có thể giữ lại hiệu ứng lõi siêu năng lực khi chết"
         )
         .addConsumer(TraitEventType.TICK, TickEvents::plateDaxiRegeneration);
 
@@ -2938,16 +2938,16 @@ public final class Traits {
     public static final MaterialTrait NTW_UTLIMANINIUM = new MaterialTrait()
         .setPartType(MaterialTrait.PROP_LINKS)
         .setAddedBy(SupportedPluginsManager.NETWORKS_NOTE)
-        .setTraitName("接入网络")
+        .setTraitName("Kết nối mạng")
         .setLore(
-            "你可以通过头盔发射出的信号",
-            "远程接入一个网格",
+            "Bạn có thể thông qua tín hiệu từ mũ phát ra",
+            "kết nối từ xa vào một mạng lưới",
             "",
-            "在空手时:",
-            ThemeUtils.CLICK_INFO + "Shift + 右键点击" + ThemeUtils.PASSIVE + "绑定网格",
-            ThemeUtils.CLICK_INFO + "左键点击" + ThemeUtils.PASSIVE + "打开绑定的网格",
+            "Khi tay không:",
+            ThemeUtils.CLICK_INFO + "Shift + chuột phải" + ThemeUtils.PASSIVE + "ràng buộc mạng lưới",
+            ThemeUtils.CLICK_INFO + "Chuột trái" + ThemeUtils.PASSIVE + "mở mạng lưới đã ràng buộc",
             "",
-            ThemeUtils.ITEM_MOLTEN_METAL + "该特性仅用于头盔时有效"
+            ThemeUtils.ITEM_MOLTEN_METAL + "Đặc tính này chỉ có hiệu lực khi dùng cho mũ"
         )
         .addConsumer(TraitEventType.INTERACT, InteractionEvents::linksUltimaninium);
 

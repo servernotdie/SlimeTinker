@@ -13,8 +13,8 @@ public final class DummyWorkbench {
         "DUMMY_TINKERS_SMELTERY",
         Material.FLETCHING_TABLE,
         ThemeItemType.MACHINE,
-        "匠魂合成站",
-        "该物品在匠魂合成站中制作"
+        "Trạm chế tạo Tinker",
+        "Vật phẩm được chế tạo tại trạm chế tạo Tinker"
     );
     public static final RecipeType TYPE = new RecipeType(Keys.WS_DUMMY_WORKBENCH, STACK);
 

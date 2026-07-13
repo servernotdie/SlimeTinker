@@ -8,11 +8,11 @@ import io.github.sefiraat.slimetinker.utils.ItemUtils;
 import io.github.sefiraat.slimetinker.utils.ThemeUtils;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
-import io.github.thebusybiscuit.slimefun4.utils.tags.SlimefunTag;
 import org.bukkit.Bukkit;
 import org.bukkit.Color;
 import org.bukkit.Material;
 import org.bukkit.Particle;
+import org.bukkit.Tag;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.FurnaceRecipe;
@@ -50,7 +50,7 @@ public final class BlockBreakEvents {
             return;
         }
 
-        PotionEffect effect = player.getPotionEffect(PotionEffectType.FAST_DIGGING);
+        PotionEffect effect = player.getPotionEffect(PotionEffectType.HASTE);
 
         if (effect != null && effect.getAmplifier() >= 9) {
             return;
@@ -61,7 +61,7 @@ public final class BlockBreakEvents {
         if (ThreadLocalRandom.current().nextInt(1, chanceUpper) == 1) {
             int nextLevel = effect == null ? 0 : Math.min(effect.getAmplifier() + 1, 9);
             int durationTicks = (int) (hasteEnd - timeNow) / 50;
-            PotionEffect newEffect = new PotionEffect(PotionEffectType.FAST_DIGGING, durationTicks, nextLevel);
+            PotionEffect newEffect = new PotionEffect(PotionEffectType.HASTE, durationTicks, nextLevel);
             player.addPotionEffect(newEffect);
             player.sendMessage(ThemeUtils.SUCCESS + "Haste Burst has hit level " + (nextLevel + 1) + "!");
         }
@@ -86,7 +86,7 @@ public final class BlockBreakEvents {
                     newDrops.add(ni);
                     friend.getRemoveDrops().add(i);
                     Particle.DustOptions dustOptions = new Particle.DustOptions(Color.fromRGB(130, 100, 30), 2);
-                    friend.getBlock().getWorld().spawnParticle(Particle.REDSTONE, friend.getBlock().getLocation(), 10, 0.2, 0.2, 0.2, 0.5, dustOptions);
+                    friend.getBlock().getWorld().spawnParticle(Particle.DUST, friend.getBlock().getLocation(), 10, 0.2, 0.2, 0.2, 0.5, dustOptions);
                     break;
                 }
             }
@@ -146,7 +146,7 @@ public final class BlockBreakEvents {
         }
         friend.setAddDrops(c);
         Particle.DustOptions dustOptions = new Particle.DustOptions(Color.fromRGB(130, 30, 120), 2);
-        friend.getBlock().getWorld().spawnParticle(Particle.REDSTONE, friend.getBlock().getLocation(), 10, 0.2, 0.2, 0.2, 0.5, dustOptions);
+        friend.getBlock().getWorld().spawnParticle(Particle.DUST, friend.getBlock().getLocation(), 10, 0.2, 0.2, 0.2, 0.5, dustOptions);
     }
 
     public static void rodEarth(EventFriend friend) {
@@ -197,7 +197,7 @@ public final class BlockBreakEvents {
                 friend.getRemoveDrops().add(i);
             }
             Particle.DustOptions dustOptions = new Particle.DustOptions(Color.fromRGB(30, 130, 40), 2);
-            friend.getBlock().getWorld().spawnParticle(Particle.REDSTONE, friend.getBlock().getLocation(), 10, 0.2, 0.2, 0.2, 0.5, dustOptions);
+            friend.getBlock().getWorld().spawnParticle(Particle.DUST, friend.getBlock().getLocation(), 10, 0.2, 0.2, 0.2, 0.5, dustOptions);
         }
         friend.setAddDrops(c);
     }
@@ -240,7 +240,7 @@ public final class BlockBreakEvents {
             }
             friend.getAddDrops().add(i);
             Particle.DustOptions dustOptions = new Particle.DustOptions(Color.fromRGB(60, 60, 60), 2);
-            friend.getBlock().getWorld().spawnParticle(Particle.REDSTONE, friend.getBlock().getLocation(), 10, 0.2, 0.2, 0.2, 0.5, dustOptions);
+            friend.getBlock().getWorld().spawnParticle(Particle.DUST, friend.getBlock().getLocation(), 10, 0.2, 0.2, 0.2, 0.5, dustOptions);
         }
     }
 
@@ -283,7 +283,7 @@ public final class BlockBreakEvents {
 
     public static void plateBronze(EventFriend friend) {
         Block b = friend.getBlock();
-        if (SlimefunTag.CROPS.isTagged(b.getType())) {
+        if (Tag.CROPS.isTagged(b.getType())) {
             Optional<ItemStack> opStack = b.getDrops().stream().findFirst();
             if (opStack.isPresent()) {
                 ItemStack i = opStack.get();

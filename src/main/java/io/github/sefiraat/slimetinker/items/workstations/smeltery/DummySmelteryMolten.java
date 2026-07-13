@@ -13,10 +13,10 @@ public final class DummySmelteryMolten {
         "DUMMY_TINKERS_SMELTERY_MOLTEN",
         Material.CHISELED_POLISHED_BLACKSTONE,
         ThemeItemType.MACHINE,
-        "匠魂冶炼炉",
-        "熔融金属是将对应的金属物品",
-        "放入冶炼炉中熔化得到的产物",
-        "需要有岩浆才能熔化金属"
+        "Lò luyện Tinker",
+        "Kim loại nóng chảy là sản phẩm khi cho vật phẩm kim loại tương ứng",
+        "vào lò luyện để nấu chảy",
+        "Cần dung nham để nấu chảy kim loại"
     );
     public static final RecipeType TYPE = new RecipeType(Keys.WS_DUMMY_SMELTERY_M, STACK);
 

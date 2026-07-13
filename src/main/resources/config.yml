@@ -1,2 +1,2 @@
-# 启用自动更新（从构建站自动下载新版本，重启后生效）
+# Bật tự động cập nhật (tự động tải xuống phiên bản mới từ trạm xây dựng, có hiệu lực sau khi khởi động lại)
 auto-update: true

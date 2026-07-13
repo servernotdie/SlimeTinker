@@ -25,10 +25,10 @@ public class MainFlexGroup extends FlexItemGroup {
 
     private static final ItemStack DOCS_ITEM_STACK = new CustomItemStack(
         Material.BOOK,
-        ThemeUtils.GUIDE + "附属 Wiki",
-        ThemeUtils.PASSIVE + "点击获取粘液匠魂 Wiki 链接",
+        ThemeUtils.GUIDE + "Wiki của tiện ích mở rộng",
+        ThemeUtils.PASSIVE + "Nhấn để lấy liên kết tới Wiki của SlimeTinker",
         "",
-        ThemeUtils.CLICK_INFO + "指南"
+        ThemeUtils.CLICK_INFO + "Hướng dẫn"
     );
 
     private static final int GUIDE_BACK = 1;
@@ -65,7 +65,7 @@ public class MainFlexGroup extends FlexItemGroup {
     @Override
     @ParametersAreNonnullByDefault
     public void open(Player p, PlayerProfile profile, SlimefunGuideMode mode) {
-        final ChestMenu chestMenu = new ChestMenu(ThemeUtils.MAIN + "粘液匠魂");
+        final ChestMenu chestMenu = new ChestMenu(ThemeUtils.MAIN + "SlimeTinker");
 
         for (int slot : HEADER) {
             chestMenu.addItem(slot, ChestMenuUtils.getBackground(), (player1, i1, itemStack, clickAction) -> false);
@@ -107,7 +107,7 @@ public class MainFlexGroup extends FlexItemGroup {
         // Docs
         menu.replaceExistingItem(DOCS, DOCS_ITEM_STACK);
         menu.addMenuClickHandler(DOCS, (player1, i1, itemStack1, clickAction) -> {
-            final TextComponent link = new TextComponent("点击此处前往Wiki");
+            final TextComponent link = new TextComponent("Nhấn vào đây để đến Wiki");
             link.setColor(ChatColor.YELLOW);
             link.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://slimefun-addons-wiki.guizhanss.cn/slime-tinker/"));
             player.spigot().sendMessage(link);
